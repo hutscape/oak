@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="en">
+{%- include head.html -%}
+<body>
+{%- include navbar.html -%}
+{%- include header.html -%}
+{%- include tabs.html -%}
+
+{% if page.url == "/" %}
+  {%- include start.html -%}
+{% endif %}
+
+{% if site.data.pages.hardware == true %}
+  {% if page.url == "/hardware" %}
+    {%- include hardware.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.software == true %}
+  {% if page.url == "/software" %}
+    {%- include software.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.bom == true %}
+  {% if page.url == "/bom" %}
+    {%- include bom.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.schedule == true %}
+  {% if page.url == "/schedule" %}
+    {%- include schedule.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.design == true %}
+  {% if page.url == "/design" %}
+    {%- include design.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.power == true %}
+  {% if page.url == "/power" %}
+    {%- include power.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.mechanical == true %}
+  {% if page.url == "/mechanical" %}
+    {%- include mechanical.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.lessons == true %}
+  {% if page.url == "/lessons" %}
+    {%- include lessons.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.references == true %}
+  {% if page.url == "/references" %}
+    {%- include references.html -%}
+  {% endif %}
+{% endif %}
+
+{{ content }}
+{%- include footer.html -%}
+
+<!-- Scripts -->
+{%- include menu-mobile.html -%}
+
+<script src="//use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.js"></script>
+<script>anchors.add()</script>
+
+{% if site.data.pages.software == true %}
+  {% if page.url == "/software" %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.schedule == true %}
+  {% if page.url == "/schedule" %}
+    {%- include schedule-script.html -%}
+  {% endif %}
+{% endif %}
+
+{% if site.data.pages.bom == true %}
+  {% if page.url == "/bom" %}
+    {%- include bom-script.html -%}
+  {% endif %}
+{% endif %}
+
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+{%- endif -%}
+</body>
+</html>
