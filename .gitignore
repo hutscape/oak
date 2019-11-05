@@ -1,33 +1,20 @@
-BOM_PATH?=_data/bill_of_materials.csv
-XML_PATH?=hardware/cactus.xml
+# Temporary
+*.kicad_pcb-bak
+*.bak
+_autosave*
+*-cache.lib
+*-rescue.lib
+*-rescue.dcm
+*.elf
+*.bin
+*.hex
+*.pyc
 
-.PHONY: serve build install bom
+# jekyll
+_site
 
-serve: build
-	jekyll serve
+# node js
+node_modules
+package-lock.json
 
-build:
-	jekyll build
-
-bom:
-	rm -f $(BOM_PATH)
-	python scripts/bom.py $(XML_PATH) $(BOM_PATH)
-
-install:
-	echo "Installing git-secrets from awslabs..."
-	brew install git-secrets
-
-	echo "Adding git-secrets config..."
-	cat scripts/_git-secrets >> .git/config
-
-  echo "Installing pre-commit hook"
-	touch .git/hooks/pre-commit || exit
-
-  echo "Making pre-commit hook executable"
-	chmod u+x .git/hooks/pre-commit
-
-  echo "Adding .gitignore..."
-	cat scripts/_gitignore > .gitignore
-
-  echo "Adding Makefile..."
-	cat scripts/_Makefile > .gitignore
+datasheets
