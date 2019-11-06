@@ -25,20 +25,42 @@ references:
         url: https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276
       - name: B-L072Z-LRWAN1 LoRa®/Sigfox™ Discovery kit
         url: https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html
-      - name: Hackable CMWX1ZZABZ (LoRa) Devices
+      - name: (Project) Hackable CMWX1ZZABZ (LoRa) Devices
         url: https://hackaday.io/project/35169-hackable-cmwx1zzabz-lora-devices
-      - name: Voodoo Sonic LoRaWAN-connected Doll
+      - name: (Project) Voodoo Sonic LoRaWAN-connected Doll
         url: https://www.instructables.com/id/Voodoo-Sonic-LoRaWAN-connected-Doll/
 
   - topic: GPS
     list:
       - name: Testing out an upcoming STEMMA GPS board for STEMMA SUNDAY
         url: https://www.youtube.com/watch?v=JhquVC3RbZU
+      - name: Adafruit Mini GPS PA1010D - UART and I2C - STEMMA QT
+        url: https://www.adafruit.com/product/4415
       - name: CD-PA1010D GNSS patch antenna module Data Sheet V.02
         url: http://docs.mirifica.eu/CDtop-tech.com/CD-PA1010/CD-PA1010D-datasheet-v02.pdf
       - name: CDTop Technology PA1010Dv2 (CD-PA1010D2)
         url: https://www.mirifica.de/101067-1/cdtop-technology/pa1010daa19220027
-      - name: 
+      - name: NEO-6M GPS Module — An Introduction
+        url: https://www.electroschematics.com/neo-6m-gps-module/
+      - name: GPS Nixie Alarm Clock with Ublox NEO-6M GPS module
+        url: https://hackaday.io/project/9417-gps-nixie-alarm-clock
+      - name: Mini GSM/GPRS GPS Breakout SIM808
+        url: http://wiki.seeedstudio.com/Mini_GSM_GPRS_GPS_Breakout_SIM808/
+      - name: SIM808 GPS Application Note V1.00
+        url: https://cdn-shop.adafruit.com/datasheets/SIM808_GPS_Application_Note_V1.00.pdf
+      - name: 66-Channel LS20031 GPS Receiver Module (MT3329 Chipset)
+        url: https://www.pololu.com/product/1249
+      - name: MEDIATEK - 3329 Datasheet
+        url: https://www.puntoflotante.net/MEDIATEK-3329.pdf
+      - name: GSM & GPS Car Diagnosis System with MEDIATEK MT3329
+        url: https://hackaday.io/project/711-gsm-gps-car-diagnosis-system
+
+  - topic: e-Paper
+    list:
+      - name: Waveshare 1.54inch e-Paper Module
+        url: https://www.waveshare.com/wiki/1.54inch_e-Paper_Module
+      - name: Waveshare 200x200, 1.54inch E-Ink raw display panel
+        url: https://www.waveshare.com/product/modules/oleds-lcds/e-paper/1.54inch-e-paper.htm
 
   - topic: Firmware
     list:
