@@ -50,10 +50,26 @@ references:
         url: https://cdn-shop.adafruit.com/datasheets/SIM808_GPS_Application_Note_V1.00.pdf
       - name: 66-Channel LS20031 GPS Receiver Module (MT3329 Chipset)
         url: https://www.pololu.com/product/1249
+      - name: Adafruit ultimate GPS with MTK3339 chipset
+        url: https://www.adafruit.com/product/746
       - name: MEDIATEK - 3329 Datasheet
         url: https://www.puntoflotante.net/MEDIATEK-3329.pdf
       - name: GSM & GPS Car Diagnosis System with MEDIATEK MT3329
         url: https://hackaday.io/project/711-gsm-gps-car-diagnosis-system
+      - name: Quectel L30 Compact GPS Module with Super Sensitivity
+        url: https://www.quectel.com/UploadFile/Product/Quectel_L30_GPS_Specification_V2.0.pdf
+      - name: NEO-7 series u-blox 7 GNSS modules
+        url: https://www.u-blox.com/en/product/neo-7-series
+      - name: NEO-6 series Versatile u-blox 6 GPS modules
+        url: https://www.u-blox.com/en/product/neo-6-series
+      - name: NEO-6 u-blox 6 GPS Modules Data Sheet
+        url: https://www.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf
+      - name: SkyTraq Venus838LPx-T Timing GPS module breakout
+        url: https://www.tindie.com/products/nsayer/skytraq-venus838lpx-t-timing-gps-module-breakout/
+      - name: Venus838LPx-T 1cm2 Precision Timing GPS Receiver
+        url: https://www.skytraq.com.tw/homesite/Venus838LPx-T_PB_v2.pdf
+      - name: MAX-7 series u-blox 7 GNSS modules
+        url: https://www.u-blox.com/en/product/max-7-series
 
   - topic: e-Paper
     list:
