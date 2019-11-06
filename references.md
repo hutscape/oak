@@ -32,6 +32,10 @@ references:
 
   - topic: GPS
     list:
+      - name: Calculate distance between two latitude-longitude points? (Haversine formula)
+        url: https://stackoverflow.com/a/27943/496797
+      - name: Haversine formula
+        url: https://en.wikipedia.org/wiki/Haversine_formula
       - name: Testing out an upcoming STEMMA GPS board for STEMMA SUNDAY
         url: https://www.youtube.com/watch?v=JhquVC3RbZU
       - name: Adafruit Mini GPS PA1010D - UART and I2C - STEMMA QT
@@ -77,6 +81,8 @@ references:
         url: https://www.waveshare.com/wiki/1.54inch_e-Paper_Module
       - name: Waveshare 200x200, 1.54inch E-Ink raw display panel
         url: https://www.waveshare.com/product/modules/oleds-lcds/e-paper/1.54inch-e-paper.htm
+      - name: Waveshare 1.54inch e-Paper Module datasheet
+        url: https://www.waveshare.com/w/upload/7/77/1.54inch_e-Paper_Datasheet.pdf
 
   - topic: Firmware
     list:
