@@ -79,7 +79,7 @@ references:
       - name: MAX-7 series u-blox 7 GNSS modules
         url: https://www.u-blox.com/en/product/max-7-series
 
-  - topic: e-Paper
+  - topic: E-Ink
     list:
       - name: Waveshare 1.54inch e-Paper Module
         url: https://www.waveshare.com/wiki/1.54inch_e-Paper_Module
