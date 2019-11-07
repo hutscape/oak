@@ -17,6 +17,8 @@ references:
         url: https://www.hoperf.com/modules/lora/RFM95.html
       - name: Adafruit RFM9X schematic and layout
         url: https://learn.adafruit.com/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts/downloads
+      - name: RFM95 Ultra-long Range Transceiver Module/LoRa Module/support 868M frequency from Seeed
+        url: https://www.seeedstudio.com/RFM95-Ultra-long-Range-Transceiver-Module-LoRa-Module-support-868M-frequency-p-2807.html
       - name: RN2483 Low-Power Long Range LoRa Technology Transceiver Module
         url: https://www.microchip.com/wwwproducts/en/RN2483
       - name: Murata's CMWX1ZZABZ-078 module
