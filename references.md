@@ -40,6 +40,8 @@ references:
         url: https://www.youtube.com/watch?v=JhquVC3RbZU
       - name: Adafruit Mini GPS PA1010D - UART and I2C - STEMMA QT
         url: https://www.adafruit.com/product/4415
+      - name: Adafruit GPS Arduino firmware
+        url: https://github.com/adafruit/Adafruit_GPS
       - name: CD-PA1010D GNSS patch antenna module Data Sheet V.02
         url: http://docs.mirifica.eu/CDtop-tech.com/CD-PA1010/CD-PA1010D-datasheet-v02.pdf
       - name: CDTop Technology PA1010Dv2 (CD-PA1010D2)
