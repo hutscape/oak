@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak/Oak.sch</source>
+    <date>2019 November 09, Saturday 17:41:46</date>
+    <tool>Eeschema (5.1.0-0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Oak</title>
+        <company>Hutscape</company>
+        <rev>V1.0</rev>
+        <date>2019-11-09</date>
+        <source>Oak.sch</source>
+        <comment number="1" value="Measure outdoor distance between 2 keychain holders"/>
+        <comment number="2" value=""/>
+        <comment number="3" value="Project website: https://hutscape.com/oak"/>
+        <comment number="4" value="Authored by: Sayanee Basu"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="AE1">
+      <value>Stub Antenna 915MHz</value>
+      <datasheet>http://www.farnell.com/datasheets/605456.pdf</datasheet>
+      <fields>
+        <field name="Link">https://sg.element14.com/lprs/ant-ss900/antenna-stub-straight-868-915mhz/dp/2096218</field>
+        <field name="MPN">ANT-SS900</field>
+        <field name="Manufacturer">LPRS</field>
+        <field name="Unit">8.90</field>
+        <field name="Vendor">Element14</field>
+      </fields>
+      <libsource lib="Device" part="Antenna" description="Antenna"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC68462</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LoRaWAN 915MHz</value>
+      <datasheet>http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf</datasheet>
+      <fields>
+        <field name="Link">https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295</field>
+        <field name="MPN">RFM95W-915S2</field>
+        <field name="Manufacturer">HopeRF</field>
+        <field name="Unit">25.64</field>
+        <field name="Vendor">Element14</field>
+      </fields>
+      <libsource lib="RF_AM_FM" part="RFM95W-915S2" description="Low power long range transceiver module, SPI and parallel interface, 915 MHz, spreading factor 6 to12, bandwith 7.8 to 500kHz, -111 to -148 dBm, SMD-16, DIP-16"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC6932D</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="Antenna">
+      <description>Antenna</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">AE</field>
+        <field name="Value">Antenna</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="RF_AM_FM" part="RFM95W-868S2">
+      <aliases>
+        <alias>RFM95W-915S2</alias>
+        <alias>RFM96W-315S2</alias>
+        <alias>RFM96W-433S2</alias>
+        <alias>RFM97W-868S2</alias>
+        <alias>RFM97W-915S2</alias>
+        <alias>RFM98W-315S2</alias>
+        <alias>RFM98W-433S2</alias>
+        <alias>RFM69HCW</alias>
+      </aliases>
+      <description>Low power long range transceiver module, SPI and parallel interface, 868 MHz, spreading factor 6 to12, bandwith 7.8 to 500kHz, -111 to -148 dBm, SMD-16, DIP-16</description>
+      <docs>http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf</docs>
+      <footprints>
+        <fp>HOPERF?RFM9XW*SMD*</fp>
+        <fp>HOPERF?RFM9XW*THT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">RFM95W-868S2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="MISO" type="output"/>
+        <pin num="3" name="MOSI" type="input"/>
+        <pin num="4" name="SCK" type="input"/>
+        <pin num="5" name="NSS" type="input"/>
+        <pin num="6" name="RESET" type="BiDi"/>
+        <pin num="7" name="DIO5" type="BiDi"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="ANT" type="BiDi"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="DIO3" type="BiDi"/>
+        <pin num="12" name="DIO4" type="BiDi"/>
+        <pin num="13" name="3.3V" type="power_in"/>
+        <pin num="14" name="DIO0" type="BiDi"/>
+        <pin num="15" name="DIO1" type="BiDi"/>
+        <pin num="16" name="DIO2" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="RF_AM_FM">
+      <uri>/Library/Application Support/kicad/library/RF_AM_FM.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="U1" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="2" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="13" name="Net-(AE1-Pad1)">
+      <node ref="U1" pin="9"/>
+      <node ref="AE1" pin="1"/>
+    </net>
+    <net code="14" name="+3V3">
+      <node ref="U1" pin="13"/>
+    </net>
+  </nets>
+</export>
