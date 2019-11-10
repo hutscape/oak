@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Oak-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -21,11 +22,12 @@ F 0 "AE1" H 7980 1239 50  0000 L CNN
 F 1 "Stub Antenna 915MHz" H 7980 1148 50  0000 L CNN
 F 2 "" H 7900 1250 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/605456.pdf" H 7900 1250 50  0001 C CNN
-F 4 "ANT-SS900" H 7900 1250 50  0001 C CNN "MPN"
-F 5 "LPRS" H 7900 1250 50  0001 C CNN "Manufacturer"
-F 6 "Element14" H 7900 1250 50  0001 C CNN "Vendor"
-F 7 "https://sg.element14.com/lprs/ant-ss900/antenna-stub-straight-868-915mhz/dp/2096218" H 7900 1250 50  0001 C CNN "Link"
-F 8 "8.90" H 0   0   50  0001 C CNN "Unit"
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "LPRS" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "ANT-SS900" H 0   0   50  0001 C CNN "Part No."
+F 7 "Element14" H 0   0   50  0001 C CNN "Vendor"
+F 8 "https://sg.element14.com/lprs/ant-ss900/antenna-stub-straight-868-915mhz/dp/2096218" H 0   0   50  0001 C CNN "Vendor link"
+F 9 "8.90" H 0   0   50  0001 C CNN "Unit cost"
 	1    7900 1250
 	1    0    0    -1  
 $EndComp
@@ -37,11 +39,12 @@ F 0 "U1" H 6800 2350 50  0000 C CNN
 F 1 "LoRaWAN 915MHz" H 7650 1300 50  0000 C CNN
 F 2 "" H 3850 3550 50  0001 C CNN
 F 3 "http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf" H 3850 3550 50  0001 C CNN
-F 4 "HopeRF" H 7150 1900 50  0001 C CNN "Manufacturer"
-F 5 "https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295" H 0   0   50  0001 C CNN "Link"
-F 6 "RFM95W-915S2" H 0   0   50  0001 C CNN "MPN"
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "HOPERF" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "RFM95W-915S2" H 0   0   50  0001 C CNN "Part No."
 F 7 "Element14" H 0   0   50  0001 C CNN "Vendor"
-F 8 "25.64" H 0   0   50  0001 C CNN "Unit"
+F 8 "https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295" H 0   0   50  0001 C CNN "Vendor link"
+F 9 "25.64" H 0   0   50  0001 C CNN "Unit cost"
 	1    7150 1900
 	1    0    0    -1  
 $EndComp

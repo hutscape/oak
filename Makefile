@@ -1,5 +1,5 @@
 BOM_PATH?=_data/bill_of_materials.csv
-XML_PATH?=hardware/cactus.xml
+XML_PATH?=hardware/*.xml
 
 .PHONY: serve build install bom
 

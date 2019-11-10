@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak/Oak.sch</source>
-    <date>2019 November 09, Saturday 17:41:46</date>
+    <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
+    <date>2019 November 11, Monday 07:19:48</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -23,11 +23,12 @@
       <value>Stub Antenna 915MHz</value>
       <datasheet>http://www.farnell.com/datasheets/605456.pdf</datasheet>
       <fields>
-        <field name="Link">https://sg.element14.com/lprs/ant-ss900/antenna-stub-straight-868-915mhz/dp/2096218</field>
-        <field name="MPN">ANT-SS900</field>
+        <field name="Category">Electronics</field>
         <field name="Manufacturer">LPRS</field>
-        <field name="Unit">8.90</field>
+        <field name="Part No.">ANT-SS900</field>
+        <field name="Unit cost">8.90</field>
         <field name="Vendor">Element14</field>
+        <field name="Vendor link">https://sg.element14.com/lprs/ant-ss900/antenna-stub-straight-868-915mhz/dp/2096218</field>
       </fields>
       <libsource lib="Device" part="Antenna" description="Antenna"/>
       <sheetpath names="/" tstamps="/"/>
@@ -37,11 +38,12 @@
       <value>LoRaWAN 915MHz</value>
       <datasheet>http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf</datasheet>
       <fields>
-        <field name="Link">https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295</field>
-        <field name="MPN">RFM95W-915S2</field>
-        <field name="Manufacturer">HopeRF</field>
-        <field name="Unit">25.64</field>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">HOPERF</field>
+        <field name="Part No.">RFM95W-915S2</field>
+        <field name="Unit cost">25.64</field>
         <field name="Vendor">Element14</field>
+        <field name="Vendor link">https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295</field>
       </fields>
       <libsource lib="RF_AM_FM" part="RFM95W-915S2" description="Low power long range transceiver module, SPI and parallel interface, 915 MHz, spreading factor 6 to12, bandwith 7.8 to 500kHz, -111 to -148 dBm, SMD-16, DIP-16"/>
       <sheetpath names="/" tstamps="/"/>

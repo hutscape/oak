@@ -1,6 +1,6 @@
 hardware: false
 software: false
-bom: false
+bom: true
 design: true
 power: false
 mechanical: false
