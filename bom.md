@@ -5,5 +5,3 @@ permalink: /bom
 sequence: 4
 ibom: false
 ---
-hi 
-{{ data.site }}
