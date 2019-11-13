@@ -6,7 +6,7 @@
   "power": "LiPo",
   "wireless":"LoRaWAN",
   "sensor": "GPS, E-Ink",
-  "mcu": "SAMD21J",
+  "mcu": "SAMD21E",
 
   "status": "ongoing"
 }
