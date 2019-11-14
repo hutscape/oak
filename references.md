@@ -85,6 +85,8 @@ references:
         url: https://www.waveshare.com/wiki/1.54inch_e-Paper_Module
       - name: Waveshare 200x200, 1.54inch E-Ink raw display panel
         url: https://www.waveshare.com/product/modules/oleds-lcds/e-paper/1.54inch-e-paper.htm
+      - name: Waveshare 200x200, 1.54inch E-Ink raw display panel schematic to module
+        url: https://www.waveshare.com/w/upload/5/5b/1.54inch_e-Paper_Schematic.pdf
       - name: Waveshare 1.54inch e-Paper Module datasheet
         url: https://www.waveshare.com/w/upload/7/77/1.54inch_e-Paper_Datasheet.pdf
 
