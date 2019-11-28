@@ -10,6 +10,8 @@ references:
         url: https://notes.iopush.net/how-to-make-a-lorawan-gps-tracker/
       - name: LoRaSensorTile
         url: https://www.tindie.com/products/TleraCorp/lorasensortile/
+      - name: GPS Live Tracking With Balena, Neo-6M And LoRa!
+        url: https://kokonatt.com/embedded/gps-live-tracking
 
   - topic: LoRaWAN
     list:
