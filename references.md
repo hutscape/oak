@@ -12,6 +12,8 @@ references:
         url: https://www.tindie.com/products/TleraCorp/lorasensortile/
       - name: GPS Live Tracking With Balena, Neo-6M And LoRa!
         url: https://kokonatt.com/embedded/gps-live-tracking
+      - name: GPS logger LoRa by Greg Davill
+        url: https://github.com/gregdavill/gpsLoggerLora
 
   - topic: LoRaWAN
     list:
