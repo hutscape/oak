@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name GPS_PA1010D)(type Legacy)(uri ${KICAD_LIB}/symbols/gps.lib)(options "")(descr ""))
-  (lib (name LoRaWAN)(type Legacy)(uri ${KICAD_LIB}/symbols/lorawan.lib)(options "")(descr ""))
-  (lib (name E-Ink)(type Legacy)(uri ${KICAD_LIB}/symbols/e-ink.lib)(options "")(descr ""))
+  (lib (name GPS_PA1010D)(type Legacy)(uri ${KIPRJMOD}/library/symbols/gps.lib)(options "")(descr ""))
+  (lib (name LoRaWAN)(type Legacy)(uri ${KIPRJMOD}/library/symbols/lorawan.lib)(options "")(descr ""))
+  (lib (name E-Ink)(type Legacy)(uri ${KIPRJMOD}/library/symbols/e-ink.lib)(options "")(descr ""))
 )
