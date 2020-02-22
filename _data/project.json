@@ -4,7 +4,7 @@
   "version": "1.0",
 
   "power": "LiPo",
-  "wireless":"LoRaWAN",
+  "wireless":"LoRa",
   "sensor": "GPS, E-Ink",
   "mcu": "SAMD21E",
 
