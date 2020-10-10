@@ -15,7 +15,7 @@ references:
       - name: GPS logger LoRa by Greg Davill
         url: https://github.com/gregdavill/gpsLoggerLora
 
-  - topic: LoRaWAN
+  - topic: LoRa
     list:
       - name: RFM95W LoRa Module
         url: https://www.hoperf.com/modules/lora/RFM95.html
@@ -35,6 +35,11 @@ references:
         url: https://hackaday.io/project/35169-hackable-cmwx1zzabz-lora-devices
       - name: (Project) Voodoo Sonic LoRaWAN-connected Doll
         url: https://www.instructables.com/id/Voodoo-Sonic-LoRaWAN-connected-Doll/
+
+  - topic: LoRa Antenna
+    list:
+      - name: Testing LoRa Antennas at 915MHz
+        url: https://medium.com/home-wireless/testing-lora-antennas-at-915mhz-6d6b41ac8f1d
 
   - topic: GPS
     list:
