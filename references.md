@@ -3,18 +3,89 @@ layout: default
 title: References
 permalink: /references
 sequence: 10
-references:
-  - topic: Similar projects
-    list:
-      - name: How to make a LoraWAN GPS tracker
-        url: https://notes.iopush.net/how-to-make-a-lorawan-gps-tracker/
-      - name: LoRaSensorTile
-        url: https://www.tindie.com/products/TleraCorp/lorasensortile/
-      - name: GPS Live Tracking With Balena, Neo-6M And LoRa!
-        url: https://kokonatt.com/embedded/gps-live-tracking
-      - name: GPS logger LoRa by Greg Davill
-        url: https://github.com/gregdavill/gpsLoggerLora
+similar:
+  - name: a LoraWAN GPS tracker
+    url: https://notes.iopush.net/how-to-make-a-lorawan-gps-tracker/
+    type: developer
+    year: 2016
+    components:
+      - type: LoRa
+        mpn: RFM95
+        datasheet_url: https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf
+      - type: battery
+        mpn: 18650
+        datasheet_url: https://datasheetspdf.com/pdf-file/1408721/TENERGY/18650/1
+      - type: software
+        mpn: node red
+        datasheet_url: https://nodered.org/
+  - name: LoRaSensorTile
+    url: https://hackaday.io/project/35169-hackable-cmwx1zzabz-lora-devices
+    type: developer
+    year: 2018
+    components:
+      - type: LoRa (with MCU STM32L082)
+        mpn: CMWX1ZZABZ-078
+        datasheet_url: https://wireless.murata.com/pub/RFM/data/type_abz.pdf
+      - type: mcu
+        mpn: STM32L082
+        datasheet_url: https://www.st.com/resource/en/datasheet/dm00141132.pdf
+      - type: accelerometer
+        mpn: BMA280
+        datasheet_url: https://www.bosch-sensortec.com/products/motion-sensors/accelerometers/bma280.html#tab_module_16_1_2
+      - type: pressure sensor
+        mpn: BME280
+        datasheet_url: https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/
+      - type: RGBW light sensor
+        mpn: VEML6040
+        datasheet_url: https://www.vishay.com/ppg?84276
+      - type: flash memory
+        mpn: MX25L12835FZNI
+        datasheet_url: https://www.macronix.com/Lists/Datasheet/Attachments/7397/MX25L12835F,%203V,%20128Mb,%20v1.6.pdf
+  - name: GPS Live Tracking
+    type: developer
+    url: https://kokonatt.com/embedded/gps-live-tracking
+    components:
+      - type: microcontroller
+        mpn: ESP8266
+      - type: GPS
+        mpn: Neo-6M
+      - type: visualization
+        mpn: Grafana
+      - type: database
+        mpn: Influx DB
+      - type: LoRa
+        mpn: SX1278
+        datasheet_url: https://cdn-shop.adafruit.com/product-files/3179/sx1276_77_78_79.pdf
+  - name: LoRaWAN GPS Tracker with 9-axis accelerometer-LGT92- 868MHz
+    type: developer
+    url: https://www.seeedstudio.com/LoRaWAN-GPS-Tracker-with-9-axis-accelerometer-LGT92-p-2922.html
+    cost: 39.50
+    year: 2020
+    components:
+      - type: microcontroller
+        mpn: STM32L072
+      - type: LoRa
+        mpn: SX1276 / 1278
+      - type: battery
+        mpn: 1000mA Li-on
+      - type: accelerometer
+        mpn:  MPU-9250
+        datasheet_url: https://invensense.tdk.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
+  - name: SAMD21 LoRa Development Board with GPS
+    url: https://hackaday.io/project/165646-samd21-lora-development-board-with-gps
+    year: 2018
+    type: developer
+    components:
+      - type: microcontroller
+        mpn: ATSAMD21E18A-AU
+      - type: GPS
+        mpn: Quectel L80 GPS module
+      - type: LoRa
+        mpn: RFM95W
+      - type: battery
+        mpn: LiOn
 
+references:
   - topic: LoRa
     list:
       - name: RFM95W LoRa Module
@@ -31,8 +102,6 @@ references:
         url: https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276
       - name: B-L072Z-LRWAN1 LoRa®/Sigfox™ Discovery kit
         url: https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html
-      - name: (Project) Hackable CMWX1ZZABZ (LoRa) Devices
-        url: https://hackaday.io/project/35169-hackable-cmwx1zzabz-lora-devices
       - name: (Project) Voodoo Sonic LoRaWAN-connected Doll
         url: https://www.instructables.com/id/Voodoo-Sonic-LoRaWAN-connected-Doll/
 
