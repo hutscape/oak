@@ -10,52 +10,52 @@ similar:
     year: 2016
     components:
       - type: LoRa
-        mpn: RFM95
-        datasheet_url: https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf
+        name: RFM95
+        url: https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/RFM95_96_97_98W.pdf
       - type: battery
-        mpn: 18650
-        datasheet_url: https://datasheetspdf.com/pdf-file/1408721/TENERGY/18650/1
+        name: 18650
+        url: https://datasheetspdf.com/pdf-file/1408721/TENERGY/18650/1
       - type: software
-        mpn: node red
-        datasheet_url: https://nodered.org/
+        name: node red
+        url: https://nodered.org/
   - name: LoRaSensorTile
     url: https://hackaday.io/project/35169-hackable-cmwx1zzabz-lora-devices
     type: developer
     year: 2018
     components:
       - type: LoRa (with MCU STM32L082)
-        mpn: CMWX1ZZABZ-078
-        datasheet_url: https://wireless.murata.com/pub/RFM/data/type_abz.pdf
+        name: CMWX1ZZABZ-078
+        url: https://wireless.murata.com/pub/RFM/data/type_abz.pdf
       - type: mcu
-        mpn: STM32L082
-        datasheet_url: https://www.st.com/resource/en/datasheet/dm00141132.pdf
+        name: STM32L082
+        url: https://www.st.com/resource/en/datasheet/dm00141132.pdf
       - type: accelerometer
-        mpn: BMA280
-        datasheet_url: https://www.bosch-sensortec.com/products/motion-sensors/accelerometers/bma280.html#tab_module_16_1_2
+        name: BMA280
+        url: https://www.bosch-sensortec.com/products/motion-sensors/accelerometers/bma280.html#tab_module_16_1_2
       - type: pressure sensor
-        mpn: BME280
-        datasheet_url: https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/
+        name: BME280
+        url: https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/
       - type: RGBW light sensor
-        mpn: VEML6040
-        datasheet_url: https://www.vishay.com/ppg?84276
+        name: VEML6040
+        url: https://www.vishay.com/ppg?84276
       - type: flash memory
-        mpn: MX25L12835FZNI
-        datasheet_url: https://www.macronix.com/Lists/Datasheet/Attachments/7397/MX25L12835F,%203V,%20128Mb,%20v1.6.pdf
+        name: MX25L12835FZNI
+        url: https://www.macronix.com/Lists/Datasheet/Attachments/7397/MX25L12835F,%203V,%20128Mb,%20v1.6.pdf
   - name: GPS Live Tracking
     type: developer
     url: https://kokonatt.com/embedded/gps-live-tracking
     components:
       - type: microcontroller
-        mpn: ESP8266
+        name: ESP8266
       - type: GPS
-        mpn: Neo-6M
+        name: Neo-6M
       - type: visualization
-        mpn: Grafana
+        name: Grafana
       - type: database
-        mpn: Influx DB
+        name: Influx DB
       - type: LoRa
-        mpn: SX1278
-        datasheet_url: https://cdn-shop.adafruit.com/product-files/3179/sx1276_77_78_79.pdf
+        name: SX1278
+        url: https://cdn-shop.adafruit.com/product-files/3179/sx1276_77_78_79.pdf
   - name: LoRaWAN GPS Tracker with 9-axis accelerometer-LGT92- 868MHz
     type: developer
     url: https://www.seeedstudio.com/LoRaWAN-GPS-Tracker-with-9-axis-accelerometer-LGT92-p-2922.html
@@ -63,27 +63,27 @@ similar:
     year: 2020
     components:
       - type: microcontroller
-        mpn: STM32L072
+        name: STM32L072
       - type: LoRa
-        mpn: SX1276 / 1278
+        name: SX1276 / 1278
       - type: battery
-        mpn: 1000mA Li-on
+        name: 1000mA Li-on
       - type: accelerometer
-        mpn:  MPU-9250
-        datasheet_url: https://invensense.tdk.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
+        name:  MPU-9250
+        url: https://invensense.tdk.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
   - name: SAMD21 LoRa Development Board with GPS
     url: https://hackaday.io/project/165646-samd21-lora-development-board-with-gps
     year: 2018
     type: developer
     components:
       - type: microcontroller
-        mpn: ATSAMD21E18A-AU
+        name: ATSAMD21E18A-AU
       - type: GPS
-        mpn: Quectel L80 GPS module
+        name: Quectel L80 GPS module
       - type: LoRa
-        mpn: RFM95W
+        name: RFM95W
       - type: battery
-        mpn: LiOn
+        name: LiOn
 
 references:
   - topic: LoRa
