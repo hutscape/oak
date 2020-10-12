@@ -1,3 +1,6 @@
+// #define DEBUG
+
+#include "DebugUtils.h"
 #include "src/eink/eink.h"
 #include "src/gps/gps.h"
 
@@ -5,9 +8,12 @@ int count = 0;
 char count_string[] = {'1', '2', '3'};
 
 void setup() {
+    #ifdef DEBUG
     SerialUSB.begin(9600);
     while (!SerialUSB) { }
-    SerialUSB.println("Start E-ink display...");
+    #endif
+
+    DEBUG_TITLE("Start Oak...");
 
     initGPS();
 }
@@ -19,10 +25,10 @@ void loop() {
     count_string[1] = count / 10 % 10 + '0';
     count_string[0] = count / 100 + '0';
 
-    // SerialUSB.println(count_string);
+    DEBUG_PRINT(count_string);
 
     if (!initEink()) {
-        SerialUSB.print("e-Paper init failed");
+        DEBUG_TITLE("E-ink initialization failed");
     }
 
     clearEink();
@@ -30,7 +36,6 @@ void loop() {
     displayEink(0, 50, count_string);
 
     delay(2000);
-    // char c = GPS.read();
 
     if (!isNMEAReceived()) {
         return;

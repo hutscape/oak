@@ -65,4 +65,6 @@ void displayGPS() {
       SerialUSB.print(GPS.longitude, 4); SerialUSB.println(GPS.lon);
     }
   }
+
+  SerialUSB.println("\n");
 }
