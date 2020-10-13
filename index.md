@@ -20,31 +20,34 @@ download_bom: false
       <span class="tag is-medium is-warning">ongoing</span>
     </div>
 
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-12">
-        <div class="tile">
-          <div class="tile is-parent">
-            <article class="tile is-child notification">
-              <p class="title">Step 1</p>
-              <p class="subtitle">Wire up the prototype components.</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification">
-              <p class="title">Step 2</p>
-              <p class="subtitle">Flash the firmware.</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification">
-              <div class="content">
-                <p class="title">Step 3</p>
-                <p class="subtitle">See the distance displayed on both keychains.</p>
-              </div>
-            </article>
-          </div>
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical is-12">
+      <div class="tile">
+        <div class="tile is-parent">
+          <article class="tile is-child notification">
+            <p class="title">Step 1</p>
+            <p class="subtitle">Wire up the prototype components.</p>
+            <a href="{{site.url}}/images/prototype/front.jpg">
+              <img src="{{site.url}}/images/prototype/front.jpg" alt="Breadboard prototype">
+            </a>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification">
+            <p class="title">Step 2</p>
+            <p class="subtitle">Flash the firmware.</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification">
+            <div class="content">
+              <p class="title">Step 3</p>
+              <p class="subtitle">See the distance displayed on both keychains.</p>
+            </div>
+          </article>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
