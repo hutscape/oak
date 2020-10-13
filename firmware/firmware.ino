@@ -17,7 +17,7 @@ long lastSendTime = 0;
 int interval = 2000;
 
 int count = 0;
-char count_string[] = {'0', '0', '0'};
+char count_string[] = {'0', '0', '0','\0'};
 
 void setup() {
   #ifdef DEBUG
@@ -40,24 +40,22 @@ void setup() {
 }
 
 void loop() {
-
     count++;
 
     count_string[2] = count % 10 + '0';
     count_string[1] = count / 10 % 10 + '0';
     count_string[0] = count / 100 + '0';
 
-    DEBUG_PRINT(count_string[0]);
-    DEBUG_PRINT(count_string[1]);
-    DEBUG_PRINT(count_string[2]);
-    SerialUSB.println(count_string);
+    DEBUG_PRINT(count_string);
 
     // LoRa
     enableLoRa();
     if (millis() - lastSendTime > interval) {
       String sensorData = String(count);
-      sendMessage(sensorData);
+      // FIXME: sendMessage() is not working
+      // sendMessage(sensorData);
 
+      // FIXME: Move these prints inside sendMessage()
       SerialUSB.print("Sending data " + sensorData);
       SerialUSB.print(" from 0x" + String(localAddress, HEX));
       SerialUSB.println(" to 0x" + String(destinationAddress, HEX));
@@ -86,8 +84,6 @@ void loop() {
     // }
 
     // displayGPS();
-
-    DEBUG_TRACE();
 }
 
 void enableLoRa() {
