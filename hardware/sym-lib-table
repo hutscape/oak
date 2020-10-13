@@ -1,5 +1,7 @@
 (sym_lib_table
-  (lib (name GPS_PA1010D)(type Legacy)(uri ${KIPRJMOD}/library/symbols/gps.lib)(options "")(descr ""))
-  (lib (name LoRaWAN)(type Legacy)(uri ${KIPRJMOD}/library/symbols/lorawan.lib)(options "")(descr ""))
-  (lib (name E-Ink)(type Legacy)(uri ${KIPRJMOD}/library/symbols/e-ink.lib)(options "")(descr ""))
+  (lib (name GPS_PA1010D)(type Legacy)(uri ${KIPRJMOD}/library/symbols/Adafruit_PA1010D_GPS.lib)(options "")(descr ""))
+  (lib (name LoRaWAN)(type Legacy)(uri ${KIPRJMOD}/library/symbols/Adafruit_RFMpx_lorawan.lib)(options "")(descr ""))
+  (lib (name E-Ink)(type Legacy)(uri ${KIPRJMOD}/library/symbols/Waheshare_eink_1_54in.lib)(options "")(descr ""))
+  (lib (name Robotdyn_SAMD21_M0)(type Legacy)(uri ${KIPRJMOD}/library/symbols/Robotdyn_SAMD21_M0.lib)(options "")(descr ""))
+  (lib (name CDTop_PA1010D_GPS)(type Legacy)(uri ${KIPRJMOD}/library/symbols/CDTop_PA1010D_GPS.lib)(options "")(descr ""))
 )

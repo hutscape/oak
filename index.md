@@ -30,12 +30,15 @@ download_bom: false
             <a href="{{site.url}}/images/prototype/front.jpg">
               <img src="{{site.url}}/images/prototype/front.jpg" alt="Breadboard prototype">
             </a>
+            <a href="{{site.url}}/images/hardware/schematic.png">
+              <img src="{{site.url}}/images/hardware/schematic.png" alt="Schematic of the prototype">
+            </a>
           </article>
         </div>
         <div class="tile is-parent">
           <article class="tile is-child notification">
             <p class="title">Step 2</p>
-            <p class="subtitle">Flash the firmware.</p>
+            <p class="subtitle">Flash the <a href="/software">firmware</a>.</p>
           </article>
         </div>
         <div class="tile is-parent">
