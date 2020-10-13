@@ -173,6 +173,15 @@ references:
       - name: Arduino Core for STM32L0 with LoRaWAN connectivity
         url: https://github.com/GrumpyOldPizza/ArduinoCore-stm32l0
 
+  - topic: SPI
+    list:
+      - name: How to access multiple SPI interfaces on Arduino
+        url: https://arduino.stackexchange.com/questions/8425/how-to-access-multiple-spi-interfaces-on-arduino
+      - name: Better SPI BUS design in 3 steps
+        url: https://dorkbotpdx.org/blog/paul/better_spi_bus_design_in_3_steps/
+      - name: Serial Peripheral Interface (SPI)
+        url: https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi
+
   - topic: Manufacturing
     list:
       - name: How to Solder Castellated Mounting Holes
