@@ -3,13 +3,14 @@
 #include "DebugUtils.h"
 #include <SPI.h>
 #include <LoRa.h>
-#include "src/eink/eink.h"
-#include "src/gps/gps.h"
+// #include "src/eink/eink.h"
+// #include "src/gps/gps.h"
 
 const int csPin = 5;
 const int resetPin = 6;
 const int irqPin = 1;
-#define LORA_CS csPin
+#define LORA_CS 5
+#define EINK_CS 10
 
 byte localAddress = 0xAA;
 byte destinationAddress = 0xBB;
@@ -26,64 +27,45 @@ void setup() {
   #endif
 
   DEBUG_TITLE("Start Oak: With GPS, LoRa and E-ink...");
-
-  enableLoRa();
   LoRa.setPins(csPin, resetPin, irqPin);
-
-  // TODO: Buy 915MHz hardware and use 915E6 frequency
   if (!LoRa.begin(433E6)) {
-      // FIXME: LoRa is not working E-ink because of SPI conflict in hardware
-      SerialUSB.println("LoRa init failed. Check your connections.");
+    // FIXME: LoRa is not working E-ink because of SPI conflict in hardware
+    SerialUSB.println("LoRa init failed. Check your connections.");
   }
 
   // initGPS();
 }
 
 void loop() {
-    count++;
-
-    count_string[2] = count % 10 + '0';
-    count_string[1] = count / 10 % 10 + '0';
-    count_string[0] = count / 100 + '0';
-
+  if (millis() - lastSendTime > interval) {
+    // count
+    sprintf(count_string, "%d", ++count);
     DEBUG_PRINT(count_string);
-
-    // LoRa
-    enableLoRa();
-    if (millis() - lastSendTime > interval) {
-      String sensorData = String(count);
-      // FIXME: sendMessage() is not working
-      // sendMessage(sensorData);
-
-      // FIXME: Move these prints inside sendMessage()
-      SerialUSB.print("Sending data " + sensorData);
-      SerialUSB.print(" from 0x" + String(localAddress, HEX));
-      SerialUSB.println(" to 0x" + String(destinationAddress, HEX));
-
-      lastSendTime = millis();
-      interval = random(2000) + 1000;
-    }
-
-    receiveMessage(LoRa.parsePacket());
+    String sensorData = String(count);
 
     // E-ink
-    enableEink();
-    if (!initEink()) {
-        DEBUG_TITLE("E-ink initialization failed");
-    }
-
-    clearEink();
-    setEink();
-    displayEink(0, 50, count_string);
-
-    delay(1000);
-
-    // GPS
-    // if (!isNMEAReceived()) {
-    //     return;
+    // enableEink();
+    // if (!initEink()) {
+    //   DEBUG_TITLE("E-ink initialization failed");
     // }
 
-    // displayGPS();
+    // clearEink();
+    // setEink();
+    // displayEink(0, 50, count_string);
+
+    // LoRa send
+    sendMessage(sensorData);
+
+    SerialUSB.print("Sending data " + sensorData);
+    SerialUSB.print(" from 0x" + String(localAddress, HEX));
+    SerialUSB.println(" to 0x" + String(destinationAddress, HEX));
+
+    lastSendTime = millis();
+    interval = random(2000) + 1000;
+  }
+
+  // LoRa receive
+  receiveMessage(LoRa.parsePacket());
 }
 
 void enableLoRa() {
