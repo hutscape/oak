@@ -2708,8 +2708,6 @@ Wire Notes Line
 Wire Notes Line
 	850  4750 10750 4750
 Wire Notes Line
-	10750 850  10750 4750
-Wire Notes Line
 	850  850  850  7500
 Wire Notes Line
 	3700 4750 3700 7500
@@ -2724,16 +2722,16 @@ Wire Wire Line
 Wire Wire Line
 	5000 5550 5000 5700
 NoConn ~ 7900 2350
-Text Notes 6500 6100 0    59   ~ 0
+Text Notes 1050 4550 0    59   ~ 0
 Arduino Zero pins | SAMD21G pins\n\n1. GPS_DATA - D0/RX - PA11\n2. LORA_G0 - D1/TX - PA10\n3. LORA_CS - D5 - PA15\n4. LORA_RST - D6 - PA20\n5. EINK_BUSY - D7 - PA21\n6. EINK_RST - D8 - PA06\n7. EINK_DC - D9 - PA07\n8. EINK_CS - D10 - PA18\n9. MOSI - ICSP_MOSI - PB10\n10. CLK - ICSP_SCK - PB11\n11. MISO - ICSP_MISO - PA19
 Wire Notes Line style solid
-	8100 4850 8100 6150
+	2650 3300 2650 4600
 Wire Notes Line style solid
-	8100 6150 6450 6150
+	2650 4600 1000 4600
 Wire Notes Line style solid
-	6450 6150 6450 4850
+	1000 4600 1000 3300
 Wire Notes Line style solid
-	6450 4850 8100 4850
+	1000 3300 2650 3300
 $Comp
 L MCU_Microchip_SAMD:ATSAMD21G18A-AUT U1
 U 1 1 5F8E7FD8
@@ -2835,8 +2833,6 @@ F 3 "" H 1650 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 2200 1750 2200
-Wire Notes Line
-	7200 850  7200 4750
 $Comp
 L Device:C_Small C3
 U 1 1 5F90756C
@@ -2932,19 +2928,17 @@ Text Label 3450 3700 2    50   ~ 0
 LORA_G0
 Text Label 3450 3900 2    50   ~ 0
 LORA_CS
-Text Label 5150 3600 0    50   ~ 0
+Text Label 5100 3600 0    50   ~ 0
 LORA_RST
 Wire Wire Line
 	4950 3300 4950 3600
-Text Label 5150 3500 0    50   ~ 0
+Text Label 5100 3500 0    50   ~ 0
 EINK_BUSY
 Wire Wire Line
 	5050 3300 5050 3500
-Wire Wire Line
-	5050 3500 5150 3500
 Text Label 3450 3600 2    50   ~ 0
 EINK_DC
-Text Label 5150 3800 0    50   ~ 0
+Text Label 5100 3800 0    50   ~ 0
 EINK_CS
 Wire Wire Line
 	4750 3300 4750 3800
@@ -2958,16 +2952,10 @@ Wire Wire Line
 	3450 1300 3450 1200
 Wire Wire Line
 	3450 1200 3550 1200
-Text Label 5150 3700 0    50   ~ 0
+Text Label 5100 3700 0    50   ~ 0
 MISO
 Wire Wire Line
 	4850 3300 4850 3700
-Wire Wire Line
-	4950 3600 5150 3600
-Wire Wire Line
-	4750 3800 5150 3800
-Wire Wire Line
-	4850 3700 5150 3700
 Text Label 3450 3500 2    50   ~ 0
 EINK_RST
 Wire Wire Line
@@ -2996,7 +2984,6 @@ NoConn ~ 3650 1300
 NoConn ~ 3550 1300
 NoConn ~ 3250 1300
 NoConn ~ 3150 1300
-NoConn ~ 3050 1300
 NoConn ~ 2950 1300
 NoConn ~ 2950 3300
 NoConn ~ 3050 3300
@@ -3015,11 +3002,9 @@ NoConn ~ 5150 3300
 NoConn ~ 5250 3300
 NoConn ~ 5350 3300
 NoConn ~ 5450 3300
-NoConn ~ 5550 3300
 NoConn ~ 5650 3300
 NoConn ~ 5750 3300
 NoConn ~ 5850 3300
-NoConn ~ 6050 3300
 Wire Wire Line
 	2000 1700 2000 1850
 Wire Wire Line
@@ -3029,4 +3014,181 @@ Wire Wire Line
 	2000 1850 2000 2200
 Wire Wire Line
 	7750 2200 8400 2200
+$Comp
+L Device:R_Small R2
+U 1 1 5F902508
+P 6250 3450
+F 0 "R2" V 6150 3450 50  0000 C CNN
+F 1 "10k" V 6350 3450 50  0000 C CNN
+F 2 "" H 6250 3450 50  0001 C CNN
+F 3 "~" H 6250 3450 50  0001 C CNN
+	1    6250 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F902DEE
+P 6050 3750
+F 0 "SW1" V 6004 3898 50  0000 L CNN
+F 1 "SW_Push" V 6095 3898 50  0000 L CNN
+F 2 "" H 6050 3950 50  0001 C CNN
+F 3 "~" H 6050 3950 50  0001 C CNN
+	1    6050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F9033C5
+P 6050 4050
+F 0 "#PWR04" H 6050 3800 50  0001 C CNN
+F 1 "GND" H 6055 3877 50  0000 C CNN
+F 2 "" H 6050 4050 50  0001 C CNN
+F 3 "" H 6050 4050 50  0001 C CNN
+	1    6050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3300 6050 3450
+Wire Wire Line
+	6050 3950 6050 4050
+Wire Wire Line
+	6050 3450 6150 3450
+Wire Wire Line
+	6500 3450 6500 3150
+Wire Wire Line
+	6350 3450 6500 3450
+Connection ~ 6050 3450
+Wire Wire Line
+	6050 3450 6050 3550
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5F907590
+P 6500 3150
+F 0 "#PWR02" H 6500 3000 50  0001 C CNN
+F 1 "+3V3" H 6515 3323 50  0000 C CNN
+F 2 "" H 6500 3150 50  0001 C CNN
+F 3 "" H 6500 3150 50  0001 C CNN
+	1    6500 3150
+	1    0    0    -1  
+$EndComp
+Text Label 3550 1000 0    59   ~ 0
+RX_LED
+Wire Wire Line
+	3050 1300 3050 1000
+Wire Wire Line
+	3050 1000 3550 1000
+Text Label 5700 3900 0    59   ~ 0
+TX_LED
+Wire Wire Line
+	5550 3300 5550 3900
+Wire Wire Line
+	5550 3900 5700 3900
+Wire Wire Line
+	5100 3500 5050 3500
+Wire Wire Line
+	4950 3600 5100 3600
+Wire Wire Line
+	4850 3700 5100 3700
+Wire Wire Line
+	4750 3800 5100 3800
+$Comp
+L power:+3V3 #PWR09
+U 1 1 5F922951
+P 8450 5150
+F 0 "#PWR09" H 8450 5000 50  0001 C CNN
+F 1 "+3V3" H 8465 5323 50  0000 C CNN
+F 2 "" H 8450 5150 50  0001 C CNN
+F 3 "" H 8450 5150 50  0001 C CNN
+	1    8450 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5F922E43
+P 8450 5400
+F 0 "R3" H 8509 5446 50  0000 L CNN
+F 1 "1k" H 8509 5355 50  0000 L CNN
+F 2 "" H 8450 5400 50  0001 C CNN
+F 3 "~" H 8450 5400 50  0001 C CNN
+	1    8450 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F923438
+P 8450 5800
+F 0 "D1" V 8489 5682 50  0000 R CNN
+F 1 "LED" V 8398 5682 50  0000 R CNN
+F 2 "" H 8450 5800 50  0001 C CNN
+F 3 "~" H 8450 5800 50  0001 C CNN
+	1    8450 5800
+	0    -1   -1   0   
+$EndComp
+Text Label 8600 6200 0    59   ~ 0
+TX_LED
+Wire Wire Line
+	8450 5150 8450 5300
+Wire Wire Line
+	8450 5500 8450 5650
+Wire Wire Line
+	8450 5950 8450 6200
+Wire Wire Line
+	8450 6200 8600 6200
+$Comp
+L power:+3V3 #PWR010
+U 1 1 5F92C409
+P 9300 5150
+F 0 "#PWR010" H 9300 5000 50  0001 C CNN
+F 1 "+3V3" H 9315 5323 50  0000 C CNN
+F 2 "" H 9300 5150 50  0001 C CNN
+F 3 "" H 9300 5150 50  0001 C CNN
+	1    9300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5F92C40F
+P 9300 5400
+F 0 "R4" H 9359 5446 50  0000 L CNN
+F 1 "1k" H 9359 5355 50  0000 L CNN
+F 2 "" H 9300 5400 50  0001 C CNN
+F 3 "~" H 9300 5400 50  0001 C CNN
+	1    9300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F92C415
+P 9300 5800
+F 0 "D2" V 9339 5682 50  0000 R CNN
+F 1 "LED" V 9248 5682 50  0000 R CNN
+F 2 "" H 9300 5800 50  0001 C CNN
+F 3 "~" H 9300 5800 50  0001 C CNN
+	1    9300 5800
+	0    -1   -1   0   
+$EndComp
+Text Label 9450 6200 0    59   ~ 0
+RX_LED
+Wire Wire Line
+	9300 5150 9300 5300
+Wire Wire Line
+	9300 5500 9300 5650
+Wire Wire Line
+	9300 5950 9300 6200
+Wire Wire Line
+	9300 6200 9450 6200
+Wire Notes Line
+	6200 7500 6200 4750
+Wire Notes Line
+	7200 6400 10750 6400
+Wire Notes Line
+	10750 850  10750 6400
+Wire Notes Line
+	7200 850  7200 6400
+Text Notes 7300 4950 0    79   ~ 0
+LEDs
+Wire Notes Line
+	7200 5050 7650 5050
+Wire Notes Line
+	7650 5050 7650 4750
 $EndSCHEMATC
