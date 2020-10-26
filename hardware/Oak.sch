@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2020-10-13"
+Date "2020-10-26"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Measure outdoor distance between 2 keychain holders"
@@ -16,58 +16,56 @@ $EndDescr
 $Comp
 L E-Ink:Waveshare_1in54_epaper U3
 U 1 1 5F8663D1
-P 5000 6150
-F 0 "U3" H 4600 6550 50  0000 C CNN
-F 1 "Waveshare_1in54_epaper" H 5000 5050 50  0000 C CNN
-F 2 "" H 5050 6150 50  0001 C CNN
-F 3 "" H 5050 6150 50  0001 C CNN
-	1    5000 6150
+P 5100 6150
+F 0 "U3" H 4700 6550 50  0000 C CNN
+F 1 "Waveshare_1in54_epaper" H 5100 5050 50  0000 C CNN
+F 2 "" H 5150 6150 50  0001 C CNN
+F 3 "" H 5150 6150 50  0001 C CNN
+	1    5100 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR05
 U 1 1 5F867B15
-P 5000 5550
-F 0 "#PWR05" H 5000 5400 50  0001 C CNN
-F 1 "+3V3" H 5015 5723 50  0000 C CNN
-F 2 "" H 5000 5550 50  0001 C CNN
-F 3 "" H 5000 5550 50  0001 C CNN
-	1    5000 5550
+P 5100 5550
+F 0 "#PWR05" H 5100 5400 50  0001 C CNN
+F 1 "+3V3" H 5115 5723 50  0000 C CNN
+F 2 "" H 5100 5550 50  0001 C CNN
+F 3 "" H 5100 5550 50  0001 C CNN
+	1    5100 5550
 	1    0    0    -1  
 $EndComp
-Text Label 4300 5950 2    50   ~ 0
+Text Label 4400 5950 2    50   ~ 0
 EINK_RST
 Wire Wire Line
-	4300 5950 4450 5950
-Text Label 4300 6150 2    50   ~ 0
+	4400 5950 4550 5950
+Text Label 4400 6150 2    50   ~ 0
 EINK_CS
 Wire Wire Line
-	4300 6150 4450 6150
-Text Label 4300 6250 2    50   ~ 0
+	4400 6150 4550 6150
+Text Label 3900 6250 2    50   ~ 0
 CLK
-Text Label 4300 6350 2    50   ~ 0
+Text Label 4400 6350 2    50   ~ 0
 MOSI
 Wire Wire Line
-	4300 6250 4450 6250
-Wire Wire Line
-	4300 6350 4450 6350
-Text Label 5650 5950 0    50   ~ 0
+	4400 6350 4550 6350
+Text Label 5750 5950 0    50   ~ 0
 EINK_BUSY
-Text Label 5650 6050 0    50   ~ 0
+Text Label 5750 6050 0    50   ~ 0
 EINK_DC
 Wire Wire Line
-	5500 5950 5650 5950
+	5600 5950 5750 5950
 Wire Wire Line
-	5500 6050 5650 6050
+	5600 6050 5750 6050
 $Comp
 L power:GND #PWR06
 U 1 1 5F87DA37
-P 5300 6650
-F 0 "#PWR06" H 5300 6400 50  0001 C CNN
-F 1 "GND" H 5305 6477 50  0000 C CNN
-F 2 "" H 5300 6650 50  0001 C CNN
-F 3 "" H 5300 6650 50  0001 C CNN
-	1    5300 6650
+P 5400 6650
+F 0 "#PWR06" H 5400 6400 50  0001 C CNN
+F 1 "GND" H 5405 6477 50  0000 C CNN
+F 2 "" H 5400 6650 50  0001 C CNN
+F 3 "" H 5400 6650 50  0001 C CNN
+	1    5400 6650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2714,13 +2712,13 @@ Wire Notes Line
 Wire Wire Line
 	2350 6650 2350 6700
 Wire Wire Line
-	5300 6550 5300 6650
+	5400 6550 5400 6650
 Wire Wire Line
 	7750 2750 7750 2850
 Wire Wire Line
 	2250 5100 2250 5250
 Wire Wire Line
-	5000 5550 5000 5700
+	5100 5550 5100 5700
 NoConn ~ 7850 1600
 Text Notes 1050 4550 0    59   ~ 0
 Arduino Zero pins | SAMD21G pins\n\n1. GPS_DATA - D0/RX - PA11\n2. LORA_G0 - D1/TX - PA10\n3. LORA_CS - D5 - PA15\n4. LORA_RST - D6 - PA20\n5. EINK_BUSY - D7 - PA21\n6. EINK_RST - D8 - PA06\n7. EINK_DC - D9 - PA07\n8. EINK_CS - D10 - PA18\n9. MOSI - ICSP_MOSI - PB10\n10. CLK - ICSP_SCK - PB11\n11. MISO - ICSP_MISO - PA19
@@ -3282,4 +3280,37 @@ Wire Notes Line
 	7200 4950 8750 4950
 Wire Notes Line
 	8750 4950 8750 4750
+$Comp
+L Device:R_Small R5
+U 1 1 5F971654
+P 4050 6500
+F 0 "R5" H 4109 6546 50  0000 L CNN
+F 1 "1k" H 4109 6455 50  0000 L CNN
+F 2 "" H 4050 6500 50  0001 C CNN
+F 3 "~" H 4050 6500 50  0001 C CNN
+	1    4050 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6250 4050 6250
+$Comp
+L power:GND #PWR0107
+U 1 1 5F975782
+P 4050 6650
+F 0 "#PWR0107" H 4050 6400 50  0001 C CNN
+F 1 "GND" H 4055 6477 50  0000 C CNN
+F 2 "" H 4050 6650 50  0001 C CNN
+F 3 "" H 4050 6650 50  0001 C CNN
+	1    4050 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6250 4050 6400
+Wire Wire Line
+	4050 6600 4050 6650
+Connection ~ 4050 6250
+Wire Wire Line
+	4050 6250 4550 6250
+Text Notes 3800 7200 0    47   ~ 0
+A pull-down resistor\nto force the E-Ink\nCLK to be LOW\nin its idle state
 $EndSCHEMATC

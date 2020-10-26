@@ -20,7 +20,6 @@ void setup() {
 
   DEBUG_TITLE("Start Oak: With GPS, LoRa and E-ink...");
 
-  // FIXME: LoRa is not working E-ink because of SPI conflict in hardware
   if(!initLora()) {
     DEBUG_PRINT("LoRa init failed. Check your connections.");
   }
@@ -36,13 +35,13 @@ void loop() {
     String sensorData = String(count);
 
     // E-ink
-    // if (!initEink()) {
-    //   DEBUG_TITLE("E-ink initialization failed");
-    // }
+    if (!initEink()) {
+      DEBUG_TITLE("E-ink initialization failed");
+    }
 
-    // clearEink();
-    // setEink();
-    // displayEink(0, 50, count_string);
+    clearEink();
+    setEink();
+    displayEink(0, 50, count_string);
 
     // LoRa send
     sendMessage(sensorData);
