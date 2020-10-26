@@ -1,0 +1,1 @@
+GPS Firmware library is from [Adafruit GPS](https://github.com/adafruit/Adafruit_GPS) with [Hardware serial parsing example](https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_Parsing/GPS_HardwareSerial_Parsing.ino)
