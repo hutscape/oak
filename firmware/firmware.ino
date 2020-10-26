@@ -3,7 +3,7 @@
 #include "DebugUtils.h"
 #include <SPI.h>
 #include <LoRa.h>
-// #include "src/eink/eink.h" 
+// #include "src/eink/eink.h"
 // #include "src/gps/gps.h"
 
 const int csPin = 5;
@@ -44,7 +44,6 @@ void loop() {
     String sensorData = String(count);
 
     // E-ink
-    // enableEink();
     // if (!initEink()) {
     //   DEBUG_TITLE("E-ink initialization failed");
     // }
@@ -66,16 +65,6 @@ void loop() {
 
   // LoRa receive
   receiveMessage(LoRa.parsePacket());
-}
-
-void enableLoRa() {
-  digitalWrite(LORA_CS, LOW);
-  digitalWrite(EINK_CS, HIGH);
-}
-
-void enableEink() {
-  digitalWrite(EINK_CS, LOW);
-  digitalWrite(LORA_CS, HIGH);
 }
 
 void sendMessage(String outgoing) {
