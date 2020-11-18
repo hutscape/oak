@@ -158,9 +158,9 @@ LORA_RST
 Text Label 4550 5150 2    50   ~ 0
 CLK
 Text Label 4550 5250 2    50   ~ 0
-CIPO
-Text Label 4550 5350 2    50   ~ 0
 COPI
+Text Label 4550 5350 2    50   ~ 0
+CIPO
 Text Label 4550 5450 2    50   ~ 0
 LORA_CS
 Wire Wire Line
