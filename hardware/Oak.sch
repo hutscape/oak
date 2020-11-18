@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2020-11-17"
+Date "2020-11-18"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Measure outdoor distance between 2 keychain holders"
@@ -46,7 +46,7 @@ Wire Wire Line
 Text Label 7200 5550 2    50   ~ 0
 CLK
 Text Label 7700 5650 2    50   ~ 0
-MOSI
+COPI
 Wire Wire Line
 	7700 5650 7850 5650
 Text Label 9050 5250 0    50   ~ 0
@@ -158,9 +158,9 @@ LORA_RST
 Text Label 4550 5150 2    50   ~ 0
 CLK
 Text Label 4550 5250 2    50   ~ 0
-MISO
+CIPO
 Text Label 4550 5350 2    50   ~ 0
-MOSI
+COPI
 Text Label 4550 5450 2    50   ~ 0
 LORA_CS
 Wire Wire Line
@@ -218,7 +218,7 @@ Wire Wire Line
 	8400 4850 8400 5000
 NoConn ~ 1650 4850
 Text Notes 4600 4150 0    59   ~ 0
-Arduino Zero pins | SAMD21G pins\n\n1. GPS_DATA - D0/RX - PA11\n2. LORA_G0 - D1/TX - PA10\n3. LORA_CS - D5 - PA15\n4. LORA_RST - D6 - PA20\n5. EINK_BUSY - D7 - PA21\n6. EINK_RST - D8 - PA06\n7. EINK_DC - D9 - PA07\n8. EINK_CS - D10 - PA18\n9. MOSI - ICSP_MOSI - PB10\n10. CLK - ICSP_SCK - PB11\n11. MISO - ICSP_MISO - PA19
+Arduino Zero pins | SAMD21G pins\n\n1. GPS_DATA - D0/RX - PA11\n2. LORA_G0 - D1/TX - PA10\n3. LORA_CS - D5 - PA15\n4. LORA_RST - D6 - PA20\n5. EINK_BUSY - D7 - PA21\n6. EINK_RST - D8 - PA06\n7. EINK_DC - D9 - PA07\n8. EINK_CS - D10 - PA18\n9. COPI - ICSP_COPI - PB10\n10. CLK - ICSP_SCK - PB11\n11. CIPO - ICSP_CIPO - PA19
 Wire Notes Line style solid
 	6200 2900 6200 4200
 Wire Notes Line style solid
@@ -382,8 +382,6 @@ Wire Wire Line
 	5550 2500 6200 2500
 Connection ~ 5550 2400
 Wire Wire Line
-	5550 2400 6200 2400
-Wire Wire Line
 	5550 2400 5550 2500
 Connection ~ 5550 2200
 Wire Wire Line
@@ -404,8 +402,6 @@ Text Label 7000 3600 2    50   ~ 0
 EINK_DC
 Text Label 8650 4300 0    50   ~ 0
 EINK_CS
-Text Label 7100 1100 0    50   ~ 0
-MISO
 Wire Wire Line
 	6900 1100 6900 1300
 Text Label 7100 1200 0    50   ~ 0
@@ -414,8 +410,6 @@ Wire Wire Line
 	7000 1300 7000 1200
 Wire Wire Line
 	7000 1200 7100 1200
-Text Label 8650 4200 0    50   ~ 0
-MISO
 Text Label 7000 3500 2    50   ~ 0
 EINK_RST
 Wire Wire Line
@@ -1215,4 +1209,24 @@ Wire Notes Line style solid
 	1750 2950 950  2950
 Wire Notes Line style solid
 	950  2950 950  2650
+Text Label 7100 1100 0    50   ~ 0
+COPI
+Text Label 8650 4200 0    50   ~ 0
+CIPO
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FB51B7B
+P 6100 2400
+F 0 "#FLG0101" H 6100 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 5850 2500 50  0000 C CNN
+F 2 "" H 6100 2400 50  0001 C CNN
+F 3 "~" H 6100 2400 50  0001 C CNN
+	1    6100 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 2400
+Wire Wire Line
+	6100 2400 6200 2400
+Wire Wire Line
+	5550 2400 6100 2400
 $EndSCHEMATC
