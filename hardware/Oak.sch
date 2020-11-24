@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2020-11-23"
+Date "2020-11-24"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Description: Measure outdoor distance between 2 keychain holders"
@@ -18,7 +18,7 @@ L E-Ink:Waveshare_1in54_epaper U6
 U 1 1 5F8663D1
 P 7700 5200
 F 0 "U6" H 7300 5600 50  0000 C CNN
-F 1 "Waveshare_1in54_epaper" H 7700 4350 50  0000 C CNN
+F 1 "Waveshare_1in54_epaper" H 7000 4550 50  0000 C CNN
 F 2 "" H 7750 5200 50  0001 C CNN
 F 3 "https://www.waveshare.com/1.54inch-e-Paper-Module.htm" H 7750 5200 50  0001 C CNN
 F 4 "1.54inch e-Paper Module, SKU 12955" H 7700 5200 50  0001 C CNN "MPN"
@@ -345,34 +345,26 @@ Wire Notes Line
 $Comp
 L Device:R_Small R8
 U 1 1 5F971654
-P 6650 5550
-F 0 "R8" H 6709 5596 50  0000 L CNN
-F 1 "1k" H 6709 5505 50  0000 L CNN
-F 2 "" H 6650 5550 50  0001 C CNN
-F 3 "~" H 6650 5550 50  0001 C CNN
-	1    6650 5550
+P 7650 1000
+F 0 "R8" H 7709 1046 50  0000 L CNN
+F 1 "1k" H 7709 955 50  0000 L CNN
+F 2 "" H 7650 1000 50  0001 C CNN
+F 3 "~" H 7650 1000 50  0001 C CNN
+	1    7650 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 5300 6650 5300
 $Comp
 L power:GND #PWR022
 U 1 1 5F975782
-P 6650 5700
-F 0 "#PWR022" H 6650 5450 50  0001 C CNN
-F 1 "GND" H 6655 5527 50  0000 C CNN
-F 2 "" H 6650 5700 50  0001 C CNN
-F 3 "" H 6650 5700 50  0001 C CNN
-	1    6650 5700
+P 7650 1100
+F 0 "#PWR022" H 7650 850 50  0001 C CNN
+F 1 "GND" H 7655 927 50  0000 C CNN
+F 2 "" H 7650 1100 50  0001 C CNN
+F 3 "" H 7650 1100 50  0001 C CNN
+	1    7650 1100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6650 5300 6650 5450
-Wire Wire Line
-	6650 5650 6650 5700
-Wire Wire Line
-	6650 5300 7150 5300
-Text Notes 6800 5950 0    47   ~ 0
+Text Notes 8100 1250 0    47   ~ 0
 A pull-down resistor\nto force the E-Ink\nCLK to be LOW\nin its idle state
 $Comp
 L Connector:Conn_Coaxial J3
@@ -809,7 +801,6 @@ Wire Wire Line
 	3850 3900 3850 3800
 Wire Wire Line
 	4100 3900 4100 3800
-Connection ~ 6650 5300
 $Comp
 L Device:R_Small R12
 U 1 1 5FF019EC
@@ -1102,18 +1093,6 @@ NoConn ~ 7000 3150
 NoConn ~ 7100 3150
 NoConn ~ 7200 3150
 NoConn ~ 6700 1150
-Wire Wire Line
-	7200 1000 7450 1000
-Wire Wire Line
-	7200 1000 7200 1150
-Wire Wire Line
-	7100 900  7450 900 
-Wire Wire Line
-	7100 900  7100 1150
-Wire Wire Line
-	6800 800  7450 800 
-Wire Wire Line
-	6800 800  6800 1150
 Text Label 8600 3400 1    47   ~ 0
 D12
 Text Label 8500 3250 3    47   ~ 0
@@ -1186,8 +1165,6 @@ F 3 "~" H 6300 2250 50  0001 C CNN
 $EndComp
 Text Label 8850 4050 0    50   ~ 0
 CIPO
-Text Label 7450 900  0    50   ~ 0
-COPI
 Wire Wire Line
 	10200 2250 10450 2250
 Wire Wire Line
@@ -1245,7 +1222,7 @@ Wire Wire Line
 	8850 3850 8800 3850
 Text Label 9750 3500 0    50   ~ 0
 TX_LED
-Text Label 7450 800  0    50   ~ 0
+Text Label 6450 1050 2    50   ~ 0
 RX_LED
 $Comp
 L power:+3V3 #PWR011
@@ -1323,7 +1300,7 @@ Wire Wire Line
 	7300 3500 7200 3500
 Text Label 7200 3500 2    50   ~ 0
 EINK_RST
-Text Label 7450 1000 0    50   ~ 0
+Text Label 7200 900  0    50   ~ 0
 CLK
 Text Label 8850 4150 0    50   ~ 0
 EINK_CS
@@ -1787,4 +1764,47 @@ Wire Wire Line
 Connection ~ 2650 3050
 Wire Wire Line
 	2650 3050 2600 3050
+Wire Wire Line
+	6500 5300 7150 5300
+Text Label 6400 950  2    50   ~ 0
+COPI
+Wire Wire Line
+	6800 1150 6800 1050
+Wire Wire Line
+	6800 1050 6450 1050
+Wire Wire Line
+	6400 950  7100 950 
+Wire Wire Line
+	7100 950  7100 1150
+Wire Wire Line
+	7200 900  7650 900 
+$Comp
+L Device:R_Small R13
+U 1 1 5FC7752E
+P 7950 900
+F 0 "R13" V 7850 900 50  0000 C CNN
+F 1 "DNP" V 8050 900 50  0000 C CNN
+F 2 "" H 7950 900 50  0001 C CNN
+F 3 "~" H 7950 900 50  0001 C CNN
+	1    7950 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 900  7200 1150
+$Comp
+L power:+3V3 #PWR032
+U 1 1 5FCB8FB1
+P 8150 900
+F 0 "#PWR032" H 8150 750 50  0001 C CNN
+F 1 "+3V3" H 8300 950 50  0000 C CNN
+F 2 "" H 8150 900 50  0001 C CNN
+F 3 "" H 8150 900 50  0001 C CNN
+	1    8150 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 900  8150 900 
+Wire Wire Line
+	7650 900  7850 900 
+Connection ~ 7650 900 
 $EndSCHEMATC
