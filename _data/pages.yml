@@ -3,7 +3,7 @@ software: true
 bom: true
 design: true
 power: false
-mechanical: false
+mechanical: true
 schedule: true
 lessons: false
 references: true
