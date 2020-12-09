@@ -4,6 +4,27 @@ title: References
 permalink: /references
 sequence: 10
 similar:
+  - name: LilyGO TTGO T-Beam
+    url: https://github.com/Xinyuan-LilyGO/LilyGO-T-Beam
+    type: developer
+    year: 2019
+    cost: 25
+    components:
+      - type: LoRa
+        name: SX1262
+        url: https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/2R000000HT76/7Nka9W5WgugoZe.xwIHJy6ebj1hW8UJ.USO_Pt2CLLo
+      - type: battery
+        name: 18650
+        url: https://datasheetspdf.com/pdf-file/1408721/TENERGY/18650/1
+      - type: mcu
+        name: ESP32
+        url: https://www.espressif.com/en/products/socs/esp32
+      - type: GPS
+        name: ublox NEO 6M
+        url: https://www.u-blox.com/en/product/neo-6-series
+      - type: Display
+        name: OLED SSD136
+        url: https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf
   - name: a LoraWAN GPS tracker
     url: https://notes.iopush.net/how-to-make-a-lorawan-gps-tracker/
     type: developer
