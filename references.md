@@ -68,12 +68,16 @@ similar:
     components:
       - type: microcontroller
         name: ESP8266
+        url: https://www.espressif.com/en/products/socs/esp8266
       - type: GPS
-        name: Neo-6M
+        name: u-blox Neo-6M
+        url: https://www.u-blox.com/en/product/neo-6-series
       - type: visualization
         name: Grafana
+        url: https://grafana.com/docs/grafana/latest/administration/configuration/
       - type: database
         name: Influx DB
+        url: https://www.influxdata.com/
       - type: LoRa
         name: SX1278
         url: https://cdn-shop.adafruit.com/product-files/3179/sx1276_77_78_79.pdf
