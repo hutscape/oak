@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name CDTop_PA1010D_GPS)(type KiCad)(uri ${KIPRJMOD}/library/footprints/GPS.pretty)(options "")(descr ""))
+  (lib (name Passives_0805)(type KiCad)(uri ${KIPRJMOD}/library/footprints/Passives_0805.pretty)(options "")(descr ""))
+  (lib (name HopeRF_RFM95)(type KiCad)(uri /Users/sayanee/Documents/hutscape/oak/hardware/library/footprints/HopeRF_RFM9X.pretty)(options "")(descr ""))
 )
