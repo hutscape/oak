@@ -21,7 +21,12 @@ F 0 "U6" H 7300 5600 50  0000 C CNN
 F 1 "Waveshare_1in54_epaper" H 7000 4550 50  0000 C CNN
 F 2 "" H 7750 5200 50  0001 C CNN
 F 3 "https://www.waveshare.com/1.54inch-e-Paper-Module.htm" H 7750 5200 50  0001 C CNN
-F 4 "1.54inch e-Paper Module, SKU 12955" H 7700 5200 50  0001 C CNN "MPN"
+F 4 "614961950511" H 7700 5200 50  0001 C CNN "MPN"
+F 5 "https://www.waveshare.com/1.54inch-e-Paper-Module.htm" H 7700 5200 50  0001 C CNN "Link"
+F 6 "1" H 7700 5200 50  0001 C CNN "MOQ"
+F 7 "Module" H 7700 5200 50  0001 C CNN "Package"
+F 8 "21.21" H 7700 5200 50  0001 C CNN "Unit"
+F 9 "Waveshare" H 7700 5200 50  0001 C CNN "Vendor"
 	1    7700 5200
 	1    0    0    -1  
 $EndComp
@@ -78,6 +83,12 @@ F 1 "PA1010D" H 1650 4700 50  0000 C CNN
 F 2 "CDTop_PA1010D_GPS:CDTop_MT3333_PA1010D" H 1500 5150 50  0001 C CNN
 F 3 "https://drive.google.com/file/d/1O-9RGAwgs2fgtnzJRBa9eB1fAqJt7n_k/view" H 1500 5150 50  0001 C CNN
 F 4 "PA1010D" H 1450 5250 50  0001 C CNN "MPN"
+F 5 "https://www.cdtop-tech.com/products/pa1010d" H 1450 5250 50  0001 C CNN "Link"
+F 6 "SMD" H 1450 5250 50  0001 C CNN "Package"
+F 7 "boxA-51" H 1450 5250 50  0001 C CNN "Stock"
+F 8 "12.00" H 1450 5250 50  0001 C CNN "Unit"
+F 9 "CDTop" H 1450 5250 50  0001 C CNN "Vendor"
+F 10 "1" H 1450 5250 50  0001 C CNN "MOQ"
 	1    1450 5250
 	1    0    0    -1  
 $EndComp
@@ -89,6 +100,13 @@ F 0 "R4" H 2059 4996 50  0000 L CNN
 F 1 "10k" H 2059 4905 50  0000 L CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2000 4950 50  0001 C CNN
 F 3 "~" H 2000 4950 50  0001 C CNN
+F 4 "https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==" H 2000 4950 50  0001 C CNN "Link"
+F 5 "1" H 2000 4950 50  0001 C CNN "MOQ"
+F 6 "CRCW080510K0FKEAC" H 2000 4950 50  0001 C CNN "MPN"
+F 7 "0805" H 2000 4950 50  0001 C CNN "Package"
+F 8 "boxA-31" H 2000 4950 50  0001 C CNN "Stock"
+F 9 "0.148" H 2000 4950 50  0001 C CNN "Unit"
+F 10 "Mouser" H 2000 4950 50  0001 C CNN "Vendor"
 	1    2000 4950
 	1    0    0    -1  
 $EndComp
@@ -207,6 +225,13 @@ F 0 "R5" H 2659 5196 50  0000 L CNN
 F 1 "1k" H 2659 5105 50  0000 L CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2600 5150 50  0001 C CNN
 F 3 "~" H 2600 5150 50  0001 C CNN
+F 4 "https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587" H 2600 5150 50  0001 C CNN "Link"
+F 5 "10" H 2600 5150 50  0001 C CNN "MOQ"
+F 6 "MCWR08X1001FTL" H 2600 5150 50  0001 C CNN "MPN"
+F 7 "0805" H 2600 5150 50  0001 C CNN "Package"
+F 8 "boxA-18" H 2600 5150 50  0001 C CNN "Stock"
+F 9 "0.012" H 2600 5150 50  0001 C CNN "Unit"
+F 10 "Element14" H 2600 5150 50  0001 C CNN "Vendor"
 	1    2600 5150
 	1    0    0    -1  
 $EndComp
@@ -255,6 +280,13 @@ F 0 "R6" H 3109 5196 50  0000 L CNN
 F 1 "1k" H 3109 5105 50  0000 L CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3050 5150 50  0001 C CNN
 F 3 "~" H 3050 5150 50  0001 C CNN
+F 4 "https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587" H 3050 5150 50  0001 C CNN "Link"
+F 5 "10" H 3050 5150 50  0001 C CNN "MOQ"
+F 6 "MCWR08X1001FTL" H 3050 5150 50  0001 C CNN "MPN"
+F 7 "0805" H 3050 5150 50  0001 C CNN "Package"
+F 8 "boxA-18" H 3050 5150 50  0001 C CNN "Stock"
+F 9 "0.012" H 3050 5150 50  0001 C CNN "Unit"
+F 10 "Element14" H 3050 5150 50  0001 C CNN "Vendor"
 	1    3050 5150
 	1    0    0    -1  
 $EndComp
@@ -364,6 +396,13 @@ F 0 "R8" H 7709 1046 50  0000 L CNN
 F 1 "1k" H 7709 955 50  0000 L CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7650 1000 50  0001 C CNN
 F 3 "~" H 7650 1000 50  0001 C CNN
+F 4 "https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587" H 7650 1000 50  0001 C CNN "Link"
+F 5 "10" H 7650 1000 50  0001 C CNN "MOQ"
+F 6 "MCWR08X1001FTL" H 7650 1000 50  0001 C CNN "MPN"
+F 7 "0805" H 7650 1000 50  0001 C CNN "Package"
+F 8 "boxA-18" H 7650 1000 50  0001 C CNN "Stock"
+F 9 "0.012" H 7650 1000 50  0001 C CNN "Unit"
+F 10 "Element14" H 7650 1000 50  0001 C CNN "Vendor"
 	1    7650 1000
 	1    0    0    -1  
 $EndComp
@@ -440,6 +479,13 @@ F 0 "R7" H 2309 5696 50  0000 L CNN
 F 1 "1k" H 2309 5605 50  0000 L CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2250 5650 50  0001 C CNN
 F 3 "~" H 2250 5650 50  0001 C CNN
+F 4 "https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587" H 2250 5650 50  0001 C CNN "Link"
+F 5 "10" H 2250 5650 50  0001 C CNN "MOQ"
+F 6 "MCWR08X1001FTL" H 2250 5650 50  0001 C CNN "MPN"
+F 7 "0805" H 2250 5650 50  0001 C CNN "Package"
+F 8 "boxA-18" H 2250 5650 50  0001 C CNN "Stock"
+F 9 "0.012" H 2250 5650 50  0001 C CNN "Unit"
+F 10 "Element14" H 2250 5650 50  0001 C CNN "Vendor"
 	1    2250 5650
 	1    0    0    -1  
 $EndComp
@@ -452,6 +498,11 @@ F 1 "RFM95" H 4850 5750 50  0000 C CNN
 F 2 "HopeRF_RFM95:HopeRF_RFM9X-SMD" H 1250 6950 50  0001 C CNN
 F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 1250 6950 50  0001 C CNN
 F 4 "RFM95W-915S2" H 4550 5300 50  0001 C CNN "MPN"
+F 5 "https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295" H 4550 5300 50  0001 C CNN "Link"
+F 6 "1" H 4550 5300 50  0001 C CNN "MOQ"
+F 7 "SMD" H 4550 5300 50  0001 C CNN "Package"
+F 8 "24.55" H 4550 5300 50  0001 C CNN "Unit"
+F 9 "Element14" H 4550 5300 50  0001 C CNN "Vendor"
 	1    4550 5300
 	1    0    0    -1  
 $EndComp
@@ -499,6 +550,12 @@ F 1 "AP2112" H 3250 1651 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3250 1725 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 3250 1500 50  0001 C CNN
 F 4 "AP2112K-3.3TRG1" H 3250 1400 50  0001 C CNN "MPN"
+F 5 "https://sg.element14.com/diodes-inc/ap2112k-3-3trg1/ldo-fixed-3-3v-0-6a-40-to-85deg/dp/3257429" H 3250 1400 50  0001 C CNN "Link"
+F 6 "5" H 3250 1400 50  0001 C CNN "MOQ"
+F 7 "SOT23-5" H 3250 1400 50  0001 C CNN "Package"
+F 8 "boxA-6" H 3250 1400 50  0001 C CNN "Stock"
+F 9 "0.483" H 3250 1400 50  0001 C CNN "Unit"
+F 10 "Element14" H 3250 1400 50  0001 C CNN "Vendor"
 	1    3250 1400
 	1    0    0    -1  
 $EndComp
@@ -508,8 +565,15 @@ U 1 1 5FD8FE49
 P 900 1200
 F 0 "J1" H 850 1350 50  0000 C CNN
 F 1 "JST-PH2 for LiPo" H 750 950 50  0000 C CNN
-F 2 "" H 900 1200 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 900 1200 50  0001 C CNN
 F 3 "~" H 900 1200 50  0001 C CNN
+F 4 "https://sg.element14.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615" H 900 1200 50  0001 C CNN "Link"
+F 5 "10" H 900 1200 50  0001 C CNN "MOQ"
+F 6 "S2B-PH-SM4-TB(LF)(SN)" H 900 1200 50  0001 C CNN "MPN"
+F 7 "SMD" H 900 1200 50  0001 C CNN "Package"
+F 8 "boxA-36" H 900 1200 50  0001 C CNN "Stock"
+F 9 "0.766" H 900 1200 50  0001 C CNN "Unit"
+F 10 "Element14" H 900 1200 50  0001 C CNN "Vendor"
 	1    900  1200
 	-1   0    0    -1  
 $EndComp
@@ -519,8 +583,14 @@ U 1 1 5FD9BB1A
 P 1750 1300
 F 0 "SW1" H 1750 1585 50  0000 C CNN
 F 1 "SW_SPDT" H 1750 1494 50  0000 C CNN
-F 2 "" H 1750 1300 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 1750 1300 50  0001 C CNN
 F 3 "~" H 1750 1300 50  0001 C CNN
+F 4 "https://sg.element14.com/nidec-copal/cus-12tb/slide-switch-spdt-0-3a-4vdc-smd/dp/2854773" H 1750 1300 50  0001 C CNN "Link"
+F 5 "5" H 1750 1300 50  0001 C CNN "MOQ"
+F 6 "CUS-12TB" H 1750 1300 50  0001 C CNN "MPN"
+F 7 "SMD" H 1750 1300 50  0001 C CNN "Package"
+F 8 "boxA-40" H 1750 1300 50  0001 C CNN "Unit"
+F 9 "Element14" H 1750 1300 50  0001 C CNN "Vendor"
 	1    1750 1300
 	-1   0    0    -1  
 $EndComp
@@ -585,6 +655,13 @@ F 0 "R3" V 2400 3750 50  0000 C CNN
 F 1 "10k" V 2600 3750 50  0000 C CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2500 3750 50  0001 C CNN
 F 3 "~" H 2500 3750 50  0001 C CNN
+F 4 "https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==" H 2500 3750 50  0001 C CNN "Link"
+F 5 "1" H 2500 3750 50  0001 C CNN "MOQ"
+F 6 "CRCW080510K0FKEAC" H 2500 3750 50  0001 C CNN "MPN"
+F 7 "0805" H 2500 3750 50  0001 C CNN "Package"
+F 8 "boxA-31" H 2500 3750 50  0001 C CNN "Stock"
+F 9 "0.148" H 2500 3750 50  0001 C CNN "Unit"
+F 10 "Mouser" H 2500 3750 50  0001 C CNN "Vendor"
 	1    2500 3750
 	0    -1   -1   0   
 $EndComp
@@ -650,7 +727,7 @@ U 1 1 5FF6C5BA
 P 4200 1300
 F 0 "JP1" H 4200 1400 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 4250 1150 50  0001 C CNN
-F 2 "" H 4200 1300 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4200 1300 50  0001 C CNN
 F 3 "~" H 4200 1300 50  0001 C CNN
 	1    4200 1300
 	-1   0    0    1   
@@ -740,6 +817,13 @@ F 0 "R9" V 2950 1400 50  0000 C CNN
 F 1 "100k" V 3050 1400 50  0000 C CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2850 1400 50  0001 C CNN
 F 3 "~" H 2850 1400 50  0001 C CNN
+F 4 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_RALEC-RTT051003BTP_C312260.html" H 2850 1400 50  0001 C CNN "Link"
+F 5 "20" H 2850 1400 50  0001 C CNN "MOQ"
+F 6 "RTT051003BTP" H 2850 1400 50  0001 C CNN "MPN"
+F 7 "0805" H 2850 1400 50  0001 C CNN "Package"
+F 8 "boxA-56" H 2850 1400 50  0001 C CNN "Stock"
+F 9 "0.0472" H 2850 1400 50  0001 C CNN "Unit"
+F 10 "LCSC" H 2850 1400 50  0001 C CNN "Vendor"
 	1    2850 1400
 	0    1    1    0   
 $EndComp
@@ -755,6 +839,13 @@ F 0 "R10" H 1759 3446 50  0000 L CNN
 F 1 "100k" H 1759 3355 50  0000 L CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1700 3400 50  0001 C CNN
 F 3 "~" H 1700 3400 50  0001 C CNN
+F 4 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_RALEC-RTT051003BTP_C312260.html" H 1700 3400 50  0001 C CNN "Link"
+F 5 "20" H 1700 3400 50  0001 C CNN "MOQ"
+F 6 "RTT051003BTP" H 1700 3400 50  0001 C CNN "MPN"
+F 7 "0805" H 1700 3400 50  0001 C CNN "Package"
+F 8 "boxA-56" H 1700 3400 50  0001 C CNN "Stock"
+F 9 "0.0472" H 1700 3400 50  0001 C CNN "Unit"
+F 10 "LCSC" H 1700 3400 50  0001 C CNN "Vendor"
 	1    1700 3400
 	1    0    0    -1  
 $EndComp
@@ -766,6 +857,13 @@ F 0 "R11" H 1759 3796 50  0000 L CNN
 F 1 "100k" H 1759 3705 50  0000 L CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1700 3750 50  0001 C CNN
 F 3 "~" H 1700 3750 50  0001 C CNN
+F 4 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_RALEC-RTT051003BTP_C312260.html" H 1700 3750 50  0001 C CNN "Link"
+F 5 "20" H 1700 3750 50  0001 C CNN "MOQ"
+F 6 "RTT051003BTP" H 1700 3750 50  0001 C CNN "MPN"
+F 7 "0805" H 1700 3750 50  0001 C CNN "Package"
+F 8 "boxA-56" H 1700 3750 50  0001 C CNN "Stock"
+F 9 "0.0472" H 1700 3750 50  0001 C CNN "Unit"
+F 10 "LCSC" H 1700 3750 50  0001 C CNN "Vendor"
 	1    1700 3750
 	1    0    0    -1  
 $EndComp
@@ -855,6 +953,13 @@ F 0 "R12" H 700 5150 50  0000 L CNN
 F 1 "10k" H 700 5050 50  0000 L CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 900 5100 50  0001 C CNN
 F 3 "~" H 900 5100 50  0001 C CNN
+F 4 "https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==" H 900 5100 50  0001 C CNN "Link"
+F 5 "1" H 900 5100 50  0001 C CNN "MOQ"
+F 6 "CRCW080510K0FKEAC" H 900 5100 50  0001 C CNN "MPN"
+F 7 "0805" H 900 5100 50  0001 C CNN "Package"
+F 8 "boxA-31" H 900 5100 50  0001 C CNN "Stock"
+F 9 "0.148" H 900 5100 50  0001 C CNN "Unit"
+F 10 "Mouser" H 900 5100 50  0001 C CNN "Vendor"
 	1    900  5100
 	1    0    0    -1  
 $EndComp
@@ -903,7 +1008,7 @@ U 1 1 5FF94058
 P 4100 3300
 F 0 "JP2" V 4100 3150 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 4150 3150 50  0001 C CNN
-F 2 "" H 4100 3300 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4100 3300 50  0001 C CNN
 F 3 "~" H 4100 3300 50  0001 C CNN
 	1    4100 3300
 	0    1    1    0   
@@ -919,7 +1024,7 @@ U 1 1 5FFBE9A4
 P 1650 4500
 F 0 "JP3" H 1650 4400 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 1700 4350 50  0001 C CNN
-F 2 "" H 1650 4500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1650 4500 50  0001 C CNN
 F 3 "~" H 1650 4500 50  0001 C CNN
 	1    1650 4500
 	-1   0    0    1   
@@ -959,7 +1064,7 @@ U 1 1 5FFF894B
 P 4750 4650
 F 0 "JP4" H 4750 4550 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 4800 4500 50  0001 C CNN
-F 2 "" H 4750 4650 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4750 4650 50  0001 C CNN
 F 3 "~" H 4750 4650 50  0001 C CNN
 	1    4750 4650
 	-1   0    0    1   
@@ -986,7 +1091,7 @@ U 1 1 600051A0
 P 7900 4600
 F 0 "JP5" H 7900 4500 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 7950 4450 50  0001 C CNN
-F 2 "" H 7900 4600 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7900 4600 50  0001 C CNN
 F 3 "~" H 7900 4600 50  0001 C CNN
 	1    7900 4600
 	-1   0    0    1   
@@ -1057,7 +1162,7 @@ U 1 1 603075BB
 P 9050 5300
 F 0 "J5" H 9150 5950 50  0000 C CNN
 F 1 "Conn_01x12_Male" H 9158 5890 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical_SMD_Pin1Left" H 9050 5300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x35_P2.54mm_Vertical_SMD_Pin1Right" H 9050 5300 50  0001 C CNN
 F 3 "~" H 9050 5300 50  0001 C CNN
 	1    9050 5300
 	1    0    0    -1  
@@ -1070,7 +1175,7 @@ U 1 1 60322821
 P 10150 5300
 F 0 "J6" H 10250 5950 50  0000 C CNN
 F 1 "Conn_01x12_Male" H 10258 5890 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical_SMD_Pin1Right" H 10150 5300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x35_P2.54mm_Vertical_SMD_Pin1Left" H 10150 5300 50  0001 C CNN
 F 3 "~" H 10150 5300 50  0001 C CNN
 	1    10150 5300
 	1    0    0    -1  
@@ -1309,7 +1414,7 @@ U 1 1 5F902DEE
 P 10250 3700
 F 0 "SW2" V 10204 3848 50  0000 L CNN
 F 1 "SW_Push" V 10295 3848 50  0000 L CNN
-F 2 "" H 10250 3900 50  0001 C CNN
+F 2 "Push_Button:Tactile_pushbutton" H 10250 3900 50  0001 C CNN
 F 3 "~" H 10250 3900 50  0001 C CNN
 	1    10250 3700
 	0    1    1    0   
@@ -1322,6 +1427,13 @@ F 0 "R2" V 10350 3400 50  0000 C CNN
 F 1 "10k" V 10550 3400 50  0000 C CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10450 3400 50  0001 C CNN
 F 3 "~" H 10450 3400 50  0001 C CNN
+F 4 "https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==" H 10450 3400 50  0001 C CNN "Link"
+F 5 "1" H 10450 3400 50  0001 C CNN "MOQ"
+F 6 "CRCW080510K0FKEAC" H 10450 3400 50  0001 C CNN "MPN"
+F 7 "0805" H 10450 3400 50  0001 C CNN "Package"
+F 8 "boxA-31" H 10450 3400 50  0001 C CNN "Stock"
+F 9 "0.148" H 10450 3400 50  0001 C CNN "Unit"
+F 10 "Mouser" H 10450 3400 50  0001 C CNN "Vendor"
 	1    10450 3400
 	0    1    1    0   
 $EndComp
@@ -1547,7 +1659,13 @@ F 0 "U2" V 9150 600 50  0000 R CNN
 F 1 "ATSAMD21" V 9150 1050 50  0000 R CNN
 F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 7350 400 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_Data%20Sheet_DS40001882E.pdf" H 8300 3150 50  0001 C CNN
-F 4 "ATSAMD21G18A-AUT" H 8300 2150 50  0001 C CNN "MPN"
+F 4 "ATSAMD21G18A-AU" H 8300 2150 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/ATMEL-AVR_Microchip-Tech-ATSAMD21G18A-AU_C78624.html" H 8300 2150 50  0001 C CNN "Link"
+F 6 "1" H 8300 2150 50  0001 C CNN "MOQ"
+F 7 "TQFP-48" H 8300 2150 50  0001 C CNN "Package"
+F 8 "boxA-59 " H 8300 2150 50  0001 C CNN "Stock"
+F 9 "4.9012" H 8300 2150 50  0001 C CNN "Unit"
+F 10 "LCSC" H 8300 2150 50  0001 C CNN "Vendor"
 	1    8300 2150
 	0    -1   -1   0   
 $EndComp
@@ -1670,8 +1788,15 @@ U 1 1 5FD89E81
 P 2000 2150
 F 0 "J2" H 1850 2500 50  0000 C CNN
 F 1 "USB_B_Micro" H 1500 2150 50  0000 C CNN
-F 2 "" H 2150 2100 50  0001 C CNN
+F 2 "Connector_USB-B_Horizontal:USB_Micro-B_Horizontal-U254-051T-4BH23-S2B" H 2150 2100 50  0001 C CNN
 F 3 "~" H 2150 2100 50  0001 C CNN
+F 4 "https://lcsc.com/product-detail/USB-Connectors_XKB-Connectivity-U254-051T-4BH23-S2B_C319164.html" H 2000 2150 50  0001 C CNN "Link"
+F 5 "10" H 2000 2150 50  0001 C CNN "MOQ"
+F 6 "U254-051T-4BH23-S2B" H 2000 2150 50  0001 C CNN "MPN"
+F 7 "SMD" H 2000 2150 50  0001 C CNN "Package"
+F 8 "boxA-60 " H 2000 2150 50  0001 C CNN "Stock"
+F 9 "0.0786" H 2000 2150 50  0001 C CNN "Unit"
+F 10 "LCSC" H 2000 2150 50  0001 C CNN "Vendor"
 	1    2000 2150
 	1    0    0    -1  
 $EndComp
@@ -1681,7 +1806,7 @@ U 1 1 5FDB8E09
 P 2200 1300
 F 0 "D1" H 2200 1150 50  0000 C CNN
 F 1 "D_Schottky" H 2200 1450 50  0000 C CNN
-F 2 "" H 2200 1300 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2200 1300 50  0001 C CNN
 F 3 "~" H 2200 1300 50  0001 C CNN
 F 4 "https://sg.element14.com/nexperia/pmeg3020eh-115/diode-schottky-2a-30v-sod-123f/dp/1510687?st=PMEG3020EH,115" H 2200 1300 50  0001 C CNN "Link"
 F 5 "5" H 2200 1300 50  0001 C CNN "MOQ"
@@ -1783,6 +1908,13 @@ F 0 "R1" V 3500 3200 50  0000 C CNN
 F 1 "1k" V 3700 3200 50  0000 C CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 3200 50  0001 C CNN
 F 3 "~" H 3600 3200 50  0001 C CNN
+F 4 "https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587" H 3600 3200 50  0001 C CNN "Link"
+F 5 "10" H 3600 3200 50  0001 C CNN "MOQ"
+F 6 "MCWR08X1001FTL" H 3600 3200 50  0001 C CNN "MPN"
+F 7 "0805" H 3600 3200 50  0001 C CNN "Package"
+F 8 "boxA-18" H 3600 3200 50  0001 C CNN "Stock"
+F 9 "0.012" H 3600 3200 50  0001 C CNN "Unit"
+F 10 "Element14" H 3600 3200 50  0001 C CNN "Vendor"
 	1    3600 3200
 	1    0    0    -1  
 $EndComp
@@ -1812,6 +1944,12 @@ F 1 "MCP7383" H 3300 3400 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3150 3400 50  0001 L CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2950 3600 50  0001 C CNN
 F 4 "MCP73831T-2ACI/OT" H 3100 3650 50  0001 C CNN "MPN"
+F 5 "https://sg.element14.com/microchip/mcp73831t-2aci-ot/li-ion-li-poly-charge-controller/dp/1332158" H 3100 3650 50  0001 C CNN "Link"
+F 6 "1" H 3100 3650 50  0001 C CNN "MOQ"
+F 7 "SOT-23-5" H 3100 3650 50  0001 C CNN "Package"
+F 8 "boxB-158" H 3100 3650 50  0001 C CNN "Stock"
+F 9 "0.837" H 3100 3650 50  0001 C CNN "Unit"
+F 10 "Element14" H 3100 3650 50  0001 C CNN "Vendor"
 	1    3100 3650
 	1    0    0    -1  
 $EndComp

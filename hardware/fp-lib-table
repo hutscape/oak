@@ -1,5 +1,7 @@
 (fp_lib_table
   (lib (name CDTop_PA1010D_GPS)(type KiCad)(uri ${KIPRJMOD}/library/footprints/GPS.pretty)(options "")(descr ""))
   (lib (name Passives_0805)(type KiCad)(uri ${KIPRJMOD}/library/footprints/Passives_0805.pretty)(options "")(descr ""))
-  (lib (name HopeRF_RFM95)(type KiCad)(uri /Users/sayanee/Documents/hutscape/oak/hardware/library/footprints/HopeRF_RFM9X.pretty)(options "")(descr ""))
+  (lib (name HopeRF_RFM95)(type KiCad)(uri ${KIPRJMOD}/library/footprints/HopeRF_RFM9X.pretty)(options "")(descr ""))
+  (lib (name Connector_USB-B_Horizontal)(type KiCad)(uri ${KIPRJMOD}/library/footprints/Connector_USB-B_Horizontal.pretty)(options "")(descr ""))
+  (lib (name Push_Button)(type KiCad)(uri ${KIPRJMOD}/library/footprints/Push_Button.pretty)(options "")(descr ""))
 )
