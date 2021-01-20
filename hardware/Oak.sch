@@ -19,7 +19,7 @@ U 1 1 5F8663D1
 P 7700 5200
 F 0 "U6" H 7300 5600 50  0000 C CNN
 F 1 "Waveshare_1in54_epaper" H 7000 4550 50  0000 C CNN
-F 2 "" H 7750 5200 50  0001 C CNN
+F 2 "Waveshare_1.54_E-ink:Waveshare_1.54_E-Ink" H 7750 5200 50  0001 C CNN
 F 3 "https://www.waveshare.com/1.54inch-e-Paper-Module.htm" H 7750 5200 50  0001 C CNN
 F 4 "614961950511" H 7700 5200 50  0001 C CNN "MPN"
 F 5 "https://www.waveshare.com/1.54inch-e-Paper-Module.htm" H 7700 5200 50  0001 C CNN "Link"
@@ -330,6 +330,12 @@ F 0 "J4" V 3650 6300 50  0000 C CNN
 F 1 "Conn_ARM_JTAG_SWD_10" V 3350 8050 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 3200 6750 50  0001 C CNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 2850 5500 50  0001 C CNN
+F 4 "https://sg.element14.com/samtec/ftsh-105-01-l-dv/header-1-27mm-smd-10way/dp/1667759" H 3200 6750 50  0001 C CNN "Link"
+F 5 "1" H 3200 6750 50  0001 C CNN "MOQ"
+F 6 "FTSH-105-01-L-DV" H 3200 6750 50  0001 C CNN "MPN"
+F 7 "SMD" H 3200 6750 50  0001 C CNN "Package"
+F 8 "2.20" H 3200 6750 50  0001 C CNN "Unit"
+F 9 "Element14" H 3200 6750 50  0001 C CNN "Vendor"
 	1    3200 6750
 	0    -1   1    0   
 $EndComp
@@ -427,6 +433,12 @@ F 0 "J3" H 5600 4975 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5300 5150 50  0000 L CNN
 F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 5500 5000 50  0001 C CNN
 F 3 " ~" H 5500 5000 50  0001 C CNN
+F 4 "https://sg.element14.com/multicomp/19-70-4-tgg/rf-coaxial-sma-straight-jack-50ohm/dp/1342653" H 5500 5000 50  0001 C CNN "Link"
+F 5 "1" H 5500 5000 50  0001 C CNN "MOQ"
+F 6 "MP-19-70-4-TGG" H 5500 5000 50  0001 C CNN "MPN"
+F 7 "PCB Mount" H 5500 5000 50  0001 C CNN "Package"
+F 8 "5.16" H 5500 5000 50  0001 C CNN "Unit"
+F 9 "Element14" H 5500 5000 50  0001 C CNN "Vendor"
 	1    5500 5000
 	1    0    0    -1  
 $EndComp
@@ -589,8 +601,9 @@ F 4 "https://sg.element14.com/nidec-copal/cus-12tb/slide-switch-spdt-0-3a-4vdc-s
 F 5 "5" H 1750 1300 50  0001 C CNN "MOQ"
 F 6 "CUS-12TB" H 1750 1300 50  0001 C CNN "MPN"
 F 7 "SMD" H 1750 1300 50  0001 C CNN "Package"
-F 8 "boxA-40" H 1750 1300 50  0001 C CNN "Unit"
+F 8 "1.04 " H 1750 1300 50  0001 C CNN "Unit"
 F 9 "Element14" H 1750 1300 50  0001 C CNN "Vendor"
+F 10 "boxA-40" H 1750 1300 50  0001 C CNN "Stock"
 	1    1750 1300
 	-1   0    0    -1  
 $EndComp
@@ -1162,8 +1175,14 @@ U 1 1 603075BB
 P 9050 5300
 F 0 "J5" H 9150 5950 50  0000 C CNN
 F 1 "Conn_01x12_Male" H 9158 5890 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x35_P2.54mm_Vertical_SMD_Pin1Right" H 9050 5300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical_SMD_Pin1Left" H 9050 5300 50  0001 C CNN
 F 3 "~" H 9050 5300 50  0001 C CNN
+F 4 "https://sg.element14.com/samtec/tsm-112-01-l-sv/connector-header-12pos-1row-2/dp/2779651" H 9050 5300 50  0001 C CNN "Link"
+F 5 "1" H 9050 5300 50  0001 C CNN "MOQ"
+F 6 "TSM-112-01-L-SV" H 9050 5300 50  0001 C CNN "MPN"
+F 7 "SMD" H 9050 5300 50  0001 C CNN "Package"
+F 8 "1.93" H 9050 5300 50  0001 C CNN "Unit"
+F 9 "Element14" H 9050 5300 50  0001 C CNN "Vendor"
 	1    9050 5300
 	1    0    0    -1  
 $EndComp
@@ -1175,8 +1194,14 @@ U 1 1 60322821
 P 10150 5300
 F 0 "J6" H 10250 5950 50  0000 C CNN
 F 1 "Conn_01x12_Male" H 10258 5890 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x35_P2.54mm_Vertical_SMD_Pin1Left" H 10150 5300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical_SMD_Pin1Right" H 10150 5300 50  0001 C CNN
 F 3 "~" H 10150 5300 50  0001 C CNN
+F 4 "https://sg.element14.com/samtec/tsm-112-01-l-sv/connector-header-12pos-1row-2/dp/2779651" H 10150 5300 50  0001 C CNN "Link"
+F 5 "1" H 10150 5300 50  0001 C CNN "MOQ"
+F 6 "TSM-112-01-L-SV" H 10150 5300 50  0001 C CNN "MPN"
+F 7 "SMD" H 10150 5300 50  0001 C CNN "Package"
+F 8 "1.93" H 10150 5300 50  0001 C CNN "Unit"
+F 9 "Element14" H 10150 5300 50  0001 C CNN "Vendor"
 	1    10150 5300
 	1    0    0    -1  
 $EndComp
@@ -1416,6 +1441,13 @@ F 0 "SW2" V 10204 3848 50  0000 L CNN
 F 1 "SW_Push" V 10295 3848 50  0000 L CNN
 F 2 "Push_Button:Tactile_pushbutton" H 10250 3900 50  0001 C CNN
 F 3 "~" H 10250 3900 50  0001 C CNN
+F 4 "https://www.aliexpress.com/item/32645332799.html" H 10250 3700 50  0001 C CNN "Link"
+F 5 "10" H 10250 3700 50  0001 C CNN "MOQ"
+F 6 "RTLECS Tactile side-actuated switch" H 10250 3700 50  0001 C CNN "MPN"
+F 7 "SMD" H 10250 3700 50  0001 C CNN "Package"
+F 8 "boxA-14" H 10250 3700 50  0001 C CNN "Stock"
+F 9 "0.19" H 10250 3700 50  0001 C CNN "Unit"
+F 10 "AliExpress" H 10250 3700 50  0001 C CNN "Vendor"
 	1    10250 3700
 	0    1    1    0   
 $EndComp

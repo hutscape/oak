@@ -4,4 +4,5 @@
   (lib (name HopeRF_RFM95)(type KiCad)(uri ${KIPRJMOD}/library/footprints/HopeRF_RFM9X.pretty)(options "")(descr ""))
   (lib (name Connector_USB-B_Horizontal)(type KiCad)(uri ${KIPRJMOD}/library/footprints/Connector_USB-B_Horizontal.pretty)(options "")(descr ""))
   (lib (name Push_Button)(type KiCad)(uri ${KIPRJMOD}/library/footprints/Push_Button.pretty)(options "")(descr ""))
+  (lib (name Waveshare_1.54_E-ink)(type KiCad)(uri ${KIPRJMOD}/library/footprints/Waveshare_1.54_E-ink.pretty)(options "")(descr ""))
 )
