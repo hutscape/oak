@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
-    <date>2021 January 20, Wednesday 17:05:08</date>
+    <date>2021 January 21, Thursday 11:27:10</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -24,9 +24,11 @@
       <footprint>Waveshare_1.54_E-ink:Waveshare_1.54_E-Ink</footprint>
       <datasheet>https://www.waveshare.com/1.54inch-e-Paper-Module.htm</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://www.waveshare.com/1.54inch-e-Paper-Module.htm</field>
         <field name="MOQ">1</field>
         <field name="MPN">614961950511</field>
+        <field name="Manufacturer">Waheshare</field>
         <field name="Package">Module</field>
         <field name="Unit">21.21</field>
         <field name="Vendor">Waveshare</field>
@@ -40,9 +42,11 @@
       <footprint>CDTop_PA1010D_GPS:CDTop_MT3333_PA1010D</footprint>
       <datasheet>https://drive.google.com/file/d/1O-9RGAwgs2fgtnzJRBa9eB1fAqJt7n_k/view</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://www.cdtop-tech.com/products/pa1010d</field>
         <field name="MOQ">1</field>
         <field name="MPN">PA1010D</field>
+        <field name="Manufacturer">CDTop</field>
         <field name="Package">SMD</field>
         <field name="Stock">boxA-51</field>
         <field name="Unit">12.00</field>
@@ -55,11 +59,13 @@
     <comp ref="R4">
       <value>10k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==</field>
         <field name="MOQ">1</field>
         <field name="MPN">CRCW080510K0FKEAC</field>
+        <field name="Manufacturer">Vishay</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-31</field>
         <field name="Unit">0.148</field>
@@ -72,11 +78,13 @@
     <comp ref="R5">
       <value>1k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587</field>
         <field name="MOQ">10</field>
         <field name="MPN">MCWR08X1001FTL</field>
+        <field name="Manufacturer">Multicomp</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-18</field>
         <field name="Unit">0.012</field>
@@ -89,11 +97,13 @@
     <comp ref="D4">
       <value>YELLOW</value>
       <footprint>Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1810051702_Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html</field>
         <field name="MOQ">10</field>
         <field name="MPN">Everlight Elec 17-215UYC/S530-A3/TR8</field>
+        <field name="Manufacturer">Everlight</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-54</field>
         <field name="Unit">0.0624</field>
@@ -106,11 +116,13 @@
     <comp ref="R6">
       <value>1k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587</field>
         <field name="MOQ">10</field>
         <field name="MPN">MCWR08X1001FTL</field>
+        <field name="Manufacturer">Multicomp</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-18</field>
         <field name="Unit">0.012</field>
@@ -123,11 +135,13 @@
     <comp ref="D5">
       <value>YELLOW</value>
       <footprint>Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1810051702_Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html</field>
         <field name="MOQ">10</field>
         <field name="MPN">Everlight Elec 17-215UYC/S530-A3/TR8</field>
+        <field name="Manufacturer">Everlight</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-54</field>
         <field name="Unit">0.0624</field>
@@ -140,11 +154,13 @@
     <comp ref="J4">
       <value>Conn_ARM_JTAG_SWD_10</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD</footprint>
-      <datasheet>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/1992056.pdf</datasheet>
       <fields>
+        <field name="Category">Connector</field>
         <field name="Link">https://sg.element14.com/samtec/ftsh-105-01-l-dv/header-1-27mm-smd-10way/dp/1667759</field>
         <field name="MOQ">1</field>
         <field name="MPN">FTSH-105-01-L-DV</field>
+        <field name="Manufacturer">Samtec</field>
         <field name="Package">SMD</field>
         <field name="Unit">2.20</field>
         <field name="Vendor">Element14</field>
@@ -156,11 +172,13 @@
     <comp ref="R8">
       <value>1k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587</field>
         <field name="MOQ">10</field>
         <field name="MPN">MCWR08X1001FTL</field>
+        <field name="Manufacturer">Multicomp</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-18</field>
         <field name="Unit">0.012</field>
@@ -173,11 +191,13 @@
     <comp ref="J3">
       <value>Conn_Coaxial</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132289_EdgeMount</footprint>
-      <datasheet> ~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/1662283.pdf</datasheet>
       <fields>
+        <field name="Category">Connector</field>
         <field name="Link">https://sg.element14.com/multicomp/19-70-4-tgg/rf-coaxial-sma-straight-jack-50ohm/dp/1342653</field>
         <field name="MOQ">1</field>
         <field name="MPN">MP-19-70-4-TGG</field>
+        <field name="Manufacturer">Multicomp</field>
         <field name="Package">PCB Mount</field>
         <field name="Unit">5.16</field>
         <field name="Vendor">Element14</field>
@@ -189,11 +209,13 @@
     <comp ref="D3">
       <value>RED</value>
       <footprint>Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2861594.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/multicomp/mcl-s270src/led-smd-0805-super-red/dp/1581239</field>
         <field name="MOQ">5</field>
         <field name="MPN">MCL-S270SRC</field>
+        <field name="Manufacturer">Multicomp</field>
         <field name="Package">0805</field>
         <field name="Unit">0.134</field>
         <field name="Vendor">Element14</field>
@@ -205,11 +227,13 @@
     <comp ref="R7">
       <value>1k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587</field>
         <field name="MOQ">10</field>
         <field name="MPN">MCWR08X1001FTL</field>
+        <field name="Manufacturer">Multicomp</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-18</field>
         <field name="Unit">0.012</field>
@@ -224,9 +248,11 @@
       <footprint>HopeRF_RFM95:HopeRF_RFM9X-SMD</footprint>
       <datasheet>https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295</field>
         <field name="MOQ">1</field>
         <field name="MPN">RFM95W-915S2</field>
+        <field name="Manufacturer">HopeRF</field>
         <field name="Package">SMD</field>
         <field name="Unit">24.55</field>
         <field name="Vendor">Element14</field>
@@ -240,9 +266,11 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <datasheet>https://www.diodes.com/assets/Datasheets/AP2112.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/diodes-inc/ap2112k-3-3trg1/ldo-fixed-3-3v-0-6a-40-to-85deg/dp/3257429</field>
         <field name="MOQ">5</field>
         <field name="MPN">AP2112K-3.3TRG1</field>
+        <field name="Manufacturer">Diodes</field>
         <field name="Package">SOT23-5</field>
         <field name="Stock">boxA-6</field>
         <field name="Unit">0.483</field>
@@ -255,11 +283,13 @@
     <comp ref="J1">
       <value>JST-PH2 for LiPo</value>
       <footprint>Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/1699381.pdf</datasheet>
       <fields>
+        <field name="Category">Connector</field>
         <field name="Link">https://sg.element14.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615</field>
         <field name="MOQ">10</field>
         <field name="MPN">S2B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
         <field name="Package">SMD</field>
         <field name="Stock">boxA-36</field>
         <field name="Unit">0.766</field>
@@ -272,11 +302,13 @@
     <comp ref="SW1">
       <value>SW_SPDT</value>
       <footprint>Button_Switch_SMD:SW_SPDT_PCM12</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2604293.pdf</datasheet>
       <fields>
+        <field name="Category">Switch</field>
         <field name="Link">https://sg.element14.com/nidec-copal/cus-12tb/slide-switch-spdt-0-3a-4vdc-smd/dp/2854773</field>
         <field name="MOQ">5</field>
         <field name="MPN">CUS-12TB</field>
+        <field name="Manufacturer">Nidec</field>
         <field name="Package">SMD</field>
         <field name="Stock">boxA-40</field>
         <field name="Unit">1.04 </field>
@@ -289,11 +321,13 @@
     <comp ref="C5">
       <value>10uF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2842314.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/taiyo-yuden/lmk212abj106kght/capacitor-mlcc-0805-10v-x5r-10uf/dp/3217584</field>
         <field name="MOQ">1</field>
         <field name="MPN">LMK212ABJ106KGHT</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-30</field>
         <field name="Unit">0.252</field>
@@ -306,11 +340,13 @@
     <comp ref="R3">
       <value>10k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==</field>
         <field name="MOQ">1</field>
         <field name="MPN">CRCW080510K0FKEAC</field>
+        <field name="Manufacturer">Vishay</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-31</field>
         <field name="Unit">0.148</field>
@@ -324,6 +360,10 @@
       <value>SolderJumper_2_Open</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Connector</field>
+        <field name="DNP">JP1, JP2, JP3, JP4, JP5</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FF6C5BA</tstamp>
@@ -331,11 +371,13 @@
     <comp ref="C6">
       <value>10uF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2842314.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/taiyo-yuden/lmk212abj106kght/capacitor-mlcc-0805-10v-x5r-10uf/dp/3217584</field>
         <field name="MOQ">1</field>
         <field name="MPN">LMK212ABJ106KGHT</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-30</field>
         <field name="Unit">0.252</field>
@@ -348,11 +390,13 @@
     <comp ref="C7">
       <value>1uF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://api.kemet.com/component-edge/download/specsheet/C0805C105K3RACTU.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/kemet/c0805c105k3ractu/cap-1-f-25v-10-x7r-0805/dp/1637035</field>
         <field name="MOQ">10</field>
         <field name="MPN">C0805C105K3RACTU</field>
+        <field name="Manufacturer">Kemet</field>
         <field name="Package">0805</field>
         <field name="Unit">0.156 </field>
         <field name="Vendor">Element14</field>
@@ -364,11 +408,13 @@
     <comp ref="R9">
       <value>100k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1810301245_RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_RALEC-RTT051003BTP_C312260.html</field>
         <field name="MOQ">20</field>
         <field name="MPN">RTT051003BTP</field>
+        <field name="Manufacturer">Ralec</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-56</field>
         <field name="Unit">0.0472</field>
@@ -381,11 +427,13 @@
     <comp ref="R10">
       <value>100k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1810301245_RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_RALEC-RTT051003BTP_C312260.html</field>
         <field name="MOQ">20</field>
         <field name="MPN">RTT051003BTP</field>
+        <field name="Manufacturer">Ralec</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-56</field>
         <field name="Unit">0.0472</field>
@@ -398,11 +446,13 @@
     <comp ref="R11">
       <value>100k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1810301245_RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_RALEC-RTT051003BTP_C312260.html</field>
         <field name="MOQ">20</field>
         <field name="MPN">RTT051003BTP</field>
+        <field name="Manufacturer">Ralec</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-56</field>
         <field name="Unit">0.0472</field>
@@ -415,11 +465,13 @@
     <comp ref="C9">
       <value>1uF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://api.kemet.com/component-edge/download/specsheet/C0805C105K3RACTU.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/kemet/c0805c105k3ractu/cap-1-f-25v-10-x7r-0805/dp/1637035</field>
         <field name="MOQ">10</field>
         <field name="MPN">C0805C105K3RACTU</field>
+        <field name="Manufacturer">Kemet</field>
         <field name="Package">0805</field>
         <field name="Unit">0.156 </field>
         <field name="Vendor">Element14</field>
@@ -431,11 +483,13 @@
     <comp ref="R12">
       <value>10k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==</field>
         <field name="MOQ">1</field>
         <field name="MPN">CRCW080510K0FKEAC</field>
+        <field name="Manufacturer">Vishay</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-31</field>
         <field name="Unit">0.148</field>
@@ -449,6 +503,10 @@
       <value>SolderJumper_2_Open</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Connector</field>
+        <field name="DNP">JP1, JP2, JP3, JP4, JP5</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FF94058</tstamp>
@@ -457,6 +515,10 @@
       <value>SolderJumper_2_Open</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Connector</field>
+        <field name="DNP">JP1, JP2, JP3, JP4, JP5</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FFBE9A4</tstamp>
@@ -465,6 +527,10 @@
       <value>SolderJumper_2_Open</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Connector</field>
+        <field name="DNP">JP1, JP2, JP3, JP4, JP5</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FFF894B</tstamp>
@@ -473,6 +539,10 @@
       <value>SolderJumper_2_Open</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Connector</field>
+        <field name="DNP">JP1, JP2, JP3, JP4, JP5</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>600051A0</tstamp>
@@ -480,11 +550,13 @@
     <comp ref="J5">
       <value>Conn_01x12_Male</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical_SMD_Pin1Left</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://4donline.ihs.com/images/VipMasterIC/IC/SAMI/SAMI-S-A0002799285/SAMI-S-A0002799285-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0</datasheet>
       <fields>
+        <field name="Category">Connector</field>
         <field name="Link">https://sg.element14.com/samtec/tsm-112-01-l-sv/connector-header-12pos-1row-2/dp/2779651</field>
         <field name="MOQ">1</field>
         <field name="MPN">TSM-112-01-L-SV</field>
+        <field name="Manufacturer">Samtec</field>
         <field name="Package">SMD</field>
         <field name="Unit">1.93</field>
         <field name="Vendor">Element14</field>
@@ -496,11 +568,13 @@
     <comp ref="J6">
       <value>Conn_01x12_Male</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical_SMD_Pin1Right</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://4donline.ihs.com/images/VipMasterIC/IC/SAMI/SAMI-S-A0002799285/SAMI-S-A0002799285-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0</datasheet>
       <fields>
+        <field name="Category">Connector</field>
         <field name="Link">https://sg.element14.com/samtec/tsm-112-01-l-sv/connector-header-12pos-1row-2/dp/2779651</field>
         <field name="MOQ">1</field>
         <field name="MPN">TSM-112-01-L-SV</field>
+        <field name="Manufacturer">Samtec</field>
         <field name="Package">SMD</field>
         <field name="Unit">1.93</field>
         <field name="Vendor">Element14</field>
@@ -512,11 +586,13 @@
     <comp ref="SW2">
       <value>SW_Push</value>
       <footprint>Push_Button:Tactile_pushbutton</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.aliexpress.com/item/32645332799.html</datasheet>
       <fields>
+        <field name="Category">Switch</field>
         <field name="Link">https://www.aliexpress.com/item/32645332799.html</field>
         <field name="MOQ">10</field>
         <field name="MPN">RTLECS Tactile side-actuated switch</field>
+        <field name="Manufacturer">RTLECS</field>
         <field name="Package">SMD</field>
         <field name="Stock">boxA-14</field>
         <field name="Unit">0.19</field>
@@ -529,11 +605,13 @@
     <comp ref="R2">
       <value>10k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==</field>
         <field name="MOQ">1</field>
         <field name="MPN">CRCW080510K0FKEAC</field>
+        <field name="Manufacturer">Vishay</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-31</field>
         <field name="Unit">0.148</field>
@@ -546,11 +624,13 @@
     <comp ref="C4">
       <value>100nF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2048170.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/murata/gcm21br72a104ka37l/cap-0-1-f-100v-10-x7r-0805/dp/2470440</field>
         <field name="MOQ">5</field>
         <field name="MPN">GCM21BR72A104KA37L</field>
+        <field name="Manufacturer">Murata</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-53</field>
         <field name="Unit">0.207</field>
@@ -563,11 +643,13 @@
     <comp ref="C3">
       <value>100nF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2048170.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/murata/gcm21br72a104ka37l/cap-0-1-f-100v-10-x7r-0805/dp/2470440</field>
         <field name="MOQ">5</field>
         <field name="MPN">GCM21BR72A104KA37L</field>
+        <field name="Manufacturer">Murata</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-53</field>
         <field name="Unit">0.207</field>
@@ -580,11 +662,13 @@
     <comp ref="C2">
       <value>100nF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2048170.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/murata/gcm21br72a104ka37l/cap-0-1-f-100v-10-x7r-0805/dp/2470440</field>
         <field name="MOQ">5</field>
         <field name="MPN">GCM21BR72A104KA37L</field>
+        <field name="Manufacturer">Murata</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-53</field>
         <field name="Unit">0.207</field>
@@ -597,11 +681,13 @@
     <comp ref="C1">
       <value>1uF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://api.kemet.com/component-edge/download/specsheet/C0805C105K3RACTU.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/kemet/c0805c105k3ractu/cap-1-f-25v-10-x7r-0805/dp/1637035</field>
         <field name="MOQ">10</field>
         <field name="MPN">C0805C105K3RACTU</field>
+        <field name="Manufacturer">Kemet</field>
         <field name="Package">0805</field>
         <field name="Unit">0.156 </field>
         <field name="Vendor">Element14</field>
@@ -615,9 +701,11 @@
       <footprint>Package_QFP:TQFP-48_7x7mm_P0.5mm</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_Data%20Sheet_DS40001882E.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://lcsc.com/product-detail/ATMEL-AVR_Microchip-Tech-ATSAMD21G18A-AU_C78624.html</field>
         <field name="MOQ">1</field>
         <field name="MPN">ATSAMD21G18A-AU</field>
+        <field name="Manufacturer">Atmel</field>
         <field name="Package">TQFP-48</field>
         <field name="Stock">boxA-59 </field>
         <field name="Unit">4.9012</field>
@@ -630,11 +718,13 @@
     <comp ref="J2">
       <value>USB_B_Micro</value>
       <footprint>Connector_USB-B_Horizontal:USB_Micro-B_Horizontal-U254-051T-4BH23-S2B</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/2002271812_XKB-Connectivity-U254-051T-4BH23-S2B_C319164.pdf</datasheet>
       <fields>
+        <field name="Category">Connector</field>
         <field name="Link">https://lcsc.com/product-detail/USB-Connectors_XKB-Connectivity-U254-051T-4BH23-S2B_C319164.html</field>
         <field name="MOQ">10</field>
         <field name="MPN">U254-051T-4BH23-S2B</field>
+        <field name="Manufacturer">XKB Connectivity</field>
         <field name="Package">SMD</field>
         <field name="Stock">boxA-60 </field>
         <field name="Unit">0.0786</field>
@@ -647,11 +737,13 @@
     <comp ref="D1">
       <value>D_Schottky</value>
       <footprint>Diode_SMD:D_SOD-123F</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/676305.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/nexperia/pmeg3020eh-115/diode-schottky-2a-30v-sod-123f/dp/1510687?st=PMEG3020EH,115</field>
         <field name="MOQ">5</field>
         <field name="MPN">PMEG3020EH,115</field>
+        <field name="Manufacturer">Nexperia</field>
         <field name="Package">SOD-123F</field>
         <field name="Stock">boxA-52</field>
         <field name="Unit">0.438 </field>
@@ -664,11 +756,13 @@
     <comp ref="C10">
       <value>10uF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2842314.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/taiyo-yuden/lmk212abj106kght/capacitor-mlcc-0805-10v-x5r-10uf/dp/3217584</field>
         <field name="MOQ">1</field>
         <field name="MPN">LMK212ABJ106KGHT</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-30</field>
         <field name="Unit">0.252</field>
@@ -681,11 +775,13 @@
     <comp ref="R1">
       <value>1k</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587</field>
         <field name="MOQ">10</field>
         <field name="MPN">MCWR08X1001FTL</field>
+        <field name="Manufacturer">Multicomp</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-18</field>
         <field name="Unit">0.012</field>
@@ -698,11 +794,13 @@
     <comp ref="D2">
       <value>ORANGE</value>
       <footprint>Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2166990.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/rohm/sml-d15dwt86/led-orange-224mcd-605nm-smd-0603/dp/2672849</field>
         <field name="MOQ">1</field>
         <field name="MPN">SML-D15DWT86</field>
+        <field name="Manufacturer">Rohm</field>
         <field name="Package">0805</field>
         <field name="Unit">0.42</field>
         <field name="Vendor">Element14</field>
@@ -716,9 +814,11 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/microchip/mcp73831t-2aci-ot/li-ion-li-poly-charge-controller/dp/1332158</field>
         <field name="MOQ">1</field>
         <field name="MPN">MCP73831T-2ACI/OT</field>
+        <field name="Manufacturer">Microchip</field>
         <field name="Package">SOT-23-5</field>
         <field name="Stock">boxB-158</field>
         <field name="Unit">0.837</field>
@@ -731,11 +831,13 @@
     <comp ref="C11">
       <value>10uF</value>
       <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2842314.pdf</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="Link">https://sg.element14.com/taiyo-yuden/lmk212abj106kght/capacitor-mlcc-0805-10v-x5r-10uf/dp/3217584</field>
         <field name="MOQ">1</field>
         <field name="MPN">LMK212ABJ106KGHT</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-30</field>
         <field name="Unit">0.252</field>
@@ -749,6 +851,10 @@
       <value>DNP</value>
       <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">R13</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FC7752E</tstamp>
