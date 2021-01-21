@@ -253,7 +253,7 @@ F 2 "Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2600 5550 50
 F 3 "https://datasheet.lcsc.com/szlcsc/1810051702_Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 2600 5550 50  0001 C CNN
 F 4 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 2600 5550 50  0001 C CNN "Link"
 F 5 "10" H 2600 5550 50  0001 C CNN "MOQ"
-F 6 "Everlight Elec 17-215UYC/S530-A3/TR8" H 2600 5550 50  0001 C CNN "MPN"
+F 6 "17-215UYC/S530-A3/TR8" H 2600 5550 50  0001 C CNN "MPN"
 F 7 "0805" H 2600 5550 50  0001 C CNN "Package"
 F 8 "boxA-54" H 2600 5550 50  0001 C CNN "Stock"
 F 9 "0.0624" H 2600 5550 50  0001 C CNN "Unit"
@@ -312,7 +312,7 @@ F 2 "Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3050 5550 50
 F 3 "https://datasheet.lcsc.com/szlcsc/1810051702_Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 3050 5550 50  0001 C CNN
 F 4 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 3050 5550 50  0001 C CNN "Link"
 F 5 "10" H 3050 5550 50  0001 C CNN "MOQ"
-F 6 "Everlight Elec 17-215UYC/S530-A3/TR8" H 3050 5550 50  0001 C CNN "MPN"
+F 6 "17-215UYC/S530-A3/TR8" H 3050 5550 50  0001 C CNN "MPN"
 F 7 "0805" H 3050 5550 50  0001 C CNN "Package"
 F 8 "boxA-54" H 3050 5550 50  0001 C CNN "Stock"
 F 9 "0.0624" H 3050 5550 50  0001 C CNN "Unit"

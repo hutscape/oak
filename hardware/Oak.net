@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch)
-    (date "2021 January 21, Thursday 11:27:03")
+    (date "2021 January 21, Thursday 15:29:40")
     (tool "Eeschema (5.1.9-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -90,7 +90,7 @@
         (field (name Category) Electronics)
         (field (name Link) https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html)
         (field (name MOQ) 10)
-        (field (name MPN) "Everlight Elec 17-215UYC/S530-A3/TR8")
+        (field (name MPN) 17-215UYC/S530-A3/TR8)
         (field (name Manufacturer) Everlight)
         (field (name Package) 0805)
         (field (name Stock) boxA-54)
@@ -124,7 +124,7 @@
         (field (name Category) Electronics)
         (field (name Link) https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html)
         (field (name MOQ) 10)
-        (field (name MPN) "Everlight Elec 17-215UYC/S530-A3/TR8")
+        (field (name MPN) 17-215UYC/S530-A3/TR8)
         (field (name Manufacturer) Everlight)
         (field (name Package) 0805)
         (field (name Stock) boxA-54)

@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
-    <date>2021 January 21, Thursday 11:27:10</date>
+    <date>2021 January 21, Thursday 15:29:43</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -102,7 +102,7 @@
         <field name="Category">Electronics</field>
         <field name="Link">https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html</field>
         <field name="MOQ">10</field>
-        <field name="MPN">Everlight Elec 17-215UYC/S530-A3/TR8</field>
+        <field name="MPN">17-215UYC/S530-A3/TR8</field>
         <field name="Manufacturer">Everlight</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-54</field>
@@ -140,7 +140,7 @@
         <field name="Category">Electronics</field>
         <field name="Link">https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html</field>
         <field name="MOQ">10</field>
-        <field name="MPN">Everlight Elec 17-215UYC/S530-A3/TR8</field>
+        <field name="MPN">17-215UYC/S530-A3/TR8</field>
         <field name="Manufacturer">Everlight</field>
         <field name="Package">0805</field>
         <field name="Stock">boxA-54</field>
