@@ -1,10 +1,12 @@
 BOM_PATH?=_data/bill_of_materials.csv
 XML_PATH?=hardware/*.xml
 
-.PHONY: serve build install bom
+.PHONY: default serve build install bom
 
-serve: build
-	jekyll serve
+default: serve
+
+serve:
+	bundle exec jekyll serve
 
 build:
 	jekyll build
