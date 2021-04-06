@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
-    <date>2021 January 25, Monday 11:23:41</date>
+    <date>2021 April 06, Tuesday 13:54:46</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -281,18 +281,17 @@
       <tstamp>5FD8C190</tstamp>
     </comp>
     <comp ref="J1">
-      <value>JST-PH2 for LiPo</value>
-      <footprint>Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</footprint>
-      <datasheet>http://www.farnell.com/datasheets/1699381.pdf</datasheet>
+      <value>18650 Battery holder</value>
+      <footprint>Battery:BatteryHolder_MPD_BH-18650-PC2</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2067690.pdf</datasheet>
       <fields>
         <field name="Category">Connector</field>
-        <field name="Link">https://sg.element14.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615</field>
-        <field name="MOQ">10</field>
-        <field name="MPN">S2B-PH-SM4-TB(LF)(SN)</field>
-        <field name="Manufacturer">JST</field>
-        <field name="Package">SMD</field>
-        <field name="Stock">boxA-36</field>
-        <field name="Unit">0.766</field>
+        <field name="Link">https://sg.element14.com/keystone/1043p/battery-holder-18650-th/dp/2673609?st=18650</field>
+        <field name="MOQ">1</field>
+        <field name="MPN">1043P</field>
+        <field name="Manufacturer">Keystone</field>
+        <field name="Package">TH</field>
+        <field name="Unit">2.72</field>
         <field name="Vendor">Element14</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>

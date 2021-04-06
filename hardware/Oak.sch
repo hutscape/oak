@@ -604,17 +604,17 @@ L Connector:Conn_01x02_Female J1
 U 1 1 5FD8FE49
 P 900 1200
 F 0 "J1" H 850 1350 50  0000 C CNN
-F 1 "JST-PH2 for LiPo" H 750 950 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 900 1200 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1699381.pdf" H 900 1200 50  0001 C CNN
-F 4 "https://sg.element14.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/connector-header-smt-r-a-2mm-2way/dp/9492615" H 900 1200 50  0001 C CNN "Link"
-F 5 "10" H 900 1200 50  0001 C CNN "MOQ"
-F 6 "S2B-PH-SM4-TB(LF)(SN)" H 900 1200 50  0001 C CNN "MPN"
-F 7 "SMD" H 900 1200 50  0001 C CNN "Package"
-F 8 "boxA-36" H 900 1200 50  0001 C CNN "Stock"
-F 9 "0.766" H 900 1200 50  0001 C CNN "Unit"
+F 1 "18650 Battery holder" V 1000 1000 50  0000 C CNN
+F 2 "Battery:BatteryHolder_MPD_BH-18650-PC2" H 900 1200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2067690.pdf" H 900 1200 50  0001 C CNN
+F 4 "https://sg.element14.com/keystone/1043p/battery-holder-18650-th/dp/2673609?st=18650" H 900 1200 50  0001 C CNN "Link"
+F 5 "1" H 900 1200 50  0001 C CNN "MOQ"
+F 6 "1043P" H 900 1200 50  0001 C CNN "MPN"
+F 7 "TH" H 900 1200 50  0001 C CNN "Package"
+F 8 "" H 900 1200 50  0001 C CNN "Stock"
+F 9 "2.72" H 900 1200 50  0001 C CNN "Unit"
 F 10 "Element14" H 900 1200 50  0001 C CNN "Vendor"
-F 11 "JST" H 900 1200 50  0001 C CNN "Manufacturer"
+F 11 "Keystone" H 900 1200 50  0001 C CNN "Manufacturer"
 F 12 "Connector" H 900 1200 50  0001 C CNN "Category"
 	1    900  1200
 	-1   0    0    -1  
