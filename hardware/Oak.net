@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch)
-    (date "2021 April 06, Tuesday 13:54:35")
+    (date "2021 April 06, Tuesday 17:04:05")
     (tool "Eeschema (5.1.9-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -250,7 +250,7 @@
       (tstamp 5FD8C190))
     (comp (ref J1)
       (value "18650 Battery holder")
-      (footprint Battery:BatteryHolder_MPD_BH-18650-PC2)
+      (footprint Battery:BatteryHolder_Keystone_1042_1x18650)
       (datasheet http://www.farnell.com/datasheets/2067690.pdf)
       (fields
         (field (name Category) Connector)

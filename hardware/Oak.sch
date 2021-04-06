@@ -605,14 +605,14 @@ U 1 1 5FD8FE49
 P 900 1200
 F 0 "J1" H 850 1350 50  0000 C CNN
 F 1 "18650 Battery holder" V 1000 1000 50  0000 C CNN
-F 2 "Battery:BatteryHolder_MPD_BH-18650-PC2" H 900 1200 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" H 900 1200 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2067690.pdf" H 900 1200 50  0001 C CNN
-F 4 "https://sg.element14.com/keystone/1043p/battery-holder-18650-th/dp/2673609?st=18650" H 900 1200 50  0001 C CNN "Link"
+F 4 "https://sg.element14.com/keystone/1042p/battery-holder-18650-smd/dp/2674338" H 900 1200 50  0001 C CNN "Link"
 F 5 "1" H 900 1200 50  0001 C CNN "MOQ"
-F 6 "1043P" H 900 1200 50  0001 C CNN "MPN"
-F 7 "TH" H 900 1200 50  0001 C CNN "Package"
+F 6 "1042P" H 900 1200 50  0001 C CNN "MPN"
+F 7 "SMD" H 900 1200 50  0001 C CNN "Package"
 F 8 "" H 900 1200 50  0001 C CNN "Stock"
-F 9 "2.72" H 900 1200 50  0001 C CNN "Unit"
+F 9 "4.04" H 900 1200 50  0001 C CNN "Unit"
 F 10 "Element14" H 900 1200 50  0001 C CNN "Vendor"
 F 11 "Keystone" H 900 1200 50  0001 C CNN "Manufacturer"
 F 12 "Connector" H 900 1200 50  0001 C CNN "Category"

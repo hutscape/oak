@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
-    <date>2021 April 06, Tuesday 13:54:46</date>
+    <date>2021 April 06, Tuesday 17:05:46</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -282,16 +282,16 @@
     </comp>
     <comp ref="J1">
       <value>18650 Battery holder</value>
-      <footprint>Battery:BatteryHolder_MPD_BH-18650-PC2</footprint>
+      <footprint>Battery:BatteryHolder_Keystone_1042_1x18650</footprint>
       <datasheet>http://www.farnell.com/datasheets/2067690.pdf</datasheet>
       <fields>
         <field name="Category">Connector</field>
-        <field name="Link">https://sg.element14.com/keystone/1043p/battery-holder-18650-th/dp/2673609?st=18650</field>
+        <field name="Link">https://sg.element14.com/keystone/1042p/battery-holder-18650-smd/dp/2674338</field>
         <field name="MOQ">1</field>
-        <field name="MPN">1043P</field>
+        <field name="MPN">1042P</field>
         <field name="Manufacturer">Keystone</field>
-        <field name="Package">TH</field>
-        <field name="Unit">2.72</field>
+        <field name="Package">SMD</field>
+        <field name="Unit">4.04</field>
         <field name="Vendor">Element14</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
