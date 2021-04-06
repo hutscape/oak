@@ -1,9 +1,9 @@
 [submodule "_includes"]
 	path = _includes
-	url = git@github.com:hutscape/project-includes.git
+	url = https://github.com/hutscape/project-includes.git
 [submodule "scripts"]
 	path = scripts
-	url = git@github.com:hutscape/project-scripts.git
+	url = https://github.com/hutscape/project-scripts.git
 [submodule "hardware/library"]
 	path = hardware/library
-	url = git@github.com:hutscape/kicad-library.git
+	url = https://github.com/hutscape/kicad-library.git

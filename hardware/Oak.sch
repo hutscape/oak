@@ -27,7 +27,7 @@ F 6 "1" H 7700 5200 50  0001 C CNN "MOQ"
 F 7 "Module" H 7700 5200 50  0001 C CNN "Package"
 F 8 "21.21" H 7700 5200 50  0001 C CNN "Unit"
 F 9 "Waveshare" H 7700 5200 50  0001 C CNN "Vendor"
-F 10 "Waheshare" H 7700 5200 50  0001 C CNN "Manufacturer"
+F 10 "Waveshare" H 7700 5200 50  0001 C CNN "Manufacturer"
 F 11 "Electronics" H 7700 5200 50  0001 C CNN "Category"
 	1    7700 5200
 	1    0    0    -1  
