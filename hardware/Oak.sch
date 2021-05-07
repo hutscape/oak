@@ -339,77 +339,77 @@ Wire Notes Line
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J4
 U 1 1 5F902879
-P 3200 6750
-F 0 "J4" V 3650 6300 50  0000 C CNN
-F 1 "Conn_ARM_JTAG_SWD_10" V 3350 8050 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 3200 6750 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1992056.pdf" V 2850 5500 50  0001 C CNN
-F 4 "https://sg.element14.com/samtec/ftsh-105-01-l-dv/header-1-27mm-smd-10way/dp/1667759" H 3200 6750 50  0001 C CNN "Link"
-F 5 "1" H 3200 6750 50  0001 C CNN "MOQ"
-F 6 "FTSH-105-01-L-DV" H 3200 6750 50  0001 C CNN "MPN"
-F 7 "SMD" H 3200 6750 50  0001 C CNN "Package"
-F 8 "2.20" H 3200 6750 50  0001 C CNN "Unit"
-F 9 "Element14" H 3200 6750 50  0001 C CNN "Vendor"
-F 10 "Samtec" H 3200 6750 50  0001 C CNN "Manufacturer"
-F 11 "Connector" H 3200 6750 50  0001 C CNN "Category"
-	1    3200 6750
+P 9950 5150
+F 0 "J4" V 10400 4700 50  0000 C CNN
+F 1 "Conn_ARM_JTAG_SWD_10" V 10900 5150 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 9950 5150 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1992056.pdf" V 9600 3900 50  0001 C CNN
+F 4 "https://sg.element14.com/samtec/ftsh-105-01-l-dv/header-1-27mm-smd-10way/dp/1667759" H 9950 5150 50  0001 C CNN "Link"
+F 5 "1" H 9950 5150 50  0001 C CNN "MOQ"
+F 6 "FTSH-105-01-L-DV" H 9950 5150 50  0001 C CNN "MPN"
+F 7 "SMD" H 9950 5150 50  0001 C CNN "Package"
+F 8 "2.20" H 9950 5150 50  0001 C CNN "Unit"
+F 9 "Element14" H 9950 5150 50  0001 C CNN "Vendor"
+F 10 "Samtec" H 9950 5150 50  0001 C CNN "Manufacturer"
+F 11 "Connector" H 9950 5150 50  0001 C CNN "Category"
+	1    9950 5150
 	0    -1   1    0   
 $EndComp
 $Comp
 L power:+3V3 #PWR026
 U 1 1 5F92B935
-P 2450 6650
-F 0 "#PWR026" H 2450 6500 50  0001 C CNN
-F 1 "+3V3" H 2465 6823 50  0000 C CNN
-F 2 "" H 2450 6650 50  0001 C CNN
-F 3 "" H 2450 6650 50  0001 C CNN
-	1    2450 6650
+P 9200 5050
+F 0 "#PWR026" H 9200 4900 50  0001 C CNN
+F 1 "+3V3" H 9215 5223 50  0000 C CNN
+F 2 "" H 9200 5050 50  0001 C CNN
+F 3 "" H 9200 5050 50  0001 C CNN
+	1    9200 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 6750 2600 6750
+	9200 5150 9350 5150
 $Comp
 L power:GND #PWR027
 U 1 1 5F92E5FC
-P 3950 6900
-F 0 "#PWR027" H 3950 6650 50  0001 C CNN
-F 1 "GND" H 3955 6727 50  0000 C CNN
-F 2 "" H 3950 6900 50  0001 C CNN
-F 3 "" H 3950 6900 50  0001 C CNN
-	1    3950 6900
+P 10700 5300
+F 0 "#PWR027" H 10700 5050 50  0001 C CNN
+F 1 "GND" H 10705 5127 50  0000 C CNN
+F 2 "" H 10700 5300 50  0001 C CNN
+F 3 "" H 10700 5300 50  0001 C CNN
+	1    10700 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 6650 3950 6650
+	10550 5050 10700 5050
 Wire Wire Line
-	3950 6650 3950 6750
+	10700 5050 10700 5150
 Wire Wire Line
-	3800 6750 3950 6750
-Connection ~ 3950 6750
+	10550 5150 10700 5150
+Connection ~ 10700 5150
 Wire Wire Line
-	3950 6750 3950 6900
-NoConn ~ 3400 7250
-NoConn ~ 3300 7250
-Text Label 3300 7400 0    50   ~ 0
+	10700 5150 10700 5300
+NoConn ~ 10150 5650
+NoConn ~ 10050 5650
+Text Label 10050 5800 0    50   ~ 0
 SWDIO
-Text Label 3300 7500 0    50   ~ 0
+Text Label 10050 5900 0    50   ~ 0
 SWCLK
-Text Label 2750 7400 2    50   ~ 0
+Text Label 9500 5800 2    50   ~ 0
 RST
 Wire Wire Line
-	3200 7250 3200 7400
+	9950 5650 9950 5800
 Wire Wire Line
-	3200 7400 3300 7400
+	9950 5800 10050 5800
 Wire Wire Line
-	3100 7250 3100 7500
+	9850 5650 9850 5900
 Wire Wire Line
-	3100 7500 3300 7500
-Text Notes 750  6450 0    79   ~ 0
+	9850 5900 10050 5900
+Text Notes 8850 4400 0    79   ~ 0
 SWD Program connector
 Wire Notes Line
-	700  6500 2250 6500
+	8800 4450 10350 4450
 Wire Notes Line
-	2250 6500 2250 6300
+	10350 4450 10350 4250
 $Comp
 L Device:R_Small R8
 U 1 1 5F971654
@@ -566,19 +566,15 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	4750 5850 6200 5850
 Wire Wire Line
-	2750 7400 2900 7400
+	9500 5800 9650 5800
 Wire Wire Line
-	2900 7400 2900 7250
+	9650 5800 9650 5650
 Wire Wire Line
-	2450 6750 2450 6650
+	9200 5150 9200 5050
 Wire Wire Line
 	2200 5550 2250 5550
 Wire Notes Line
 	2450 4250 2450 6300
-Wire Notes Line
-	700  7550 4050 7550
-Wire Notes Line
-	4050 7550 4050 6300
 $Comp
 L Regulator_Linear:AP2112K-3.3 U1
 U 1 1 5FD8C190
@@ -641,8 +637,6 @@ F 12 "Switch" H 1750 1300 50  0001 C CNN "Category"
 $EndComp
 Text Notes 750  900  0    79   ~ 0
 Power
-Wire Notes Line
-	700  700  700  7550
 Wire Notes Line
 	700  950  1150 950 
 Wire Notes Line
@@ -745,7 +739,7 @@ Wire Notes Line
 Wire Notes Line
 	1550 3300 700  3300
 Wire Wire Line
-	4400 1300 4400 1150
+	4400 1300 4400 1250
 $Comp
 L power:GND #PWR04
 U 1 1 5FF1B049
@@ -1195,146 +1189,20 @@ Wire Notes Line
 	6250 6300 6250 4250
 Wire Notes Line
 	8800 4250 8800 6300
-Text Label 9300 4800 0    47   ~ 0
-D0
-Text Label 9300 4900 0    47   ~ 0
-D1
-Text Label 9300 5000 0    47   ~ 0
-D2
-Text Label 9300 5100 0    47   ~ 0
-D3
-Text Label 9300 5200 0    47   ~ 0
-D4
-Text Label 9300 5300 0    47   ~ 0
-D5
-Text Label 9300 5400 0    47   ~ 0
-D6
-Text Label 9300 5500 0    47   ~ 0
-D7
-Wire Wire Line
-	9250 5200 9300 5200
-Text Label 9300 5600 0    47   ~ 0
-D8
-Text Label 9300 5700 0    47   ~ 0
-D9
-Text Label 9300 5800 0    47   ~ 0
-D10
-Text Label 10400 4800 0    50   ~ 0
-COPI
-Text Label 10400 4900 0    50   ~ 0
-CIPO
-Text Label 10400 5000 0    50   ~ 0
-CLK
-Text Label 10400 5100 0    50   ~ 0
-SDA
-Text Label 10400 5200 0    50   ~ 0
-SCL
-$Comp
-L Connector:Conn_01x12_Male J5
-U 1 1 603075BB
-P 9050 5300
-F 0 "J5" H 9150 5950 50  0000 C CNN
-F 1 "Conn_01x12_Male" H 9158 5890 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical_SMD_Pin1Left" H 9050 5300 50  0001 C CNN
-F 3 "https://4donline.ihs.com/images/VipMasterIC/IC/SAMI/SAMI-S-A0002799285/SAMI-S-A0002799285-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0" H 9050 5300 50  0001 C CNN
-F 4 "https://sg.element14.com/samtec/tsm-112-01-l-sv/connector-header-12pos-1row-2/dp/2779651" H 9050 5300 50  0001 C CNN "Link"
-F 5 "1" H 9050 5300 50  0001 C CNN "MOQ"
-F 6 "TSM-112-01-L-SV" H 9050 5300 50  0001 C CNN "MPN"
-F 7 "SMD" H 9050 5300 50  0001 C CNN "Package"
-F 8 "1.93" H 9050 5300 50  0001 C CNN "Unit"
-F 9 "Element14" H 9050 5300 50  0001 C CNN "Vendor"
-F 10 "Samtec" H 9050 5300 50  0001 C CNN "Manufacturer"
-F 11 "Connector" H 9050 5300 50  0001 C CNN "Category"
-	1    9050 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 5900 9250 5900
-$Comp
-L Connector:Conn_01x12_Male J6
-U 1 1 60322821
-P 10150 5300
-F 0 "J6" H 10250 5950 50  0000 C CNN
-F 1 "Conn_01x12_Male" H 10258 5890 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical_SMD_Pin1Right" H 10150 5300 50  0001 C CNN
-F 3 "https://4donline.ihs.com/images/VipMasterIC/IC/SAMI/SAMI-S-A0002799285/SAMI-S-A0002799285-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0" H 10150 5300 50  0001 C CNN
-F 4 "https://sg.element14.com/samtec/tsm-112-01-l-sv/connector-header-12pos-1row-2/dp/2779651" H 10150 5300 50  0001 C CNN "Link"
-F 5 "1" H 10150 5300 50  0001 C CNN "MOQ"
-F 6 "TSM-112-01-L-SV" H 10150 5300 50  0001 C CNN "MPN"
-F 7 "SMD" H 10150 5300 50  0001 C CNN "Package"
-F 8 "1.93" H 10150 5300 50  0001 C CNN "Unit"
-F 9 "Element14" H 10150 5300 50  0001 C CNN "Vendor"
-F 10 "Samtec" H 10150 5300 50  0001 C CNN "Manufacturer"
-F 11 "Connector" H 10150 5300 50  0001 C CNN "Category"
-	1    10150 5300
-	1    0    0    -1  
-$EndComp
-Text Label 9300 5900 0    50   ~ 0
-RST
-Text Label 10400 5600 0    50   ~ 0
-VBAT
-Text Label 10400 5700 0    50   ~ 0
-VBUS
-Wire Wire Line
-	10350 5600 10400 5600
-Wire Wire Line
-	10350 5700 10400 5700
-$Comp
-L power:GND #PWR0101
-U 1 1 603BCDC3
-P 10400 5900
-F 0 "#PWR0101" H 10400 5650 50  0001 C CNN
-F 1 "GND" H 10405 5727 50  0000 C CNN
-F 2 "" H 10400 5900 50  0001 C CNN
-F 3 "" H 10400 5900 50  0001 C CNN
-	1    10400 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 5900 10400 5900
-$Comp
-L power:+3V3 #PWR0102
-U 1 1 603CAA10
-P 10700 5700
-F 0 "#PWR0102" H 10700 5550 50  0001 C CNN
-F 1 "+3V3" H 10715 5873 50  0000 C CNN
-F 2 "" H 10700 5700 50  0001 C CNN
-F 3 "" H 10700 5700 50  0001 C CNN
-	1    10700 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10700 5800 10700 5700
-Wire Wire Line
-	10350 5800 10700 5800
-Text Notes 8850 4400 0    79   ~ 0
-Extension headers
-Wire Notes Line
-	8800 4500 10000 4500
-Wire Notes Line
-	10000 4500 10000 4250
 Wire Notes Line
 	700  700  10550 700 
-Wire Wire Line
-	8500 4150 8850 4150
-Wire Wire Line
-	8900 3250 8900 3150
-Wire Wire Line
-	9000 3250 9000 3150
 Text Label 9000 3250 3    47   ~ 0
 SCL
 Text Label 8900 3250 3    47   ~ 0
 SDA
-Text Label 7200 1150 1    47   ~ 0
+Text Label 7200 1150 1    50   ~ 0
 D13
-Text Label 7100 1150 1    47   ~ 0
+Text Label 7100 1150 1    50   ~ 0
 D11
 NoConn ~ 7000 3150
 NoConn ~ 7100 3150
 NoConn ~ 7200 3150
 NoConn ~ 6700 1150
-Text Label 8600 3400 1    47   ~ 0
-D12
 Text Label 8500 3250 3    47   ~ 0
 D10
 Text Label 7400 3250 3    47   ~ 0
@@ -1361,10 +1229,6 @@ Text Label 8700 3250 3    47   ~ 0
 D6
 Text Label 8200 3250 3    47   ~ 0
 D5
-Text Label 7500 3250 3    47   ~ 0
-D4
-Wire Wire Line
-	7500 3150 7500 3250
 Text Label 7600 3250 3    47   ~ 0
 D3
 Text Label 8100 3250 3    47   ~ 0
@@ -1373,8 +1237,6 @@ Text Label 7700 3250 3    47   ~ 0
 D1
 Text Label 7800 3250 3    47   ~ 0
 D0
-Wire Wire Line
-	7200 3700 7600 3700
 Text Label 7200 3700 2    50   ~ 0
 GPS_RST
 Wire Notes Line style solid
@@ -1383,8 +1245,6 @@ Wire Notes Line style solid
 	4550 4150 6200 4150
 Wire Notes Line style solid
 	4550 2650 4550 4150
-Wire Wire Line
-	8100 4000 7200 4000
 Text Label 7200 4000 2    50   ~ 0
 BATT
 Wire Wire Line
@@ -1409,14 +1269,6 @@ Wire Wire Line
 	10200 2250 10450 2250
 Wire Wire Line
 	5750 1550 5750 2050
-Wire Wire Line
-	8500 3150 8500 4150
-Wire Wire Line
-	8600 3150 8600 4050
-Wire Wire Line
-	8700 3150 8700 3950
-Wire Wire Line
-	8800 3150 8800 3850
 Wire Wire Line
 	9100 3700 9750 3700
 Wire Wire Line
@@ -1446,42 +1298,32 @@ SWDIO
 Text Label 9750 3400 0    50   ~ 0
 SWCLK
 Connection ~ 10250 3150
-Wire Wire Line
-	10350 3150 10250 3150
 Text Label 10350 3150 0    50   ~ 0
 RST
 Wire Wire Line
 	10250 3150 10250 3400
 Wire Wire Line
 	9800 3150 10250 3150
-Wire Wire Line
-	8600 4050 8850 4050
-Wire Wire Line
-	8700 3950 8850 3950
-Wire Wire Line
-	8850 3850 8800 3850
 Text Label 9750 3500 0    50   ~ 0
 TX_LED
-Text Label 6450 1050 2    50   ~ 0
+Text Label 6550 1100 2    50   ~ 0
 RX_LED
 $Comp
 L power:+3V3 #PWR011
 U 1 1 5F907590
-P 10700 3100
-F 0 "#PWR011" H 10700 2950 50  0001 C CNN
-F 1 "+3V3" H 10715 3273 50  0000 C CNN
-F 2 "" H 10700 3100 50  0001 C CNN
-F 3 "" H 10700 3100 50  0001 C CNN
-	1    10700 3100
+P 10850 3100
+F 0 "#PWR011" H 10850 2950 50  0001 C CNN
+F 1 "+3V3" H 10865 3273 50  0000 C CNN
+F 2 "" H 10850 3100 50  0001 C CNN
+F 3 "" H 10850 3100 50  0001 C CNN
+	1    10850 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10250 3400 10250 3500
 Connection ~ 10250 3400
 Wire Wire Line
-	10550 3400 10700 3400
-Wire Wire Line
-	10700 3400 10700 3100
+	10850 3400 10850 3100
 Wire Wire Line
 	10250 3400 10350 3400
 Wire Wire Line
@@ -1546,16 +1388,6 @@ NoConn ~ 6800 3150
 NoConn ~ 6700 3150
 NoConn ~ 7300 1150
 NoConn ~ 7400 1150
-Wire Wire Line
-	8200 4100 7200 4100
-Wire Wire Line
-	7800 3900 7200 3900
-Wire Wire Line
-	7700 3800 7200 3800
-Wire Wire Line
-	7400 3600 7200 3600
-Wire Wire Line
-	7300 3500 7200 3500
 Text Label 7200 3500 2    50   ~ 0
 EINK_RST
 Text Label 7200 900  0    50   ~ 0
@@ -1792,11 +1624,7 @@ Microcontroller
 Wire Notes Line
 	10600 700  11000 700 
 Wire Notes Line
-	11000 700  11000 6300
-Wire Notes Line
 	700  4250 11000 4250
-Wire Notes Line
-	700  6300 11000 6300
 Wire Notes Line
 	4450 700  4450 4550
 Wire Notes Line style solid
@@ -1809,81 +1637,11 @@ Wire Notes Line style solid
 	800  2500 1600 2500
 Text Notes 850  2750 0    47   ~ 0
 Power source \nis either the USB or\nLiPo battery
-Text Label 9500 4800 0    47   ~ 0
-GPS_DATA
-Wire Wire Line
-	9250 4800 9500 4800
-Text Label 9500 4900 0    47   ~ 0
-LORA_G0
-Text Label 9500 5000 0    47   ~ 0
-BATT
-Text Label 9500 5100 0    47   ~ 0
-GPS_RST
-Text Label 9500 5300 0    47   ~ 0
-LORA_CS
-Wire Wire Line
-	9250 4900 9500 4900
-Wire Wire Line
-	9250 5000 9500 5000
-Wire Wire Line
-	9250 5100 9500 5100
-Wire Wire Line
-	9250 5300 9500 5300
-Text Label 9500 5400 0    47   ~ 0
-LORA_RST
-Wire Wire Line
-	9250 5400 9500 5400
-Text Label 9500 5500 0    47   ~ 0
-EINK_BUSY
-Wire Wire Line
-	9250 5500 9500 5500
-Text Label 9500 5600 0    47   ~ 0
-EINK_RST
-Wire Wire Line
-	9250 5600 9500 5600
-Text Label 9500 5700 0    47   ~ 0
-EINK_DC
-Wire Wire Line
-	9250 5700 9500 5700
-Text Label 9500 5800 0    47   ~ 0
-EINK_CS
-Wire Wire Line
-	9250 5800 9500 5800
-Text Label 10650 4900 0    47   ~ 0
-D11
-Wire Wire Line
-	10350 4900 10650 4900
-Text Label 10650 4800 0    47   ~ 0
-D12
-Wire Wire Line
-	10350 4800 10650 4800
-Text Label 10650 5000 0    47   ~ 0
-D13
-Wire Wire Line
-	10350 5000 10650 5000
-Wire Wire Line
-	10400 5100 10350 5100
-Wire Wire Line
-	10400 5200 10350 5200
-Text Label 6900 3250 3    47   ~ 0
+Text Label 6850 3400 2    47   ~ 0
 A0
-Wire Wire Line
-	6900 3150 6900 3250
-Text Label 10400 5300 0    47   ~ 0
-A0
-Wire Wire Line
-	10400 5300 10350 5300
-Text Label 10400 5400 0    47   ~ 0
+Text Label 6550 1000 2    50   ~ 0
 A1
-Wire Wire Line
-	10400 5400 10350 5400
-Text Label 10400 5500 0    47   ~ 0
-A2
-Wire Wire Line
-	10400 5500 10350 5500
-Text Label 6900 1150 1    47   ~ 0
-A1
-Text Label 7000 1150 1    47   ~ 0
+Text Label 6550 900  2    50   ~ 0
 A2
 Text Label 2600 3050 2    47   ~ 0
 VBUS
@@ -1962,11 +1720,7 @@ Text Label 2550 1950 0    47   ~ 0
 VBUS
 Wire Wire Line
 	2350 1300 2450 1300
-Wire Wire Line
-	2550 1950 2450 1950
 Connection ~ 2450 1950
-Wire Wire Line
-	2000 950  2100 950 
 Wire Wire Line
 	2050 1300 2000 1300
 Wire Wire Line
@@ -2128,18 +1882,10 @@ Wire Wire Line
 	2650 3050 2600 3050
 Wire Wire Line
 	6500 5300 7150 5300
-Text Label 6400 950  2    50   ~ 0
+Text Label 6550 800  2    50   ~ 0
 COPI
 Wire Wire Line
-	6800 1150 6800 1050
-Wire Wire Line
-	6800 1050 6450 1050
-Wire Wire Line
-	6400 950  7100 950 
-Wire Wire Line
-	7100 950  7100 1150
-Wire Wire Line
-	7200 900  7650 900 
+	7200 900  7400 900 
 $Comp
 L Device:R_Small R13
 U 1 1 5FC7752E
@@ -2171,4 +1917,339 @@ Wire Wire Line
 Wire Wire Line
 	7650 900  7850 900 
 Connection ~ 7650 900 
+$Comp
+L Connector:TestPoint_Probe TP13
+U 1 1 609A9AEB
+P 6750 3900
+F 0 "TP13" V 6800 4100 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 3955 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3900 50  0001 C CNN
+F 3 "~" H 6950 3900 50  0001 C CNN
+	1    6750 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 3900 7800 3900
+Wire Wire Line
+	6750 3500 7300 3500
+$Comp
+L Connector:TestPoint_Probe TP9
+U 1 1 609E0DC0
+P 6750 3500
+F 0 "TP9" V 6800 3700 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 3555 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3500 50  0001 C CNN
+F 3 "~" H 6950 3500 50  0001 C CNN
+	1    6750 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 3800 7700 3800
+$Comp
+L Connector:TestPoint_Probe TP12
+U 1 1 609EE554
+P 6750 3800
+F 0 "TP12" V 6800 4000 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 3855 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3800 50  0001 C CNN
+F 3 "~" H 6950 3800 50  0001 C CNN
+	1    6750 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 4000 8100 4000
+$Comp
+L Connector:TestPoint_Probe TP14
+U 1 1 609FBC17
+P 6750 4000
+F 0 "TP14" V 6800 4200 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 4055 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4000 50  0001 C CNN
+F 3 "~" H 6950 4000 50  0001 C CNN
+	1    6750 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 3700 7600 3700
+$Comp
+L Connector:TestPoint_Probe TP11
+U 1 1 60A095C7
+P 6750 3700
+F 0 "TP11" V 6800 3900 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 3755 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3700 50  0001 C CNN
+F 3 "~" H 6950 3700 50  0001 C CNN
+	1    6750 3700
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7500 3150
+Wire Wire Line
+	6750 4100 8200 4100
+$Comp
+L Connector:TestPoint_Probe TP15
+U 1 1 60A237BD
+P 6750 4100
+F 0 "TP15" V 6800 4300 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 4155 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4100 50  0001 C CNN
+F 3 "~" H 6950 4100 50  0001 C CNN
+	1    6750 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP20
+U 1 1 60A3DD9B
+P 9350 3950
+F 0 "TP20" H 9550 4000 50  0000 C CNN
+F 1 "TestPoint_Probe" V 9549 4005 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9550 3950 50  0001 C CNN
+F 3 "~" H 9550 3950 50  0001 C CNN
+	1    9350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP19
+U 1 1 60A3FB63
+P 9350 3850
+F 0 "TP19" H 9550 3900 50  0000 C CNN
+F 1 "TestPoint_Probe" V 9549 3905 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9550 3850 50  0001 C CNN
+F 3 "~" H 9550 3850 50  0001 C CNN
+	1    9350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP22
+U 1 1 60A4CEB1
+P 9350 4150
+F 0 "TP22" H 9550 4200 50  0000 C CNN
+F 1 "TestPoint_Probe" V 9549 4205 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9550 4150 50  0001 C CNN
+F 3 "~" H 9550 4150 50  0001 C CNN
+	1    9350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP23
+U 1 1 60A5A1DB
+P 10550 3150
+F 0 "TP23" H 10750 3200 50  0000 C CNN
+F 1 "TestPoint_Probe" V 10749 3205 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 10750 3150 50  0001 C CNN
+F 3 "~" H 10750 3150 50  0001 C CNN
+	1    10550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 3150 10550 3150
+$Comp
+L Connector:TestPoint_Probe TP5
+U 1 1 60AB52BE
+P 6200 800
+F 0 "TP5" H 6400 850 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6399 855 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6400 800 50  0001 C CNN
+F 3 "~" H 6400 800 50  0001 C CNN
+	1    6200 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP21
+U 1 1 60AC2BF2
+P 9350 4050
+F 0 "TP21" H 9550 4100 50  0000 C CNN
+F 1 "TestPoint_Probe" V 9549 4105 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9550 4050 50  0001 C CNN
+F 3 "~" H 9550 4050 50  0001 C CNN
+	1    9350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP16
+U 1 1 60AC2EF5
+P 7400 900
+F 0 "TP16" H 7600 1000 50  0000 C CNN
+F 1 "TestPoint_Probe" V 7599 955 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7600 900 50  0001 C CNN
+F 3 "~" H 7600 900 50  0001 C CNN
+	1    7400 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 900 
+Wire Wire Line
+	7400 900  7650 900 
+Wire Wire Line
+	10550 3400 10850 3400
+Wire Wire Line
+	2000 950  2400 950 
+Wire Wire Line
+	2450 1950 2800 1950
+$Comp
+L Connector:TestPoint_Probe TP1
+U 1 1 60AEBBE3
+P 2400 950
+F 0 "TP1" H 2600 1050 50  0000 C CNN
+F 1 "TestPoint_Probe" V 2599 1005 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 2600 950 50  0001 C CNN
+F 3 "~" H 2600 950 50  0001 C CNN
+	1    2400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP2
+U 1 1 60AEC454
+P 2800 1950
+F 0 "TP2" H 2900 1900 50  0000 C CNN
+F 1 "TestPoint_Probe" V 2999 2005 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3000 1950 50  0001 C CNN
+F 3 "~" H 3000 1950 50  0001 C CNN
+	1    2800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3600 7400 3600
+$Comp
+L Connector:TestPoint_Probe TP10
+U 1 1 60AFA1CC
+P 6750 3600
+F 0 "TP10" V 6800 3800 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 3655 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3600 50  0001 C CNN
+F 3 "~" H 6950 3600 50  0001 C CNN
+	1    6750 3600
+	0    -1   -1   0   
+$EndComp
+Text Label 8600 3250 3    47   ~ 0
+D12
+Wire Wire Line
+	9000 3450 8950 3450
+Wire Wire Line
+	9000 3150 9000 3450
+$Comp
+L Connector:TestPoint_Probe TP17
+U 1 1 60B38BE7
+P 8850 3450
+F 0 "TP17" H 9050 3500 50  0000 C CNN
+F 1 "TestPoint_Probe" V 9049 3505 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9050 3450 50  0001 C CNN
+F 3 "~" H 9050 3450 50  0001 C CNN
+	1    8850 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP18
+U 1 1 60B377F7
+P 8950 3450
+F 0 "TP18" H 9150 3500 50  0000 C CNN
+F 1 "TestPoint_Probe" V 9149 3505 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9150 3450 50  0001 C CNN
+F 3 "~" H 9150 3450 50  0001 C CNN
+	1    8950 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 3450 8850 3450
+Wire Wire Line
+	8900 3150 8900 3450
+Wire Wire Line
+	8800 3850 9350 3850
+Wire Wire Line
+	8700 3950 9350 3950
+Wire Wire Line
+	8600 4050 9350 4050
+Wire Wire Line
+	8500 4150 9350 4150
+Wire Wire Line
+	8800 3150 8800 3850
+Wire Wire Line
+	8700 3150 8700 3950
+Wire Wire Line
+	8600 3150 8600 4050
+Wire Wire Line
+	8500 3150 8500 4150
+Wire Wire Line
+	6900 3400 6750 3400
+Wire Wire Line
+	6900 3150 6900 3400
+$Comp
+L Connector:TestPoint_Probe TP8
+U 1 1 60BADACA
+P 6750 3400
+F 0 "TP8" V 6800 3600 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 3455 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3400 50  0001 C CNN
+F 3 "~" H 6950 3400 50  0001 C CNN
+	1    6750 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 800  6200 800 
+Wire Wire Line
+	7100 800  7100 1150
+Wire Wire Line
+	7000 1150 7000 900 
+Wire Wire Line
+	6900 1150 6900 1000
+Wire Wire Line
+	6550 1100 6800 1100
+Wire Wire Line
+	6800 1100 6800 1150
+Wire Wire Line
+	6200 900  7000 900 
+Wire Wire Line
+	6200 1000 6900 1000
+$Comp
+L Connector:TestPoint_Probe TP6
+U 1 1 60C02A35
+P 6200 900
+F 0 "TP6" H 6400 950 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6399 955 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6400 900 50  0001 C CNN
+F 3 "~" H 6400 900 50  0001 C CNN
+	1    6200 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP7
+U 1 1 60C02E92
+P 6200 1000
+F 0 "TP7" H 6400 1050 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6399 1055 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6400 1000 50  0001 C CNN
+F 3 "~" H 6400 1000 50  0001 C CNN
+	1    6200 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP4
+U 1 1 60C03355
+P 4400 1250
+F 0 "TP4" V 4550 1450 50  0000 C CNN
+F 1 "TestPoint_Probe" V 4599 1305 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4600 1250 50  0001 C CNN
+F 3 "~" H 4600 1250 50  0001 C CNN
+	1    4400 1250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4400 1250
+Wire Wire Line
+	4400 1250 4400 1150
+$Comp
+L Connector:TestPoint_Probe TP3
+U 1 1 60C043CD
+P 3250 1800
+F 0 "TP3" V 3300 2000 50  0000 C CNN
+F 1 "TestPoint_Probe" V 3449 1855 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3450 1800 50  0001 C CNN
+F 3 "~" H 3450 1800 50  0001 C CNN
+	1    3250 1800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3250 1800
+Wire Notes Line
+	700  6300 11000 6300
+Wire Notes Line
+	11000 700  11000 6300
+Wire Notes Line
+	700  700  700  6300
 $EndSCHEMATC
