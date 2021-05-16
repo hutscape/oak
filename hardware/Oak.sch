@@ -1195,18 +1195,10 @@ Text Label 9000 3250 3    47   ~ 0
 SCL
 Text Label 8900 3250 3    47   ~ 0
 SDA
-Text Label 7200 1150 1    50   ~ 0
-D13
-Text Label 7100 1150 1    50   ~ 0
-D11
 NoConn ~ 7000 3150
 NoConn ~ 7100 3150
 NoConn ~ 7200 3150
 NoConn ~ 6700 1150
-Text Label 8500 3250 3    47   ~ 0
-D10
-Text Label 7400 3250 3    47   ~ 0
-D9
 Wire Wire Line
 	8200 3150 8200 4100
 Wire Wire Line
@@ -1221,23 +1213,7 @@ Wire Wire Line
 	7400 3150 7400 3600
 Wire Wire Line
 	7300 3150 7300 3500
-Text Label 7300 3250 3    47   ~ 0
-D8
-Text Label 8800 3250 3    47   ~ 0
-D7
-Text Label 8700 3250 3    47   ~ 0
-D6
-Text Label 8200 3250 3    47   ~ 0
-D5
-Text Label 7600 3250 3    47   ~ 0
-D3
-Text Label 8100 3250 3    47   ~ 0
-D2
-Text Label 7700 3250 3    47   ~ 0
-D1
-Text Label 7800 3250 3    47   ~ 0
-D0
-Text Label 7200 3700 2    50   ~ 0
+Text Label 7250 3700 2    50   ~ 0
 GPS_RST
 Wire Notes Line style solid
 	6200 4150 6200 2650
@@ -1245,7 +1221,7 @@ Wire Notes Line style solid
 	4550 4150 6200 4150
 Wire Notes Line style solid
 	4550 2650 4550 4150
-Text Label 7200 4000 2    50   ~ 0
+Text Label 7250 4000 2    50   ~ 0
 BATT
 Wire Wire Line
 	5750 2250 6300 2250
@@ -1388,23 +1364,23 @@ NoConn ~ 6800 3150
 NoConn ~ 6700 3150
 NoConn ~ 7300 1150
 NoConn ~ 7400 1150
-Text Label 7200 3500 2    50   ~ 0
+Text Label 7250 3500 2    50   ~ 0
 EINK_RST
 Text Label 7200 900  0    50   ~ 0
 CLK
 Text Label 8850 4150 0    50   ~ 0
 EINK_CS
-Text Label 7200 3600 2    50   ~ 0
+Text Label 7250 3600 2    50   ~ 0
 EINK_DC
 Text Label 8850 3850 0    50   ~ 0
 EINK_BUSY
 Text Label 8850 3950 0    50   ~ 0
 LORA_RST
-Text Label 7200 4100 2    50   ~ 0
+Text Label 7250 4100 2    50   ~ 0
 LORA_CS
-Text Label 7200 3800 2    50   ~ 0
+Text Label 7250 3800 2    50   ~ 0
 LORA_G0
-Text Label 7200 3900 2    50   ~ 0
+Text Label 7250 3900 2    50   ~ 0
 GPS_DATA
 Wire Wire Line
 	5750 2050 5750 2250
@@ -1929,8 +1905,6 @@ F 3 "~" H 6950 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6750 3900 7800 3900
-Wire Wire Line
 	6750 3500 7300 3500
 $Comp
 L Connector:TestPoint_Probe TP9
@@ -2119,8 +2093,6 @@ F 3 "~" H 6950 3600 50  0001 C CNN
 	1    6750 3600
 	0    -1   -1   0   
 $EndComp
-Text Label 8600 3250 3    47   ~ 0
-D12
 Wire Wire Line
 	9000 3450 8950 3450
 Wire Wire Line
@@ -2252,4 +2224,32 @@ Wire Notes Line
 	11000 700  11000 6300
 Wire Notes Line
 	700  700  700  6300
+Text Notes 7800 3250 3    47   ~ 0
+D0
+Text Notes 7700 3250 3    47   ~ 0
+D1
+Text Notes 7600 3250 3    47   ~ 0
+D3
+Text Notes 7400 3250 3    47   ~ 0
+D9
+Text Notes 7300 3250 3    47   ~ 0
+D8
+Text Notes 8100 3250 3    47   ~ 0
+D2
+Text Notes 8200 3250 3    47   ~ 0
+D5
+Wire Wire Line
+	6750 3900 7800 3900
+Text Notes 8500 3250 3    47   ~ 0
+D10
+Text Notes 8600 3250 3    47   ~ 0
+D11
+Text Notes 8700 3250 3    47   ~ 0
+D6
+Text Notes 8800 3250 3    47   ~ 0
+D7
+Text Notes 7200 1150 1    47   ~ 0
+D13
+Text Notes 7100 1150 1    47   ~ 0
+D11
 $EndSCHEMATC
