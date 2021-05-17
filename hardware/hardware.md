@@ -26,7 +26,7 @@ PCB Layout in KiCad:
 1. Create a layout PDF file `layout.pdf`
     File > Print > Check `F.Cu`, `B.Cu`, `F.SilkS`, `B.SilkS`, `F.Mask`, `B.Mask`, `Edge.Cuts`, `F.CrtYrd`, `B.CrtYrd`, `F.Fab`, `B.Fab` > Save as PDF > Title : Project name V1.0 > Save in hardware/docs/layout.pdf
 1. Create screenshots of `layout-front.png` and `layout-back.png`
-    Enable all Front / Back layers > Select Silscreen layer > Flip view for Back layer
+    View Uncheck grid > Enable all Front / Back layers > Select Silscreen layer > Flip view for Back layer
 1. Create screenshots of the 3D view `3dview-back.png` and `3dview-front.png`
     File > View > 3D Viewer > File > Export current view as PNG > images/hardware/3dview-front.png
  -->
