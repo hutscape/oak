@@ -96,30 +96,8 @@ F 12 "Electronics" H 1450 5250 50  0001 C CNN "Category"
 	1    1450 5250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5F890E07
-P 2000 4950
-F 0 "R4" H 2059 4996 50  0000 L CNN
-F 1 "10k" H 2059 4905 50  0000 L CNN
-F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2000 4950 50  0001 C CNN
-F 3 "https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf" H 2000 4950 50  0001 C CNN
-F 4 "https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==" H 2000 4950 50  0001 C CNN "Link"
-F 5 "1" H 2000 4950 50  0001 C CNN "MOQ"
-F 6 "CRCW080510K0FKEAC" H 2000 4950 50  0001 C CNN "MPN"
-F 7 "0805" H 2000 4950 50  0001 C CNN "Package"
-F 8 "boxA-31" H 2000 4950 50  0001 C CNN "Stock"
-F 9 "0.148" H 2000 4950 50  0001 C CNN "Unit"
-F 10 "Mouser" H 2000 4950 50  0001 C CNN "Vendor"
-F 11 "Vishay" H 2000 4950 50  0001 C CNN "Manufacturer"
-F 12 "Electronics" H 2000 4950 50  0001 C CNN "Category"
-	1    2000 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 5200 2000 5050
 Text Label 2000 5300 0    50   ~ 0
-GPS_DATA
+GPS_TX
 NoConn ~ 1000 5050
 NoConn ~ 1000 5150
 NoConn ~ 1000 5500
@@ -146,7 +124,7 @@ F 3 "" H 4950 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5200 5700 0    50   ~ 0
-LORA_G0
+LORA_DATA
 Wire Wire Line
 	5050 5700 5200 5700
 Wire Wire Line
@@ -1041,17 +1019,6 @@ Wire Wire Line
 	1900 5300 2000 5300
 Wire Wire Line
 	1900 5200 2000 5200
-$Comp
-L power:+3V3 #PWR034
-U 1 1 5FF68447
-P 2000 4850
-F 0 "#PWR034" H 2000 4700 50  0001 C CNN
-F 1 "+3V3" H 2015 5023 50  0000 C CNN
-F 2 "" H 2000 4850 50  0001 C CNN
-F 3 "" H 2000 4850 50  0001 C CNN
-	1    2000 4850
-	1    0    0    -1  
-$EndComp
 Text Label 850  5900 0    50   ~ 0
 GPS_RST
 Wire Wire Line
@@ -1215,12 +1182,6 @@ Wire Wire Line
 	7300 3150 7300 3500
 Text Label 7250 3700 2    50   ~ 0
 GPS_RST
-Wire Notes Line style solid
-	6200 4150 6200 2650
-Wire Notes Line style solid
-	4550 4150 6200 4150
-Wire Notes Line style solid
-	4550 2650 4550 4150
 Text Label 7250 4000 2    50   ~ 0
 BATT
 Wire Wire Line
@@ -1357,7 +1318,6 @@ F 12 "Electronics" H 10450 3400 50  0001 C CNN "Category"
 $EndComp
 NoConn ~ 9400 3150
 NoConn ~ 8400 3150
-NoConn ~ 8300 3150
 NoConn ~ 8000 3150
 NoConn ~ 7900 3150
 NoConn ~ 6800 3150
@@ -1378,10 +1338,8 @@ Text Label 8850 3950 0    50   ~ 0
 LORA_RST
 Text Label 7250 4100 2    50   ~ 0
 LORA_CS
-Text Label 7250 3800 2    50   ~ 0
-LORA_G0
 Text Label 7250 3900 2    50   ~ 0
-GPS_DATA
+GPS_TX
 Wire Wire Line
 	5750 2050 5750 2250
 Wire Wire Line
@@ -1587,10 +1545,8 @@ F 12 "Electronics" H 8300 2150 50  0001 C CNN "Category"
 	1    8300 2150
 	0    -1   -1   0   
 $EndComp
-Wire Notes Line style solid
-	4550 2650 6200 2650
-Text Notes 4600 4100 0    59   ~ 0
-Arduino Zero pins | SAMD21G pins\n\n1. GPS_DATA - D0/RX - PA11\n2. LORA_G0 - D1/TX - PA10\n3. LORA_CS - D5 - PA15\n4. LORA_RST - D6 - PA20\n5. EINK_BUSY - D7 - PA21\n6. EINK_RST - D8 - PA06\n7. EINK_DC - D9 - PA07\n8. EINK_CS - D10 - PA18\n9. COPI - ICSP_COPI - PB10\n10. CLK - ICSP_SCK - PB11\n11. CIPO - ICSP_CIPO - PA19\n12. BATT - D2 - PA14\n13. GPS_RST - D3 - PA09
+Text Notes 4600 3850 0    47   ~ 0
+Arduino Zero pins | SAMD21G pins\n\n1. GPS_TX - D0/RX - PA11\n2. GPS_RX - D1/TX - PA10\n3. LORA_CS - D5 - PA15\n4. LORA_RST - D6 - PA20\n5. LORA_DATA - D11 - PA16\n6. EINK_BUSY - D7 - PA21\n7. EINK_RST - D8 - PA06\n8. EINK_DC - D9 - PA07\n9. EINK_CS - D10 - PA18\n10. COPI - ICSP_COPI - PB10\n11. CLK - ICSP_SCK - PB11\n12. CIPO - ICSP_CIPO - PA19\n13. BATT - D2 - PA14\n14. GPS_RST - D3 - PA09
 Wire Notes Line
 	5550 950  5550 700 
 Wire Notes Line
@@ -2243,7 +2199,7 @@ Wire Wire Line
 Text Notes 8500 3250 3    47   ~ 0
 D10
 Text Notes 8600 3250 3    47   ~ 0
-D11
+D12
 Text Notes 8700 3250 3    47   ~ 0
 D6
 Text Notes 8800 3250 3    47   ~ 0
@@ -2252,4 +2208,37 @@ Text Notes 7200 1150 1    47   ~ 0
 D13
 Text Notes 7100 1150 1    47   ~ 0
 D11
+Text Notes 8300 3250 3    47   ~ 0
+D11
+Wire Notes Line
+	4550 2550 5900 2550
+Text Notes 4600 4150 0    39   ~ 0
+Pin mappings: \nhttps://github.com\n/arduino/ArduinoCore-samd\n/tree/master/variants/arduino_zero
+Wire Wire Line
+	8300 3150 8300 4200
+Wire Wire Line
+	8300 4200 6750 4200
+Text Label 7250 4200 2    50   ~ 0
+LORA_DATA
+$Comp
+L Connector:TestPoint_Probe TP24
+U 1 1 60A6E589
+P 6750 4200
+F 0 "TP24" V 6800 4400 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6949 4255 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4200 50  0001 C CNN
+F 3 "~" H 6950 4200 50  0001 C CNN
+	1    6750 4200
+	0    -1   -1   0   
+$EndComp
+Text Label 7250 3800 2    50   ~ 0
+GPS_RX
+Wire Notes Line
+	4550 4200 5900 4200
+Wire Notes Line
+	4550 2550 4550 4200
+Wire Notes Line
+	5900 2550 5900 4200
+Text Label 2000 5200 0    50   ~ 0
+GPS_RX
 $EndSCHEMATC
