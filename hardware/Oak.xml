@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
-    <date>2021 April 06, Tuesday 17:05:46</date>
+    <date>2021 May 19, Wednesday 20:57:08</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Oak</title>
         <company>Hutscape</company>
         <rev>V1.0</rev>
-        <date>2020-11-24</date>
+        <date>2021-05-19</date>
         <source>Oak.sch</source>
         <comment number="1" value="Description: Measure outdoor distance between 2 keychain holders"/>
         <comment number="2" value="License: CC-BY-SA 4.0 or TAPR"/>
@@ -28,7 +28,7 @@
         <field name="Link">https://www.waveshare.com/1.54inch-e-Paper-Module.htm</field>
         <field name="MOQ">1</field>
         <field name="MPN">614961950511</field>
-        <field name="Manufacturer">Waheshare</field>
+        <field name="Manufacturer">Waveshare</field>
         <field name="Package">Module</field>
         <field name="Unit">21.21</field>
         <field name="Vendor">Waveshare</field>
@@ -55,25 +55,6 @@
       <libsource lib="CDTop_PA1010D_GPS" part="PA1010D" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F88EAFC</tstamp>
-    </comp>
-    <comp ref="R4">
-      <value>10k</value>
-      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-        <field name="Link">https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==</field>
-        <field name="MOQ">1</field>
-        <field name="MPN">CRCW080510K0FKEAC</field>
-        <field name="Manufacturer">Vishay</field>
-        <field name="Package">0805</field>
-        <field name="Stock">boxA-31</field>
-        <field name="Unit">0.148</field>
-        <field name="Vendor">Mouser</field>
-      </fields>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5F890E07</tstamp>
     </comp>
     <comp ref="R5">
       <value>1k</value>
@@ -546,42 +527,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>600051A0</tstamp>
     </comp>
-    <comp ref="J5">
-      <value>Conn_01x12_Male</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical_SMD_Pin1Left</footprint>
-      <datasheet>https://4donline.ihs.com/images/VipMasterIC/IC/SAMI/SAMI-S-A0002799285/SAMI-S-A0002799285-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0</datasheet>
-      <fields>
-        <field name="Category">Connector</field>
-        <field name="Link">https://sg.element14.com/samtec/tsm-112-01-l-sv/connector-header-12pos-1row-2/dp/2779651</field>
-        <field name="MOQ">1</field>
-        <field name="MPN">TSM-112-01-L-SV</field>
-        <field name="Manufacturer">Samtec</field>
-        <field name="Package">SMD</field>
-        <field name="Unit">1.93</field>
-        <field name="Vendor">Element14</field>
-      </fields>
-      <libsource lib="Connector" part="Conn_01x12_Male" description="Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>603075BB</tstamp>
-    </comp>
-    <comp ref="J6">
-      <value>Conn_01x12_Male</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical_SMD_Pin1Right</footprint>
-      <datasheet>https://4donline.ihs.com/images/VipMasterIC/IC/SAMI/SAMI-S-A0002799285/SAMI-S-A0002799285-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0</datasheet>
-      <fields>
-        <field name="Category">Connector</field>
-        <field name="Link">https://sg.element14.com/samtec/tsm-112-01-l-sv/connector-header-12pos-1row-2/dp/2779651</field>
-        <field name="MOQ">1</field>
-        <field name="MPN">TSM-112-01-L-SV</field>
-        <field name="Manufacturer">Samtec</field>
-        <field name="Package">SMD</field>
-        <field name="Unit">1.93</field>
-        <field name="Vendor">Element14</field>
-      </fields>
-      <libsource lib="Connector" part="Conn_01x12_Male" description="Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60322821</tstamp>
-    </comp>
     <comp ref="SW2">
       <value>SW_Push</value>
       <footprint>Push_Button:Tactile_pushbutton</footprint>
@@ -858,6 +803,198 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FC7752E</tstamp>
     </comp>
+    <comp ref="TP13">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609A9AEB</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609E0DC0</tstamp>
+    </comp>
+    <comp ref="TP12">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609EE554</tstamp>
+    </comp>
+    <comp ref="TP14">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609FBC17</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60A095C7</tstamp>
+    </comp>
+    <comp ref="TP15">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60A237BD</tstamp>
+    </comp>
+    <comp ref="TP20">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60A3DD9B</tstamp>
+    </comp>
+    <comp ref="TP19">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60A3FB63</tstamp>
+    </comp>
+    <comp ref="TP22">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60A4CEB1</tstamp>
+    </comp>
+    <comp ref="TP23">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60A5A1DB</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AB52BE</tstamp>
+    </comp>
+    <comp ref="TP21">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AC2BF2</tstamp>
+    </comp>
+    <comp ref="TP16">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AC2EF5</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AEBBE3</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AEC454</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60AFA1CC</tstamp>
+    </comp>
+    <comp ref="TP17">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60B38BE7</tstamp>
+    </comp>
+    <comp ref="TP18">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60B377F7</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60BADACA</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60C02A35</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60C02E92</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60C03355</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60C043CD</tstamp>
+    </comp>
+    <comp ref="TP24">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60A6E589</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Battery_Management" part="MCP73832-2-OT">
@@ -921,31 +1058,6 @@
         <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Connector" part="Conn_01x12_Male">
-      <description>Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x12_Male</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-        <pin num="4" name="Pin_4" type="passive"/>
-        <pin num="5" name="Pin_5" type="passive"/>
-        <pin num="6" name="Pin_6" type="passive"/>
-        <pin num="7" name="Pin_7" type="passive"/>
-        <pin num="8" name="Pin_8" type="passive"/>
-        <pin num="9" name="Pin_9" type="passive"/>
-        <pin num="10" name="Pin_10" type="passive"/>
-        <pin num="11" name="Pin_11" type="passive"/>
-        <pin num="12" name="Pin_12" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Connector" part="Conn_ARM_JTAG_SWD_10">
       <description>Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface</description>
       <docs>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</docs>
@@ -986,6 +1098,21 @@
       <pins>
         <pin num="1" name="In" type="passive"/>
         <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint_Probe">
+      <description>test point (alternative probe-style design)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_Probe</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="USB_B_Micro">
@@ -1308,91 +1435,88 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/D8">
+    <net code="1" name="/EINK_RST">
       <node ref="U6" pin="2"/>
-      <node ref="J5" pin="9"/>
       <node ref="U2" pin="11"/>
+      <node ref="TP9" pin="1"/>
     </net>
-    <net code="2" name="/D10">
+    <net code="2" name="/EINK_CS">
       <node ref="U6" pin="4"/>
-      <node ref="J5" pin="11"/>
+      <node ref="TP22" pin="1"/>
       <node ref="U2" pin="27"/>
     </net>
     <net code="3" name="/CLK">
-      <node ref="R8" pin="1"/>
-      <node ref="U5" pin="4"/>
-      <node ref="U6" pin="5"/>
-      <node ref="U2" pin="20"/>
-      <node ref="J6" pin="3"/>
       <node ref="R13" pin="2"/>
+      <node ref="U2" pin="20"/>
+      <node ref="TP16" pin="1"/>
+      <node ref="U5" pin="4"/>
+      <node ref="R8" pin="1"/>
+      <node ref="U6" pin="5"/>
     </net>
-    <net code="4" name="/CIPO">
-      <node ref="J6" pin="2"/>
-      <node ref="J6" pin="1"/>
-      <node ref="U6" pin="6"/>
+    <net code="4" name="/COPI">
       <node ref="U2" pin="19"/>
-      <node ref="U2" pin="28"/>
+      <node ref="U6" pin="6"/>
+      <node ref="TP5" pin="1"/>
       <node ref="U5" pin="3"/>
-      <node ref="U5" pin="2"/>
     </net>
-    <net code="5" name="/D7">
+    <net code="5" name="/EINK_BUSY">
       <node ref="U6" pin="1"/>
       <node ref="U2" pin="30"/>
-      <node ref="J5" pin="8"/>
+      <node ref="TP19" pin="1"/>
     </net>
-    <net code="6" name="/D9">
+    <net code="6" name="/EINK_DC">
       <node ref="U6" pin="3"/>
       <node ref="U2" pin="12"/>
-      <node ref="J5" pin="10"/>
+      <node ref="TP10" pin="1"/>
     </net>
     <net code="7" name="GND">
-      <node ref="J4" pin="5"/>
-      <node ref="C10" pin="2"/>
-      <node ref="J4" pin="9"/>
-      <node ref="U2" pin="5"/>
-      <node ref="U2" pin="42"/>
-      <node ref="J6" pin="12"/>
-      <node ref="U2" pin="35"/>
-      <node ref="U4" pin="7"/>
-      <node ref="C11" pin="1"/>
-      <node ref="R8" pin="2"/>
-      <node ref="J3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
       <node ref="J4" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J4" pin="5"/>
+      <node ref="J4" pin="9"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="TP3" pin="1"/>
+      <node ref="U2" pin="18"/>
+      <node ref="R8" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="J3" pin="2"/>
       <node ref="R7" pin="2"/>
       <node ref="U5" pin="1"/>
       <node ref="U5" pin="10"/>
-      <node ref="U2" pin="18"/>
-      <node ref="J2" pin="5"/>
-      <node ref="U6" pin="7"/>
-      <node ref="U5" pin="8"/>
-      <node ref="C9" pin="1"/>
-      <node ref="U3" pin="2"/>
-      <node ref="U1" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="J1" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C5" pin="1"/>
-      <node ref="R3" pin="1"/>
-      <node ref="SW2" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C6" pin="2"/>
       <node ref="C7" pin="2"/>
-      <node ref="C1" pin="1"/>
+      <node ref="U6" pin="7"/>
+      <node ref="C6" pin="2"/>
       <node ref="R11" pin="2"/>
+      <node ref="U2" pin="35"/>
+      <node ref="U5" pin="8"/>
+      <node ref="U2" pin="42"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U4" pin="7"/>
+      <node ref="U1" pin="2"/>
+      <node ref="J2" pin="5"/>
+      <node ref="C10" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C11" pin="1"/>
     </net>
     <net code="8" name="Net-(U4-Pad1)">
       <node ref="U4" pin="1"/>
     </net>
     <net code="9" name="Net-(JP3-Pad2)">
-      <node ref="U4" pin="10"/>
       <node ref="JP3" pin="2"/>
+      <node ref="U4" pin="10"/>
     </net>
     <net code="10" name="Net-(U4-Pad2)">
       <node ref="U4" pin="2"/>
     </net>
     <net code="11" name="Net-(D3-Pad2)">
-      <node ref="U4" pin="3"/>
       <node ref="D3" pin="2"/>
+      <node ref="U4" pin="3"/>
     </net>
     <net code="12" name="Net-(U4-Pad8)">
       <node ref="U4" pin="8"/>
@@ -1400,52 +1524,53 @@
     <net code="13" name="Net-(U4-Pad9)">
       <node ref="U4" pin="9"/>
     </net>
-    <net code="14" name="Net-(R4-Pad2)">
-      <node ref="U4" pin="5"/>
-      <node ref="R4" pin="2"/>
-    </net>
-    <net code="15" name="/D0">
-      <node ref="U4" pin="4"/>
-      <node ref="J5" pin="1"/>
+    <net code="14" name="/GPS_TX">
       <node ref="U2" pin="16"/>
+      <node ref="TP13" pin="1"/>
+      <node ref="U4" pin="4"/>
     </net>
-    <net code="16" name="/D1">
-      <node ref="U2" pin="15"/>
+    <net code="15" name="/LORA_DATA">
       <node ref="U5" pin="14"/>
-      <node ref="J5" pin="2"/>
+      <node ref="U2" pin="25"/>
+      <node ref="TP24" pin="1"/>
     </net>
-    <net code="17" name="Net-(J3-Pad1)">
-      <node ref="U5" pin="9"/>
+    <net code="16" name="Net-(J3-Pad1)">
       <node ref="J3" pin="1"/>
+      <node ref="U5" pin="9"/>
     </net>
-    <net code="18" name="Net-(U5-Pad7)">
+    <net code="17" name="Net-(U5-Pad7)">
       <node ref="U5" pin="7"/>
     </net>
-    <net code="19" name="Net-(U5-Pad12)">
+    <net code="18" name="Net-(U5-Pad12)">
       <node ref="U5" pin="12"/>
     </net>
-    <net code="20" name="Net-(U5-Pad11)">
+    <net code="19" name="Net-(U5-Pad11)">
       <node ref="U5" pin="11"/>
     </net>
-    <net code="21" name="Net-(U5-Pad16)">
+    <net code="20" name="Net-(U5-Pad16)">
       <node ref="U5" pin="16"/>
     </net>
-    <net code="22" name="Net-(U5-Pad15)">
+    <net code="21" name="Net-(U5-Pad15)">
       <node ref="U5" pin="15"/>
     </net>
-    <net code="23" name="/D6">
+    <net code="22" name="/LORA_RST">
       <node ref="U5" pin="6"/>
+      <node ref="TP20" pin="1"/>
       <node ref="U2" pin="29"/>
-      <node ref="J5" pin="7"/>
     </net>
-    <net code="24" name="/D5">
+    <net code="23" name="/CIPO">
+      <node ref="U2" pin="28"/>
+      <node ref="U5" pin="2"/>
+      <node ref="TP21" pin="1"/>
+    </net>
+    <net code="24" name="/LORA_CS">
       <node ref="U2" pin="24"/>
-      <node ref="J5" pin="6"/>
+      <node ref="TP15" pin="1"/>
       <node ref="U5" pin="5"/>
     </net>
     <net code="25" name="/TX_LED">
-      <node ref="D4" pin="1"/>
       <node ref="U2" pin="39"/>
+      <node ref="D4" pin="1"/>
     </net>
     <net code="26" name="Net-(D4-Pad2)">
       <node ref="D4" pin="2"/>
@@ -1456,16 +1581,16 @@
       <node ref="U2" pin="48"/>
     </net>
     <net code="28" name="Net-(D5-Pad2)">
-      <node ref="R6" pin="2"/>
       <node ref="D5" pin="2"/>
+      <node ref="R6" pin="2"/>
     </net>
     <net code="29" name="/SWDIO">
       <node ref="U2" pin="46"/>
       <node ref="J4" pin="2"/>
     </net>
     <net code="30" name="/SWCLK">
-      <node ref="J4" pin="4"/>
       <node ref="U2" pin="45"/>
+      <node ref="J4" pin="4"/>
     </net>
     <net code="31" name="Net-(J4-Pad6)">
       <node ref="J4" pin="6"/>
@@ -1477,15 +1602,15 @@
       <node ref="J4" pin="8"/>
     </net>
     <net code="34" name="/RST">
-      <node ref="SW2" pin="1"/>
-      <node ref="R2" pin="2"/>
-      <node ref="J5" pin="12"/>
       <node ref="J4" pin="10"/>
       <node ref="U2" pin="40"/>
+      <node ref="TP23" pin="1"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="R2" pin="2"/>
     </net>
     <net code="35" name="Net-(D3-Pad1)">
-      <node ref="D3" pin="1"/>
       <node ref="R7" pin="1"/>
+      <node ref="D3" pin="1"/>
     </net>
     <net code="36" name="Net-(R9-Pad1)">
       <node ref="U1" pin="3"/>
@@ -1495,10 +1620,10 @@
       <node ref="U1" pin="4"/>
     </net>
     <net code="38" name="Net-(C6-Pad1)">
-      <node ref="JP1" pin="2"/>
-      <node ref="C6" pin="1"/>
       <node ref="C7" pin="1"/>
       <node ref="U1" pin="5"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="C6" pin="1"/>
     </net>
     <net code="39" name="Net-(J1-Pad1)">
       <node ref="J1" pin="1"/>
@@ -1513,157 +1638,157 @@
     </net>
     <net code="42" name="/BATT">
       <node ref="U2" pin="23"/>
-      <node ref="J5" pin="3"/>
       <node ref="R11" pin="1"/>
+      <node ref="TP14" pin="1"/>
       <node ref="R10" pin="2"/>
     </net>
-    <net code="43" name="/D3">
+    <net code="43" name="/GPS_RST">
       <node ref="R12" pin="2"/>
       <node ref="U4" pin="6"/>
-      <node ref="J5" pin="4"/>
+      <node ref="TP11" pin="1"/>
       <node ref="U2" pin="14"/>
     </net>
     <net code="44" name="/VBAT">
       <node ref="JP2" pin="1"/>
-      <node ref="J6" pin="9"/>
+      <node ref="TP1" pin="1"/>
       <node ref="SW1" pin="2"/>
       <node ref="D1" pin="2"/>
     </net>
     <net code="45" name="Net-(C5-Pad2)">
+      <node ref="C9" pin="2"/>
       <node ref="JP2" pin="2"/>
       <node ref="U3" pin="3"/>
       <node ref="C5" pin="2"/>
-      <node ref="C9" pin="2"/>
     </net>
     <net code="46" name="Net-(JP4-Pad2)">
       <node ref="U5" pin="13"/>
       <node ref="JP4" pin="2"/>
     </net>
     <net code="47" name="+3V3">
+      <node ref="JP1" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U2" pin="17"/>
+      <node ref="R12" pin="1"/>
+      <node ref="JP5" pin="1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="JP4" pin="1"/>
+      <node ref="U2" pin="36"/>
+      <node ref="JP3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U2" pin="44"/>
       <node ref="R5" pin="1"/>
-      <node ref="C4" pin="1"/>
+      <node ref="U2" pin="6"/>
       <node ref="R13" pin="1"/>
       <node ref="C3" pin="1"/>
-      <node ref="R2" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="R6" pin="1"/>
-      <node ref="J4" pin="1"/>
-      <node ref="JP1" pin="1"/>
-      <node ref="U2" pin="17"/>
-      <node ref="R4" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="TP4" pin="1"/>
       <node ref="R10" pin="1"/>
-      <node ref="R12" pin="1"/>
-      <node ref="JP3" pin="1"/>
-      <node ref="JP4" pin="1"/>
-      <node ref="JP5" pin="1"/>
-      <node ref="U2" pin="36"/>
-      <node ref="J6" pin="11"/>
-      <node ref="U2" pin="6"/>
-      <node ref="U2" pin="44"/>
     </net>
     <net code="48" name="Net-(JP5-Pad2)">
-      <node ref="U6" pin="8"/>
       <node ref="JP5" pin="2"/>
+      <node ref="U6" pin="8"/>
     </net>
-    <net code="49" name="/D4">
-      <node ref="U2" pin="13"/>
-      <node ref="J5" pin="5"/>
-    </net>
-    <net code="50" name="/SDA">
-      <node ref="U2" pin="31"/>
-      <node ref="J6" pin="4"/>
-    </net>
-    <net code="51" name="/SCL">
-      <node ref="U2" pin="32"/>
-      <node ref="J6" pin="5"/>
-    </net>
-    <net code="52" name="/VBUS">
-      <node ref="J6" pin="10"/>
-      <node ref="R9" pin="2"/>
-      <node ref="C10" pin="1"/>
-      <node ref="C11" pin="2"/>
-      <node ref="U3" pin="4"/>
-      <node ref="U1" pin="1"/>
-      <node ref="D2" pin="2"/>
-      <node ref="J2" pin="1"/>
-      <node ref="D1" pin="1"/>
-    </net>
-    <net code="53" name="Net-(U2-Pad4)">
+    <net code="49" name="Net-(U2-Pad4)">
       <node ref="U2" pin="4"/>
     </net>
-    <net code="54" name="Net-(U2-Pad9)">
+    <net code="50" name="Net-(U2-Pad9)">
       <node ref="U2" pin="9"/>
     </net>
-    <net code="55" name="Net-(U2-Pad10)">
+    <net code="51" name="Net-(U2-Pad10)">
       <node ref="U2" pin="10"/>
     </net>
-    <net code="56" name="Net-(U2-Pad47)">
+    <net code="52" name="Net-(U2-Pad47)">
       <node ref="U2" pin="47"/>
     </net>
-    <net code="57" name="/USB_D-">
+    <net code="53" name="/USB_D-">
       <node ref="J2" pin="2"/>
       <node ref="U2" pin="33"/>
     </net>
-    <net code="58" name="/USB_D+">
+    <net code="54" name="/USB_D+">
       <node ref="J2" pin="3"/>
       <node ref="U2" pin="34"/>
     </net>
-    <net code="59" name="Net-(U2-Pad41)">
+    <net code="55" name="Net-(U2-Pad41)">
       <node ref="U2" pin="41"/>
     </net>
-    <net code="60" name="Net-(U2-Pad26)">
+    <net code="56" name="Net-(U2-Pad26)">
       <node ref="U2" pin="26"/>
     </net>
-    <net code="61" name="Net-(U2-Pad25)">
-      <node ref="U2" pin="25"/>
-    </net>
-    <net code="62" name="Net-(U2-Pad22)">
+    <net code="57" name="Net-(U2-Pad22)">
       <node ref="U2" pin="22"/>
     </net>
-    <net code="63" name="Net-(U2-Pad21)">
+    <net code="58" name="Net-(U2-Pad21)">
       <node ref="U2" pin="21"/>
     </net>
-    <net code="64" name="Net-(U2-Pad2)">
+    <net code="59" name="Net-(U2-Pad2)">
       <node ref="U2" pin="2"/>
     </net>
-    <net code="65" name="Net-(U2-Pad1)">
+    <net code="60" name="Net-(U2-Pad1)">
       <node ref="U2" pin="1"/>
     </net>
-    <net code="66" name="Net-(U2-Pad37)">
+    <net code="61" name="Net-(U2-Pad37)">
       <node ref="U2" pin="37"/>
     </net>
-    <net code="67" name="Net-(U2-Pad38)">
+    <net code="62" name="Net-(U2-Pad38)">
       <node ref="U2" pin="38"/>
     </net>
-    <net code="68" name="Net-(C1-Pad2)">
+    <net code="63" name="Net-(C1-Pad2)">
       <node ref="C1" pin="2"/>
       <node ref="U2" pin="43"/>
     </net>
-    <net code="69" name="/A0">
-      <node ref="U2" pin="3"/>
-      <node ref="J6" pin="6"/>
+    <net code="64" name="Net-(U2-Pad13)">
+      <node ref="U2" pin="13"/>
     </net>
-    <net code="70" name="/A1">
+    <net code="65" name="/A1">
+      <node ref="TP7" pin="1"/>
       <node ref="U2" pin="7"/>
-      <node ref="J6" pin="7"/>
     </net>
-    <net code="71" name="/A2">
-      <node ref="J6" pin="8"/>
+    <net code="66" name="/A2">
+      <node ref="TP6" pin="1"/>
       <node ref="U2" pin="8"/>
     </net>
-    <net code="72" name="Net-(J2-Pad4)">
+    <net code="67" name="/A0">
+      <node ref="U2" pin="3"/>
+      <node ref="TP8" pin="1"/>
+    </net>
+    <net code="68" name="Net-(J2-Pad4)">
       <node ref="J2" pin="4"/>
     </net>
-    <net code="73" name="Net-(J2-Pad6)">
+    <net code="69" name="Net-(J2-Pad6)">
       <node ref="J2" pin="6"/>
     </net>
-    <net code="74" name="Net-(R1-Pad2)">
-      <node ref="U3" pin="1"/>
+    <net code="70" name="Net-(R1-Pad2)">
       <node ref="R1" pin="2"/>
+      <node ref="U3" pin="1"/>
     </net>
-    <net code="75" name="Net-(D2-Pad1)">
-      <node ref="D2" pin="1"/>
+    <net code="71" name="Net-(D2-Pad1)">
       <node ref="R1" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="72" name="/VBUS">
+      <node ref="U1" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C11" pin="2"/>
+      <node ref="U3" pin="4"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="73" name="/SCL">
+      <node ref="TP18" pin="1"/>
+      <node ref="U2" pin="32"/>
+    </net>
+    <net code="74" name="/SDA">
+      <node ref="TP17" pin="1"/>
+      <node ref="U2" pin="31"/>
+    </net>
+    <net code="75" name="/GPS_RX">
+      <node ref="TP12" pin="1"/>
+      <node ref="U2" pin="15"/>
+      <node ref="U4" pin="5"/>
     </net>
   </nets>
 </export>

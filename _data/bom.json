@@ -1,5 +1,5 @@
 {
-  "bom-total-populate": 41, 
+  "bom-total-populate": 62, 
   "vendor-names": [
     "Element14", 
     "LCSC", 
@@ -8,8 +8,8 @@
     "CDTop", 
     "Waveshare"
   ], 
-  "bom-uniq": 26, 
-  "bom-cost": 84.55000000000001, 
+  "bom-uniq": 25, 
+  "bom-cost": 80.53999999999999, 
   "vendors": 6, 
-  "bom-total": 47
+  "bom-total": 68
 }

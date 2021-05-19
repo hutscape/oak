@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch)
-    (date "2021 May 18, Tuesday 12:56:54")
+    (date "2021 May 19, Wednesday 20:55:58")
     (tool "Eeschema (5.1.9-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title Oak)
         (company Hutscape)
         (rev V1.0)
-        (date 2021-05-16)
+        (date 2021-05-19)
         (source Oak.sch)
         (comment (number 1) (value "Description: Measure outdoor distance between 2 keychain holders"))
         (comment (number 2) (value "License: CC-BY-SA 4.0 or TAPR"))
