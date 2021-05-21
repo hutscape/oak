@@ -6,7 +6,13 @@
   "power": "LiPo",
   "wireless":"LoRa",
   "sensor": "GPS, E-Ink",
-  "mcu": "SAMD21E",
+  "mcu": "SAMD21G18",
+
+  "bom-uniq": 30,
+  "bom-total": 82,
+  "bom-cost-sgd": 105.7,
+  "bom-cost-usd": 78.93,
+  "vendors": 6,
 
   "status": "ongoing"
 }

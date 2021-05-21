@@ -1,13 +1,13 @@
 {
-  "bom-uniq": 31,
-  "bom-total": 83,
-  "bom-total-populate": 52,
-  "bom-cost": 107.34,
+  "bom-uniq": 30,
+  "bom-total": 82,
+  "bom-total-populate": 51,
+  "bom-cost": 105.7,
   "vendor-names": [
     "Element14",
     "LCSC",
-    "Mouser",
     "AliExpress",
+    "Mouser",
     "CDTop",
     "Waveshare"
   ],
