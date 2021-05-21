@@ -15,6 +15,9 @@ bom:
 	rm -f $(BOM_PATH)
 	python scripts/bom.py $(XML_PATH) $(BOM_PATH)
 
+stats:
+	python3 scripts/bom_stats.py $(BOM_PATH)
+
 install:
 	echo "Installing git-secrets from awslabs..."
 	brew install git-secrets

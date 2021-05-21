@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2021-05-19"
+Date "2021-05-21"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Description: Measure outdoor distance between 2 keychain holders"
@@ -683,6 +683,7 @@ F 9 "0.148" H 2500 3750 50  0001 C CNN "Unit"
 F 10 "Mouser" H 2500 3750 50  0001 C CNN "Vendor"
 F 11 "Vishay" H 2500 3750 50  0001 C CNN "Manufacturer"
 F 12 "Electronics" H 2500 3750 50  0001 C CNN "Category"
+F 13 "R13" H 2500 3750 50  0001 C CNN "DNP"
 	1    2500 3750
 	0    -1   -1   0   
 $EndComp
@@ -997,6 +998,7 @@ F 9 "0.148" H 900 5100 50  0001 C CNN "Unit"
 F 10 "Mouser" H 900 5100 50  0001 C CNN "Vendor"
 F 11 "Vishay" H 900 5100 50  0001 C CNN "Manufacturer"
 F 12 "Electronics" H 900 5100 50  0001 C CNN "Category"
+F 13 "R13" H 900 5100 50  0001 C CNN "DNP"
 	1    900  5100
 	1    0    0    -1  
 $EndComp
@@ -1313,6 +1315,7 @@ F 9 "0.148" H 10450 3400 50  0001 C CNN "Unit"
 F 10 "Mouser" H 10450 3400 50  0001 C CNN "Vendor"
 F 11 "Vishay" H 10450 3400 50  0001 C CNN "Manufacturer"
 F 12 "Electronics" H 10450 3400 50  0001 C CNN "Category"
+F 13 "R13" H 10450 3400 50  0001 C CNN "DNP"
 	1    10450 3400
 	0    1    1    0   
 $EndComp
@@ -1857,6 +1860,8 @@ F 0 "TP13" V 6800 4100 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 3955 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3900 50  0001 C CNN
 F 3 "~" H 6950 3900 50  0001 C CNN
+F 4 "Electronics" H 6750 3900 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 3900 50  0001 C CNN "DNP"
 	1    6750 3900
 	0    -1   -1   0   
 $EndComp
@@ -1870,6 +1875,8 @@ F 0 "TP9" V 6800 3700 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 3555 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3500 50  0001 C CNN
 F 3 "~" H 6950 3500 50  0001 C CNN
+F 4 "Electronics" H 6750 3500 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 3500 50  0001 C CNN "DNP"
 	1    6750 3500
 	0    -1   -1   0   
 $EndComp
@@ -1883,6 +1890,8 @@ F 0 "TP12" V 6800 4000 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 3855 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3800 50  0001 C CNN
 F 3 "~" H 6950 3800 50  0001 C CNN
+F 4 "Electronics" H 6750 3800 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 3800 50  0001 C CNN "DNP"
 	1    6750 3800
 	0    -1   -1   0   
 $EndComp
@@ -1896,6 +1905,8 @@ F 0 "TP14" V 6800 4200 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 4055 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4000 50  0001 C CNN
 F 3 "~" H 6950 4000 50  0001 C CNN
+F 4 "Electronics" H 6750 4000 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 4000 50  0001 C CNN "DNP"
 	1    6750 4000
 	0    -1   -1   0   
 $EndComp
@@ -1909,6 +1920,8 @@ F 0 "TP11" V 6800 3900 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 3755 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3700 50  0001 C CNN
 F 3 "~" H 6950 3700 50  0001 C CNN
+F 4 "Electronics" H 6750 3700 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 3700 50  0001 C CNN "DNP"
 	1    6750 3700
 	0    -1   -1   0   
 $EndComp
@@ -1923,6 +1936,8 @@ F 0 "TP15" V 6800 4300 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 4155 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4100 50  0001 C CNN
 F 3 "~" H 6950 4100 50  0001 C CNN
+F 4 "Electronics" H 6750 4100 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 4100 50  0001 C CNN "DNP"
 	1    6750 4100
 	0    -1   -1   0   
 $EndComp
@@ -1934,6 +1949,8 @@ F 0 "TP20" H 9550 4000 50  0000 C CNN
 F 1 "TestPoint_Probe" V 9549 4005 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9550 3950 50  0001 C CNN
 F 3 "~" H 9550 3950 50  0001 C CNN
+F 4 "Electronics" H 9350 3950 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 9350 3950 50  0001 C CNN "DNP"
 	1    9350 3950
 	1    0    0    -1  
 $EndComp
@@ -1945,6 +1962,8 @@ F 0 "TP19" H 9550 3900 50  0000 C CNN
 F 1 "TestPoint_Probe" V 9549 3905 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9550 3850 50  0001 C CNN
 F 3 "~" H 9550 3850 50  0001 C CNN
+F 4 "Electronics" H 9350 3850 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 9350 3850 50  0001 C CNN "DNP"
 	1    9350 3850
 	1    0    0    -1  
 $EndComp
@@ -1956,6 +1975,8 @@ F 0 "TP22" H 9550 4200 50  0000 C CNN
 F 1 "TestPoint_Probe" V 9549 4205 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9550 4150 50  0001 C CNN
 F 3 "~" H 9550 4150 50  0001 C CNN
+F 4 "Electronics" H 9350 4150 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 9350 4150 50  0001 C CNN "DNP"
 	1    9350 4150
 	1    0    0    -1  
 $EndComp
@@ -1967,6 +1988,8 @@ F 0 "TP23" H 10750 3200 50  0000 C CNN
 F 1 "TestPoint_Probe" V 10749 3205 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 10750 3150 50  0001 C CNN
 F 3 "~" H 10750 3150 50  0001 C CNN
+F 4 "Electronics" H 10550 3150 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 10550 3150 50  0001 C CNN "DNP"
 	1    10550 3150
 	1    0    0    -1  
 $EndComp
@@ -1980,6 +2003,8 @@ F 0 "TP5" H 6400 850 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6399 855 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6400 800 50  0001 C CNN
 F 3 "~" H 6400 800 50  0001 C CNN
+F 4 "Electronics" H 6200 800 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6200 800 50  0001 C CNN "DNP"
 	1    6200 800 
 	-1   0    0    1   
 $EndComp
@@ -1991,6 +2016,8 @@ F 0 "TP21" H 9550 4100 50  0000 C CNN
 F 1 "TestPoint_Probe" V 9549 4105 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9550 4050 50  0001 C CNN
 F 3 "~" H 9550 4050 50  0001 C CNN
+F 4 "Electronics" H 9350 4050 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 9350 4050 50  0001 C CNN "DNP"
 	1    9350 4050
 	1    0    0    -1  
 $EndComp
@@ -2002,6 +2029,8 @@ F 0 "TP16" H 7600 1000 50  0000 C CNN
 F 1 "TestPoint_Probe" V 7599 955 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7600 900 50  0001 C CNN
 F 3 "~" H 7600 900 50  0001 C CNN
+F 4 "Electronics" H 7400 900 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 7400 900 50  0001 C CNN "DNP"
 	1    7400 900 
 	1    0    0    -1  
 $EndComp
@@ -2022,6 +2051,8 @@ F 0 "TP1" H 2600 1050 50  0000 C CNN
 F 1 "TestPoint_Probe" V 2599 1005 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 2600 950 50  0001 C CNN
 F 3 "~" H 2600 950 50  0001 C CNN
+F 4 "Electronics" H 2400 950 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 2400 950 50  0001 C CNN "DNP"
 	1    2400 950 
 	1    0    0    -1  
 $EndComp
@@ -2033,6 +2064,8 @@ F 0 "TP2" H 2900 1900 50  0000 C CNN
 F 1 "TestPoint_Probe" V 2999 2005 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3000 1950 50  0001 C CNN
 F 3 "~" H 3000 1950 50  0001 C CNN
+F 4 "Electronics" H 2800 1950 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 2800 1950 50  0001 C CNN "DNP"
 	1    2800 1950
 	1    0    0    -1  
 $EndComp
@@ -2046,6 +2079,8 @@ F 0 "TP10" V 6800 3800 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 3655 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3600 50  0001 C CNN
 F 3 "~" H 6950 3600 50  0001 C CNN
+F 4 "Electronics" H 6750 3600 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 3600 50  0001 C CNN "DNP"
 	1    6750 3600
 	0    -1   -1   0   
 $EndComp
@@ -2061,6 +2096,8 @@ F 0 "TP17" H 9050 3500 50  0000 C CNN
 F 1 "TestPoint_Probe" V 9049 3505 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9050 3450 50  0001 C CNN
 F 3 "~" H 9050 3450 50  0001 C CNN
+F 4 "Electronics" H 8850 3450 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 8850 3450 50  0001 C CNN "DNP"
 	1    8850 3450
 	0    1    1    0   
 $EndComp
@@ -2072,6 +2109,8 @@ F 0 "TP18" H 9150 3500 50  0000 C CNN
 F 1 "TestPoint_Probe" V 9149 3505 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9150 3450 50  0001 C CNN
 F 3 "~" H 9150 3450 50  0001 C CNN
+F 4 "Electronics" H 8950 3450 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 8950 3450 50  0001 C CNN "DNP"
 	1    8950 3450
 	0    1    1    0   
 $EndComp
@@ -2107,6 +2146,8 @@ F 0 "TP8" V 6800 3600 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 3455 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3400 50  0001 C CNN
 F 3 "~" H 6950 3400 50  0001 C CNN
+F 4 "Electronics" H 6750 3400 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 3400 50  0001 C CNN "DNP"
 	1    6750 3400
 	0    -1   -1   0   
 $EndComp
@@ -2134,6 +2175,8 @@ F 0 "TP6" H 6400 950 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6399 955 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6400 900 50  0001 C CNN
 F 3 "~" H 6400 900 50  0001 C CNN
+F 4 "Electronics" H 6200 900 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6200 900 50  0001 C CNN "DNP"
 	1    6200 900 
 	-1   0    0    1   
 $EndComp
@@ -2145,6 +2188,8 @@ F 0 "TP7" H 6400 1050 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6399 1055 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6400 1000 50  0001 C CNN
 F 3 "~" H 6400 1000 50  0001 C CNN
+F 4 "Electronics" H 6200 1000 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6200 1000 50  0001 C CNN "DNP"
 	1    6200 1000
 	-1   0    0    1   
 $EndComp
@@ -2156,6 +2201,8 @@ F 0 "TP4" V 4550 1450 50  0000 C CNN
 F 1 "TestPoint_Probe" V 4599 1305 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4600 1250 50  0001 C CNN
 F 3 "~" H 4600 1250 50  0001 C CNN
+F 4 "Electronics" H 4400 1250 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 4400 1250 50  0001 C CNN "DNP"
 	1    4400 1250
 	0    -1   -1   0   
 $EndComp
@@ -2170,6 +2217,8 @@ F 0 "TP3" V 3300 2000 50  0000 C CNN
 F 1 "TestPoint_Probe" V 3449 1855 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3450 1800 50  0001 C CNN
 F 3 "~" H 3450 1800 50  0001 C CNN
+F 4 "Electronics" H 3250 1800 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 3250 1800 50  0001 C CNN "DNP"
 	1    3250 1800
 	0    -1   -1   0   
 $EndComp
@@ -2228,6 +2277,8 @@ F 0 "TP24" V 6800 4400 50  0000 C CNN
 F 1 "TestPoint_Probe" V 6949 4255 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4200 50  0001 C CNN
 F 3 "~" H 6950 4200 50  0001 C CNN
+F 4 "Electronics" H 6750 4200 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6750 4200 50  0001 C CNN "DNP"
 	1    6750 4200
 	0    -1   -1   0   
 $EndComp

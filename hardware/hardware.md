@@ -18,7 +18,7 @@ Schematic in KiCad:
 1. Create a schematic PDF file `schematic.pdf`
     File > Print > Check Print sheet reference and title block > Print > Save as PDF > Title : Project name V1.0 > Save in hardware/docs/schematic.pdf
 1. Create a schematic PNG file `schematic.png`
-    Open schematic.pdf in Preview > Format: PNG > schematic.png > images/hardware/schematic.png
+    Open schematic.pdf in Preview > Format: PNG > Resolution 300 > schematic.png > images/hardware/schematic.png
 
 PCB Layout in KiCad:
 1. Change issue date of the layout:
