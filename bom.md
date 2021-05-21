@@ -3,18 +3,21 @@ layout: default
 title: Bill of Materials
 permalink: /bom
 sequence: 4
-ibom: false
+ibom: true
 ---
 
-<!-- How to generate BOM
+<!--
+
+======= How to generate BOM ======
 
     1. Generate a new Netlist
     2. Generate a new *.xml file
         Remove all BOM plugins -> Add BOM plugin "bom_csv_grouped_by_value" -> Click Generate
     3. Check all columns of BOM
-    4. Generate `bom.json` and `bill_of_materials.csv`
+    4. Generate `bill_of_materials.csv` and `bom.json`
         ```
         make bom
+        make stats
         ```
     5. Check /bom URL
         ```
@@ -25,5 +28,12 @@ ibom: false
         Antenna
         Screw, nuts, spacers
         SWD programming cable
+
+======= How to generate iBOM ======
+
+    1. Go to PCB Layout
+    2. Click iBOM menu item
+    3. Generate ibom.html
+    4. transfer `hardware/bom/ibom.html` to `bom/ibom.html`
 
 -->

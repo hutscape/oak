@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch)
-    (date "2021 May 19, Wednesday 20:55:58")
+    (date "2021 May 21, Friday 15:22:18")
     (tool "Eeschema (5.1.9-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title Oak)
         (company Hutscape)
         (rev V1.0)
-        (date 2021-05-19)
+        (date 2021-05-21)
         (source Oak.sch)
         (comment (number 1) (value "Description: Measure outdoor distance between 2 keychain holders"))
         (comment (number 2) (value "License: CC-BY-SA 4.0 or TAPR"))
@@ -287,6 +287,7 @@
       (datasheet https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf)
       (fields
         (field (name Category) Electronics)
+        (field (name DNP) R13)
         (field (name Link) https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==)
         (field (name MOQ) 1)
         (field (name MPN) CRCW080510K0FKEAC)
@@ -414,6 +415,7 @@
       (datasheet https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf)
       (fields
         (field (name Category) Electronics)
+        (field (name DNP) R13)
         (field (name Link) https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==)
         (field (name MOQ) 1)
         (field (name MPN) CRCW080510K0FKEAC)
@@ -488,6 +490,7 @@
       (datasheet https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf)
       (fields
         (field (name Category) Electronics)
+        (field (name DNP) R13)
         (field (name Link) https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==)
         (field (name MOQ) 1)
         (field (name MPN) CRCW080510K0FKEAC)
@@ -715,6 +718,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 609A9AEB))
@@ -722,6 +728,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 609E0DC0))
@@ -729,6 +738,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 609EE554))
@@ -736,6 +748,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 609FBC17))
@@ -743,6 +758,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A095C7))
@@ -750,6 +768,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A237BD))
@@ -757,6 +778,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A3DD9B))
@@ -764,6 +788,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A3FB63))
@@ -771,6 +798,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A4CEB1))
@@ -778,6 +808,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A5A1DB))
@@ -785,6 +818,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60AB52BE))
@@ -792,6 +828,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60AC2BF2))
@@ -799,6 +838,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60AC2EF5))
@@ -806,6 +848,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60AEBBE3))
@@ -813,6 +858,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60AEC454))
@@ -820,6 +868,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60AFA1CC))
@@ -827,6 +878,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60B38BE7))
@@ -834,6 +888,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60B377F7))
@@ -841,6 +898,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60BADACA))
@@ -848,6 +908,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60C02A35))
@@ -855,6 +918,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60C02E92))
@@ -862,6 +928,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60C03355))
@@ -869,6 +938,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60C043CD))
@@ -876,6 +948,9 @@
       (value TestPoint_Probe)
       (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name Category) Electronics)
+        (field (name DNP) "TP1, TP2, "))
       (libsource (lib Connector) (part TestPoint_Probe) (description "test point (alternative probe-style design)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A6E589)))

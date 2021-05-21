@@ -5,12 +5,12 @@ permalink: /
 sequence: 1
 
 manufacturing: false
-downloads: false
-download_schematic: false
-download_layout: false
-download_kicad: false
+downloads: true
+download_schematic: true
+download_layout: true
+download_kicad: true
 download_gerber: false
-download_bom: false
+download_bom: true
 ---
 <section class="section is-small">
   <div class="container">
