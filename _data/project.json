@@ -3,7 +3,7 @@
   "description": "🌳 Measure outdoor distance between 2 keychain holders 🔑",
   "version": "1.0",
 
-  "power": "LiPo",
+  "power": "18650",
   "wireless":"LoRa",
   "sensor": "GPS, E-Ink",
   "mcu": "SAMD21G18",
