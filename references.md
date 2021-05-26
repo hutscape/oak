@@ -23,7 +23,7 @@ similar:
         name: ublox NEO 6M
         url: https://www.u-blox.com/en/product/neo-6-series
       - type: Display
-        name: OLED SSD136
+        name: OLED SSD1306
         url: https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf
   - name: a LoraWAN GPS tracker
     url: https://notes.iopush.net/how-to-make-a-lorawan-gps-tracker/
