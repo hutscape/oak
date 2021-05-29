@@ -29,6 +29,7 @@ F 8 "21.21" H 7700 5200 50  0001 C CNN "Unit"
 F 9 "Waveshare" H 7700 5200 50  0001 C CNN "Vendor"
 F 10 "Waveshare" H 7700 5200 50  0001 C CNN "Manufacturer"
 F 11 "Electronics" H 7700 5200 50  0001 C CNN "Category"
+F 12 "boxC-boards-025" H 7700 5200 50  0001 C CNN "Stock"
 	1    7700 5200
 	1    0    0    -1  
 $EndComp
@@ -330,6 +331,7 @@ F 8 "2.20" H 9950 5150 50  0001 C CNN "Unit"
 F 9 "Element14" H 9950 5150 50  0001 C CNN "Vendor"
 F 10 "Samtec" H 9950 5150 50  0001 C CNN "Manufacturer"
 F 11 "Connector" H 9950 5150 50  0001 C CNN "Category"
+F 12 "boxC-boards-017" H 9950 5150 50  0001 C CNN "Stock"
 	1    9950 5150
 	0    -1   1    0   
 $EndComp
@@ -437,6 +439,7 @@ F 8 "5.16" H 5500 5000 50  0001 C CNN "Unit"
 F 9 "Element14" H 5500 5000 50  0001 C CNN "Vendor"
 F 10 "Multicomp" H 5500 5000 50  0001 C CNN "Manufacturer"
 F 11 "Connector" H 5500 5000 50  0001 C CNN "Category"
+F 12 "boxB-185" H 5500 5000 50  0001 C CNN "Stock"
 	1    5500 5000
 	1    0    0    -1  
 $EndComp
@@ -469,6 +472,7 @@ F 8 "0.134" H 2050 5550 50  0001 C CNN "Unit"
 F 9 "Element14" H 2050 5550 50  0001 C CNN "Vendor"
 F 10 "Multicomp" H 2050 5550 50  0001 C CNN "Manufacturer"
 F 11 "Electronics" H 2050 5550 50  0001 C CNN "Category"
+F 12 "boxB-187" H 2050 5550 50  0001 C CNN "Stock"
 	1    2050 5550
 	-1   0    0    1   
 $EndComp
@@ -519,6 +523,7 @@ F 8 "24.55" H 4550 5300 50  0001 C CNN "Unit"
 F 9 "Element14" H 4550 5300 50  0001 C CNN "Vendor"
 F 10 "HopeRF" H 4550 5300 50  0001 C CNN "Manufacturer"
 F 11 "Electronics" H 4550 5300 50  0001 C CNN "Category"
+F 12 "boxB-188" H 4550 5300 50  0001 C CNN "Stock"
 	1    4550 5300
 	1    0    0    -1  
 $EndComp
@@ -585,7 +590,7 @@ F 4 "https://sg.element14.com/keystone/1042p/battery-holder-18650-smd/dp/2674338
 F 5 "1" H 900 1200 50  0001 C CNN "MOQ"
 F 6 "1042P" H 900 1200 50  0001 C CNN "MPN"
 F 7 "SMD" H 900 1200 50  0001 C CNN "Package"
-F 8 "" H 900 1200 50  0001 C CNN "Stock"
+F 8 "boxD-power-013" H 900 1200 50  0001 C CNN "Stock"
 F 9 "4.04" H 900 1200 50  0001 C CNN "Unit"
 F 10 "Element14" H 900 1200 50  0001 C CNN "Vendor"
 F 11 "Keystone" H 900 1200 50  0001 C CNN "Manufacturer"
@@ -794,6 +799,7 @@ F 8 "0.156 " H 3850 1550 50  0001 C CNN "Unit"
 F 9 "Element14" H 3850 1550 50  0001 C CNN "Vendor"
 F 10 "Kemet" H 3850 1550 50  0001 C CNN "Manufacturer"
 F 11 "Electronics" H 3850 1550 50  0001 C CNN "Category"
+F 12 "boxB-186" H 3850 1550 50  0001 C CNN "Stock"
 	1    3850 1550
 	1    0    0    -1  
 $EndComp
@@ -952,6 +958,7 @@ F 8 "0.156 " H 4100 3700 50  0001 C CNN "Unit"
 F 9 "Element14" H 4100 3700 50  0001 C CNN "Vendor"
 F 10 "Kemet" H 4100 3700 50  0001 C CNN "Manufacturer"
 F 11 "Electronics" H 4100 3700 50  0001 C CNN "Category"
+F 12 "boxB-186" H 4100 3700 50  0001 C CNN "Stock"
 	1    4100 3700
 	-1   0    0    1   
 $EndComp
@@ -1507,6 +1514,7 @@ F 8 "0.156 " H 6200 1850 50  0001 C CNN "Unit"
 F 9 "Element14" H 6200 1850 50  0001 C CNN "Vendor"
 F 10 "Kemet" H 6200 1850 50  0001 C CNN "Manufacturer"
 F 11 "Electronics" H 6200 1850 50  0001 C CNN "Category"
+F 12 "boxB-186" H 6200 1850 50  0001 C CNN "Stock"
 	1    6200 1850
 	0    -1   -1   0   
 $EndComp

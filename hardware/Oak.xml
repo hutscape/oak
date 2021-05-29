@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
-    <date>2021 May 19, Wednesday 20:57:08</date>
+    <date>2021 May 29, Saturday 19:24:54</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Oak</title>
         <company>Hutscape</company>
         <rev>V1.0</rev>
-        <date>2021-05-19</date>
+        <date>2021-05-21</date>
         <source>Oak.sch</source>
         <comment number="1" value="Description: Measure outdoor distance between 2 keychain holders"/>
         <comment number="2" value="License: CC-BY-SA 4.0 or TAPR"/>
@@ -30,6 +30,7 @@
         <field name="MPN">614961950511</field>
         <field name="Manufacturer">Waveshare</field>
         <field name="Package">Module</field>
+        <field name="Stock">boxC-boards-025</field>
         <field name="Unit">21.21</field>
         <field name="Vendor">Waveshare</field>
       </fields>
@@ -143,6 +144,7 @@
         <field name="MPN">FTSH-105-01-L-DV</field>
         <field name="Manufacturer">Samtec</field>
         <field name="Package">SMD</field>
+        <field name="Stock">boxC-boards-017</field>
         <field name="Unit">2.20</field>
         <field name="Vendor">Element14</field>
       </fields>
@@ -180,6 +182,7 @@
         <field name="MPN">MP-19-70-4-TGG</field>
         <field name="Manufacturer">Multicomp</field>
         <field name="Package">PCB Mount</field>
+        <field name="Stock">boxB-185</field>
         <field name="Unit">5.16</field>
         <field name="Vendor">Element14</field>
       </fields>
@@ -198,6 +201,7 @@
         <field name="MPN">MCL-S270SRC</field>
         <field name="Manufacturer">Multicomp</field>
         <field name="Package">0805</field>
+        <field name="Stock">boxB-187</field>
         <field name="Unit">0.134</field>
         <field name="Vendor">Element14</field>
       </fields>
@@ -235,6 +239,7 @@
         <field name="MPN">RFM95W-915S2</field>
         <field name="Manufacturer">HopeRF</field>
         <field name="Package">SMD</field>
+        <field name="Stock">boxB-188</field>
         <field name="Unit">24.55</field>
         <field name="Vendor">Element14</field>
       </fields>
@@ -272,6 +277,7 @@
         <field name="MPN">1042P</field>
         <field name="Manufacturer">Keystone</field>
         <field name="Package">SMD</field>
+        <field name="Stock">boxD-power-013</field>
         <field name="Unit">4.04</field>
         <field name="Vendor">Element14</field>
       </fields>
@@ -323,6 +329,7 @@
       <datasheet>https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">R13</field>
         <field name="Link">https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==</field>
         <field name="MOQ">1</field>
         <field name="MPN">CRCW080510K0FKEAC</field>
@@ -378,6 +385,7 @@
         <field name="MPN">C0805C105K3RACTU</field>
         <field name="Manufacturer">Kemet</field>
         <field name="Package">0805</field>
+        <field name="Stock">boxB-186</field>
         <field name="Unit">0.156 </field>
         <field name="Vendor">Element14</field>
       </fields>
@@ -453,6 +461,7 @@
         <field name="MPN">C0805C105K3RACTU</field>
         <field name="Manufacturer">Kemet</field>
         <field name="Package">0805</field>
+        <field name="Stock">boxB-186</field>
         <field name="Unit">0.156 </field>
         <field name="Vendor">Element14</field>
       </fields>
@@ -466,6 +475,7 @@
       <datasheet>https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">R13</field>
         <field name="Link">https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==</field>
         <field name="MOQ">1</field>
         <field name="MPN">CRCW080510K0FKEAC</field>
@@ -552,6 +562,7 @@
       <datasheet>https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">R13</field>
         <field name="Link">https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==</field>
         <field name="MOQ">1</field>
         <field name="MPN">CRCW080510K0FKEAC</field>
@@ -633,6 +644,7 @@
         <field name="MPN">C0805C105K3RACTU</field>
         <field name="Manufacturer">Kemet</field>
         <field name="Package">0805</field>
+        <field name="Stock">boxB-186</field>
         <field name="Unit">0.156 </field>
         <field name="Vendor">Element14</field>
       </fields>
@@ -807,6 +819,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>609A9AEB</tstamp>
@@ -815,6 +831,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>609E0DC0</tstamp>
@@ -823,6 +843,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>609EE554</tstamp>
@@ -831,6 +855,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>609FBC17</tstamp>
@@ -839,6 +867,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A095C7</tstamp>
@@ -847,6 +879,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A237BD</tstamp>
@@ -855,6 +891,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A3DD9B</tstamp>
@@ -863,6 +903,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A3FB63</tstamp>
@@ -871,6 +915,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A4CEB1</tstamp>
@@ -879,6 +927,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A5A1DB</tstamp>
@@ -887,6 +939,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60AB52BE</tstamp>
@@ -895,6 +951,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60AC2BF2</tstamp>
@@ -903,6 +963,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60AC2EF5</tstamp>
@@ -911,6 +975,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60AEBBE3</tstamp>
@@ -919,6 +987,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60AEC454</tstamp>
@@ -927,6 +999,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60AFA1CC</tstamp>
@@ -935,6 +1011,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B38BE7</tstamp>
@@ -943,6 +1023,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B377F7</tstamp>
@@ -951,6 +1035,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60BADACA</tstamp>
@@ -959,6 +1047,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60C02A35</tstamp>
@@ -967,6 +1059,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60C02E92</tstamp>
@@ -975,6 +1071,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60C03355</tstamp>
@@ -983,6 +1083,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60C043CD</tstamp>
@@ -991,6 +1095,10 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="DNP">TP1, TP2, </field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A6E589</tstamp>
