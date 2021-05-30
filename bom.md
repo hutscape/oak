@@ -36,4 +36,7 @@ ibom: true
     3. Generate ibom.html
     4. transfer `hardware/bom/ibom.html` to `bom/ibom.html`
 
+====== How to generate BOM Stats file _data/bom.json ======
+
+    1. make stats
 -->
