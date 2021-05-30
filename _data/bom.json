@@ -1,8 +1,8 @@
 {
-  "bom-uniq": 30,
-  "bom-total": 82,
-  "bom-total-populate": 51,
-  "bom-cost": 105.7,
+  "bom-uniq": 31,
+  "bom-total": 83,
+  "bom-total-populate": 52,
+  "bom-cost": 111.2,
   "vendor-names": [
     "Element14",
     "LCSC",
@@ -11,5 +11,11 @@
     "CDTop",
     "Waveshare"
   ],
-  "vendors": 6
+  "vendors": 6,
+  "bom-pending": 3,
+  "bom-pending-names": [
+    "ORANGE LED",
+    "1x8 2.54mm Right-angled pin header",
+    "915MHz Stub Antenna"
+  ]
 }
