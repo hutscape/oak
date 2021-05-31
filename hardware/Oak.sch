@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2021-05-21"
-Rev "V1.0"
+Date "2021-05-31"
+Rev "V1.1"
 Comp "Hutscape"
 Comment1 "Description: Measure outdoor distance between 2 keychain holders"
 Comment2 "License: CC-BY-SA 4.0 or TAPR"
