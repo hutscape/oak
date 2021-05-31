@@ -30,11 +30,13 @@ ibom: true
         SWD programming cable
 
 ======= How to generate iBOM ======
-
-    1. Go to PCB Layout
-    2. Click iBOM menu item
-    3. Generate ibom.html
-    4. transfer `hardware/bom/ibom.html` to `bom/ibom.html`
+    1. Ensure Netlist and XML files are latest
+    2. Go to PCB Layout
+    3. Click iBOM menu item
+    4. Change the directory in General > Directory > /hutscape/{PROJECT}/bom/
+    5. Show first pin in Html default > Check "Highlight first pin"
+    6. Add DNP as a column in Extra fields > Check "DNP"
+    7. Generate ibom.html by clickign "Generate BOM"
 
 ====== How to generate BOM Stats file _data/bom.json ======
 

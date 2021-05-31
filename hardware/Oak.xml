@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
-    <date>2021 May 29, Saturday 19:24:54</date>
+    <date>2021 May 31, Monday 19:51:28</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Oak</title>
         <company>Hutscape</company>
-        <rev>V1.0</rev>
-        <date>2021-05-21</date>
+        <rev>V1.1</rev>
+        <date>2021-05-31</date>
         <source>Oak.sch</source>
         <comment number="1" value="Description: Measure outdoor distance between 2 keychain holders"/>
         <comment number="2" value="License: CC-BY-SA 4.0 or TAPR"/>
@@ -173,7 +173,7 @@
     </comp>
     <comp ref="J3">
       <value>Conn_Coaxial</value>
-      <footprint>Connector_Coaxial:SMA_Amphenol_132289_EdgeMount</footprint>
+      <footprint>Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount</footprint>
       <datasheet>http://www.farnell.com/datasheets/1662283.pdf</datasheet>
       <fields>
         <field name="Category">Connector</field>
