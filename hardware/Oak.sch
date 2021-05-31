@@ -429,7 +429,7 @@ U 1 1 5FB25581
 P 5500 5000
 F 0 "J3" H 5600 4975 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5300 5150 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 5500 5000 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 5500 5000 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/1662283.pdf" H 5500 5000 50  0001 C CNN
 F 4 "https://sg.element14.com/multicomp/19-70-4-tgg/rf-coaxial-sma-straight-jack-50ohm/dp/1342653" H 5500 5000 50  0001 C CNN "Link"
 F 5 "1" H 5500 5000 50  0001 C CNN "MOQ"

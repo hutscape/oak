@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch)
-    (date "2021 May 29, Saturday 19:25:01")
+    (date "2021 May 31, Monday 12:04:02")
     (tool "Eeschema (5.1.9-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -153,7 +153,7 @@
       (tstamp 5F971654))
     (comp (ref J3)
       (value Conn_Coaxial)
-      (footprint Connector_Coaxial:SMA_Amphenol_132289_EdgeMount)
+      (footprint Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount)
       (datasheet http://www.farnell.com/datasheets/1662283.pdf)
       (fields
         (field (name Category) Connector)
