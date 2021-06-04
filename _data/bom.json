@@ -12,9 +12,8 @@
     "Waveshare"
   ],
   "vendors": 6,
-  "bom-pending": 2,
+  "bom-pending": 1,
   "bom-pending-names": [
-    "ORANGE LED",
-    "1x8 2.54mm Right-angled pin header"
+    "ORANGE LED"
   ]
 }
