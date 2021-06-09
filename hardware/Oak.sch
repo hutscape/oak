@@ -688,7 +688,7 @@ F 9 "0.148" H 2500 3750 50  0001 C CNN "Unit"
 F 10 "Mouser" H 2500 3750 50  0001 C CNN "Vendor"
 F 11 "Vishay" H 2500 3750 50  0001 C CNN "Manufacturer"
 F 12 "Electronics" H 2500 3750 50  0001 C CNN "Category"
-F 13 "R13" H 2500 3750 50  0001 C CNN "DNP"
+F 13 "" H 2500 3750 50  0001 C CNN "DNP"
 	1    2500 3750
 	0    -1   -1   0   
 $EndComp
@@ -1005,7 +1005,7 @@ F 9 "0.148" H 900 5100 50  0001 C CNN "Unit"
 F 10 "Mouser" H 900 5100 50  0001 C CNN "Vendor"
 F 11 "Vishay" H 900 5100 50  0001 C CNN "Manufacturer"
 F 12 "Electronics" H 900 5100 50  0001 C CNN "Category"
-F 13 "R13" H 900 5100 50  0001 C CNN "DNP"
+F 13 "" H 900 5100 50  0001 C CNN "DNP"
 	1    900  5100
 	1    0    0    -1  
 $EndComp
@@ -1322,7 +1322,7 @@ F 9 "0.148" H 10450 3400 50  0001 C CNN "Unit"
 F 10 "Mouser" H 10450 3400 50  0001 C CNN "Vendor"
 F 11 "Vishay" H 10450 3400 50  0001 C CNN "Manufacturer"
 F 12 "Electronics" H 10450 3400 50  0001 C CNN "Category"
-F 13 "R13" H 10450 3400 50  0001 C CNN "DNP"
+F 13 "" H 10450 3400 50  0001 C CNN "DNP"
 	1    10450 3400
 	0    1    1    0   
 $EndComp

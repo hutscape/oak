@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch)
-    (date "2021 May 31, Monday 19:52:47")
+    (date "2021 June 09, Wednesday 14:25:26")
     (tool "Eeschema (5.1.9-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -293,7 +293,6 @@
       (datasheet https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf)
       (fields
         (field (name Category) Electronics)
-        (field (name DNP) R13)
         (field (name Link) https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==)
         (field (name MOQ) 1)
         (field (name MPN) CRCW080510K0FKEAC)
@@ -423,7 +422,6 @@
       (datasheet https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf)
       (fields
         (field (name Category) Electronics)
-        (field (name DNP) R13)
         (field (name Link) https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==)
         (field (name MOQ) 1)
         (field (name MPN) CRCW080510K0FKEAC)
@@ -498,7 +496,6 @@
       (datasheet https://www.mouser.sg/datasheet/2/427/crcwce3-1223726.pdf)
       (fields
         (field (name Category) Electronics)
-        (field (name DNP) R13)
         (field (name Link) https://www.mouser.sg/ProductDetail/Vishay-Dale/CRCW080510K0FKEAC?qs=E3Y5ESvWgWORadmUijPtxQ==)
         (field (name MOQ) 1)
         (field (name MPN) CRCW080510K0FKEAC)
