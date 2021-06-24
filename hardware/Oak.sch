@@ -722,8 +722,6 @@ Wire Notes Line
 	1550 2900 1550 3300
 Wire Notes Line
 	1550 3300 700  3300
-Wire Wire Line
-	4400 1300 4400 1250
 $Comp
 L power:GND #PWR04
 U 1 1 5FF1B049
@@ -2214,9 +2212,6 @@ F 5 "TP1, TP2, " H 4400 1250 50  0001 C CNN "DNP"
 	1    4400 1250
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4400 1250
-Wire Wire Line
-	4400 1250 4400 1150
 $Comp
 L Connector:TestPoint_Probe TP3
 U 1 1 60C043CD
@@ -2300,4 +2295,9 @@ Wire Notes Line
 	5900 2550 5900 4200
 Text Label 2000 5200 0    50   ~ 0
 GPS_RX
+Wire Wire Line
+	4400 1250 4400 1150
+Wire Wire Line
+	4400 1300 4400 1250
+Connection ~ 4400 1250
 $EndSCHEMATC
