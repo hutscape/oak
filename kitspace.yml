@@ -1,0 +1,6 @@
+summary: Measure outdoor distance between 2 keychain holders
+site: https://hutscape.com/oak/
+bom: _data/bill_of_materials.csv
+eda:
+  type: kicad
+  pcb: hardware/Oak.kicad_pcb
