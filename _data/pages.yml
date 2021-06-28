@@ -5,5 +5,5 @@ design: true
 power: false
 mechanical: true
 schedule: true
-lessons: false
+lessons: true
 references: true
