@@ -18,7 +18,7 @@ lessons:
     list:
       - name: Use SMD components only on top layer for one-step manual SMD stencil soldering process
       - name: Place a writable area on the silkscreen to note down LoRa node address or other associated numbers
-      - name: Add a PCB-edge through hole test point for <code>GND</code> so that it can be always left connected
+      - name: Add a PCB-edge through hole test point for <code>GND</code> so that it can be always left connected and accessed for both top and bottom layer probe testing
       - name: Use a smaller SSD1306 I2C OLED display instead of E-Ink
 
   - title: Board bring-up
