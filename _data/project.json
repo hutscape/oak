@@ -1,6 +1,6 @@
 {
   "name": "Oak",
-  "description": "🌳 Measure outdoor distance between 2 keychain holders 🔑",
+  "description": "🌳 Outdoor LoRa-GPS tracker with E-Ink display 🔑",
   "version": "1.0",
 
   "power": "18650",

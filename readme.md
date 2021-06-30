@@ -1,6 +1,6 @@
 # Oak
 
-> 🌳 Measure outdoor distance between 2 keychain holders 🔑
+> 🌳 Outdoor LoRa-GPS tracker with E-Ink display  🔑
 
 Visit [hutscape.com/oak](https://hutscape.com/oak) for more details.
 
