@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2021-05-31"
-Rev "V1.1"
+Date "2021-07-02"
+Rev "V1.2"
 Comp "Hutscape"
-Comment1 "Description: Measure outdoor distance between 2 keychain holders"
+Comment1 "Description: Outdoor LoRa-GPS tracker with E-Ink display"
 Comment2 "License: CC-BY-SA 4.0 or TAPR"
 Comment3 "Project website: https://hutscape.com/oak"
 Comment4 "Authored by: Sayanee Basu <sayanee@gmail.com>"
@@ -318,72 +318,70 @@ Wire Notes Line
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J4
 U 1 1 5F902879
-P 9950 5150
-F 0 "J4" V 10400 4700 50  0000 C CNN
-F 1 "Conn_ARM_JTAG_SWD_10" V 10900 5150 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 9950 5150 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1992056.pdf" V 9600 3900 50  0001 C CNN
-F 4 "https://sg.element14.com/samtec/ftsh-105-01-l-dv/header-1-27mm-smd-10way/dp/1667759" H 9950 5150 50  0001 C CNN "Link"
-F 5 "1" H 9950 5150 50  0001 C CNN "MOQ"
-F 6 "FTSH-105-01-L-DV" H 9950 5150 50  0001 C CNN "MPN"
-F 7 "SMD" H 9950 5150 50  0001 C CNN "Package"
-F 8 "2.20" H 9950 5150 50  0001 C CNN "Unit"
-F 9 "Element14" H 9950 5150 50  0001 C CNN "Vendor"
-F 10 "Samtec" H 9950 5150 50  0001 C CNN "Manufacturer"
-F 11 "Connector" H 9950 5150 50  0001 C CNN "Category"
-F 12 "boxC-boards-017" H 9950 5150 50  0001 C CNN "Stock"
-	1    9950 5150
+P 10150 5000
+F 0 "J4" V 10600 4550 50  0000 C CNN
+F 1 "Conn_ARM_JTAG_SWD_10" V 11200 5000 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 10150 5000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1992056.pdf" V 9800 3750 50  0001 C CNN
+F 4 "https://sg.element14.com/samtec/ftsh-105-01-l-dv/header-1-27mm-smd-10way/dp/1667759" H 10150 5000 50  0001 C CNN "Link"
+F 5 "1" H 10150 5000 50  0001 C CNN "MOQ"
+F 6 "FTSH-105-01-L-DV" H 10150 5000 50  0001 C CNN "MPN"
+F 7 "SMD" H 10150 5000 50  0001 C CNN "Package"
+F 8 "2.20" H 10150 5000 50  0001 C CNN "Unit"
+F 9 "Element14" H 10150 5000 50  0001 C CNN "Vendor"
+F 10 "Samtec" H 10150 5000 50  0001 C CNN "Manufacturer"
+F 11 "Connector" H 10150 5000 50  0001 C CNN "Category"
+F 12 "boxC-boards-017" H 10150 5000 50  0001 C CNN "Stock"
+	1    10150 5000
 	0    -1   1    0   
 $EndComp
 $Comp
 L power:+3V3 #PWR026
 U 1 1 5F92B935
-P 9200 5050
-F 0 "#PWR026" H 9200 4900 50  0001 C CNN
-F 1 "+3V3" H 9215 5223 50  0000 C CNN
-F 2 "" H 9200 5050 50  0001 C CNN
-F 3 "" H 9200 5050 50  0001 C CNN
-	1    9200 5050
+P 8950 4750
+F 0 "#PWR026" H 8950 4600 50  0001 C CNN
+F 1 "+3V3" H 8965 4923 50  0000 C CNN
+F 2 "" H 8950 4750 50  0001 C CNN
+F 3 "" H 8950 4750 50  0001 C CNN
+	1    8950 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 5150 9350 5150
 $Comp
 L power:GND #PWR027
 U 1 1 5F92E5FC
-P 10700 5300
-F 0 "#PWR027" H 10700 5050 50  0001 C CNN
-F 1 "GND" H 10705 5127 50  0000 C CNN
-F 2 "" H 10700 5300 50  0001 C CNN
-F 3 "" H 10700 5300 50  0001 C CNN
-	1    10700 5300
+P 10900 5150
+F 0 "#PWR027" H 10900 4900 50  0001 C CNN
+F 1 "GND" H 10905 4977 50  0000 C CNN
+F 2 "" H 10900 5150 50  0001 C CNN
+F 3 "" H 10900 5150 50  0001 C CNN
+	1    10900 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10550 5050 10700 5050
+	10750 4900 10900 4900
 Wire Wire Line
-	10700 5050 10700 5150
+	10900 4900 10900 5000
 Wire Wire Line
-	10550 5150 10700 5150
-Connection ~ 10700 5150
+	10750 5000 10900 5000
+Connection ~ 10900 5000
 Wire Wire Line
-	10700 5150 10700 5300
-NoConn ~ 10150 5650
-NoConn ~ 10050 5650
-Text Label 10050 5800 0    50   ~ 0
+	10900 5000 10900 5150
+NoConn ~ 10350 5500
+NoConn ~ 10250 5500
+Text Label 10250 5650 0    50   ~ 0
 SWDIO
-Text Label 10050 5900 0    50   ~ 0
+Text Label 10250 5750 0    50   ~ 0
 SWCLK
-Text Label 9500 5800 2    50   ~ 0
+Text Label 10250 5850 0    50   ~ 0
 RST
 Wire Wire Line
-	9950 5650 9950 5800
+	10150 5500 10150 5650
 Wire Wire Line
-	9950 5800 10050 5800
+	10150 5650 10250 5650
 Wire Wire Line
-	9850 5650 9850 5900
+	10050 5500 10050 5750
 Wire Wire Line
-	9850 5900 10050 5900
+	10050 5750 10250 5750
 Text Notes 8850 4400 0    79   ~ 0
 SWD Program connector
 Wire Notes Line
@@ -548,12 +546,6 @@ Wire Notes Line style solid
 	4750 6200 4750 5850
 Wire Notes Line style solid
 	4750 5850 6200 5850
-Wire Wire Line
-	9500 5800 9650 5800
-Wire Wire Line
-	9650 5800 9650 5650
-Wire Wire Line
-	9200 5150 9200 5050
 Wire Wire Line
 	2200 5550 2250 5550
 Wire Notes Line
@@ -2300,4 +2292,39 @@ Wire Wire Line
 Wire Wire Line
 	4400 1300 4400 1250
 Connection ~ 4400 1250
+$Comp
+L Jumper:SolderJumper_2_Open JP6
+U 1 1 60DF8D75
+P 9100 5000
+F 0 "JP6" H 9100 5113 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 9100 5114 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 9100 5000 50  0001 C CNN
+F 3 "~" H 9100 5000 50  0001 C CNN
+	1    9100 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 8900 5900 0    47   ~ 0
+Option:\nJ-Link edu mini\ndoes not require\nan input voltage\nfor 3.3V at Vtref.\n\nIf other programmers\nrequire the Vtref, \nbridge the solder \njumper JP6.
+Wire Wire Line
+	9850 5850 10250 5850
+Wire Wire Line
+	9850 5500 9850 5850
+Wire Wire Line
+	9550 5000 9450 5000
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60E57584
+P 9450 5000
+F 0 "#FLG0102" H 9450 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 9450 5173 50  0000 C CNN
+F 2 "" H 9450 5000 50  0001 C CNN
+F 3 "~" H 9450 5000 50  0001 C CNN
+	1    9450 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 9450 5000
+Wire Wire Line
+	8950 4750 8950 5000
+Wire Wire Line
+	9250 5000 9450 5000
 $EndSCHEMATC
