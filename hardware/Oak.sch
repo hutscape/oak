@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2021-07-02"
+Date "2021-07-22"
 Rev "V1.2"
 Comp "Hutscape"
 Comment1 "Description: Outdoor LoRa-GPS tracker with E-Ink display"
@@ -52,7 +52,7 @@ Text Label 7000 5200 2    50   ~ 0
 EINK_CS
 Wire Wire Line
 	7000 5200 7150 5200
-Text Label 6500 5300 2    50   ~ 0
+Text Label 7000 5300 2    50   ~ 0
 CLK
 Text Label 7000 5400 2    50   ~ 0
 COPI
@@ -372,8 +372,6 @@ Text Label 10250 5650 0    50   ~ 0
 SWDIO
 Text Label 10250 5750 0    50   ~ 0
 SWCLK
-Text Label 10250 5850 0    50   ~ 0
-RST
 Wire Wire Line
 	10150 5500 10150 5650
 Wire Wire Line
@@ -1813,8 +1811,6 @@ Wire Wire Line
 Connection ~ 2650 3050
 Wire Wire Line
 	2650 3050 2600 3050
-Wire Wire Line
-	6500 5300 7150 5300
 Text Label 6550 800  2    50   ~ 0
 COPI
 Wire Wire Line
@@ -2327,4 +2323,8 @@ Wire Wire Line
 	8950 4750 8950 5000
 Wire Wire Line
 	9250 5000 9450 5000
+Text Label 10250 5850 0    50   ~ 0
+RST
+Wire Wire Line
+	7000 5300 7150 5300
 $EndSCHEMATC
