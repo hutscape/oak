@@ -10,6 +10,16 @@
   {%- include start.html -%}
 {% endif %}
 
+{% if site.data.pages.examples == true %}
+  {% if page.url == "/examples" %}
+    {%- include examples.html -%}
+  {% endif %}
+
+  {% if page.url contains "/examples/" %}
+    {%- include example.html -%}
+  {% endif %}
+{% endif %}
+
 {% if site.data.pages.hardware == true %}
   {% if page.url == "/hardware" %}
     {%- include hardware.html -%}
@@ -65,6 +75,7 @@
 {% endif %}
 
 {{ content }}
+
 {%- include footer.html -%}
 
 <!-- Scripts -->

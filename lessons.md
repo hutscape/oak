@@ -2,7 +2,7 @@
 layout: default
 title: Lessons learnt
 permalink: /lessons
-sequence: 9
+sequence: 10
 lessons:
   - title: Lessons learnt
     subtitle: Good practices to continue for future projects

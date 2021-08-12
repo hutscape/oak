@@ -2,7 +2,7 @@
 layout: default
 title: Design
 permalink: /design
-sequence: 5
+sequence: 6
 sub_system: true
 state_machine: false
 terminologies:

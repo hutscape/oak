@@ -2,7 +2,7 @@
 layout: default
 title: Mechanical
 permalink: /mechanical
-sequence: 7
+sequence: 8
 items:
   - name: Waveshare 1.54inch E-Ink display module
     url: https://www.waveshare.com/1.54inch-e-Paper-Module.htm

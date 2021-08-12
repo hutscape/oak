@@ -2,7 +2,7 @@
 layout: default
 title: Software
 permalink: /software
-sequence: 3
+sequence: 4
 test: false
 features:
   - detail: Get GPS location every 60 seconds

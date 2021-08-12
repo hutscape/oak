@@ -2,7 +2,7 @@
 layout: default
 title: Bill of Materials
 permalink: /bom
-sequence: 4
+sequence: 5
 ibom: true
 ---
 

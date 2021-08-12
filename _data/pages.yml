@@ -1,3 +1,4 @@
+examples: true
 hardware: true
 software: true
 bom: true

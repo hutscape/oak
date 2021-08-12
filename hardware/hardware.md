@@ -2,7 +2,7 @@
 layout: default
 title: Hardware
 permalink: /hardware
-sequence: 2
+sequence: 3
 
 three_d: true
 pcb_layout: true

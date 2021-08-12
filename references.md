@@ -2,7 +2,7 @@
 layout: default
 title: References
 permalink: /references
-sequence: 10
+sequence: 11
 similar:
   - name: LilyGO TTGO T-Beam
     url: https://github.com/Xinyuan-LilyGO/LilyGO-T-Beam
