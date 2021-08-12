@@ -14,7 +14,7 @@ sequence: 2
       <ol type="1">
         {% for example in site.examples %}
         <li>
-          <a href="{{ example.url }}">{{ example.title }}</a>
+          <a href="{{ site.url }}{{ example.url }}">{{ example.title }}</a>
           <div class="tags is-pulled-right">
             {% for feat in example.features %}
             <span class="tag is-warning is-light">{{ feat }}</span>
