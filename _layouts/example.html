@@ -1,0 +1,113 @@
+---
+layout: default
+---
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-1">{{ page.title}}</h2>
+    <div class="tags">
+      {% for feat in page.features %}
+      <span class="tag is-warning is-light">{{ feat }}</span>
+      {% endfor %}
+
+      <span class="tag">{{ page.difficulty }}</span>
+    </div>
+
+    <div class="content is-medium">
+      <p>{{ page.description }}</p>
+    </div>
+
+    <hr>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <div class="columns is-multiline is-desktop">
+      <div class="column is-half">
+        <h2 class="title is-2">Steps</h2>
+
+        <div class="content is-medium">
+          <ol type=1>
+            {% for step in page.steps %}
+            <li>
+              {{ step.step }}
+              {% if step.image %}
+              <a href="{{ site.url}}/images/examples/{{ step.image }}"><img src="{{ site.url}}/images/examples/{{ step.image }}"
+                  alt="{{step.step}}"></a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+
+      {% if page.images.prototype %}
+      <div class="column is-half">
+        <h2 class="title is-2">Prototype</h2>
+        <p class="subtitle is-4">A photo of the actual setup.</p>
+        <div class="content is-medium">
+          <a href="{{ site.url}}/images/examples/{{ page.images.prototype }}"><img
+              src="{{ site.url}}/images/examples/{{ page.images.prototype }}"
+              alt="{{ page.name }} setup"></a>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.images.console %}
+      <div class="column is-half">
+        <h2 class="title is-2">Serial console</h2>
+        <p class="subtitle is-4">Serial output from the firmware.</p>
+        <div class="content is-medium">
+          <a href="{{ site.url}}/images/examples/{{ page.images.console }}"><img
+              src="{{ site.url}}/images/examples/{{ page.images.console }}"
+              alt="{{ page.name }} setup"></a>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.images.schematic %}
+      <div class="column is-half">
+        <h2 class="title is-2">Schematic</h2>
+        <p class="subtitle is-4">Wire up the hardware accordingly</p>
+        <div class="content is-medium">
+          <a href="{{ site.url}}/images/examples/{{ page.images.schematic }}"><img
+              src="{{ site.url}}/images/examples/{{ page.images.schematic }}" alt="{{ page.name }} setup"></a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% if page.has_code != false %}
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-2">Code</h2>
+
+    <a href="{{ site.github.repository_url }}/tree/master/{{page.path | replace:'.md',''}}" class="button
+    is-primary">Download code</a>
+    {% highlight c %}{% include_relative {{ page.path | remove: "_examples/" | remove: ".md" }}/{{ page.path | remove:
+    "_examples/" | remove: ".md" }}.ino %}{% endhighlight %}
+
+    <h2 class="title is-2">Makefile</h2>
+    {% highlight make %}{% include_relative {{ page.path | remove: "_examples/" | remove: ".md" }}/Makefile %}{%
+    endhighlight %}
+  </div>
+</section>
+{% endif %}
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-2">References</h2>
+
+    <div class="content is-medium">
+      <ol type=1>
+        {% for ref in page.references %}
+        <li>
+          <a href="{{ ref.url }}">{{ ref.name }}</a>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>

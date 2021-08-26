@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Examples
-permalink: /example
+permalink: /examples
 sequence: 2
 ---
 
@@ -9,7 +9,6 @@ sequence: 2
 <section class="section is-small">
   <div class="container">
     <h2 class="title is-1">Examples</h2>
-
     <div class="content is-medium">
       <ol type="1">
         {% for example in site.examples %}
@@ -19,7 +18,6 @@ sequence: 2
             {% for feat in example.features %}
             <span class="tag is-warning is-light">{{ feat }}</span>
             {% endfor %}
-
             <span class="tag">{{ example.difficulty }}</span>
           </div>
         </li>
