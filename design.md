@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: design
 title: Design
 permalink: /design
 sequence: 6

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: hardware
 title: Hardware
 permalink: /hardware
 sequence: 3

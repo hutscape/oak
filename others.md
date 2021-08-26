@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: others
 title: Others
 permalink: /others
 sequence: 8

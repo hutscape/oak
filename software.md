@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: software
 title: Software
 permalink: /software
 sequence: 4
