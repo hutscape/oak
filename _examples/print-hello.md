@@ -9,9 +9,11 @@ difficulty: easy
 features:
   - print
   - serial
+
 images:
   prototype: print-hello-prototype.jpg
   console: print-hello-console.jpg
+
 steps:
   - step: Plug in the Oak PCB to the computer
   - step: Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>
