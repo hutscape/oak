@@ -9,4 +9,4 @@
 	url = https://github.com/hutscape/kicad-library.git
 [submodule "_layouts"]
 	path = _layouts
-	url = git@github.com:hutscape/project-layouts.git
+	url = https://github.com/hutscape/project-layouts.git
