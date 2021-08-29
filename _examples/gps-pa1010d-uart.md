@@ -9,6 +9,15 @@ features:
   - UART
 has_code: false
 
+components:
+  - name: PA1010D
+    url: https://www.cdtop-tech.com/products/pa1010d
+  - name: USB-UART CP2102 board
+    url: https://s.click.aliexpress.com/e/_AdFtDI
+  - name: Saleae Logic Analyser
+    url: https://amzn.to/39SJ8px
+
+video: 2WIaRukQKbk
 images:
   prototype: gps-pa1010d-uart-prototype.jpg
   console: gps-pa1010d-uart-console.png
