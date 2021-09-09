@@ -20,5 +20,8 @@ _site
 node_modules
 package-lock.json
 
+# build files
+build
+
 datasheets
 gerbers

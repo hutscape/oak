@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2021-07-22"
-Rev "V1.2"
+Date "2021-09-09"
+Rev "V1.2.1"
 Comp "Hutscape"
 Comment1 "Description: Outdoor LoRa-GPS tracker with E-Ink display"
 Comment2 "License: CC-BY-SA 4.0 or TAPR"
@@ -910,19 +910,6 @@ Wire Wire Line
 	1700 3500 1700 3600
 Wire Wire Line
 	1700 3850 1700 3950
-$Comp
-L power:+3V3 #PWR030
-U 1 1 5FCF47FF
-P 1700 3250
-F 0 "#PWR030" H 1700 3100 50  0001 C CNN
-F 1 "+3V3" H 1700 3450 50  0000 C CNN
-F 2 "" H 1700 3250 50  0001 C CNN
-F 3 "" H 1700 3250 50  0001 C CNN
-	1    1700 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 3250 1700 3300
 Wire Wire Line
 	1700 3600 1500 3600
 Connection ~ 1700 3600
@@ -1177,10 +1164,10 @@ Wire Wire Line
 	7400 3150 7400 3600
 Wire Wire Line
 	7300 3150 7300 3500
-Text Label 7250 3700 2    50   ~ 0
+Text Label 6850 3700 2    50   ~ 0
 GPS_RST
-Text Label 7250 4000 2    50   ~ 0
-BATT
+Text Label 6850 4000 2    50   ~ 0
+D2
 Wire Wire Line
 	5750 2250 6300 2250
 Wire Wire Line
@@ -1322,21 +1309,21 @@ NoConn ~ 6800 3150
 NoConn ~ 6700 3150
 NoConn ~ 7300 1150
 NoConn ~ 7400 1150
-Text Label 7250 3500 2    50   ~ 0
+Text Label 6850 3500 2    50   ~ 0
 EINK_RST
 Text Label 7200 900  0    50   ~ 0
 CLK
 Text Label 8850 4150 0    50   ~ 0
 EINK_CS
-Text Label 7250 3600 2    50   ~ 0
+Text Label 6850 3600 2    50   ~ 0
 EINK_DC
 Text Label 8850 3850 0    50   ~ 0
 EINK_BUSY
 Text Label 8850 3950 0    50   ~ 0
 LORA_RST
-Text Label 7250 4100 2    50   ~ 0
+Text Label 6850 4100 2    50   ~ 0
 LORA_CS
-Text Label 7250 3900 2    50   ~ 0
+Text Label 6850 3900 2    50   ~ 0
 GPS_TX
 Wire Wire Line
 	5750 2050 5750 2250
@@ -1545,7 +1532,7 @@ F 12 "Electronics" H 8300 2150 50  0001 C CNN "Category"
 	0    -1   -1   0   
 $EndComp
 Text Notes 4600 3850 0    47   ~ 0
-Arduino Zero pins | SAMD21G pins\n\n1. GPS_TX - D0/RX - PA11\n2. GPS_RX - D1/TX - PA10\n3. LORA_CS - D5 - PA15\n4. LORA_RST - D6 - PA20\n5. LORA_DATA - D11 - PA16\n6. EINK_BUSY - D7 - PA21\n7. EINK_RST - D8 - PA06\n8. EINK_DC - D9 - PA07\n9. EINK_CS - D10 - PA18\n10. COPI - ICSP_COPI - PB10\n11. CLK - ICSP_SCK - PB11\n12. CIPO - ICSP_CIPO - PA19\n13. BATT - D2 - PA14\n14. GPS_RST - D3 - PA09
+Arduino Zero pins | SAMD21G pins\n\n1. GPS_TX - D0/RX - PA11\n2. GPS_RX - D1/TX - PA10\n3. LORA_CS - D5 - PA15\n4. LORA_RST - D6 - PA20\n5. LORA_DATA - D11 - PA16\n6. EINK_BUSY - D7 - PA21\n7. EINK_RST - D8 - PA06\n8. EINK_DC - D9 - PA07\n9. EINK_CS - D10 - PA18\n10. COPI - ICSP_COPI - PB10\n11. CLK - ICSP_SCK - PB11\n12. CIPO - ICSP_CIPO - PA19\n13. BATT - A0 - PA02\n14. GPS_RST - D3 - PA09
 Wire Notes Line
 	5550 950  5550 700 
 Wire Notes Line
@@ -1569,7 +1556,7 @@ Wire Notes Line style solid
 Text Notes 850  2750 0    47   ~ 0
 Power source \nis either the USB or\nLiPo battery
 Text Label 6850 3400 2    47   ~ 0
-A0
+BATT
 Text Label 6550 1000 2    50   ~ 0
 A1
 Text Label 6550 900  2    50   ~ 0
@@ -1705,8 +1692,8 @@ $Comp
 L Device:R_Small R1
 U 1 1 5FE5027C
 P 3600 3200
-F 0 "R1" V 3500 3200 50  0000 C CNN
-F 1 "1k" V 3700 3200 50  0000 C CNN
+F 0 "R1" H 3500 3200 50  0000 C CNN
+F 1 "1k" H 3700 3200 50  0000 C CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 3200 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2563624.pdf" H 3600 3200 50  0001 C CNN
 F 4 "https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587" H 3600 3200 50  0001 C CNN "Link"
@@ -1726,7 +1713,7 @@ L Device:LED D2
 U 1 1 5FE4F6E4
 P 3250 3050
 F 0 "D2" H 3250 2950 50  0000 C CNN
-F 1 "ORANGE" H 3200 3200 50  0000 C CNN
+F 1 "ORANGE" H 3500 2950 50  0000 C CNN
 F 2 "Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3250 3050 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2166990.pdf" H 3250 3050 50  0001 C CNN
 F 4 "https://sg.element14.com/rohm/sml-d15dwt86/led-orange-224mcd-605nm-smd-0603/dp/2672849" H 3250 3050 50  0001 C CNN "Link"
@@ -1849,90 +1836,80 @@ Connection ~ 7650 900
 $Comp
 L Connector:TestPoint_Probe TP13
 U 1 1 609A9AEB
-P 6750 3900
-F 0 "TP13" V 6800 4100 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 3955 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3900 50  0001 C CNN
-F 3 "~" H 6950 3900 50  0001 C CNN
-F 4 "Electronics" H 6750 3900 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 3900 50  0001 C CNN "DNP"
-	1    6750 3900
+P 6400 3900
+F 0 "TP13" V 6450 4100 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 3955 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3900 50  0001 C CNN
+F 3 "~" H 6600 3900 50  0001 C CNN
+F 4 "Electronics" H 6400 3900 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 3900 50  0001 C CNN "DNP"
+	1    6400 3900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6750 3500 7300 3500
 $Comp
 L Connector:TestPoint_Probe TP9
 U 1 1 609E0DC0
-P 6750 3500
-F 0 "TP9" V 6800 3700 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 3555 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3500 50  0001 C CNN
-F 3 "~" H 6950 3500 50  0001 C CNN
-F 4 "Electronics" H 6750 3500 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 3500 50  0001 C CNN "DNP"
-	1    6750 3500
+P 6400 3500
+F 0 "TP9" V 6450 3700 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 3555 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3500 50  0001 C CNN
+F 3 "~" H 6600 3500 50  0001 C CNN
+F 4 "Electronics" H 6400 3500 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 3500 50  0001 C CNN "DNP"
+	1    6400 3500
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6750 3800 7700 3800
 $Comp
 L Connector:TestPoint_Probe TP12
 U 1 1 609EE554
-P 6750 3800
-F 0 "TP12" V 6800 4000 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 3855 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3800 50  0001 C CNN
-F 3 "~" H 6950 3800 50  0001 C CNN
-F 4 "Electronics" H 6750 3800 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 3800 50  0001 C CNN "DNP"
-	1    6750 3800
+P 6400 3800
+F 0 "TP12" V 6450 4000 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 3855 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3800 50  0001 C CNN
+F 3 "~" H 6600 3800 50  0001 C CNN
+F 4 "Electronics" H 6400 3800 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 3800 50  0001 C CNN "DNP"
+	1    6400 3800
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6750 4000 8100 4000
 $Comp
 L Connector:TestPoint_Probe TP14
 U 1 1 609FBC17
-P 6750 4000
-F 0 "TP14" V 6800 4200 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 4055 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4000 50  0001 C CNN
-F 3 "~" H 6950 4000 50  0001 C CNN
-F 4 "Electronics" H 6750 4000 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 4000 50  0001 C CNN "DNP"
-	1    6750 4000
+P 6400 4000
+F 0 "TP14" V 6450 4200 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 4055 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 4000 50  0001 C CNN
+F 3 "~" H 6600 4000 50  0001 C CNN
+F 4 "Electronics" H 6400 4000 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 4000 50  0001 C CNN "DNP"
+	1    6400 4000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6750 3700 7600 3700
 $Comp
 L Connector:TestPoint_Probe TP11
 U 1 1 60A095C7
-P 6750 3700
-F 0 "TP11" V 6800 3900 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 3755 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3700 50  0001 C CNN
-F 3 "~" H 6950 3700 50  0001 C CNN
-F 4 "Electronics" H 6750 3700 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 3700 50  0001 C CNN "DNP"
-	1    6750 3700
+P 6400 3700
+F 0 "TP11" V 6450 3900 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 3755 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3700 50  0001 C CNN
+F 3 "~" H 6600 3700 50  0001 C CNN
+F 4 "Electronics" H 6400 3700 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 3700 50  0001 C CNN "DNP"
+	1    6400 3700
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 7500 3150
-Wire Wire Line
-	6750 4100 8200 4100
 $Comp
 L Connector:TestPoint_Probe TP15
 U 1 1 60A237BD
-P 6750 4100
-F 0 "TP15" V 6800 4300 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 4155 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4100 50  0001 C CNN
-F 3 "~" H 6950 4100 50  0001 C CNN
-F 4 "Electronics" H 6750 4100 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 4100 50  0001 C CNN "DNP"
-	1    6750 4100
+P 6400 4100
+F 0 "TP15" V 6450 4300 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 4155 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 4100 50  0001 C CNN
+F 3 "~" H 6600 4100 50  0001 C CNN
+F 4 "Electronics" H 6400 4100 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 4100 50  0001 C CNN "DNP"
+	1    6400 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2063,19 +2040,17 @@ F 5 "TP1, TP2, " H 2800 1950 50  0001 C CNN "DNP"
 	1    2800 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6750 3600 7400 3600
 $Comp
 L Connector:TestPoint_Probe TP10
 U 1 1 60AFA1CC
-P 6750 3600
-F 0 "TP10" V 6800 3800 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 3655 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3600 50  0001 C CNN
-F 3 "~" H 6950 3600 50  0001 C CNN
-F 4 "Electronics" H 6750 3600 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 3600 50  0001 C CNN "DNP"
-	1    6750 3600
+P 6400 3600
+F 0 "TP10" V 6450 3800 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 3655 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3600 50  0001 C CNN
+F 3 "~" H 6600 3600 50  0001 C CNN
+F 4 "Electronics" H 6400 3600 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 3600 50  0001 C CNN "DNP"
+	1    6400 3600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -2129,20 +2104,18 @@ Wire Wire Line
 Wire Wire Line
 	8500 3150 8500 4150
 Wire Wire Line
-	6900 3400 6750 3400
-Wire Wire Line
 	6900 3150 6900 3400
 $Comp
 L Connector:TestPoint_Probe TP8
 U 1 1 60BADACA
-P 6750 3400
-F 0 "TP8" V 6800 3600 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 3455 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 3400 50  0001 C CNN
-F 3 "~" H 6950 3400 50  0001 C CNN
-F 4 "Electronics" H 6750 3400 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 3400 50  0001 C CNN "DNP"
-	1    6750 3400
+P 6400 3400
+F 0 "TP8" V 6450 3600 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 3455 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3400 50  0001 C CNN
+F 3 "~" H 6600 3400 50  0001 C CNN
+F 4 "Electronics" H 6400 3400 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 3400 50  0001 C CNN "DNP"
+	1    6400 3400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -2234,8 +2207,6 @@ Text Notes 8100 3250 3    47   ~ 0
 D2
 Text Notes 8200 3250 3    47   ~ 0
 D5
-Wire Wire Line
-	6750 3900 7800 3900
 Text Notes 8500 3250 3    47   ~ 0
 D10
 Text Notes 8600 3250 3    47   ~ 0
@@ -2256,24 +2227,22 @@ Text Notes 4600 4150 0    39   ~ 0
 Pin mappings: \nhttps://github.com\n/arduino/ArduinoCore-samd\n/tree/master/variants/arduino_zero
 Wire Wire Line
 	8300 3150 8300 4200
-Wire Wire Line
-	8300 4200 6750 4200
-Text Label 7250 4200 2    50   ~ 0
+Text Label 6850 4200 2    50   ~ 0
 LORA_DATA
 $Comp
 L Connector:TestPoint_Probe TP24
 U 1 1 60A6E589
-P 6750 4200
-F 0 "TP24" V 6800 4400 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6949 4255 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6950 4200 50  0001 C CNN
-F 3 "~" H 6950 4200 50  0001 C CNN
-F 4 "Electronics" H 6750 4200 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6750 4200 50  0001 C CNN "DNP"
-	1    6750 4200
+P 6400 4200
+F 0 "TP24" V 6450 4400 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6599 4255 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 4200 50  0001 C CNN
+F 3 "~" H 6600 4200 50  0001 C CNN
+F 4 "Electronics" H 6400 4200 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6400 4200 50  0001 C CNN "DNP"
+	1    6400 4200
 	0    -1   -1   0   
 $EndComp
-Text Label 7250 3800 2    50   ~ 0
+Text Label 6850 3800 2    50   ~ 0
 GPS_RX
 Wire Notes Line
 	4550 4200 5900 4200
@@ -2327,4 +2296,28 @@ Text Label 10250 5850 0    50   ~ 0
 RST
 Wire Wire Line
 	7000 5300 7150 5300
+Text Notes 6900 3200 3    47   ~ 0
+A0
+Wire Wire Line
+	6400 3400 6900 3400
+Wire Wire Line
+	6400 3500 7300 3500
+Wire Wire Line
+	6400 3600 7400 3600
+Wire Wire Line
+	6400 3700 7600 3700
+Wire Wire Line
+	6400 4000 8100 4000
+Wire Wire Line
+	6400 3900 7800 3900
+Wire Wire Line
+	6400 3800 7700 3800
+Wire Wire Line
+	6400 4100 8200 4100
+Wire Wire Line
+	6400 4200 8300 4200
+Text Label 1700 3100 0    47   ~ 0
+VBAT
+Wire Wire Line
+	1700 3100 1700 3300
 $EndSCHEMATC
