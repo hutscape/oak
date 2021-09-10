@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Oak"
-Date "2021-09-09"
-Rev "V1.2.1"
+Date "2021-09-10"
+Rev "V1.3.0"
 Comp "Hutscape"
 Comment1 "Description: Outdoor LoRa-GPS tracker with E-Ink display"
 Comment2 "License: CC-BY-SA 4.0 or TAPR"
@@ -18,7 +18,7 @@ L E-Ink:Waveshare_1in54_epaper U6
 U 1 1 5F8663D1
 P 7700 5200
 F 0 "U6" H 7300 5600 50  0000 C CNN
-F 1 "Waveshare_1in54_epaper" H 7000 4550 50  0000 C CNN
+F 1 "Waveshare_1in54_epaper" H 7350 4550 50  0000 C CNN
 F 2 "Waveshare_1.54_E-ink:Waveshare_1.54_E-Ink" H 7750 5200 50  0001 C CNN
 F 3 "https://www.waveshare.com/1.54inch-e-Paper-Module.htm" H 7750 5200 50  0001 C CNN
 F 4 "614961950511" H 7700 5200 50  0001 C CNN "MPN"
@@ -116,54 +116,54 @@ $EndComp
 $Comp
 L power:+3V3 #PWR016
 U 1 1 5F8A6EB7
-P 4950 4650
-F 0 "#PWR016" H 4950 4500 50  0001 C CNN
-F 1 "+3V3" H 5100 4700 50  0000 C CNN
-F 2 "" H 4950 4650 50  0001 C CNN
-F 3 "" H 4950 4650 50  0001 C CNN
-	1    4950 4650
+P 5550 4650
+F 0 "#PWR016" H 5550 4500 50  0001 C CNN
+F 1 "+3V3" H 5700 4700 50  0000 C CNN
+F 2 "" H 5550 4650 50  0001 C CNN
+F 3 "" H 5550 4650 50  0001 C CNN
+	1    5550 4650
 	1    0    0    -1  
 $EndComp
-Text Label 5200 5700 0    50   ~ 0
+Text Label 5800 5700 0    50   ~ 0
 LORA_DATA
 Wire Wire Line
-	5050 5700 5200 5700
+	5650 5700 5800 5700
 Wire Wire Line
-	5050 5000 5300 5000
-NoConn ~ 5050 5200
-NoConn ~ 5050 5300
-NoConn ~ 5050 5400
-NoConn ~ 5050 5500
-NoConn ~ 5050 5600
-Text Label 3900 5500 2    50   ~ 0
+	5650 5000 5900 5000
+NoConn ~ 5650 5200
+NoConn ~ 5650 5300
+NoConn ~ 5650 5400
+NoConn ~ 5650 5500
+NoConn ~ 5650 5600
+Text Label 4500 5500 2    50   ~ 0
 LORA_RST
-Text Label 3900 5000 2    50   ~ 0
+Text Label 4500 5000 2    50   ~ 0
 CLK
-Text Label 3900 5100 2    50   ~ 0
+Text Label 4500 5100 2    50   ~ 0
 COPI
-Text Label 3900 5200 2    50   ~ 0
+Text Label 4500 5200 2    50   ~ 0
 CIPO
-Text Label 3900 5300 2    50   ~ 0
+Text Label 4500 5300 2    50   ~ 0
 LORA_CS
 Wire Wire Line
-	3900 5500 4050 5500
+	4500 5500 4650 5500
 Wire Wire Line
-	3900 5000 4050 5000
+	4500 5000 4650 5000
 Wire Wire Line
-	3900 5100 4050 5100
+	4500 5100 4650 5100
 Wire Wire Line
-	3900 5200 4050 5200
+	4500 5200 4650 5200
 Wire Wire Line
-	3900 5300 4050 5300
+	4500 5300 4650 5300
 $Comp
 L power:GND #PWR025
 U 1 1 5F8B7FD4
-P 4550 6050
-F 0 "#PWR025" H 4550 5800 50  0001 C CNN
-F 1 "GND" H 4555 5877 50  0000 C CNN
-F 2 "" H 4550 6050 50  0001 C CNN
-F 3 "" H 4550 6050 50  0001 C CNN
-	1    4550 6050
+P 5150 6050
+F 0 "#PWR025" H 5150 5800 50  0001 C CNN
+F 1 "GND" H 5155 5877 50  0000 C CNN
+F 2 "" H 5150 6050 50  0001 C CNN
+F 3 "" H 5150 6050 50  0001 C CNN
+	1    5150 6050
 	-1   0    0    -1  
 $EndComp
 Text Notes 800  4450 0    79   ~ 0
@@ -172,22 +172,22 @@ Wire Notes Line
 	700  4500 1150 4500
 Wire Notes Line
 	1150 4500 1150 4250
-Text Notes 6350 4450 0    79   ~ 0
+Text Notes 6600 4450 0    79   ~ 0
 E-Ink
-Text Notes 3550 4450 0    79   ~ 0
+Text Notes 4150 4450 0    79   ~ 0
 LoRa 915MHz
 Wire Notes Line
-	6800 4250 6800 4550
+	7050 4250 7050 4550
 Wire Notes Line
-	6800 4550 6250 4550
+	7050 4550 6500 4550
 Wire Notes Line
-	4450 4550 3450 4550
+	5050 4550 4050 4550
 Wire Wire Line
 	8000 5600 8000 5700
 Wire Wire Line
 	1450 5850 1450 5950
 Wire Wire Line
-	4550 4650 4550 4800
+	5150 4650 5150 4800
 Wire Wire Line
 	7700 4600 7700 4750
 NoConn ~ 1550 4700
@@ -422,36 +422,36 @@ A pull-down resistor\nto force the E-Ink\nCLK to be LOW\nin its idle state
 $Comp
 L Connector:Conn_Coaxial J3
 U 1 1 5FB25581
-P 5500 5000
-F 0 "J3" H 5600 4975 50  0000 L CNN
-F 1 "Conn_Coaxial" H 5300 5150 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 5500 5000 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1662283.pdf" H 5500 5000 50  0001 C CNN
-F 4 "https://sg.element14.com/multicomp/19-70-4-tgg/rf-coaxial-sma-straight-jack-50ohm/dp/1342653" H 5500 5000 50  0001 C CNN "Link"
-F 5 "1" H 5500 5000 50  0001 C CNN "MOQ"
-F 6 "MP-19-70-4-TGG" H 5500 5000 50  0001 C CNN "MPN"
-F 7 "PCB Mount" H 5500 5000 50  0001 C CNN "Package"
-F 8 "5.16" H 5500 5000 50  0001 C CNN "Unit"
-F 9 "Element14" H 5500 5000 50  0001 C CNN "Vendor"
-F 10 "Multicomp" H 5500 5000 50  0001 C CNN "Manufacturer"
-F 11 "Connector" H 5500 5000 50  0001 C CNN "Category"
-F 12 "boxB-185" H 5500 5000 50  0001 C CNN "Stock"
-	1    5500 5000
+P 6100 5000
+F 0 "J3" H 6200 4975 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5900 5150 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 6100 5000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1662283.pdf" H 6100 5000 50  0001 C CNN
+F 4 "https://sg.element14.com/multicomp/19-70-4-tgg/rf-coaxial-sma-straight-jack-50ohm/dp/1342653" H 6100 5000 50  0001 C CNN "Link"
+F 5 "1" H 6100 5000 50  0001 C CNN "MOQ"
+F 6 "MP-19-70-4-TGG" H 6100 5000 50  0001 C CNN "MPN"
+F 7 "PCB Mount" H 6100 5000 50  0001 C CNN "Package"
+F 8 "5.16" H 6100 5000 50  0001 C CNN "Unit"
+F 9 "Element14" H 6100 5000 50  0001 C CNN "Vendor"
+F 10 "Multicomp" H 6100 5000 50  0001 C CNN "Manufacturer"
+F 11 "Connector" H 6100 5000 50  0001 C CNN "Category"
+F 12 "boxB-185" H 6100 5000 50  0001 C CNN "Stock"
+	1    6100 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR020
 U 1 1 5FB29970
-P 5500 5250
-F 0 "#PWR020" H 5500 5000 50  0001 C CNN
-F 1 "GND" H 5505 5077 50  0000 C CNN
-F 2 "" H 5500 5250 50  0001 C CNN
-F 3 "" H 5500 5250 50  0001 C CNN
-	1    5500 5250
+P 6100 5250
+F 0 "#PWR020" H 6100 5000 50  0001 C CNN
+F 1 "GND" H 6105 5077 50  0000 C CNN
+F 2 "" H 6100 5250 50  0001 C CNN
+F 3 "" H 6100 5250 50  0001 C CNN
+	1    6100 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 5200 5500 5250
+	6100 5200 6100 5250
 $Comp
 L Device:LED D3
 U 1 1 5FB3824C
@@ -506,44 +506,36 @@ $EndComp
 $Comp
 L RF_Module:RFM95W-915S2 U5
 U 1 1 5FBDEF19
-P 4550 5300
-F 0 "U5" H 4200 5750 50  0000 C CNN
-F 1 "RFM95" H 4850 5750 50  0000 C CNN
-F 2 "HopeRF_RFM95:HopeRF_RFM9X-SMD" H 1250 6950 50  0001 C CNN
-F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 1250 6950 50  0001 C CNN
-F 4 "RFM95W-915S2" H 4550 5300 50  0001 C CNN "MPN"
-F 5 "https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295" H 4550 5300 50  0001 C CNN "Link"
-F 6 "1" H 4550 5300 50  0001 C CNN "MOQ"
-F 7 "SMD" H 4550 5300 50  0001 C CNN "Package"
-F 8 "24.55" H 4550 5300 50  0001 C CNN "Unit"
-F 9 "Element14" H 4550 5300 50  0001 C CNN "Vendor"
-F 10 "HopeRF" H 4550 5300 50  0001 C CNN "Manufacturer"
-F 11 "Electronics" H 4550 5300 50  0001 C CNN "Category"
-F 12 "boxB-188" H 4550 5300 50  0001 C CNN "Stock"
-	1    4550 5300
+P 5150 5300
+F 0 "U5" H 4800 5750 50  0000 C CNN
+F 1 "RFM95" H 5450 5750 50  0000 C CNN
+F 2 "HopeRF_RFM95:HopeRF_RFM9X-SMD" H 1850 6950 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 1850 6950 50  0001 C CNN
+F 4 "RFM95W-915S2" H 5150 5300 50  0001 C CNN "MPN"
+F 5 "https://sg.element14.com/hoperf/rfm95w-915s2/rf-transceiver-module-915mhz-13dbm/dp/2759295" H 5150 5300 50  0001 C CNN "Link"
+F 6 "1" H 5150 5300 50  0001 C CNN "MOQ"
+F 7 "SMD" H 5150 5300 50  0001 C CNN "Package"
+F 8 "24.55" H 5150 5300 50  0001 C CNN "Unit"
+F 9 "Element14" H 5150 5300 50  0001 C CNN "Vendor"
+F 10 "HopeRF" H 5150 5300 50  0001 C CNN "Manufacturer"
+F 11 "Electronics" H 5150 5300 50  0001 C CNN "Category"
+F 12 "boxB-188" H 5150 5300 50  0001 C CNN "Stock"
+	1    5150 5300
 	1    0    0    -1  
 $EndComp
-Text Notes 4800 6150 0    59   ~ 0
-Dev board pins - RFM95 pins\nG0 - DIO0\nRST - NSS
+Text Notes 5800 6200 0    59   ~ 0
+Dev board pins \n- RFM95 pins\nG0 - DIO0\nRST - NSS
 Wire Wire Line
-	4450 5900 4450 6050
+	5050 5900 5050 6050
 Wire Wire Line
-	4450 6050 4550 6050
+	5050 6050 5150 6050
 Wire Wire Line
-	4550 5900 4550 6050
-Connection ~ 4550 6050
+	5150 5900 5150 6050
+Connection ~ 5150 6050
 Wire Wire Line
-	4650 5900 4650 6050
+	5250 5900 5250 6050
 Wire Wire Line
-	4650 6050 4550 6050
-Wire Notes Line style solid
-	6200 5850 6200 6200
-Wire Notes Line style solid
-	6200 6200 4750 6200
-Wire Notes Line style solid
-	4750 6200 4750 5850
-Wire Notes Line style solid
-	4750 5850 6200 5850
+	5250 6050 5150 6050
 Wire Wire Line
 	2200 5550 2250 5550
 Wire Notes Line
@@ -728,29 +720,29 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR01
 U 1 1 5FF12C00
-P 4400 1150
-F 0 "#PWR01" H 4400 1000 50  0001 C CNN
-F 1 "+3V3" H 4350 1350 50  0000 C CNN
-F 2 "" H 4400 1150 50  0001 C CNN
-F 3 "" H 4400 1150 50  0001 C CNN
-	1    4400 1150
+P 4350 1150
+F 0 "#PWR01" H 4350 1000 50  0001 C CNN
+F 1 "+3V3" H 4300 1300 50  0000 C CNN
+F 2 "" H 4350 1150 50  0001 C CNN
+F 3 "" H 4350 1150 50  0001 C CNN
+	1    4350 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5FF6C5BA
-P 4200 1300
-F 0 "JP1" H 4200 1400 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4250 1150 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4200 1300 50  0001 C CNN
-F 3 "~" H 4200 1300 50  0001 C CNN
-F 4 "Connector" H 4200 1300 50  0001 C CNN "Category"
-F 5 "JP1, JP2, JP3, JP4, JP5" H 4200 1300 50  0001 C CNN "DNP"
-	1    4200 1300
+P 4150 1300
+F 0 "JP1" H 4150 1400 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4200 1150 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4150 1300 50  0001 C CNN
+F 3 "~" H 4150 1300 50  0001 C CNN
+F 4 "Connector" H 4150 1300 50  0001 C CNN "Category"
+F 5 "JP1, JP2, JP3, JP4, JP5" H 4150 1300 50  0001 C CNN "DNP"
+	1    4150 1300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4350 1300 4400 1300
+	4300 1300 4350 1300
 $Comp
 L Device:C_Small C6
 U 1 1 5FBB9D79
@@ -802,9 +794,6 @@ Wire Wire Line
 	3650 1300 3850 1300
 Wire Wire Line
 	3850 1300 3850 1450
-Connection ~ 3850 1300
-Wire Wire Line
-	3850 1300 4050 1300
 $Comp
 L power:GND #PWR028
 U 1 1 5FC26BF0
@@ -1075,32 +1064,32 @@ Connection ~ 1400 4500
 $Comp
 L Jumper:SolderJumper_2_Open JP4
 U 1 1 5FFF894B
-P 4750 4650
-F 0 "JP4" H 4750 4550 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4800 4500 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4750 4650 50  0001 C CNN
-F 3 "~" H 4750 4650 50  0001 C CNN
-F 4 "Connector" H 4750 4650 50  0001 C CNN "Category"
-F 5 "JP1, JP2, JP3, JP4, JP5" H 4750 4650 50  0001 C CNN "DNP"
-	1    4750 4650
+P 5350 4650
+F 0 "JP4" H 5350 4550 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5400 4500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5350 4650 50  0001 C CNN
+F 3 "~" H 5350 4650 50  0001 C CNN
+F 4 "Connector" H 5350 4650 50  0001 C CNN "Category"
+F 5 "JP1, JP2, JP3, JP4, JP5" H 5350 4650 50  0001 C CNN "DNP"
+	1    5350 4650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4950 4650 4900 4650
+	5550 4650 5500 4650
 Wire Wire Line
-	4600 4650 4550 4650
+	5200 4650 5150 4650
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 60004149
-P 4550 4650
-F 0 "#FLG03" H 4550 4725 50  0001 C CNN
-F 1 "PWR_FLAG" H 4300 4650 50  0000 C CNN
-F 2 "" H 4550 4650 50  0001 C CNN
-F 3 "~" H 4550 4650 50  0001 C CNN
-	1    4550 4650
+P 5150 4650
+F 0 "#FLG03" H 5150 4725 50  0001 C CNN
+F 1 "PWR_FLAG" H 4900 4650 50  0000 C CNN
+F 2 "" H 5150 4650 50  0001 C CNN
+F 3 "~" H 5150 4650 50  0001 C CNN
+	1    5150 4650
 	1    0    0    -1  
 $EndComp
-Connection ~ 4550 4650
+Connection ~ 5150 4650
 $Comp
 L Jumper:SolderJumper_2_Open JP5
 U 1 1 600051A0
@@ -1135,10 +1124,6 @@ Wire Wire Line
 Wire Wire Line
 	3050 5950 3100 5950
 Wire Notes Line
-	3450 6300 3450 4250
-Wire Notes Line
-	6250 6300 6250 4250
-Wire Notes Line
 	8800 4250 8800 6300
 Wire Notes Line
 	700  700  10550 700 
@@ -1167,7 +1152,7 @@ Wire Wire Line
 Text Label 6850 3700 2    50   ~ 0
 GPS_RST
 Text Label 6850 4000 2    50   ~ 0
-D2
+LED
 Wire Wire Line
 	5750 2250 6300 2250
 Wire Wire Line
@@ -1543,8 +1528,6 @@ Wire Notes Line
 	10600 700  11000 700 
 Wire Notes Line
 	700  4250 11000 4250
-Wire Notes Line
-	4450 700  4450 4550
 Wire Notes Line style solid
 	800  2800 800  2500
 Wire Notes Line style solid
@@ -1836,80 +1819,80 @@ Connection ~ 7650 900
 $Comp
 L Connector:TestPoint_Probe TP13
 U 1 1 609A9AEB
-P 6400 3900
-F 0 "TP13" V 6450 4100 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 3955 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3900 50  0001 C CNN
-F 3 "~" H 6600 3900 50  0001 C CNN
-F 4 "Electronics" H 6400 3900 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 3900 50  0001 C CNN "DNP"
-	1    6400 3900
+P 6450 3900
+F 0 "TP13" V 6500 4100 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 3955 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 3900 50  0001 C CNN
+F 3 "~" H 6650 3900 50  0001 C CNN
+F 4 "Electronics" H 6450 3900 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 3900 50  0001 C CNN "DNP"
+	1    6450 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint_Probe TP9
 U 1 1 609E0DC0
-P 6400 3500
-F 0 "TP9" V 6450 3700 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 3555 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3500 50  0001 C CNN
-F 3 "~" H 6600 3500 50  0001 C CNN
-F 4 "Electronics" H 6400 3500 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 3500 50  0001 C CNN "DNP"
-	1    6400 3500
+P 6450 3500
+F 0 "TP9" V 6500 3700 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 3555 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 3500 50  0001 C CNN
+F 3 "~" H 6650 3500 50  0001 C CNN
+F 4 "Electronics" H 6450 3500 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 3500 50  0001 C CNN "DNP"
+	1    6450 3500
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint_Probe TP12
 U 1 1 609EE554
-P 6400 3800
-F 0 "TP12" V 6450 4000 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 3855 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3800 50  0001 C CNN
-F 3 "~" H 6600 3800 50  0001 C CNN
-F 4 "Electronics" H 6400 3800 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 3800 50  0001 C CNN "DNP"
-	1    6400 3800
+P 6450 3800
+F 0 "TP12" V 6500 4000 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 3855 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 3800 50  0001 C CNN
+F 3 "~" H 6650 3800 50  0001 C CNN
+F 4 "Electronics" H 6450 3800 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 3800 50  0001 C CNN "DNP"
+	1    6450 3800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint_Probe TP14
 U 1 1 609FBC17
-P 6400 4000
-F 0 "TP14" V 6450 4200 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 4055 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 4000 50  0001 C CNN
-F 3 "~" H 6600 4000 50  0001 C CNN
-F 4 "Electronics" H 6400 4000 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 4000 50  0001 C CNN "DNP"
-	1    6400 4000
+P 6450 4000
+F 0 "TP14" V 6500 4200 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 4055 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 4000 50  0001 C CNN
+F 3 "~" H 6650 4000 50  0001 C CNN
+F 4 "Electronics" H 6450 4000 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 4000 50  0001 C CNN "DNP"
+	1    6450 4000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint_Probe TP11
 U 1 1 60A095C7
-P 6400 3700
-F 0 "TP11" V 6450 3900 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 3755 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3700 50  0001 C CNN
-F 3 "~" H 6600 3700 50  0001 C CNN
-F 4 "Electronics" H 6400 3700 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 3700 50  0001 C CNN "DNP"
-	1    6400 3700
+P 6450 3700
+F 0 "TP11" V 6500 3900 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 3755 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 3700 50  0001 C CNN
+F 3 "~" H 6650 3700 50  0001 C CNN
+F 4 "Electronics" H 6450 3700 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 3700 50  0001 C CNN "DNP"
+	1    6450 3700
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 7500 3150
 $Comp
 L Connector:TestPoint_Probe TP15
 U 1 1 60A237BD
-P 6400 4100
-F 0 "TP15" V 6450 4300 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 4155 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 4100 50  0001 C CNN
-F 3 "~" H 6600 4100 50  0001 C CNN
-F 4 "Electronics" H 6400 4100 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 4100 50  0001 C CNN "DNP"
-	1    6400 4100
+P 6450 4100
+F 0 "TP15" V 6500 4300 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 4155 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 4100 50  0001 C CNN
+F 3 "~" H 6650 4100 50  0001 C CNN
+F 4 "Electronics" H 6450 4100 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 4100 50  0001 C CNN "DNP"
+	1    6450 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2043,14 +2026,14 @@ $EndComp
 $Comp
 L Connector:TestPoint_Probe TP10
 U 1 1 60AFA1CC
-P 6400 3600
-F 0 "TP10" V 6450 3800 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 3655 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3600 50  0001 C CNN
-F 3 "~" H 6600 3600 50  0001 C CNN
-F 4 "Electronics" H 6400 3600 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 3600 50  0001 C CNN "DNP"
-	1    6400 3600
+P 6450 3600
+F 0 "TP10" V 6500 3800 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 3655 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 3600 50  0001 C CNN
+F 3 "~" H 6650 3600 50  0001 C CNN
+F 4 "Electronics" H 6450 3600 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 3600 50  0001 C CNN "DNP"
+	1    6450 3600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -2108,14 +2091,14 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint_Probe TP8
 U 1 1 60BADACA
-P 6400 3400
-F 0 "TP8" V 6450 3600 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 3455 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 3400 50  0001 C CNN
-F 3 "~" H 6600 3400 50  0001 C CNN
-F 4 "Electronics" H 6400 3400 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 3400 50  0001 C CNN "DNP"
-	1    6400 3400
+P 6450 3400
+F 0 "TP8" V 6500 3600 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 3455 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 3400 50  0001 C CNN
+F 3 "~" H 6650 3400 50  0001 C CNN
+F 4 "Electronics" H 6450 3400 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 3400 50  0001 C CNN "DNP"
+	1    6450 3400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -2163,14 +2146,14 @@ $EndComp
 $Comp
 L Connector:TestPoint_Probe TP4
 U 1 1 60C03355
-P 4400 1250
-F 0 "TP4" V 4550 1450 50  0000 C CNN
-F 1 "TestPoint_Probe" V 4599 1305 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4600 1250 50  0001 C CNN
-F 3 "~" H 4600 1250 50  0001 C CNN
-F 4 "Electronics" H 4400 1250 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 4400 1250 50  0001 C CNN "DNP"
-	1    4400 1250
+P 4350 1250
+F 0 "TP4" V 4500 1450 50  0000 C CNN
+F 1 "TestPoint_Probe" V 4549 1305 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4550 1250 50  0001 C CNN
+F 3 "~" H 4550 1250 50  0001 C CNN
+F 4 "Electronics" H 4350 1250 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 4350 1250 50  0001 C CNN "DNP"
+	1    4350 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2232,14 +2215,14 @@ LORA_DATA
 $Comp
 L Connector:TestPoint_Probe TP24
 U 1 1 60A6E589
-P 6400 4200
-F 0 "TP24" V 6450 4400 50  0000 C CNN
-F 1 "TestPoint_Probe" V 6599 4255 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6600 4200 50  0001 C CNN
-F 3 "~" H 6600 4200 50  0001 C CNN
-F 4 "Electronics" H 6400 4200 50  0001 C CNN "Category"
-F 5 "TP1, TP2, " H 6400 4200 50  0001 C CNN "DNP"
-	1    6400 4200
+P 6450 4200
+F 0 "TP24" V 6500 4400 50  0000 C CNN
+F 1 "TestPoint_Probe" V 6649 4255 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6650 4200 50  0001 C CNN
+F 3 "~" H 6650 4200 50  0001 C CNN
+F 4 "Electronics" H 6450 4200 50  0001 C CNN "Category"
+F 5 "TP1, TP2, " H 6450 4200 50  0001 C CNN "DNP"
+	1    6450 4200
 	0    -1   -1   0   
 $EndComp
 Text Label 6850 3800 2    50   ~ 0
@@ -2252,11 +2235,6 @@ Wire Notes Line
 	5900 2550 5900 4200
 Text Label 2000 5200 0    50   ~ 0
 GPS_RX
-Wire Wire Line
-	4400 1250 4400 1150
-Wire Wire Line
-	4400 1300 4400 1250
-Connection ~ 4400 1250
 $Comp
 L Jumper:SolderJumper_2_Open JP6
 U 1 1 60DF8D75
@@ -2298,26 +2276,105 @@ Wire Wire Line
 	7000 5300 7150 5300
 Text Notes 6900 3200 3    47   ~ 0
 A0
-Wire Wire Line
-	6400 3400 6900 3400
-Wire Wire Line
-	6400 3500 7300 3500
-Wire Wire Line
-	6400 3600 7400 3600
-Wire Wire Line
-	6400 3700 7600 3700
-Wire Wire Line
-	6400 4000 8100 4000
-Wire Wire Line
-	6400 3900 7800 3900
-Wire Wire Line
-	6400 3800 7700 3800
-Wire Wire Line
-	6400 4100 8200 4100
-Wire Wire Line
-	6400 4200 8300 4200
 Text Label 1700 3100 0    47   ~ 0
 VBAT
 Wire Wire Line
 	1700 3100 1700 3300
+Wire Wire Line
+	6450 3400 6900 3400
+Wire Wire Line
+	6450 3500 7300 3500
+Wire Wire Line
+	6450 3600 7400 3600
+Wire Wire Line
+	6450 3700 7600 3700
+Wire Wire Line
+	6450 3800 7700 3800
+Wire Wire Line
+	6450 3900 7800 3900
+Wire Wire Line
+	6450 4000 8100 4000
+Wire Wire Line
+	6450 4100 8200 4100
+Wire Wire Line
+	6450 4200 8300 4200
+Wire Notes Line
+	6500 4250 6500 6300
+Wire Notes Line
+	4450 4250 4450 700 
+Wire Wire Line
+	4350 1150 4350 1250
+Wire Wire Line
+	3850 1300 4000 1300
+Connection ~ 3850 1300
+Connection ~ 4350 1250
+Wire Wire Line
+	4350 1250 4350 1300
+Wire Notes Line
+	5050 4550 5050 4250
+Wire Notes Line
+	6500 5750 5700 5750
+Wire Notes Line
+	5700 5750 5700 6300
+Wire Notes Line
+	4050 4250 4050 6300
+$Comp
+L Device:LED D6
+U 1 1 614C43D7
+P 3600 5150
+F 0 "D6" V 3650 5050 50  0000 R CNN
+F 1 "YELLOW" V 3550 5050 50  0000 R CNN
+F 2 "Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 5150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810051702_Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 3600 5150 50  0001 C CNN
+F 4 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 3600 5150 50  0001 C CNN "Link"
+F 5 "10" H 3600 5150 50  0001 C CNN "MOQ"
+F 6 "17-215UYC/S530-A3/TR8" H 3600 5150 50  0001 C CNN "MPN"
+F 7 "0805" H 3600 5150 50  0001 C CNN "Package"
+F 8 "boxA-54" H 3600 5150 50  0001 C CNN "Stock"
+F 9 "0.0624" H 3600 5150 50  0001 C CNN "Unit"
+F 10 "LCSC" H 3600 5150 50  0001 C CNN "Vendor"
+F 11 "Everlight" H 3600 5150 50  0001 C CNN "Manufacturer"
+F 12 "Electronics" H 3600 5150 50  0001 C CNN "Category"
+	1    3600 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 614C50F4
+P 3600 5550
+F 0 "R4" H 3659 5596 50  0000 L CNN
+F 1 "1k" H 3659 5505 50  0000 L CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 5550 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2563624.pdf" H 3600 5550 50  0001 C CNN
+F 4 "https://sg.element14.com/multicomp/mcwr08x1001ftl/res-1k-1-0-125w-0805-thick-film/dp/2447587" H 3600 5550 50  0001 C CNN "Link"
+F 5 "10" H 3600 5550 50  0001 C CNN "MOQ"
+F 6 "MCWR08X1001FTL" H 3600 5550 50  0001 C CNN "MPN"
+F 7 "0805" H 3600 5550 50  0001 C CNN "Package"
+F 8 "boxA-18" H 3600 5550 50  0001 C CNN "Stock"
+F 9 "0.012" H 3600 5550 50  0001 C CNN "Unit"
+F 10 "Element14" H 3600 5550 50  0001 C CNN "Vendor"
+F 11 "Multicomp" H 3600 5550 50  0001 C CNN "Manufacturer"
+F 12 "Electronics" H 3600 5550 50  0001 C CNN "Category"
+	1    3600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 614DE2C8
+P 3600 5800
+F 0 "#PWR030" H 3600 5550 50  0001 C CNN
+F 1 "GND" H 3605 5627 50  0000 C CNN
+F 2 "" H 3600 5800 50  0001 C CNN
+F 3 "" H 3600 5800 50  0001 C CNN
+	1    3600 5800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4800 3600 5000
+Wire Wire Line
+	3600 5300 3600 5450
+Wire Wire Line
+	3600 5650 3600 5800
+Text Label 3600 4800 0    47   ~ 0
+LED
 $EndSCHEMATC

@@ -1,18 +1,19 @@
 ---
 layout: example
-title: Serial print
-description: Hello world with serial prints
+title: Hello world blinky
+description: Hello world with Blinky LED
 references:
   - name: Arduino CLI
     url: https://arduino.github.io/arduino-cli/latest/
+  - name: Arduino Zero pin mapping for PA14
+    url: https://github.com/arduino/ArduinoCore-samd/blob/master/variants/arduino_zero/variant.cpp
 difficulty: easy
 features:
-  - print
-  - serial
+  - blinky
+  - LED
 
 images:
-  prototype: print-hello-prototype.jpg
-  console: print-hello-console.jpg
+  prototype: hello-world-prototype.jpg
 
 steps:
   - step: Plug in the Oak PCB to the computer
