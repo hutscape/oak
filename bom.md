@@ -36,7 +36,7 @@ ibom: true
     4. Change the directory in General > Directory > /hutscape/{PROJECT}/bom/
     5. Show first pin in Html default > Check "Highlight first pin"
     6. Add DNP as a column in Extra fields > Check "DNP"
-    7. Generate ibom.html by clickign "Generate BOM"
+    7. Generate ibom.html by clicking "Generate BOM"
 
 ====== How to generate BOM Stats file _data/bom.json ======
 
