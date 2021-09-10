@@ -4,12 +4,15 @@
 
 void setup() {
   pinMode(LEDPIN, OUTPUT);
+  SerialUSB.begin(9600);
 }
 
 void loop() {
   digitalWrite(LEDPIN, HIGH);
+  SerialUSB.println("HIGH");
   delay(2000);
 
   digitalWrite(LEDPIN, LOW);
+  SerialUSB.println("LOW");
   delay(2000);
 }

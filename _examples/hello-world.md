@@ -14,6 +14,7 @@ features:
 
 images:
   prototype: hello-world-prototype.jpg
+  console: hello-world-console.png
 
 photos:
   - filename: hello-world-1.jpg
