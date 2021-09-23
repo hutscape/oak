@@ -11,7 +11,7 @@ int counter = 0;
 
 void setup() {
   SerialUSB.begin(9600);
-  while (!SerialUSB) {}
+  while (!SerialUSB) { }
 
   SerialUSB.println("LoRa Sender");
   pinMode(LEDPIN, OUTPUT);
@@ -34,14 +34,16 @@ void loop() {
   LoRa.endPacket();
 
   counter++;
-
+  blink(2);
   delay(2000);
+}
 
-  digitalWrite(LEDPIN, HIGH);
-  SerialUSB.println("HIGH");
-  delay(500);
+void blink(int num) {
+  for (int i = 0; i < num; i++) {
+    digitalWrite(LEDPIN, HIGH);
+    delay(250);
 
-  digitalWrite(LEDPIN, LOW);
-  SerialUSB.println("LOW");
-  delay(500);
+    digitalWrite(LEDPIN, LOW);
+    delay(250);
+  }
 }
