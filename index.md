@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: start
 title: Getting Started
 permalink: /
 sequence: 1
