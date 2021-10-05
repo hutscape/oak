@@ -15,7 +15,7 @@ all:
 	arduino-cli compile --fqbn $(BOARD) --build-properties build.extra_flags="-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}"  --output-dir $(BUILD) ./
 
 flash:
-	arduino-cli upload -p /dev/cu.usbmodem14101 --fqbn $(BOARD) --input-dir $(BUILD) --verbose
+	arduino-cli upload -p $(PORT) --fqbn $(BOARD) --input-dir $(BUILD) --verbose
 
 clean:
 	rm -r build
