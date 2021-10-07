@@ -3,8 +3,10 @@ layout: example
 title: E-Ink hello world
 description: Display simple string on E-Ink with increasing counter
 references:
-  - name: Arduino Waveshare E-paper 1in54
+  - name: Arduino Waveshare E-paper 1in54 version 1
     url: https://github.com/waveshare/e-Paper/tree/master/Arduino/epd1in54
+  - name: Arduino Waveshare E-paper 1in54 version 2
+    url: https://github.com/waveshare/e-Paper/tree/master/Arduino/epd1in54_V2
 difficulty: medium
 features:
   - e-ink
@@ -20,6 +22,9 @@ steps:
     image: print-hello-check.png
   - step: Run <code>make</code> to upload the code
 ---
+## Waveshare E-Ink version
+
+Check the E-Ink display for the version number.
 
 ## SPI
 The 4 non-SPI pins are defined in `epdif.h` file:
