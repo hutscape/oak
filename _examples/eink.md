@@ -21,10 +21,13 @@ steps:
   - step: Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>
     image: print-hello-check.png
   - step: Run <code>make</code> to upload the code
+  - step: Start the serial monitor to view the console logs
 ---
 ## Waveshare E-Ink version
 
-Check the E-Ink display for the version number.
+Check the E-Ink display module for the version number. Here, version 1 is used and the number is not marked on the module.
+
+<img src="{{site.url}}/images/examples/waveshare-1in54-module.jpg" alt="WaveShare 1.54 inch module">
 
 ## SPI
 The 4 non-SPI pins are defined in `epdif.h` file:
