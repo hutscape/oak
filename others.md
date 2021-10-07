@@ -19,8 +19,8 @@ lessons:
     subtitle: For next iteration
     list:
       - name: Use SMD components only on top layer for one-step manual SMD stencil soldering process
-      - name: Place a writable area on the silkscreen to note down LoRa node address or other associated numbers
-      - name: Add a PCB-edge through hole test point for <code>GND</code> so that it can be always left connected and accessed for both top and bottom layer probe testing
+      - name: Place a writable area on the silkscreen to note down LoRa node address, PCB number, frequency or other info
+      - name: Add a <a href="https://sg.element14.com/c/test-measurement/test-connectors-ic-clips/pcb-test-points?connector-mounting=surface-mount">surface mount PCB test point</a> for <code>GND</code> and SPI points
       - name: Use a smaller SSD1306 I2C OLED display instead of E-Ink
 
   - title: Board bring-up
