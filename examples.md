@@ -19,6 +19,14 @@ sequence: 2
             <span class="tag is-warning is-light">{{ feat }}</span>
             {% endfor %}
             <span class="tag">{{ example.difficulty }}</span>
+
+            <!-- TODO -->
+            {% if jekyll.environment == "development" %}
+            {% if example.images.prototype %}
+            {% else %}
+            <span class="tag is-danger">TODO Prototype image</span>
+            {% endif %}
+          {% endif %}
           </div>
         </li>
         {% endfor %}

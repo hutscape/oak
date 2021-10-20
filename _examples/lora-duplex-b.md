@@ -6,6 +6,10 @@ references:
   - name: Arduino LoRa duplex example code
     url: https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaDuplex/LoRaDuplex.ino
 prerequisites:
+  - name: LoRa transmit
+    url: ./lora-tx
+  - name: LoRa receive
+    url: ./lora-rx
   - name: LoRa Duplex A
     url: ./lora-duplex-a
 difficulty: medium
