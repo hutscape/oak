@@ -1,6 +1,6 @@
 ---
 layout: example
-title: Upload bootloader Arduino Zero
+title: Upload Arduino Zero bootloader
 description: Upload bootloader Arduino Zero with J-Link Edu Mini
 references:
   - name: Arduino Core for SAMD21G to make the bootloader file
@@ -15,7 +15,6 @@ has_code: false
 images:
   prototype: bootloader-prototype.jpg
   schematic: bootloader-schematic.png
-
 ---
 
 ## Pin connections
