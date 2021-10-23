@@ -13,6 +13,14 @@ _autosave*
 *.pyc
 *.gch
 
+ideas
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+build
+node_modules
+
 # jekyll
 _site
 
