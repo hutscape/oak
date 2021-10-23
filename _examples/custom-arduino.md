@@ -105,13 +105,25 @@ Refer to the 2 repositories created:
     ```
     $ ls variants
     oak
+
+    $ cat boards.txt| grep "variant="
+    oak.build.variant=oak
     ```
 1. Change the file `platform.txt` properties `name=` and `version=`
+
+    ```sh
+    name=Hutscape Boards
+    version=1.0.0
+    ```
 1. Git commit the entire board
 1. Git tag it with the same version written in `platform.txt`
 1. Download [a zip file of the entire repository](https://github.com/hutscape/hutscape-arduino-boards)
 1. Add the new version of the board in [`package_hutscape_index.json`](https://github.com/hutscape/arduino-board-index/blob/main/package_hutscape_index.json)
-    - Add SHASUM and size of the file
+    -  Add SHASUM
+      ```sh
+      shasum -a 256 hutscape-oak-arduino-boards-x.y.z.tar.gz
+      ```
+    - Add size in bytes
 1. Copy and paste the `package_hutscape_index.json` URL into the File > Preferences > "Additional Boards Manager" textbox in Arduino IDE
     ```
     https://raw.githubusercontent.com/hutscape/arduino-board-index/main/package_hutscape_index.json
