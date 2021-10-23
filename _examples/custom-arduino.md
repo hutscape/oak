@@ -37,23 +37,27 @@ Refer to the 2 repositories created:
 1. Identify the architecture that is closest to the microcontroller you are using E.g. SAMD21G
 1. Identify the corresponding similar repository of the custom board E.g. [Arduino Zero](https://github.com/arduino/ArduinoCore-samd/tree/master/variants/arduino_zero)
 1. Find the closest board variant location [on your computer based on the operating system](https://support.arduino.cc/hc/en-us/articles/360012076960-Where-are-the-installed-cores-located-)
-    ```
+
+    ```sh
     ~/Library/Arduino15/packages/arduino/hardware/samd/1.8.11/variants/arduino_zero
     ```
 1. If required, change `variants.h` and `variant.cpp`
 1. Copy the most similar board and amend the namespace in `boards.txt` in locally in the path `~/Library/Arduino15/packages/arduino/hardware/samd/1.8.11/`
-    ```
+
+    ```sh
     # Oak (Native USB Port)
     # --------------------------------------
     oak.name=Oak
     ...
     ```
 1. Amend other properties accordingly E.g. add the `-DCRYSTALLESS`
-    ```
+
+    ```sh
     oak.build.extra_flags=-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
     ```
 1. Change `platform.txt` version
-    ```
+
+    ```sh
     name=Arduino SAMD (32-bits ARM Cortex-M0+) Boards
     version=1.8.11
     ```
@@ -63,8 +67,51 @@ Refer to the 2 repositories created:
 
 ## Create downloadable custom board
 
-1. Create [a zip file of the board](https://github.com/hutscape/arduino-board-index/tree/main/boards)
-1. Add to [`package_hutscape_index.json`](https://github.com/hutscape/arduino-board-index/blob/main/package_hutscape_index.json)
+1. Identify the architecture that is closest to the microcontroller you are using E.g. SAMD21G
+1. Identify the corresponding similar repository of the custom board E.g. [Arduino Zero in ArduinoCore-samd](https://github.com/arduino/ArduinoCore-samd)
+1. Remove all other bootloaders in the `bootloaders` folder and keep only the ones required E.g. `zero`
+
+    ```sh
+    ├── bootloaders
+    │   └── zero
+    ```
+
+1. Remove all other variants in the `variants` folder and keep only the ones required E.g. folder `arduino_zero` renamed to `oak`
+
+    ```sh
+    └── variants
+      └── oak
+    ```
+1. Copy [`api` folder](https://github.com/arduino/ArduinoCore-API/tree/master/api) into `cores/arduino` folder
+1. Simplify the file `boards.txt` and keep only the board required
+    - change the namespace E.g. `arduino_zero_native` to `oak`
+    - change `*.name`, `*.build.usb_product`, `*.build.usb_manufacturer` accordingly
+    - change `*.build.variant` accordingly
+
+    ```sh
+    # Oak (Native USB Port)
+    # --------------------------------------
+    oak.name=Oak (Native USB Port)
+    ...
+    oak.build.usb_product="Hutscape Oak"
+    oak.build.usb_manufacturer="Hutscape"
+    ...
+    oak.build.extra_flags=-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
+    ...
+    oak.build.variant=oak
+    ...
+    ```
+1. Ensure the folder names under `variants` are the same as in the file `boards.txt` properties `*.build.variant`
+    ```
+    $ ls variants
+    oak
+    ```
+1. Change the file `platform.txt` properties `name=` and `version=`
+1. Git commit the entire board
+1. Git tag it with the same version written in `platform.txt`
+1. Download [a zip file of the entire repository](https://github.com/hutscape/hutscape-arduino-boards)
+1. Add the new version of the board in [`package_hutscape_index.json`](https://github.com/hutscape/arduino-board-index/blob/main/package_hutscape_index.json)
+    - Add SHASUM and size of the file
 1. Copy and paste the `package_hutscape_index.json` URL into the File > Preferences > "Additional Boards Manager" textbox in Arduino IDE
     ```
     https://raw.githubusercontent.com/hutscape/arduino-board-index/main/package_hutscape_index.json
