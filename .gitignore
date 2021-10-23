@@ -13,16 +13,12 @@ _autosave*
 *.pyc
 *.gch
 
+# jekyll
 ideas
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-build
-node_modules
-
-# jekyll
-_site
 
 # node js
 node_modules
@@ -31,5 +27,6 @@ package-lock.json
 # build files
 build
 
+# hardware
 datasheets
 gerbers

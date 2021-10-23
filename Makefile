@@ -34,5 +34,6 @@ install:
 	echo "Adding .gitignore..."
 	cat scripts/_gitignore > .gitignore
 
-	echo "Adding Makefile..."
-	cat scripts/_Makefile > .gitignore
+	echo "Adding Gemfile and installing ruby gems..."
+	cat scripts/Gemfile > Gemfile
+	bundle install
