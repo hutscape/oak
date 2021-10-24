@@ -133,3 +133,6 @@ Refer to the 2 repositories created:
 1. Restart Arduino IDE
 1. Go to Tools > Boards Manager > Search for Hutscape or Oak
     <img src="{{ site.url }}/images/examples/install-custom-board.png" alt="Install custom Arduino board">
+    <img src="{{ site.url }}/images/examples/custom-board-installed.png" alt="Custom Arduino board is installed">
+1. Choose the custom board installed for compiling and uploading
+    <img src="{{ site.url }}/images/examples/choose-custom-board.png" alt="Choose the custom Arduino Board installed">
