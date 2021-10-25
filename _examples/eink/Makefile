@@ -4,10 +4,7 @@ BUILD=build
 
 .PHONY: default lint all flash clean
 
-default: lint all flash clean
-
-lint:
-	cpplint --extensions=ino --filter=-legal/copyright,-whitespace/line_length,-readability/casting,-readability/todo,-build/include_subdir,-runtime/printf *.ino
+default: all flash clean
 
 all:
 	# This custom PCB does not have a crytal on pins PA00 and PA01
