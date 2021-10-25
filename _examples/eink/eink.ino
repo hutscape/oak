@@ -14,8 +14,6 @@ char count_string[] = {'0', '0', '0', '\0'};
 
 void setup() {
   SerialUSB.begin(9600);
-  while (!SerialUSB) { }
-
   SerialUSB.println("Starting E-ink display...");
 }
 
@@ -33,12 +31,12 @@ void loop() {
   epd.ClearFrameMemory(0xFF);
   epd.DisplayFrame();
 
-  paint.SetRotate(ROTATE_270);
+  paint.SetRotate(ROTATE_0);
   paint.SetWidth(200);
   paint.SetHeight(24);
 
-  paint.Clear(UNCOLORED);
-  paint.DrawStringAt(2, 10, count_string, &Font16, COLORED);
+  paint.Clear(COLORED);
+  paint.DrawStringAt(30, 4, count_string, &Font24, UNCOLORED);
   epd.SetFrameMemory(
       paint.GetImage(), 0, 50, paint.GetWidth(), paint.GetHeight());
 
