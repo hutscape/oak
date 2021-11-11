@@ -41,6 +41,7 @@ download_bom: true
             <p class="title">Step 2</p>
             <p class="subtitle">Install the custom Arduino board in the Arduino IDE.</p>
             <p>Copy and paste the following URL into the File > Preferences > "Additional Boards Manager" textbox in Arduino IDE</p>
+            <code> https://raw.githubusercontent.com/hutscape/arduino-board-index/main/package_hutscape_index.json</code>
             <a href="{{site.url}}/images/examples/paste-board-url.png">
               <img src="{{site.url}}/images/examples/paste-board-url.png" alt="Paste board URL">
             </a>
@@ -57,7 +58,7 @@ download_bom: true
           <article class="tile is-child notification">
             <div class="content">
               <p class="title">Step 3</p>
-              <p class="subtitle">Try the <a href="/examples/hello-world">Blinky LED code</a> or other <a href="/examples">examples</a>.</p>
+              <p class="subtitle">Try the <a href="{{site.url}}/examples/hello-world">Blinky LED code</a> or other <a href="{{site.url}}/examples">examples</a>.</p>
               <a href="{{site.url}}/images/examples/eink-prototype.jpg">
                 <img src="{{site.url}}/images/examples/eink-prototype.jpg" alt="Typical setup">
               </a>
