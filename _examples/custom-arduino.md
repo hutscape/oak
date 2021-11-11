@@ -19,6 +19,8 @@ difficulty: difficult
 features:
   - custom
   - arduino
+images:
+  prototype: custom-arduino-prototype.jpg
 prerequisites:
   - name: Upload Arduino Zero bootloader
     url: ./bootloader
