@@ -26,26 +26,41 @@ download_bom: true
         <div class="tile is-parent">
           <article class="tile is-child notification">
             <p class="title">Step 1</p>
-            <p class="subtitle">Wire up the prototype components.</p>
+            <p class="subtitle">Assemble the components.</p>
+            <p>Screw in the E-Ink screen, the LoRa antenna and insert the 18650 battery at the back.</p>
             <a href="{{site.url}}/images/prototype/front.jpg">
-              <img src="{{site.url}}/images/prototype/front.jpg" alt="Breadboard prototype">
+              <img src="{{site.url}}/images/prototype/front.jpg" alt="Final assembly">
             </a>
-            <a href="{{site.url}}/images/hardware/schematic.png">
-              <img src="{{site.url}}/images/hardware/schematic.png" alt="Schematic of the prototype">
+            <a href="{{site.url}}/images/prototype/back.jpg">
+              <img src="{{site.url}}/images/prototype/back.jpg" alt="With the battery">
             </a>
           </article>
         </div>
         <div class="tile is-parent">
           <article class="tile is-child notification">
             <p class="title">Step 2</p>
-            <p class="subtitle">Flash the <a href="/software">firmware</a>.</p>
+            <p class="subtitle">Install the custom Arduino board in the Arduino IDE.</p>
+            <p>Copy and paste the following URL into the File > Preferences > "Additional Boards Manager" textbox in Arduino IDE</p>
+            <a href="{{site.url}}/images/examples/paste-board-url.png">
+              <img src="{{site.url}}/images/examples/paste-board-url.png" alt="Paste board URL">
+            </a>
+            <p>Restart Arduino IDE. Go to Tools > Boards Manager > Search for Hutscape or Oak</p>
+            <a href="{{site.url}}/images/examples/install-custom-board.png">
+              <img src="{{site.url}}/images/examples/install-custom-board.png" alt="Install custom board">
+            </a>
+            <a href="{{site.url}}/images/examples/custom-board-installed.png">
+              <img src="{{site.url}}/images/examples/custom-board-installed.png" alt="Installation of custom board is successful">
+            </a>
           </article>
         </div>
         <div class="tile is-parent">
           <article class="tile is-child notification">
             <div class="content">
               <p class="title">Step 3</p>
-              <p class="subtitle">See the distance displayed on both keychains.</p>
+              <p class="subtitle">Try the <a href="/examples/hello-world">Blinky LED code</a> or other <a href="/examples">examples</a>.</p>
+              <a href="{{site.url}}/images/examples/eink-prototype.jpg">
+                <img src="{{site.url}}/images/examples/eink-prototype.jpg" alt="Typical setup">
+              </a>
             </div>
           </article>
         </div>
