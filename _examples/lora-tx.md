@@ -13,7 +13,7 @@ features:
   - LoRa
   - transmission
 images:
-  prototype: lora-tx-prototype.jpg
+  prototype: lora-prototype.jpg
   console: lora-tx-console.png
 steps:
   - step: Plug in the Oak PCB to the computer

@@ -13,7 +13,7 @@ features:
   - LoRa
   - receive
 images:
-  prototype: lora-tx-prototype.jpg
+  prototype: lora-prototype.jpg
   console: lora-rx-console.png
 steps:
   - step: Ensure <a href="./lora-tx">LoRa Tx</a> is running

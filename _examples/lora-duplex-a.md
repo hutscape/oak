@@ -18,7 +18,7 @@ features:
   - duplex
   - p2p
 images:
-  prototype: lora-tx-prototype.jpg
+  prototype: lora-prototype.jpg
   console: lora-duplex-console.png
 steps:
   - step: Prepare <a href="./lora-duplex-b">LoRa duplex B</a> to send and receive at the same time
