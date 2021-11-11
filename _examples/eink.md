@@ -23,13 +23,13 @@ steps:
   - step: Run <code>make</code> to upload the code
   - step: Start the serial monitor to view the console logs
 ---
-## Waveshare E-Ink version
+### Waveshare E-Ink version
 
 Check the E-Ink display module for the version number. Here, version 1 is used and the number is not marked on the module.
 
 <img src="{{site.url}}/images/examples/waveshare-1in54-module.jpg" alt="WaveShare 1.54 inch module">
 
-## SPI
+### SPI
 The 4 non-SPI pins are defined in `epdif.h` file:
 
 ```
@@ -46,7 +46,7 @@ The SPI pins for Arduino Zero / SAMD21G are defined as following:
 | `19` | `PB10` | `SERCOM4/PAD[2]` | COPI |
 | `20` | `PB11` | `SERCOM4/PAD[3]` | SCK |
 
-## Pins in schematic
+### Pins in schematic
 
 | Schematic label | Arduino Zero pin name | SAMD21G pin name
 | ----- | ------ | ------ |

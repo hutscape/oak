@@ -37,8 +37,6 @@ photos:
   - filename: gps-fix-pps-prototype.jpg
 ---
 
-## GPS Fix
-
 Ensure you have access to the open skies for a potential GPS fix.
 
 When the serial console shows the latitude and longitude information, the `PPS` Red LED should also blink once per second.
