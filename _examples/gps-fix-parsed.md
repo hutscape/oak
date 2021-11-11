@@ -24,7 +24,7 @@ references:
     url: https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_EchoTest/GPS_HardwareSerial_EchoTest.ino
 images:
   console: gps-fix-parsed-console.png
-  prototype: gps-fix-parsed-prototype.jpg
+  prototype: gps-fix-prototype.jpg
   schematic: gps-schematic.png
 steps:
   - step: Ensure you have access to open skies for a GPS fix
@@ -33,6 +33,8 @@ steps:
     image: print-hello-check.png
   - step: Run <code>make</code> to upload the code
   - step: Start the serial monitor
+photos:
+  - filename: gps-fix-pps-prototype.jpg
 ---
 
 ## GPS Fix
