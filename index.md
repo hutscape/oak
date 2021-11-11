@@ -4,7 +4,7 @@ title: Getting Started
 permalink: /
 sequence: 1
 
-manufacturing: false
+manufacturing: true
 downloads: true
 download_schematic: true
 download_layout: true
