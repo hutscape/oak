@@ -7,7 +7,7 @@
 #define UNCOLORED 1
 
 unsigned char image[1024];
-Paint paint(image, 0, 0);  // width should be the multiple of 8
+Paint paint(image, 0, 0);
 Epd epd;
 int count = 0;
 char count_string[] = {'0', '0', '0', '\0'};
