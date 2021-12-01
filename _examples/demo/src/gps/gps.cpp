@@ -23,7 +23,7 @@ bool receivedGPSfix() {
   }
 
   if (!GPS.fix) {
-    return true;  // TEMP
+    return false;
   }
 
   return true;
@@ -68,14 +68,27 @@ void getGPSdate(String &value) {
 
 void getLatLong(String &value) {
   if (GPS.fix) {
-    value = String(GPS.latitude, 0);
-    value += String(GPS.lat);
-    value += ',';
-    value += String(GPS.longitude, 0);
-    value += String(GPS.lon);
+    String latitude = String(GPS.latitude, 0);
+    String latitude_degrees =
+        latitude.substring(0, latitude.length() - 2);
+    String latitude_minutes =
+        latitude.substring(latitude.length() - 2, latitude.length());
 
-    // TODO: Add a dot to the 2nd past position
-    // of the lat and long string to indicate degress.minutes
+    String longitude = String(GPS.longitude, 0);
+    String longitude_degrees =
+        longitude.substring(0, longitude.length() - 2);
+    String longitude_minutes =
+        longitude.substring(longitude.length() - 2, longitude.length());
+
+    value = latitude_degrees;
+    value += " ";
+    value += latitude_minutes;
+    value += String(GPS.lat);
+    value += ",  ";
+    value += longitude_degrees;
+    value += " ";
+    value += longitude_minutes;
+    value += String(GPS.lon);
   }
 }
 

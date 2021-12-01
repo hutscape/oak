@@ -17,6 +17,7 @@ String incoming = "";
 String gpsTime;
 String gpsDate;
 String latlong;
+String previousLatlong;
 
 void setup() {
   SerialUSB.begin(9600);
@@ -57,7 +58,7 @@ void loop() {
 
   if (receivedGPSfix()) {
     getGPStime(gpsTime);
-    SerialUSB.print("Time: ");
+    SerialUSB.print("\nTime: ");
     SerialUSB.println(gpsTime);
 
     getGPSdate(gpsDate);
@@ -69,8 +70,11 @@ void loop() {
     SerialUSB.println(latlong);
 
     if (millis() - lastDisplayTime > displayInterval) {
-      // TODO: Display only if latlong value has changed
-      displayLatLong(latlong);
+      if (latlong != previousLatlong) {
+        displayLatLong(latlong);
+        previousLatlong = latlong;
+      }
+
       lastDisplayTime = millis();
     }
   }

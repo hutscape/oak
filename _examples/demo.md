@@ -18,8 +18,8 @@ features:
   - GPS
   - E-Ink
 images:
-  prototype: lora-prototype.jpg
-  console: lora-duplex-console.png
+  prototype: demo-prototype.jpg
+  console: demo-console.png
 steps:
   - step: Prepare 2 nodes flash with the same sketch but with different local and destination addresses
   - step: Plug in the Oak PCB to the computer
