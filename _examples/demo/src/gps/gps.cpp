@@ -23,7 +23,7 @@ bool receivedGPSfix() {
   }
 
   if (!GPS.fix) {
-    return false;
+    return true; // TEMP
   }
 
   return true;
@@ -92,31 +92,35 @@ void getLatLong(String &value) {
   }
 }
 
+bool getGPSfix() {
+  return GPS.fix;
+}
+
+uint8_t getGPSfixquality() {
+  return GPS.fixquality;
+}
+
+float getGPSspeed() {
+  return GPS.speed;
+}
+
+float getGPSangle() {
+  return GPS.angle;
+}
+
+float getGPSaltitude() {
+  return GPS.altitude;
+}
+
+uint8_t getGPSsatellites() {
+  return GPS.satellites;
+}
+
 void getOtherGPSinfo() {
-  SerialUSB.print("Fix: ");
-  SerialUSB.print((int)GPS.fix);
-  SerialUSB.print(" quality: ");
-  SerialUSB.println((int)GPS.fixquality);
   SerialUSB.print("Time [s] since last fix: ");
   SerialUSB.println(GPS.secondsSinceFix(), 3);
   SerialUSB.print("    since last GPS time: ");
   SerialUSB.println(GPS.secondsSinceTime(), 3);
   SerialUSB.print("    since last GPS date: ");
   SerialUSB.println(GPS.secondsSinceDate(), 3);
-  if (GPS.fix) {
-    SerialUSB.print("Location: ");
-    SerialUSB.print(GPS.latitude, 4);
-    SerialUSB.print(GPS.lat);
-    SerialUSB.print(", ");
-    SerialUSB.print(GPS.longitude, 4);
-    SerialUSB.println(GPS.lon);
-    SerialUSB.print("Speed (knots): ");
-    SerialUSB.println(GPS.speed);
-    SerialUSB.print("Angle: ");
-    SerialUSB.println(GPS.angle);
-    SerialUSB.print("Altitude: ");
-    SerialUSB.println(GPS.altitude);
-    SerialUSB.print("Satellites: ");
-    SerialUSB.println((int)GPS.satellites);
-  }
 }

@@ -57,17 +57,7 @@ void loop() {
   }
 
   if (receivedGPSfix()) {
-    getGPStime(gpsTime);
-    SerialUSB.print("\nTime: ");
-    SerialUSB.println(gpsTime);
-
-    getGPSdate(gpsDate);
-    SerialUSB.print("Date: ");
-    SerialUSB.println(gpsDate);
-
-    getLatLong(latlong);
-    SerialUSB.print("Lat/Long: ");
-    SerialUSB.println(latlong);
+    printGPSinfo();
 
     if (millis() - lastDisplayTime > displayInterval) {
       if (latlong != previousLatlong) {
@@ -78,4 +68,36 @@ void loop() {
       lastDisplayTime = millis();
     }
   }
+}
+
+void printGPSinfo() {
+  getGPStime(gpsTime);
+  SerialUSB.print("\nTime: ");
+  SerialUSB.println(gpsTime);
+
+  getGPSdate(gpsDate);
+  SerialUSB.print("Date: ");
+  SerialUSB.println(gpsDate);
+
+  getLatLong(latlong);
+  SerialUSB.print("Lat/Long: ");
+  SerialUSB.println(latlong);
+
+  SerialUSB.print("GPS Fix? ");
+  SerialUSB.println((int)getGPSfix());
+
+  SerialUSB.print("GPS Fix quality: ");
+  SerialUSB.println((int)getGPSfixquality());
+
+  SerialUSB.print("Speed (knots): ");
+  SerialUSB.println(getGPSspeed());
+
+  SerialUSB.print("Angle: ");
+  SerialUSB.println(getGPSangle());
+
+  SerialUSB.print("Altitude: ");
+  SerialUSB.println(getGPSaltitude());
+
+  SerialUSB.print("Satellites: ");
+  SerialUSB.println(getGPSsatellites());
 }
