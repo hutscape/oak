@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "~/Documents/Arduino/libraries"
+      ],
+      "defines": [],
+      "browse": {
+        "path": [
+          "~/Documents/Arduino/libraries"
+        ]
+      },
+      "macFrameworkPath": [
+        "/System/Library/Frameworks",
+        "/Library/Frameworks"
+      ]
+    }
+  ],
+  "version": 4
+}
