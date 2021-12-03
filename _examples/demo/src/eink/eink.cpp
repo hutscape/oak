@@ -25,8 +25,8 @@ void displayOnEink(String latlong, String timestamp) {
   char convertLatlong[16] = "1 40N, 103 91E";
   latlong.toCharArray(convertLatlong, 16);
 
-  char convertTimestamp[10] = "02:16:59";
-  timestamp.toCharArray(convertTimestamp, 10);
+  char convertTimestamp[9] = "02:16:59";
+  timestamp.toCharArray(convertTimestamp, 9);
 
   epd.ClearFrameMemory(0xFF);
   epd.DisplayFrame();
