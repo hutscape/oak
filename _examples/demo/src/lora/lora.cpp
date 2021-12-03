@@ -35,12 +35,12 @@ bool receiveLoRa(int packetSize, byte localAddress, String &incoming) {
   }
 
   if (incomingLength != incoming.length()) {
-    SerialUSB.println("Error: Message length does not match length");
+    // Message length does not match length
     return false;
   }
 
   if (recipient != localAddress) {
-    SerialUSB.println("Error: Recipient address does not match local address");
+    // Recipient address does not match local address
     return false;
   }
 
