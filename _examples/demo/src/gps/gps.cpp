@@ -68,6 +68,9 @@ void getGPSdate(String &value) {
   value += String(GPS.month, DEC);
   value += '-';
   value += String(GPS.day, DEC);
+  // FIXME: The dat printed is 200-0-0
+  // Why does priting the following line to fixes it?
+  // SerialUSB.println(value);
 }
 
 void getLatLong(String &value) {

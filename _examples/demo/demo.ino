@@ -14,8 +14,8 @@ long lastSendTime = 0;
 long lastDisplayTime = 0;
 
 String incoming = "";
-String gpsTime;
-String gpsDate;
+String gpsTime = "10:00:23";
+String gpsDate = "2021-12-31";
 String latlong;
 String previousLatlong;
 
@@ -77,7 +77,6 @@ void printGPSinfo() {
 
   getGPSdate(gpsDate);
   SerialUSB.print("Date: ");
-  // FIXME: GPS date is 200-0-0
   SerialUSB.println(gpsDate);
 
   getLatLong(latlong);

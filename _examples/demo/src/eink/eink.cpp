@@ -43,7 +43,8 @@ void displayOnEink(String latlong, String timestamp) {
       paint.GetImage(), 0, 10, paint.GetWidth(), paint.GetHeight());
 
   paint.Clear(UNCOLORED);
-  paint.DrawStringAt(20, 4, convertTimestamp, &Font16, COLORED);
+  paint.DrawStringAt(10, 4, "at ", &Font16, COLORED);
+  paint.DrawStringAt(40, 4, convertTimestamp, &Font16, COLORED);
   epd.SetFrameMemory(
       paint.GetImage(), 0, 30, paint.GetWidth(), paint.GetHeight());
 
