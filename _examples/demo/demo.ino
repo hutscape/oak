@@ -1,6 +1,9 @@
+#define DEBUG  // Comment to turn off debug statements
+
+#include "src/debug/debug.h"
 #include "src/gps/gps.h"
-#include "src/lora/lora.h"
 #include "src/eink/eink.h"
+#include "src/lora/lora.h"
 
 // Ensure 2 nodes are flashed with the same sketch
 // Just exchange the node addresses below
@@ -20,18 +23,19 @@ String latlong;
 String previousLatlong;
 
 void setup() {
+  #ifdef DEBUG
   SerialUSB.begin(9600);
   while (!SerialUSB) { }
+  #endif
 
-  SerialUSB.println("Starting Oak demo on node "
-    + String(localAddress, HEX));
+  DEBUG_PRINT_MORE("Starting Oak demo on node " + String(localAddress, HEX));
 
   if (!initLoRa()) {
-    SerialUSB.println("Starting LoRa failed!");
+    DEBUG_PRINT("Starting LoRa failed!");
   }
 
   if (!initEink()) {
-    SerialUSB.println("Starting Eink failed!");
+    DEBUG_PRINT("Starting Eink failed!");
   }
 
   initGPS();
@@ -42,18 +46,24 @@ void loop() {
     String sensorData = String(counter++);
     sendLoRa(sensorData, localAddress, destinationAddress);
 
-    SerialUSB.print("Send data " + sensorData);
-    SerialUSB.print(" from 0x" + String(localAddress, HEX));
-    SerialUSB.println(" to 0x" + String(destinationAddress, HEX));
+    DEBUG_PRINT_MORE("Send data "
+      + sensorData
+      + " from 0x"
+      + String(localAddress, HEX)
+      + " to 0x"
+      + String(destinationAddress, HEX));
 
     lastSendTime = millis();
     sendInterval = random(2000) + 1000;
   }
 
   if (receiveLoRa(LoRa.parsePacket(), localAddress, incoming)) {
-    SerialUSB.print("Received data " + incoming);
-    SerialUSB.print(" from 0x" + String(destinationAddress, HEX));
-    SerialUSB.println(" to 0x" + String(localAddress, HEX));
+    DEBUG_PRINT_MORE("Received data "
+      + incoming
+      + " from 0x"
+      + String(destinationAddress, HEX)
+      + " to 0x"
+      + String(localAddress, HEX));
   }
 
   if (receivedGPSfix()) {
@@ -71,40 +81,28 @@ void loop() {
 }
 
 void printGPSinfo() {
+  DEBUG_PRINT_SIMPLE("\n");
+
   getGPStime(gpsTime);
-  SerialUSB.print("\nTime: ");
-  SerialUSB.println(gpsTime);
+  DEBUG_PRINT_MORE("Time: " + gpsTime);
 
   getGPSdate(gpsDate);
-  SerialUSB.print("Date: ");
-  SerialUSB.println(gpsDate);
+  DEBUG_PRINT_MORE("Date: " + gpsDate);
 
   getLatLong(latlong);
-  SerialUSB.print("Lat/Long: ");
-  SerialUSB.println(latlong);
+  DEBUG_PRINT_MORE("Lat/Long: " + latlong);
 
-  SerialUSB.print("GPS Fix? ");
-  SerialUSB.println((int)getGPSfix());
+  DEBUG_PRINT_MORE("GPS Fix? " + (int)getGPSfix());
+  DEBUG_PRINT_MORE("GPS Fix quality: " + (int)getGPSfixquality());
+  DEBUG_PRINT_MORE("Speed (knots): " + String(getGPSspeed()));
+  DEBUG_PRINT_MORE("Angle: " + String(getGPSangle()));
+  DEBUG_PRINT_MORE("Altitude: " + String(getGPSaltitude()));
+  DEBUG_PRINT_MORE("Satellites: " + String(getGPSsatellites()));
 
-  SerialUSB.print("GPS Fix quality: ");
-  SerialUSB.println((int)getGPSfixquality());
-
-  SerialUSB.print("Speed (knots): ");
-  SerialUSB.println(getGPSspeed());
-
-  SerialUSB.print("Angle: ");
-  SerialUSB.println(getGPSangle());
-
-  SerialUSB.print("Altitude: ");
-  SerialUSB.println(getGPSaltitude());
-
-  SerialUSB.print("Satellites: ");
-  SerialUSB.println(getGPSsatellites());
-
-  SerialUSB.print("Time [s] since last fix: ");
-  SerialUSB.println(getGPStimeSinceLastFix(), 3);
-  SerialUSB.print("    since last GPS time: ");
-  SerialUSB.println(getGPSlastTime(), 3);
-  SerialUSB.print("    since last GPS date: ");
-  SerialUSB.println(getGPSlastDate(), 3);
+  DEBUG_PRINT_MORE("Time [s] since last fix: "
+    + String(getGPStimeSinceLastFix(), 3));
+  DEBUG_PRINT_MORE("    since last GPS time: "
+    + String(getGPSlastTime(), 3));
+  DEBUG_PRINT_MORE("    since last GPS date: "
+    + String(getGPSlastDate(), 3));
 }
