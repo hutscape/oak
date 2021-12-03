@@ -3,12 +3,14 @@
     {
       "name": "Mac",
       "includePath": [
-        "~/Documents/Arduino/libraries"
+        "~/Documents/Arduino/libraries",
+        "${workspaceRoot}/**"
       ],
       "defines": [],
       "browse": {
         "path": [
-          "~/Documents/Arduino/libraries"
+          "~/Documents/Arduino/libraries",
+          "${workspaceRoot}/**"
         ]
       },
       "macFrameworkPath": [
