@@ -1,6 +1,7 @@
 #include "gps.h"
 
 Adafruit_GPS GPS(&GPSSerial);
+const uint8_t timezone = 8;  // GMT +8
 
 void initGPS() {
   GPS.begin(9600);
@@ -30,6 +31,8 @@ bool receivedGPSfix() {
 }
 
 void getGPStime(String &value) {
+  // uint8_t hourInTimezone = getTimezoneHour(GPS.hour);
+
   if (GPS.hour < 10) {
     value = '0';
   }
@@ -126,4 +129,15 @@ float getGPSlastTime() {
 
 float getGPSlastDate() {
   return GPS.secondsSinceDate();
+}
+
+uint8_t getTimezoneHour(uint8_t hour) {
+  hour += timezone;
+  if (hour > 23) {
+    hour -= 24;
+  } else if (hour < 0) {
+    hour += 24;
+  }
+
+  return hour;
 }

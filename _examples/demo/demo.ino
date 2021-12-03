@@ -61,7 +61,7 @@ void loop() {
 
     if (millis() - lastDisplayTime > displayInterval) {
       if (latlong != previousLatlong) {
-        displayLatLong(latlong);
+        displayOnEink(latlong, gpsTime);
         previousLatlong = latlong;
       }
 

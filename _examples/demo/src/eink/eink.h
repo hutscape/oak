@@ -7,4 +7,4 @@
 #define UNCOLORED 1
 
 bool initEink();
-void displayLatLong(String);
+void displayOnEink(String, String);
