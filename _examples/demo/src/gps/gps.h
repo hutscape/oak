@@ -13,5 +13,6 @@ float getGPSspeed();
 float getGPSangle();
 float getGPSaltitude();
 uint8_t getGPSsatellites();
-
-void getOtherGPSinfo();
+float getGPStimeSinceLastFix();
+float getGPSlastTime();
+float getGPSlastDate();

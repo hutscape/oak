@@ -100,4 +100,11 @@ void printGPSinfo() {
 
   SerialUSB.print("Satellites: ");
   SerialUSB.println(getGPSsatellites());
+
+  SerialUSB.print("Time [s] since last fix: ");
+  SerialUSB.println(getGPStimeSinceLastFix(), 3);
+  SerialUSB.print("    since last GPS time: ");
+  SerialUSB.println(getGPSlastTime(), 3);
+  SerialUSB.print("    since last GPS date: ");
+  SerialUSB.println(getGPSlastDate(), 3);
 }

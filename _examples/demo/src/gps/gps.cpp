@@ -23,7 +23,7 @@ bool receivedGPSfix() {
   }
 
   if (!GPS.fix) {
-    return true; // TEMP
+    return false;
   }
 
   return true;
@@ -116,11 +116,14 @@ uint8_t getGPSsatellites() {
   return GPS.satellites;
 }
 
-void getOtherGPSinfo() {
-  SerialUSB.print("Time [s] since last fix: ");
-  SerialUSB.println(GPS.secondsSinceFix(), 3);
-  SerialUSB.print("    since last GPS time: ");
-  SerialUSB.println(GPS.secondsSinceTime(), 3);
-  SerialUSB.print("    since last GPS date: ");
-  SerialUSB.println(GPS.secondsSinceDate(), 3);
+float getGPStimeSinceLastFix() {
+  return GPS.secondsSinceFix();
+}
+
+float getGPSlastTime() {
+  return GPS.secondsSinceTime();
+}
+
+float getGPSlastDate() {
+  return GPS.secondsSinceDate();
 }
