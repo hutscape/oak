@@ -130,14 +130,3 @@ float getGPSlastTime() {
 float getGPSlastDate() {
   return GPS.secondsSinceDate();
 }
-
-uint8_t getTimezoneHour(uint8_t hour) {
-  hour += timezone;
-  if (hour > 23) {
-    hour -= 24;
-  } else if (hour < 0) {
-    hour += 24;
-  }
-
-  return hour;
-}

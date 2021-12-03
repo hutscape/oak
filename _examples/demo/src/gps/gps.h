@@ -16,4 +16,3 @@ uint8_t getGPSsatellites();
 float getGPStimeSinceLastFix();
 float getGPSlastTime();
 float getGPSlastDate();
-uint8_t getTimezoneHour(uint8_t);
