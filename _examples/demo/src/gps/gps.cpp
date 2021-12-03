@@ -31,12 +31,13 @@ bool receivedGPSfix() {
 }
 
 void getGPStime(String &value) {
-  // uint8_t hourInTimezone = getTimezoneHour(GPS.hour);
+  uint8_t hourInTimezone = (GPS.hour + timezone) % 24;
 
-  if (GPS.hour < 10) {
-    value = '0';
+  if (hourInTimezone < 10) {
+    value = '0' + String(hourInTimezone, DEC);
   }
-  value += String(GPS.hour, DEC);
+
+  value = String(hourInTimezone, DEC);
   value += ':';
 
   if (GPS.minute < 10) {

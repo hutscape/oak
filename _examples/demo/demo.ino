@@ -77,6 +77,7 @@ void printGPSinfo() {
 
   getGPSdate(gpsDate);
   SerialUSB.print("Date: ");
+  // FIXME: GPS date is 200-0-0
   SerialUSB.println(gpsDate);
 
   getLatLong(latlong);
