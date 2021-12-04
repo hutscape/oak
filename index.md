@@ -39,7 +39,7 @@ download_bom: true
         <div class="tile is-parent">
           <article class="tile is-child notification">
             <p class="title">Step 2</p>
-            <p class="subtitle">Install the custom Arduino board in the Arduino IDE.</p>
+            <p class="subtitle">[Option A]: Install new board in Arduino IDE</p>
             <p>Copy and paste the following URL into the File > Preferences > "Additional Boards Manager" textbox in Arduino IDE</p>
             <code> https://raw.githubusercontent.com/hutscape/arduino-board-index/main/package_hutscape_index.json</code>
             <a href="{{site.url}}/images/examples/paste-board-url.png">
@@ -51,6 +51,14 @@ download_bom: true
             </a>
             <a href="{{site.url}}/images/examples/custom-board-installed.png">
               <img src="{{site.url}}/images/examples/custom-board-installed.png" alt="Installation of custom board is successful">
+            </a>
+            <p class="subtitle">[Option B]: Use Makefile</p>
+            <p>Run <code>make</code> to upload the sketch to the board.</p>
+            <a href="{{site.url}}/images/examples/make-to-install.png">
+              <img src="{{site.url}}/images/examples/make-to-install.png" alt="Run the command make to upload the code to the board">
+            </a>
+            <a href="{{site.url}}/images/examples/make-successful.png">
+              <img src="{{site.url}}/images/examples/make-successful.png" alt="Successfully uploaded the code to the board">
             </a>
           </article>
         </div>
