@@ -70,6 +70,14 @@ download_bom: true
               <a href="{{site.url}}/images/examples/eink-prototype.jpg">
                 <img src="{{site.url}}/images/examples/eink-prototype.jpg" alt="Typical setup">
               </a>
+              <p class="subtitle">[Option A]: Use Arduino IDE</p>
+              <a href="{{site.url}}/images/examples/option-a-ide-blinky.png">
+                <img src="{{site.url}}/images/examples/option-a-ide-blinky.png" alt="Use Arduino IDE to upoad blinky firmware">
+              </a>
+              <p class="subtitle">[Option B]: Use Makefile</p>
+              <a href="{{site.url}}/images/examples/option-b-makefile-blinky.png">
+                <img src="{{site.url}}/images/examples/option-b-makefile-blinky.png" alt="Use Makefile to upload the blinky firmware">
+              </a>
             </div>
           </article>
         </div>
