@@ -3,6 +3,7 @@
 
 int counter = 0;
 #define LEDPIN 2
+int ledState = LOW;
 
 #define RADIO_CS_PIN 5        // D5 on Arduino Zero
 #define RADIO_DI0_PIN 11      // D11 on Arduino Zero
@@ -16,8 +17,7 @@ int interval = 2000;
 
 void setup() {
   SerialUSB.begin(9600);
-  while (!SerialUSB) {
-  }
+  pinMode(LEDPIN, OUTPUT);
 
   SerialUSB.println("Starting LoRa duplex on node " + String(localAddress, HEX));
   pinMode(LEDPIN, OUTPUT);
@@ -42,6 +42,11 @@ void loop() {
 
     lastSendTime = millis();
     interval = random(2000) + 1000;
+
+    // Toggle LED
+    ledState = !ledState;
+    digitalWrite(LEDPIN, ledState);
+    SerialUSB.println("LED state " + String(ledState));
   }
 
   receiveMessage(LoRa.parsePacket());

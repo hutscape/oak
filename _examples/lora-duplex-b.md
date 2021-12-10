@@ -27,3 +27,7 @@ steps:
     image: print-hello-check.png
   - step: Run <code>make</code> to upload the code
 ---
+
+Run both nodes `AA` and `BB` at the same time to exchange an integer.
+
+This example can be run battery-powered. The LED will blink when the node sends out a packet.
