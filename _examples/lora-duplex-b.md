@@ -23,9 +23,10 @@ images:
 steps:
   - step: Prepare <a href="./lora-duplex-a">LoRa duplex A</a> to send and receive at the same time
   - step: Plug in the Oak PCB to the computer
-  - step: Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>
+  - step: (Option A) Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>. Run <code>make</code> to compile and upload the code to the board.
     image: print-hello-check.png
-  - step: Run <code>make</code> to upload the code
+  - step: (Option B) Ensure the board can be detected with Arduino IDE. Compile and upload the code to the board.
+    image: arduino-ide-board.png
 ---
 
 Run both nodes `AA` and `BB` at the same time to exchange an integer.

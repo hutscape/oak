@@ -24,8 +24,9 @@ images:
   schematic: gps-schematic.png
 steps:
   - step: Plug in the Oak PCB to the computer
-  - step: Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>
+  - step: Plug in the Oak PCB to the computer
+  - step: (Option A) Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>. Run <code>make</code> to compile and upload the code to the board.
     image: print-hello-check.png
-  - step: Run <code>make</code> to upload the code
-  - step: Start the serial monitor
+  - step: (Option B) Ensure the board can be detected with Arduino IDE. Compile and upload the code to the board.
+    image: arduino-ide-board.png
 ---
