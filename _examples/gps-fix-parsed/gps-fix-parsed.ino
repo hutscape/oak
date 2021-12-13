@@ -8,7 +8,6 @@ Adafruit_GPS GPS(&GPSSerial);
 uint32_t timer = millis();
 
 void setup() {
-  while (!Serial) {}
   SerialUSB.begin(115200);
   SerialUSB.println("Adafruit GPS library basic test!");
 

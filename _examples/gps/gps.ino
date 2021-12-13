@@ -2,7 +2,6 @@
 
 void setup() {
   SerialUSB.begin(115200);
-  while (!SerialUSB) {}
   GPSSerial.begin(9600);
 
   SerialUSB.println("Starting GPS with UART...");

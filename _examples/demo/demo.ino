@@ -25,7 +25,6 @@ String previousLatlong;
 void setup() {
   #ifdef DEBUG
   SerialUSB.begin(9600);
-  while (!SerialUSB) { }
   #endif
 
   DEBUG_PRINT_MORE("Starting Oak demo on node " + String(localAddress, HEX));

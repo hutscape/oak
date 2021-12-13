@@ -15,7 +15,6 @@ char count_string[] = {'0', '0', '0','\0'};
 void setup() {
   #ifdef DEBUG
   SerialUSB.begin(9600);
-  while (!SerialUSB) { }
   #endif
 
   DEBUG_TITLE("Start Oak: With GPS, LoRa and E-ink...");

@@ -11,7 +11,6 @@ int counter = 0;
 
 void setup() {
   SerialUSB.begin(9600);
-  while (!SerialUSB) { }
 
   SerialUSB.println("Starting LoRa transmission...");
   pinMode(LEDPIN, OUTPUT);

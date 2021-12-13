@@ -18,7 +18,6 @@ unsigned long time_now_s;
 
 void setup() {
   SerialUSB.begin(9600);
-  while (!SerialUSB) { }
 
   SerialUSB.println("E-Ink rotated information example... \n");
   if (epd.Init(lut_full_update) != 0) {

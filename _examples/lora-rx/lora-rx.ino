@@ -8,9 +8,6 @@
 
 void setup() {
   SerialUSB.begin(9600);
-  while (!SerialUSB) {
-  }
-
   SerialUSB.println("Starting LoRa Receiver...");
 
   LoRa.setPins(RADIO_CS_PIN, RADIO_RST_PIN, RADIO_DI0_PIN);
