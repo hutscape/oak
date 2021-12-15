@@ -4,21 +4,33 @@
 Adafruit_GPS GPS(&GPSSerial);
 
 #define GPSECHO false
+#define LEDPIN 2
+#define GPSRST 3
+
+int ledState = 0;
 
 uint32_t timer = millis();
 
 void setup() {
-  SerialUSB.begin(115200);
+  SerialUSB.begin(9600);
   SerialUSB.println("Adafruit GPS library basic test!");
 
+  // Initiate GPS
   GPS.begin(9600);
   GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
   GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ);
   GPS.sendCommand(PGCMD_ANTENNA);
 
+  pinMode(GPSRST, OUTPUT);
+  digitalWrite(GPSRST, HIGH);
+
   delay(1000);
 
   GPSSerial.println(PMTK_Q_RELEASE);
+
+  // Initiate the LED pin as an output
+  pinMode(LEDPIN, OUTPUT);
+  digitalWrite(LEDPIN, ledState);
 }
 
 void loop() {
@@ -27,6 +39,8 @@ void loop() {
   if (GPS.newNMEAreceived()) {
     if (!GPS.parse(GPS.lastNMEA())) {
       return;
+    } else {
+      SerialUSB.println("GPS data received");
     }
   }
 
@@ -75,21 +89,23 @@ void loop() {
     SerialUSB.println(GPS.secondsSinceTime(), 3);
     SerialUSB.print("    since last GPS date: ");
     SerialUSB.println(GPS.secondsSinceDate(), 3);
-    if (GPS.fix) {
-      SerialUSB.print("Location: ");
-      SerialUSB.print(GPS.latitude, 4);
-      SerialUSB.print(GPS.lat);
-      SerialUSB.print(", ");
-      SerialUSB.print(GPS.longitude, 4);
-      SerialUSB.println(GPS.lon);
-      SerialUSB.print("Speed (knots): ");
-      SerialUSB.println(GPS.speed);
-      SerialUSB.print("Angle: ");
-      SerialUSB.println(GPS.angle);
-      SerialUSB.print("Altitude: ");
-      SerialUSB.println(GPS.altitude);
-      SerialUSB.print("Satellites: ");
-      SerialUSB.println((int)GPS.satellites);
-    }
+    SerialUSB.print("Location: ");
+    SerialUSB.print(GPS.latitude, 4);
+    SerialUSB.print(GPS.lat);
+    SerialUSB.print(", ");
+    SerialUSB.print(GPS.longitude, 4);
+    SerialUSB.println(GPS.lon);
+    SerialUSB.print("Speed (knots): ");
+    SerialUSB.println(GPS.speed);
+    SerialUSB.print("Angle: ");
+    SerialUSB.println(GPS.angle);
+    SerialUSB.print("Altitude: ");
+    SerialUSB.println(GPS.altitude);
+    SerialUSB.print("Satellites: ");
+    SerialUSB.println((int)GPS.satellites);
+
+    // LED Toggle
+    ledState = !ledState;
+    digitalWrite(LEDPIN, ledState);
   }
 }

@@ -1,10 +1,14 @@
 #define GPSSerial Serial1
+#define GPSRST 3
 
 void setup() {
-  SerialUSB.begin(115200);
+  SerialUSB.begin(9600);
   GPSSerial.begin(9600);
 
   SerialUSB.println("Starting GPS with UART...");
+
+  pinMode(GPSRST, OUTPUT);
+  digitalWrite(GPSRST, HIGH);
 }
 
 void loop() {
