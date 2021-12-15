@@ -26,8 +26,6 @@ void setup() {
 
   delay(1000);
 
-  GPSSerial.println(PMTK_Q_RELEASE);
-
   // Initiate the LED pin as an output
   pinMode(LEDPIN, OUTPUT);
   digitalWrite(LEDPIN, ledState);

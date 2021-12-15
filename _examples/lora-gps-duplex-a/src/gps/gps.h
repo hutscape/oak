@@ -3,6 +3,7 @@
 #include <Adafruit_GPS.h>
 #define GPSSerial Serial1
 #define GPSECHO false
+#define GPSRST 3
 
 struct LatLong {
   float latitude;

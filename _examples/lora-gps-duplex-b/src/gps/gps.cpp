@@ -1,4 +1,5 @@
 #include "gps.h"
+#include "Arduino.h"
 
 Adafruit_GPS GPS(&GPSSerial);
 const uint8_t timezone = 8;  // GMT +8
@@ -11,7 +12,8 @@ void initGPS() {
 
   delay(1000);
 
-  GPSSerial.println(PMTK_Q_RELEASE);
+  pinMode(GPSRST, OUTPUT);
+  digitalWrite(GPSRST, HIGH);
 }
 
 bool receivedGPSfix() {

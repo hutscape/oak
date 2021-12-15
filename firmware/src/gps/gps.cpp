@@ -2,6 +2,7 @@
 
 #define GPSSerial Serial1
 #define GPSECHO false
+#define GPSRST 3
 
 Adafruit_GPS GPS(&GPSSerial);
 uint32_t timer = millis();
@@ -14,7 +15,8 @@ void initGPS() {
 
     delay(1000);
 
-    GPSSerial.println(PMTK_Q_RELEASE);
+    pinMode(GPSRST, OUTPUT);
+    digitalWrite(GPSRST, HIGH);
 }
 
 bool isNMEAReceived() {
@@ -31,12 +33,24 @@ void displayGPS() {
     if (millis() - timer > 2000) {
         timer = millis();
         SerialUSB.print("\nTime: ");
-    if (GPS.hour < 10) { SerialUSB.print('0'); }
-        SerialUSB.print(GPS.hour, DEC); SerialUSB.print(':');
-    if (GPS.minute < 10) { SerialUSB.print('0'); }
-        SerialUSB.print(GPS.minute, DEC); SerialUSB.print(':');
-    if (GPS.seconds < 10) { SerialUSB.print('0'); }
-        SerialUSB.print(GPS.seconds, DEC); SerialUSB.print('.');
+    if (GPS.hour < 10) {
+        SerialUSB.print('0');
+    }
+    SerialUSB.print(GPS.hour, DEC);
+    SerialUSB.print(':');
+
+    if (GPS.minute < 10) {
+        SerialUSB.print('0');
+    }
+    SerialUSB.print(GPS.minute, DEC);
+    SerialUSB.print(':');
+
+    if (GPS.seconds < 10) {
+        SerialUSB.print('0');
+    }
+    SerialUSB.print(GPS.seconds, DEC);
+    SerialUSB.print('.');
+
     if (GPS.milliseconds < 10) {
         SerialUSB.print("00");
     } else if (GPS.milliseconds > 9 && GPS.milliseconds < 100) {
@@ -45,12 +59,15 @@ void displayGPS() {
 
     SerialUSB.println(GPS.milliseconds);
     SerialUSB.print("Date: ");
-    SerialUSB.print(GPS.day, DEC); SerialUSB.print('/');
-    SerialUSB.print(GPS.month, DEC); SerialUSB.print("/20");
+    SerialUSB.print(GPS.day, DEC);
+    SerialUSB.print('/');
+    SerialUSB.print(GPS.month, DEC);
+    SerialUSB.print("/20");
     SerialUSB.println(GPS.year, DEC);
     SerialUSB.print("Fix: ");
     SerialUSB.print((int)GPS.fix);
-    SerialUSB.print(" quality: "); SerialUSB.println((int)GPS.fixquality);
+    SerialUSB.print(" quality: ");
+    SerialUSB.println((int)GPS.fixquality);
     SerialUSB.print("Time [s] since last fix: ");
     SerialUSB.println(GPS.secondsSinceFix(), 3);
     SerialUSB.print("    since last GPS time: ");
@@ -60,9 +77,11 @@ void displayGPS() {
 
     if (GPS.fix) {
       SerialUSB.print("Location: ");
-      SerialUSB.print(GPS.latitude, 4); SerialUSB.print(GPS.lat);
+      SerialUSB.print(GPS.latitude, 4);
+      SerialUSB.print(GPS.lat);
       SerialUSB.print(", ");
-      SerialUSB.print(GPS.longitude, 4); SerialUSB.println(GPS.lon);
+      SerialUSB.print(GPS.longitude, 4);
+      SerialUSB.println(GPS.lon);
     }
   }
 
