@@ -1,3 +1,5 @@
+#define DEBUG  // Uncomment to enable verbose debug prints
+
 #include <Adafruit_GPS.h>
 #define GPSSerial Serial1
 #define GPSECHO false
@@ -13,7 +15,7 @@ bool receivedGPSfix();
 void getGPStime(String &);
 void getGPSdate(String &);
 void getLatLong(struct LatLong *);
-bool hasNewGPS(struct LatLong *, struct LatLong *);
+bool hasNewGPSFix(struct LatLong *, struct LatLong *);
 bool getGPSfix();
 uint8_t getGPSfixquality();
 float getGPSspeed();

@@ -24,13 +24,13 @@ bool receivedGPSfix() {
   }
 
   if (!GPS.fix) {
-    #ifdef DEBUG
-      // print intermediate GPS info before fix
-      return true;
-    #else
-      // don't print intermediate GPS info until there is a fix
-      return false;
-    #endif
+#ifdef DEBUG
+    // print intermediate GPS info before fix
+    return true;
+#else
+    // don't print intermediate GPS info until there is a fix
+    return false;
+#endif
   }
 
   return true;
@@ -43,9 +43,12 @@ void getLatLong(struct LatLong *latlong) {
   }
 }
 
-bool hasNewGPS(struct LatLong *prevLatlong, struct LatLong *currLatLong) {
-  if (prevLatlong->latitude == currLatLong->latitude
-    && prevLatlong->longitude == currLatLong->longitude) {
+bool hasNewGPSFix(struct LatLong *prevLatlong, struct LatLong *currLatLong) {
+  if (currLatLong->latitude == 0.00 && currLatLong->longitude == 0.00) {
+    return false;
+  }
+
+  if (prevLatlong->latitude == currLatLong->latitude && prevLatlong->longitude == currLatLong->longitude) {
     return false;
   }
 
@@ -90,9 +93,6 @@ void getGPSdate(String &value) {
   value += String(GPS.month, DEC);
   value += '-';
   value += String(GPS.day, DEC);
-  // FIXME: The date printed is 200-0-0
-  // Why does priting the following line to fixes it?
-  // SerialUSB.println(value);
 }
 
 bool getGPSfix() {

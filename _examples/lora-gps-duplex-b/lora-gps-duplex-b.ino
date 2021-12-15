@@ -1,6 +1,4 @@
-#define DEBUG 0
-// 1 to enable verbose debug prints
-// 0 to disable verbose debug prints
+#define DEBUG  // Uncomment to enable verbose debug prints
 
 #include "src/gps/gps.h"
 #include "src/led/led.h"
@@ -35,7 +33,7 @@ void setup() {
 
 void loop() {
   if (millis() - lastSendTime > interval) {
-    if (hasNewGPS(&prevLatlong, &latlong)) {
+    if (hasNewGPSFix(&prevLatlong, &latlong)) {
       convertLatLongToString(&latlong, latlongInString);
       sendLoRa(latlongInString, localAddress, destinationAddress);
 
@@ -49,7 +47,11 @@ void loop() {
 
       prevLatlong = latlong;
     } else {
-      SerialUSB.println("No new GPS data. Not sending anything over LoRa.");
+      if (latlong->latitude == 0.00 && latlong->longitude == 0.00) {
+        SerialUSB.println("No GPS fix");
+      } else {
+        SerialUSB.println("No new GPS location");
+      }
     }
 
     lastSendTime = millis();
@@ -70,7 +72,7 @@ void loop() {
   if (receivedGPSfix()) {
     getLatLong(&latlong);
 
-    #if DEBUG
+    #ifdef DEBUG
       printGPSinfo();
     #endif
   }
