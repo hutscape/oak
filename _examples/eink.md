@@ -13,6 +13,9 @@ features:
   - e-paper
   - waveshare
   - display
+versions:
+  - name: e-paper
+    version: 1
 images:
   prototype: eink-prototype.jpg
   console: eink-console.png

@@ -13,6 +13,9 @@ features:
   - e-paper
   - waveshare
   - display
+versions:
+  - name: e-paper
+    version: 1
 prerequisites:
   - name: E-Ink hello world
     url: ./eink

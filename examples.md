@@ -18,8 +18,10 @@ sequence: 2
             {% for feat in example.features %}
             <span class="tag is-warning is-light">{{ feat }}</span>
             {% endfor %}
+            {% for v in example.versions %}
+            <span class="tag is-link is-light">{{ v.name }} v{{v.version}}</span>
+            {% endfor %}
             <span class="tag">{{ example.difficulty }}</span>
-
             <!-- TODO -->
             {% if jekyll.environment == "development" %}
             {% if example.images.prototype %}
