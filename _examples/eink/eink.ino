@@ -13,11 +13,11 @@ int count = 0;
 char count_string[] = {'0', '0', '0', '\0'};
 
 void setup() {
-  Serial.begin(9600);
+  SerialUSB.begin(9600);
 
-  Serial.print("e-Paper init ");
+  SerialUSB.print("e-Paper init ");
   if (epd.Init(lut_full_update) != 0) {
-    Serial.print("e-Paper init failed");
+    SerialUSB.print("e-Paper init failed");
     return;
   }
 }
