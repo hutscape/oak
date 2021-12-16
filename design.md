@@ -2,7 +2,7 @@
 layout: design
 title: Design
 permalink: /design
-sequence: 6
+sequence: 5
 
 # Mechanical
 items:
