@@ -7,6 +7,9 @@ references:
     url: https://github.com/waveshare/e-Paper/tree/master/Arduino/epd1in54
   - name: Arduino Waveshare E-paper 1in54 version 2
     url: https://github.com/waveshare/e-Paper/tree/master/Arduino/epd1in54_V2
+dependancies:
+  - name: waveshare
+    url: https://github.com/waveshare/e-Paper
 difficulty: medium
 features:
   - e-ink

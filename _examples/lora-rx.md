@@ -5,6 +5,9 @@ description: Receive LoRa with an increasing integer counter
 references:
   - name: Arduino LoRa receiver example code
     url: https://github.com/sandeepmistry/arduino-LoRa/tree/master/examples/LoRaReceiver
+dependancies:
+  - name: Arduino LoRa
+    url: https://github.com/sandeepmistry/arduino-LoRa
 prerequisites:
   - name: LoRa Tx
     url: ./lora-tx

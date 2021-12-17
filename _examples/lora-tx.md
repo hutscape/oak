@@ -5,6 +5,9 @@ description: Transmit LoRa with an increasing integer counter to no destination 
 references:
   - name: Arduino LoRa sender example code
     url: https://github.com/sandeepmistry/arduino-LoRa/tree/master/examples/LoRaSender
+dependancies:
+  - name: Arduino LoRa
+    url: https://github.com/sandeepmistry/arduino-LoRa
 prerequisites:
   - name: LoRa Rx
     url: ./lora-rx

@@ -5,6 +5,9 @@ description: LoRa transmit and receive from destination address approximately at
 references:
   - name: Arduino LoRa duplex example code
     url: https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaDuplex/LoRaDuplex.ino
+dependancies:
+  - name: Arduino LoRa
+    url: https://github.com/sandeepmistry/arduino-LoRa
 prerequisites:
   - name: LoRa transmit
     url: ./lora-tx
