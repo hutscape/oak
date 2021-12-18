@@ -37,8 +37,6 @@ void loop() {
   if (GPS.newNMEAreceived()) {
     if (!GPS.parse(GPS.lastNMEA())) {
       return;
-    } else {
-      SerialUSB.println("GPS data received");
     }
   }
 
