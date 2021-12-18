@@ -86,10 +86,10 @@ void loop() {
     SerialUSB.print("    since last GPS date: ");
     SerialUSB.println(GPS.secondsSinceDate(), 3);
     SerialUSB.print("Location: ");
-    SerialUSB.print(GPS.latitude, 4);
+    SerialUSB.print(GPS.latitude, 8);
     SerialUSB.print(GPS.lat);
     SerialUSB.print(", ");
-    SerialUSB.print(GPS.longitude, 4);
+    SerialUSB.print(GPS.longitude, 8);
     SerialUSB.println(GPS.lon);
     SerialUSB.print("Speed (knots): ");
     SerialUSB.println(GPS.speed);
