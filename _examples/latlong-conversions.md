@@ -23,3 +23,9 @@ steps:
   - step: (Option B) Ensure the board can be detected with Arduino IDE. Compile and upload the code to the board.
     image: arduino-ide-board.png
 ---
+
+### Lat-Long formats
+
+- Degrees-Minutes-Seconds (DMS): `1°24'58.6"N 103°54'54.6"E`
+- Decimal-Minutes: `124.97666667, 10354.91`
+- Decimal Degrees: `1.41627010, 103.91517884`
