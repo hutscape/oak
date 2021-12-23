@@ -13,13 +13,15 @@ struct LatLong {
 
 void initGPS();
 bool receivedGPSfix();
-
-void getGPStime(String &);
-void getGPSdate(String &);
-void getLatLong(struct LatLong *);
 bool hasNewGPSFix(struct LatLong *, struct LatLong *);
 bool getGPSfix();
 uint8_t getGPSfixquality();
+
+// Get various types of GPS information
+void getGPStime(String &);
+void getGPSdate(String &);
+void getLatLong(struct LatLong *);
+
 float getGPSspeed();
 float getGPSangle();
 float getGPSaltitude();
@@ -28,5 +30,6 @@ float getGPStimeSinceLastFix();
 float getGPSlastTime();
 float getGPSlastDate();
 
-void formatLatLongForDisplay(struct LatLong *, String &);
+// Convert LatLong to various formats
+void convertLatLongForDisplay(struct LatLong *, String &);
 void convertLatLongToString(struct LatLong *, String &);

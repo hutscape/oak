@@ -23,6 +23,7 @@ long lastDisplayTime = 0;
 String incoming = "";
 String gpsTime = "10:00:23";
 String gpsDate = "2021-12-31";
+String gpsLatLong = "124.12345678N, 10354.12345678E";
 LatLong latlong = {0.00, 0.00};
 LatLong prevLatlong = {0.00, 0.00};
 
@@ -93,10 +94,8 @@ void printGPSinfo() {
   DEBUG_GPS("Date: " + gpsDate);
 
   getLatLong(&latlong);
-  DEBUG_GPS("Lat/Long: "
-    + String(latlong.latitude, 6)
-    + " "
-    + String(latlong.longitude, 6));
+  convertLatLongToString(&latlong, gpsLatLong);
+  DEBUG_GPS("Lat/Long: " + gpsLatLong);
 
   DEBUG_GPS("GPS Fix? " + String(getGPSfix(), DEC));
   DEBUG_GPS("GPS Fix quality: " + String(getGPSfixquality(), DEC));

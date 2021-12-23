@@ -134,7 +134,7 @@ float getGPSlastDate() {
   return GPS.secondsSinceDate();
 }
 
-void formatLatLongForDisplay(struct LatLong *latlong, String &value) {
+void convertLatLongForDisplay(struct LatLong *latlong, String &value) {
   if (GPS.fix) {
     String latitude = String(latlong->latitude, 0);
     String latitude_degrees =
@@ -160,6 +160,8 @@ void formatLatLongForDisplay(struct LatLong *latlong, String &value) {
   }
 }
 
+// Output example: "1234.12345678N, 12345.12345678E"
+// Format in Degree-Minutes in 8 decimal place accruacy
 void convertLatLongToString(struct LatLong *latlong, String &value) {
   if (GPS.fix) {
     String latitude = String(latlong->latitude, 8);
