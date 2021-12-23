@@ -4,6 +4,7 @@
 #include "src/gps/gps.h"
 #include "src/eink/eink.h"
 #include "src/lora/lora.h"
+#include "src/led/led.h"
 
 // Ensure 2 nodes are flashed with the same sketch
 // Just exchange the node addresses below
@@ -19,8 +20,8 @@ long lastDisplayTime = 0;
 String incoming = "";
 String gpsTime = "10:00:23";
 String gpsDate = "2021-12-31";
-String latlong;
-String previousLatlong;
+LatLong latlong = {0.00, 0.00};
+LatLong prevLatlong = {0.00, 0.00};
 
 void setup() {
   #ifdef DEBUG
@@ -69,9 +70,9 @@ void loop() {
     printGPSinfo();
 
     if (millis() - lastDisplayTime > displayInterval) {
-      if (latlong != previousLatlong) {
-        displayOnEink(latlong, gpsTime);
-        previousLatlong = latlong;
+      if (hasNewGPSFix(&prevLatlong, &latlong)) {
+        // displayOnEink(&latlong, gpsTime);
+        prevLatlong = latlong;
       }
 
       lastDisplayTime = millis();
@@ -88,11 +89,14 @@ void printGPSinfo() {
   getGPSdate(gpsDate);
   DEBUG_PRINT_MORE("Date: " + gpsDate);
 
-  getLatLong(latlong);
-  DEBUG_PRINT_MORE("Lat/Long: " + latlong);
+  getLatLong(&latlong);
+  DEBUG_PRINT_MORE("Lat/Long: "
+    + String(latlong.latitude, 6)
+    + " "
+    + String(latlong.longitude, 6));
 
-  DEBUG_PRINT_MORE("GPS Fix? " + (int)getGPSfix());
-  DEBUG_PRINT_MORE("GPS Fix quality: " + (int)getGPSfixquality());
+  DEBUG_PRINT_MORE("GPS Fix? " + String(getGPSfix(), DEC));
+  DEBUG_PRINT_MORE("GPS Fix quality: " + String(getGPSfixquality(), DEC));
   DEBUG_PRINT_MORE("Speed (knots): " + String(getGPSspeed()));
   DEBUG_PRINT_MORE("Angle: " + String(getGPSangle()));
   DEBUG_PRINT_MORE("Altitude: " + String(getGPSaltitude()));

@@ -26,6 +26,32 @@ bool receivedGPSfix() {
   }
 
   if (!GPS.fix) {
+    #ifdef DEBUG
+      // print intermediate GPS info before fix
+      return true;
+    #else
+      // don't print intermediate GPS info until there is a fix
+      return false;
+    #endif
+  }
+
+  return true;
+}
+
+void getLatLong(struct LatLong *latlong) {
+  if (GPS.fix) {
+    latlong->latitude = GPS.latitude;
+    latlong->longitude = GPS.longitude;
+  }
+}
+
+bool hasNewGPSFix(struct LatLong *prevLatlong, struct LatLong *currLatLong) {
+  if (currLatLong->latitude == 0.00 && currLatLong->longitude == 0.00) {
+    return false;
+  }
+
+  if (prevLatlong->latitude == currLatLong->latitude
+    && prevLatlong->longitude == currLatLong->longitude) {
     return false;
   }
 
@@ -70,35 +96,6 @@ void getGPSdate(String &value) {
   value += String(GPS.month, DEC);
   value += '-';
   value += String(GPS.day, DEC);
-  // FIXME: The date printed is 200-0-0
-  // Why does priting the following line to fixes it?
-  // SerialUSB.println(value);
-}
-
-void getLatLong(String &value) {
-  if (GPS.fix) {
-    String latitude = String(GPS.latitude, 0);
-    String latitude_degrees =
-        latitude.substring(0, latitude.length() - 2);
-    String latitude_minutes =
-        latitude.substring(latitude.length() - 2, latitude.length());
-
-    String longitude = String(GPS.longitude, 0);
-    String longitude_degrees =
-        longitude.substring(0, longitude.length() - 2);
-    String longitude_minutes =
-        longitude.substring(longitude.length() - 2, longitude.length());
-
-    value = latitude_degrees;
-    value += " ";
-    value += latitude_minutes;
-    value += String(GPS.lat);
-    value += ",  ";
-    value += longitude_degrees;
-    value += " ";
-    value += longitude_minutes;
-    value += String(GPS.lon);
-  }
 }
 
 bool getGPSfix() {
@@ -135,4 +132,43 @@ float getGPSlastTime() {
 
 float getGPSlastDate() {
   return GPS.secondsSinceDate();
+}
+
+void formatLatLongForDisplay(struct LatLong *latlong, String &value) {
+  if (GPS.fix) {
+    String latitude = String(latlong->latitude, 0);
+    String latitude_degrees =
+        latitude.substring(0, latitude.length() - 2);
+    String latitude_minutes =
+        latitude.substring(latitude.length() - 2, latitude.length());
+
+    String longitude = String(latlong->longitude, 0);
+    String longitude_degrees =
+        longitude.substring(0, longitude.length() - 2);
+    String longitude_minutes =
+        longitude.substring(longitude.length() - 2, longitude.length());
+
+    value = latitude_degrees;
+    value += " ";
+    value += latitude_minutes;
+    value += String(GPS.lat);
+    value += ", ";
+    value += longitude_degrees;
+    value += " ";
+    value += longitude_minutes;
+    value += String(GPS.lon);
+  }
+}
+
+void convertLatLongToString(struct LatLong *latlong, String &value) {
+  if (GPS.fix) {
+    String latitude = String(latlong->latitude, 8);
+    String longitude = String(latlong->longitude, 8);
+
+    value = latitude;
+    value += String(GPS.lat);
+    value += ",";
+    value += longitude;
+    value += String(GPS.lon);
+  }
 }
