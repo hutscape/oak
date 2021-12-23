@@ -1,4 +1,7 @@
-#define DEBUG  // Comment to turn off debug statements
+#define DEBUG 2
+// 0 = no debug
+// 1 = debug
+// 2 = debug + GPS info
 
 #include "src/debug/debug.h"
 #include "src/gps/gps.h"
@@ -81,31 +84,31 @@ void loop() {
 }
 
 void printGPSinfo() {
-  DEBUG_PRINT_SIMPLE("\n");
+  DEBUG_GPS("----------------------------------------");
 
   getGPStime(gpsTime);
-  DEBUG_PRINT_MORE("Time: " + gpsTime);
+  DEBUG_GPS("Time: " + gpsTime);
 
   getGPSdate(gpsDate);
-  DEBUG_PRINT_MORE("Date: " + gpsDate);
+  DEBUG_GPS("Date: " + gpsDate);
 
   getLatLong(&latlong);
-  DEBUG_PRINT_MORE("Lat/Long: "
+  DEBUG_GPS("Lat/Long: "
     + String(latlong.latitude, 6)
     + " "
     + String(latlong.longitude, 6));
 
-  DEBUG_PRINT_MORE("GPS Fix? " + String(getGPSfix(), DEC));
-  DEBUG_PRINT_MORE("GPS Fix quality: " + String(getGPSfixquality(), DEC));
-  DEBUG_PRINT_MORE("Speed (knots): " + String(getGPSspeed()));
-  DEBUG_PRINT_MORE("Angle: " + String(getGPSangle()));
-  DEBUG_PRINT_MORE("Altitude: " + String(getGPSaltitude()));
-  DEBUG_PRINT_MORE("Satellites: " + String(getGPSsatellites()));
+  DEBUG_GPS("GPS Fix? " + String(getGPSfix(), DEC));
+  DEBUG_GPS("GPS Fix quality: " + String(getGPSfixquality(), DEC));
+  DEBUG_GPS("Speed (knots): " + String(getGPSspeed()));
+  DEBUG_GPS("Angle: " + String(getGPSangle()));
+  DEBUG_GPS("Altitude: " + String(getGPSaltitude()));
+  DEBUG_GPS("Satellites: " + String(getGPSsatellites()));
 
-  DEBUG_PRINT_MORE("Time [s] since last fix: "
+  DEBUG_GPS("Time [s] since last fix: "
     + String(getGPStimeSinceLastFix(), 3));
-  DEBUG_PRINT_MORE("    since last GPS time: "
+  DEBUG_GPS("    since last GPS time: "
     + String(getGPSlastTime(), 3));
-  DEBUG_PRINT_MORE("    since last GPS date: "
+  DEBUG_GPS("    since last GPS date: "
     + String(getGPSlastDate(), 3));
 }

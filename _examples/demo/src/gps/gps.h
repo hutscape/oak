@@ -1,4 +1,5 @@
-#define DEBUG  // Uncomment to enable verbose debug prints
+#define DEBUG
+// Uncomment to enable verbose debug prints
 
 #include <Adafruit_GPS.h>
 #define GPSSerial Serial1
