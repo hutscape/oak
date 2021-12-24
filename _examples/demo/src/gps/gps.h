@@ -11,6 +11,7 @@ struct LatLong {
   float longitude;
 };
 
+// GPS initialisation and GPS fix related functions
 void initGPS();
 bool receivedGPSfix();
 bool hasNewGPSFix(struct LatLong *, struct LatLong *);
@@ -21,7 +22,6 @@ uint8_t getGPSfixquality();
 void getGPStime(String &);
 void getGPSdate(String &);
 void getLatLong(struct LatLong *);
-
 float getGPSspeed();
 float getGPSangle();
 float getGPSaltitude();

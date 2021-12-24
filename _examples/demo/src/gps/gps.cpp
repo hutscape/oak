@@ -134,43 +134,42 @@ float getGPSlastDate() {
   return GPS.secondsSinceDate();
 }
 
+// Output example
+// String value = "12 34N, 12 34E"
+// Format latitude-longitude in Degree Minutes
 void convertLatLongForDisplay(struct LatLong *latlong, String &value) {
-  if (GPS.fix) {
-    String latitude = String(latlong->latitude, 0);
-    String latitude_degrees =
-        latitude.substring(0, latitude.length() - 2);
-    String latitude_minutes =
-        latitude.substring(latitude.length() - 2, latitude.length());
+  String latitude = String(latlong->latitude, 0);
+  String latitude_degrees =
+      latitude.substring(0, latitude.length() - 2);
+  String latitude_minutes =
+      latitude.substring(latitude.length() - 2, latitude.length());
 
-    String longitude = String(latlong->longitude, 0);
-    String longitude_degrees =
-        longitude.substring(0, longitude.length() - 2);
-    String longitude_minutes =
-        longitude.substring(longitude.length() - 2, longitude.length());
+  String longitude = String(latlong->longitude, 0);
+  String longitude_degrees =
+      longitude.substring(0, longitude.length() - 2);
+  String longitude_minutes =
+      longitude.substring(longitude.length() - 2, longitude.length());
 
-    value = latitude_degrees;
-    value += " ";
-    value += latitude_minutes;
-    value += String(GPS.lat);
-    value += ", ";
-    value += longitude_degrees;
-    value += " ";
-    value += longitude_minutes;
-    value += String(GPS.lon);
-  }
+  value = latitude_degrees;
+  value += " ";
+  value += latitude_minutes;
+  value += String(GPS.lat);
+  value += ", ";
+  value += longitude_degrees;
+  value += " ";
+  value += longitude_minutes;
+  value += String(GPS.lon);
 }
 
 // Output example: "1234.12345678N, 12345.12345678E"
 // Format in Degree-Minutes in 8 decimal place accruacy
 void convertLatLongToString(struct LatLong *latlong, String &value) {
-  if (GPS.fix) {
-    String latitude = String(latlong->latitude, 8);
-    String longitude = String(latlong->longitude, 8);
+  String latitude = String(latlong->latitude, 8);
+  String longitude = String(latlong->longitude, 8);
 
-    value = latitude;
-    value += String(GPS.lat);
-    value += ",";
-    value += longitude;
-    value += String(GPS.lon);
-  }
+  value = latitude;
+  value += String(GPS.lat);
+  value += ",";
+  value += longitude;
+  value += String(GPS.lon);
 }

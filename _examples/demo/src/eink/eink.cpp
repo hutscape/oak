@@ -19,14 +19,14 @@ bool initEink() {
 }
 
 void displayOnEink(String latlong, String timestamp) {
-  const char haversine[] = "300m";
-  const char last_timestamp[] = "00:10 ago";
+  const char haversine[] = "searching";
+  const char last_timestamp[] = "no peer";
 
-  char convertLatlong[16] = "1 40N, 103 91E";
+  char convertLatlong[16] = "waiting for fix";  // Example "1 40N, 103 91E";
   latlong.toCharArray(convertLatlong, 16);
 
-  char convertTimestamp[9] = "02:16:59";
-  timestamp.toCharArray(convertTimestamp, 9);
+  char convertTimestamp[6] = "00:00";  // Example "02:16";
+  timestamp.toCharArray(convertTimestamp, 6);
 
   epd.ClearFrameMemory(0xFF);
   epd.DisplayFrame();
@@ -53,10 +53,10 @@ void displayOnEink(String latlong, String timestamp) {
   paint.SetRotate(ROTATE_270);
 
   paint.Clear(COLORED);
-  paint.DrawStringAt(15, 6, haversine, &Font24, UNCOLORED);
-  paint.DrawStringAt(15, 34, last_timestamp, &Font16, UNCOLORED);
-  epd.SetFrameMemory(paint.GetImage(),
-                     80, 72, paint.GetWidth(), paint.GetHeight());
+  paint.DrawStringAt(12, 10, haversine, &Font16, UNCOLORED);
+  paint.DrawStringAt(12, 32, last_timestamp, &Font16, UNCOLORED);
+  epd.SetFrameMemory(
+    paint.GetImage(), 80, 72, paint.GetWidth(), paint.GetHeight());
 
   epd.DisplayFrame();
 }

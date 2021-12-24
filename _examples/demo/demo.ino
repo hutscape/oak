@@ -8,11 +8,13 @@
 #include "src/eink/eink.h"
 #include "src/lora/lora.h"
 #include "src/led/led.h"
+// TODO: add #include "src/flash/flash.h"
 
 // Ensure 2 nodes are flashed with the same sketch
 // Just exchange the node addresses below
 byte localAddress = 0xBB;
 byte destinationAddress = 0xAA;
+// TODO: Read localAddress and destinationAddress from flash
 
 int counter = 0;
 int sendInterval = 3000;  // Send LoRa packet every 3 seconds
@@ -21,9 +23,9 @@ long lastSendTime = 0;
 long lastDisplayTime = 0;
 
 String incoming = "";
-String gpsTime = "10:00:23";
+String gpsTime = "00:00";
 String gpsDate = "2021-12-31";
-String gpsLatLong = "124.12345678N, 10354.12345678E";
+String gpsLatLong = "waiting for fix";  // // Example "1 40N, 103 91E";
 LatLong latlong = {0.00, 0.00};
 LatLong prevLatlong = {0.00, 0.00};
 
@@ -42,6 +44,7 @@ void setup() {
     DEBUG_PRINT("Starting Eink failed!");
   }
 
+  displayOnEink(gpsLatLong, gpsTime);
   initGPS();
 }
 
@@ -71,11 +74,16 @@ void loop() {
   }
 
   if (receivedGPSfix()) {
+    getGPStime(gpsTime);
+    getGPSdate(gpsDate);
+    getLatLong(&latlong);
+
     printGPSinfo();
 
     if (millis() - lastDisplayTime > displayInterval) {
       if (hasNewGPSFix(&prevLatlong, &latlong)) {
-        // displayOnEink(&latlong, gpsTime);
+        convertLatLongForDisplay(&latlong, gpsLatLong);
+        displayOnEink(gpsLatLong, gpsTime);
         prevLatlong = latlong;
       }
 
@@ -86,14 +94,8 @@ void loop() {
 
 void printGPSinfo() {
   DEBUG_GPS("----------------------------------------");
-
-  getGPStime(gpsTime);
   DEBUG_GPS("Time: " + gpsTime);
-
-  getGPSdate(gpsDate);
   DEBUG_GPS("Date: " + gpsDate);
-
-  getLatLong(&latlong);
   convertLatLongToString(&latlong, gpsLatLong);
   DEBUG_GPS("Lat/Long: " + gpsLatLong);
 
