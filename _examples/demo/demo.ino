@@ -8,13 +8,11 @@
 #include "src/eink/eink.h"
 #include "src/lora/lora.h"
 #include "src/led/led.h"
-// TODO: add #include "src/flash/flash.h"
 
 // Ensure 2 nodes are flashed with the same sketch
 // Just exchange the node addresses below
 byte localAddress = 0xBB;
 byte destinationAddress = 0xAA;
-// TODO: Read localAddress and destinationAddress from flash
 
 int counter = 0;
 int sendInterval = 3000;  // Send LoRa packet every 3 seconds
@@ -46,6 +44,11 @@ void setup() {
 
   displayOnEink(gpsLatLong, gpsTime);
   initGPS();
+
+  DEBUG_PRINT_MORE(" localAddress: "
+    + String(localAddress, HEX));
+  DEBUG_PRINT_MORE(" destinationAddress: "
+    + String(destinationAddress, HEX));
 }
 
 void loop() {
