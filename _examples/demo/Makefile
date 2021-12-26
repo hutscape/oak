@@ -10,7 +10,8 @@ lint:
 	cpplint --extensions=ino --filter=-legal/copyright,-whitespace/line_length,-readability/casting,-readability/todo,-runtime/int *.ino
 
 all:
-	arduino-cli compile --fqbn $(BOARD) --output-dir $(BUILD) ./
+	# arduino-cli compile --fqbn $(BOARD) --output-dir $(BUILD) ./
+	arduino-cli compile --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xBB -DDESTINATION_ADDRESS=0xAA" --output-dir $(BUILD) ./
 
 flash:
 	arduino-cli upload -p $(PORT) --fqbn $(BOARD) --input-dir $(BUILD) --verbose

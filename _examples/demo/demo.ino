@@ -1,18 +1,21 @@
-#define DEBUG 2
+#define DEBUG 1
 // 0 = no debug
 // 1 = debug
 // 2 = debug + GPS info
 
+#ifdef EINK_V2
+#include "src/eink_v2/eink_v2.h"
+#else
+#include "src/eink/eink.h"
+#endif
+
 #include "src/debug/debug.h"
 #include "src/gps/gps.h"
-#include "src/eink/eink.h"
-#include "src/lora/lora.h"
 #include "src/led/led.h"
+#include "src/lora/lora.h"
 
-// Ensure 2 nodes are flashed with the same sketch
-// Just exchange the node addresses below
-byte localAddress = 0xBB;
-byte destinationAddress = 0xAA;
+byte localAddress = LOCAL_ADDRESS;
+byte destinationAddress = DESTINATION_ADDRESS;
 
 int counter = 0;
 int sendInterval = 3000;  // Send LoRa packet every 3 seconds
