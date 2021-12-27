@@ -59,4 +59,5 @@ void displayOnEink(String latlong, String timestamp) {
     paint.GetImage(), 80, 72, paint.GetWidth(), paint.GetHeight());
 
   epd.DisplayFrame();
+  epd.Sleep();
 }

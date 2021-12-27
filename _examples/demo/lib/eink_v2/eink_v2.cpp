@@ -15,6 +15,9 @@ bool initEink() {
 }
 
 void displayOnEink(String latlong, String timestamp) {
+  const char haversine[] = "searching";
+  const char last_timestamp[] = "no peer";
+
   char convertLatlong[16] = "waiting for fix";  // Example "1 40N, 103 91E";
   latlong.toCharArray(convertLatlong, 16);
 
@@ -25,14 +28,25 @@ void displayOnEink(String latlong, String timestamp) {
   paint.SetHeight(24);
 
   paint.Clear(COLORED);
-  paint.DrawStringAt(30, 4, convertLatlong, &Font16, UNCOLORED);
+  paint.DrawStringAt(10, 4, convertLatlong, &Font16, UNCOLORED);
   epd.SetFrameMemory(
     paint.GetImage(), 0, 10, paint.GetWidth(), paint.GetHeight());
 
   paint.Clear(UNCOLORED);
-  paint.DrawStringAt(30, 4, convertTimestamp, &Font16, COLORED);
+  paint.DrawStringAt(10, 4, "at ", &Font16, COLORED);
+  paint.DrawStringAt(40, 4, convertTimestamp, &Font16, COLORED);
   epd.SetFrameMemory(
     paint.GetImage(), 0, 30, paint.GetWidth(), paint.GetHeight());
+
+  paint.SetWidth(50);
+  paint.SetHeight(120);
+  paint.SetRotate(ROTATE_270);
+
+  paint.Clear(COLORED);
+  paint.DrawStringAt(12, 10, haversine, &Font16, UNCOLORED);
+  paint.DrawStringAt(12, 32, last_timestamp, &Font16, UNCOLORED);
+  epd.SetFrameMemory(
+      paint.GetImage(), 80, 72, paint.GetWidth(), paint.GetHeight());
 
   epd.DisplayFrame();
   epd.Sleep();

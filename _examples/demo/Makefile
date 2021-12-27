@@ -4,7 +4,7 @@ BUILD=build
 
 .PHONY: default lint all flash clean
 
-default: lint all flash clean
+default: lint pcb_a flash clean
 
 a: lint pcb_a flash clean
 
@@ -15,15 +15,15 @@ lint:
 
 pcb_a:
 	rm -f src/eink*
-	ln -sf ../lib/eink src
-	arduino-cli compile --clean --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xAA -DDESTINATION_ADDRESS=0xBB" --output-dir $(BUILD) ./
-	rm src/eink
+	ln -sf ../lib/eink_v2 src
+	arduino-cli compile --clean --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xAA -DDESTINATION_ADDRESS=0xBB -DEINK_V2" --output-dir $(BUILD) ./
+	rm src/eink_v2
 
 pcb_b:
 	rm -f src/eink*
-	ln -sf ../lib/eink_v2 src
-	arduino-cli compile --clean --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xBB -DDESTINATION_ADDRESS=0xAA -DEINK_V2" --output-dir $(BUILD) ./
-	rm src/eink_v2
+	ln -sf ../lib/eink src
+	arduino-cli compile --clean --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xBB -DDESTINATION_ADDRESS=0xAA" --output-dir $(BUILD) ./
+	rm src/eink
 
 flash:
 	arduino-cli upload -p $(PORT) --fqbn $(BOARD) --input-dir $(BUILD) --verbose
