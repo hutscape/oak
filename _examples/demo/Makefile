@@ -14,10 +14,16 @@ lint:
 	cpplint --extensions=ino --filter=-legal/copyright,-whitespace/line_length,-readability/casting,-readability/todo,-runtime/int *.ino
 
 pcb_a:
-	arduino-cli compile --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xAA -DDESTINATION_ADDRESS=0xBB" --output-dir $(BUILD) ./
+	rm -f src/eink*
+	ln -sf ../lib/eink src
+	arduino-cli compile --clean --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xAA -DDESTINATION_ADDRESS=0xBB" --output-dir $(BUILD) ./
+	rm src/eink
 
 pcb_b:
-	arduino-cli compile --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xBB -DDESTINATION_ADDRESS=0xAA -DEINK_V2" --output-dir $(BUILD) ./
+	rm -f src/eink*
+	ln -sf ../lib/eink_v2 src
+	arduino-cli compile --clean --fqbn $(BOARD) --build-property compiler.cpp.extra_flags="-DLOCAL_ADDRESS=0xBB -DDESTINATION_ADDRESS=0xAA -DEINK_V2" --output-dir $(BUILD) ./
+	rm src/eink_v2
 
 flash:
 	arduino-cli upload -p $(PORT) --fqbn $(BOARD) --input-dir $(BUILD) --verbose
