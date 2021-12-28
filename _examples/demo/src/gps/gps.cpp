@@ -173,3 +173,22 @@ void convertLatLongToString(struct LatLong *latlong, String &value) {
   value += longitude;
   value += String(GPS.lon);
 }
+
+float getHaversineDistance(struct LatLong *latlong1, struct LatLong *latlong2) {
+  float lat1 = latlong1->latitude;
+  float lon1 = latlong1->longitude;
+  float lat2 = latlong2->latitude;
+  float lon2 = latlong2->longitude;
+
+  float dLat = (lat2 - lat1) * DEG_TO_RAD;
+  float dLon = (lon2 - lon1) * DEG_TO_RAD;
+  float lat1Rad = lat1 * DEG_TO_RAD;
+  float lat2Rad = lat2 * DEG_TO_RAD;
+
+  float a = sin(dLat / 2) * sin(dLat / 2) +
+            sin(dLon / 2) * sin(dLon / 2) * cos(lat1Rad) * cos(lat2Rad);
+  float c = 2 * atan2(sqrt(a), sqrt(1 - a));
+  float d = EARTH_RADIUS * c;
+
+  return d;  // in km
+}

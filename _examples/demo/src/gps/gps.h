@@ -5,6 +5,7 @@
 #define GPSSerial Serial1
 #define GPSECHO false
 #define GPSRST 3
+#define EARTH_RADIUS 6371.0  // km
 
 struct LatLong {
   float latitude;
@@ -29,6 +30,7 @@ uint8_t getGPSsatellites();
 float getGPStimeSinceLastFix();
 float getGPSlastTime();
 float getGPSlastDate();
+float getHaversineDistance(struct LatLong *, struct LatLong *);
 
 // Convert LatLong to various formats
 void convertLatLongForDisplay(struct LatLong *, String &);

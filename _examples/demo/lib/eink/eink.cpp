@@ -18,6 +18,7 @@ bool initEink() {
   return true;
 }
 
+// TODO: Add 3rd argument to display Haversine distance
 void displayOnEink(String latlong, String timestamp) {
   const char haversine[] = "searching";
   const char last_timestamp[] = "no peer";

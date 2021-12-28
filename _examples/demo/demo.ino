@@ -23,7 +23,7 @@ long lastLoRaSendTime = 0;
 int displayInterval = 5000;  // display on E-Ink every 5 seconds
 long lastDisplayTime = 0;
 
-String incoming = "";
+String dataFromDestinationAddress = "";
 
 String gpsTime = "00:00";
 String gpsDate = "2021-12-31";
@@ -77,9 +77,10 @@ void loop() {
     sendLoRaInterval = random(2000) + 1000;
   }
 
-  if (receiveLoRa(LoRa.parsePacket(), localAddress, incoming)) {
+  if (receiveLoRa(
+    LoRa.parsePacket(), localAddress, dataFromDestinationAddress)) {
     DEBUG_PRINT_MORE("Received data "
-      + incoming
+      + dataFromDestinationAddress
       + " from 0x"
       + String(destinationAddress, HEX)
       + " to 0x"
@@ -95,7 +96,10 @@ void loop() {
 
     if (millis() - lastDisplayTime > displayInterval) {
       if (hasNewGPSFix(&prevLatlong, &latlong)) {
+        // TODO: Convert dataFromDestinationAddress to LatLong
+        // TODO: pass to getHaversineDistance
         convertLatLongForDisplay(&latlong, gpsLatLongForDisplay);
+        // TODO: Add 3rd arg to displayOnEink for Haversine Distance
         displayOnEink(gpsLatLongForDisplay, gpsTime);
         prevLatlong = latlong;
       }
