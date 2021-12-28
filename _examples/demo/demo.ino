@@ -36,22 +36,23 @@ void setup() {
   #endif
 
   DEBUG_PRINT_MORE("Starting Oak demo on node " + String(localAddress, HEX));
+  DEBUG_PRINT_MORE(" localAddress: " + String(localAddress, HEX));
+  DEBUG_PRINT_MORE(" destinationAddress: " + String(destinationAddress, HEX));
 
   if (!initLoRa()) {
     DEBUG_PRINT("Starting LoRa failed!");
+  } else {
+    DEBUG_PRINT("Starting LoRa succeeded!");
   }
 
   if (!initEink()) {
     DEBUG_PRINT("Starting Eink failed!");
+  } else {
+    DEBUG_PRINT("Starting Eink succeeded!");
   }
 
   displayOnEink(gpsLatLong, gpsTime);
   initGPS();
-
-  DEBUG_PRINT_MORE(" localAddress: "
-    + String(localAddress, HEX));
-  DEBUG_PRINT_MORE(" destinationAddress: "
-    + String(destinationAddress, HEX));
 }
 
 void loop() {
