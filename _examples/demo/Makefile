@@ -2,7 +2,7 @@ BOARD?=hutscape:samd:oak
 PORT := $(shell ls /dev/cu.usbmodem*)
 BUILD=build
 
-.PHONY: default lint all flash clean
+.PHONY: default a b lint pcb_a pcb_b flash clean
 
 default: lint pcb_a flash clean
 

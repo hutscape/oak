@@ -17,16 +17,23 @@
 byte localAddress = LOCAL_ADDRESS;
 byte destinationAddress = DESTINATION_ADDRESS;
 
-int counter = 0;
-int sendInterval = 3000;  // Send LoRa packet every 3 seconds
+int sendLoRaInterval = 3000;  // Send LoRa packet every 3 seconds
+long lastLoRaSendTime = 0;
+
 int displayInterval = 5000;  // display on E-Ink every 5 seconds
-long lastSendTime = 0;
 long lastDisplayTime = 0;
 
 String incoming = "";
+
 String gpsTime = "00:00";
 String gpsDate = "2021-12-31";
-String gpsLatLong = "waiting for fix";  // // Example "1 40N, 103 91E";
+
+String gpsLatLong = "waiting for fix";
+// Example "1234.12345678N, 12345.12345678E"
+
+String gpsLatLongForDisplay = "";
+// Example "1 40N, 103 91E";
+
 LatLong latlong = {0.00, 0.00};
 LatLong prevLatlong = {0.00, 0.00};
 
@@ -56,19 +63,18 @@ void setup() {
 }
 
 void loop() {
-  if (millis() - lastSendTime > sendInterval) {
-    String sensorData = String(counter++);
-    sendLoRa(sensorData, localAddress, destinationAddress);
+  if (millis() - lastLoRaSendTime > sendLoRaInterval) {
+    sendLoRa(gpsLatLong, localAddress, destinationAddress);
 
     DEBUG_PRINT_MORE("Send data "
-      + sensorData
+      + gpsLatLong
       + " from 0x"
       + String(localAddress, HEX)
       + " to 0x"
       + String(destinationAddress, HEX));
 
-    lastSendTime = millis();
-    sendInterval = random(2000) + 1000;
+    lastLoRaSendTime = millis();
+    sendLoRaInterval = random(2000) + 1000;
   }
 
   if (receiveLoRa(LoRa.parsePacket(), localAddress, incoming)) {
@@ -89,8 +95,8 @@ void loop() {
 
     if (millis() - lastDisplayTime > displayInterval) {
       if (hasNewGPSFix(&prevLatlong, &latlong)) {
-        convertLatLongForDisplay(&latlong, gpsLatLong);
-        displayOnEink(gpsLatLong, gpsTime);
+        convertLatLongForDisplay(&latlong, gpsLatLongForDisplay);
+        displayOnEink(gpsLatLongForDisplay, gpsTime);
         prevLatlong = latlong;
       }
 
