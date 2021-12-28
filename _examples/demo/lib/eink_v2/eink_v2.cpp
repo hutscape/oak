@@ -24,8 +24,10 @@ void displayOnEink(String latlong, String timestamp) {
   char convertTimestamp[6] = "00:00";  // Example "02:16";
   timestamp.toCharArray(convertTimestamp, 6);
 
+  // Display current node GPS and timestamp
   paint.SetWidth(200);
   paint.SetHeight(24);
+  paint.SetRotate(ROTATE_0);
 
   paint.Clear(COLORED);
   paint.DrawStringAt(10, 4, convertLatlong, &Font16, UNCOLORED);
@@ -38,6 +40,7 @@ void displayOnEink(String latlong, String timestamp) {
   epd.SetFrameMemory(
     paint.GetImage(), 0, 30, paint.GetWidth(), paint.GetHeight());
 
+  // Display Haversine distance and relative time with peer node
   paint.SetWidth(50);
   paint.SetHeight(120);
   paint.SetRotate(ROTATE_270);
@@ -49,5 +52,4 @@ void displayOnEink(String latlong, String timestamp) {
       paint.GetImage(), 80, 72, paint.GetWidth(), paint.GetHeight());
 
   epd.DisplayFrame();
-  epd.Sleep();
 }
