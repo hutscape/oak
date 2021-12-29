@@ -36,15 +36,18 @@ String gpsLatLongForDisplay = "";
 
 LatLong latlong = {0.00, 0.00};
 LatLong prevLatlong = {0.00, 0.00};
+LatLong peerLalong = {0.00, 0.00};
 
 void setup() {
   #ifdef DEBUG
   SerialUSB.begin(9600);
+  while (!SerialUSB) {}
   #endif
 
   DEBUG_PRINT_MORE("Starting Oak demo on node " + String(localAddress, HEX));
-  DEBUG_PRINT_MORE(" localAddress: " + String(localAddress, HEX));
-  DEBUG_PRINT_MORE(" destinationAddress: " + String(destinationAddress, HEX));
+
+  DEBUG_PRINT_MORE("   localAddress: " + String(localAddress, HEX));
+  DEBUG_PRINT_MORE("   destinationAddress: " + String(destinationAddress, HEX));
 
   if (!initLoRa()) {
     DEBUG_PRINT("Starting LoRa failed!");
@@ -58,23 +61,25 @@ void setup() {
     DEBUG_PRINT("Starting Eink succeeded!");
   }
 
-  displayOnEink(gpsLatLong, gpsTime);
+  displayOnEink(gpsLatLong, gpsTime, "0km");
   initGPS();
 }
 
 void loop() {
   if (millis() - lastLoRaSendTime > sendLoRaInterval) {
-    sendLoRa(gpsLatLong, localAddress, destinationAddress);
+    if (hasNewGPSFix(&prevLatlong, &latlong)) {
+      sendLoRa(gpsLatLong, localAddress, destinationAddress);
 
-    DEBUG_PRINT_MORE("Send data "
-      + gpsLatLong
-      + " from 0x"
-      + String(localAddress, HEX)
-      + " to 0x"
-      + String(destinationAddress, HEX));
+      DEBUG_PRINT_MORE("Send data "
+        + gpsLatLong
+        + " from 0x"
+        + String(localAddress, HEX)
+        + " to 0x"
+        + String(destinationAddress, HEX));
 
-    lastLoRaSendTime = millis();
-    sendLoRaInterval = random(2000) + 1000;
+      lastLoRaSendTime = millis();
+      sendLoRaInterval = random(2000) + 1000;
+    }
   }
 
   if (receiveLoRa(
@@ -96,11 +101,15 @@ void loop() {
 
     if (millis() - lastDisplayTime > displayInterval) {
       if (hasNewGPSFix(&prevLatlong, &latlong)) {
-        // TODO: Convert dataFromDestinationAddress to LatLong
-        // TODO: pass to getHaversineDistance
+        // Convert peerLatlong to struct LatLong
+        convertStringToLatLong(dataFromDestinationAddress, &peerLalong);
+
+        // Calculate distance between peerLatlong and latlong
+        float distance = getHaversineDistance(&latlong, &peerLalong);
+
+        // Display on E-Ink
         convertLatLongForDisplay(&latlong, gpsLatLongForDisplay);
-        // TODO: Add 3rd arg to displayOnEink for Haversine Distance
-        displayOnEink(gpsLatLongForDisplay, gpsTime);
+        displayOnEink(gpsLatLongForDisplay, gpsTime, String(distance, 0));
         prevLatlong = latlong;
       }
 

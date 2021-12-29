@@ -40,8 +40,20 @@ bool receivedGPSfix() {
 
 void getLatLong(struct LatLong *latlong) {
   if (GPS.fix) {
-    latlong->latitude = GPS.latitude;
-    latlong->longitude = GPS.longitude;
+    latlong->latitude = convertDMtoDecimalDegrees(GPS.latitude);
+    latlong->longitude = convertDMtoDecimalDegrees(GPS.longitude);
+  }
+
+  if (String(GPS.lat) == "N") {
+    latlong->latitude *= 1;
+  } else {
+    latlong->latitude *= -1;
+  }
+
+  if (String(GPS.lon) == "E") {
+    latlong->longitude *= 1;
+  } else {
+    latlong->longitude *= -1;
   }
 }
 
@@ -135,30 +147,19 @@ float getGPSlastDate() {
 }
 
 // Output example
-// String value = "12 34N, 12 34E"
-// Format latitude-longitude in Degree Minutes
+// String value = "12.34N, 12.34E" in decimal degrees to 2 decimal places
 void convertLatLongForDisplay(struct LatLong *latlong, String &value) {
-  String latitude = String(latlong->latitude, 0);
-  String latitude_degrees =
-      latitude.substring(0, latitude.length() - 2);
-  String latitude_minutes =
-      latitude.substring(latitude.length() - 2, latitude.length());
+  String latitude = String(latlong->latitude, 2);
+  String latitude_direction = latlong->latitude < 0 ? "S" : "N";
 
-  String longitude = String(latlong->longitude, 0);
-  String longitude_degrees =
-      longitude.substring(0, longitude.length() - 2);
-  String longitude_minutes =
-      longitude.substring(longitude.length() - 2, longitude.length());
+  String longitude = String(latlong->longitude, 2);
+  String longitude_direction = latlong->longitude < 0 ? "W" : "E";
 
-  value = latitude_degrees;
-  value += " ";
-  value += latitude_minutes;
-  value += String(GPS.lat);
-  value += ", ";
-  value += longitude_degrees;
-  value += " ";
-  value += longitude_minutes;
-  value += String(GPS.lon);
+  value = latitude
+    + latitude_direction
+    + ", "
+    + longitude
+    + longitude_direction;
 }
 
 // Output example: "1234.12345678N, 12345.12345678E"
@@ -167,11 +168,7 @@ void convertLatLongToString(struct LatLong *latlong, String &value) {
   String latitude = String(latlong->latitude, 8);
   String longitude = String(latlong->longitude, 8);
 
-  value = latitude;
-  value += String(GPS.lat);
-  value += ",";
-  value += longitude;
-  value += String(GPS.lon);
+  value = latitude + "," + longitude;
 }
 
 float getHaversineDistance(struct LatLong *latlong1, struct LatLong *latlong2) {
@@ -191,4 +188,27 @@ float getHaversineDistance(struct LatLong *latlong1, struct LatLong *latlong2) {
   float d = EARTH_RADIUS * c;
 
   return d;  // in km
+}
+
+// Convert from Decimal degrees "1234.12345678,12345.12345678" to LatLong
+void convertStringToLatLong(String data, struct LatLong *latlong) {
+  int commaIndex = data.indexOf(",");
+  int dataLength = data.length();
+
+  String latitude = data.substring(0, commaIndex);
+  String longitude = data.substring(commaIndex + 1, dataLength);
+
+  latlong->latitude = latitude.toFloat();
+  latlong->longitude = longitude.toFloat();
+}
+// Convert Degree-Minutes 125.28 (1° 25.28') to Decimal Degrees 1.421343
+float convertDMtoDecimalDegrees(float value) {
+  int size = String(value, 8).length();
+
+  String minutes = String(value, 8).substring(size - 8 - 3, size);
+  String degrees = String(value, 8).substring(0, size - 8 - 3);
+
+  float decimalDegrees = degrees.toFloat() + minutes.toFloat() / 60;
+
+  return decimalDegrees;
 }
