@@ -41,7 +41,6 @@ LatLong peerLalong = {0.00, 0.00};
 void setup() {
   #ifdef DEBUG
   SerialUSB.begin(9600);
-  while (!SerialUSB) {}
   #endif
 
   DEBUG_PRINT_MORE("Starting Oak demo on node " + String(localAddress, HEX));
@@ -61,7 +60,7 @@ void setup() {
     DEBUG_PRINT("Starting Eink succeeded!");
   }
 
-  displayOnEink(gpsLatLong, gpsTime, "0km");
+  displayOnEink("waiting for fix", "", "searching");
   initGPS();
 }
 
@@ -109,7 +108,8 @@ void loop() {
 
         // Display on E-Ink
         convertLatLongForDisplay(&latlong, gpsLatLongForDisplay);
-        displayOnEink(gpsLatLongForDisplay, gpsTime, String(distance, 0));
+        displayOnEink(
+          gpsLatLongForDisplay, gpsTime, String(distance, 3) + "km");
         prevLatlong = latlong;
       }
 

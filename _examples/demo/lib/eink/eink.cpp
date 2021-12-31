@@ -18,17 +18,17 @@ bool initEink() {
   return true;
 }
 
-// TODO: Add 3rd argument to display Haversine distance
 void displayOnEink(String latlong, String timestamp, String haversine) {
-  char convertLatlong[16] = "waiting for fix";  // Example "1.40N, 1.03E";
+  char convertLatlong[16];  // Example "1.40N, 1.03E"
   latlong.toCharArray(convertLatlong, 16);
 
-  char convertTimestamp[6] = "00:00";  // Example "02:16";
+  char convertTimestamp[6];  // Example "02:16"
   timestamp.toCharArray(convertTimestamp, 6);
 
-  char convertHaversine[10] = "searching";  // Example "0.3km";
+  char convertHaversine[10];  // Example "0.3km"
   haversine.toCharArray(convertHaversine, 10);
 
+  // TODO: Display relative time ago when Haversine distance was calculated
   const char last_timestamp[] = "for peer";
 
   // Clear the E-Ink screen
@@ -48,8 +48,7 @@ void displayOnEink(String latlong, String timestamp, String haversine) {
       paint.GetImage(), 0, 10, paint.GetWidth(), paint.GetHeight());
 
   paint.Clear(UNCOLORED);
-  paint.DrawStringAt(10, 4, "at ", &Font16, COLORED);
-  paint.DrawStringAt(40, 4, convertTimestamp, &Font16, COLORED);
+  paint.DrawStringAt(10, 4, convertTimestamp, &Font16, COLORED);
   epd.SetFrameMemory(
       paint.GetImage(), 0, 30, paint.GetWidth(), paint.GetHeight());
 
