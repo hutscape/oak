@@ -201,6 +201,7 @@ void convertStringToLatLong(String data, struct LatLong *latLong) {
 
   latLong->latitude = latitude.toFloat();
   latLong->longitude = longitude.toFloat();
+  latLong->hasValidFix = true;
 }
 // Convert Degree-Minutes 125.28 (1° 25.28') to Decimal Degrees 1.421343
 float convertDMtoDecimalDegrees(float value) {
