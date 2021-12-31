@@ -38,32 +38,33 @@ bool receivedGPSfix() {
   return true;
 }
 
-void getLatLong(struct LatLong *latlong) {
+void getLatLong(struct LatLong *latLong) {
   if (GPS.fix) {
-    latlong->latitude = convertDMtoDecimalDegrees(GPS.latitude);
-    latlong->longitude = convertDMtoDecimalDegrees(GPS.longitude);
+    latLong->latitude = convertDMtoDecimalDegrees(GPS.latitude);
+    latLong->longitude = convertDMtoDecimalDegrees(GPS.longitude);
+    latLong->hasValidFix = true;
   }
 
   if (String(GPS.lat) == "N") {
-    latlong->latitude *= 1;
+    latLong->latitude *= 1;
   } else {
-    latlong->latitude *= -1;
+    latLong->latitude *= -1;
   }
 
   if (String(GPS.lon) == "E") {
-    latlong->longitude *= 1;
+    latLong->longitude *= 1;
   } else {
-    latlong->longitude *= -1;
+    latLong->longitude *= -1;
   }
 }
 
-bool hasNewGPSFix(struct LatLong *prevLatlong, struct LatLong *currLatLong) {
+bool hasNewGPSFix(struct LatLong *prevLatLong, struct LatLong *currLatLong) {
   if (currLatLong->latitude == 0.00 && currLatLong->longitude == 0.00) {
     return false;
   }
 
-  if (prevLatlong->latitude == currLatLong->latitude
-    && prevLatlong->longitude == currLatLong->longitude) {
+  if (prevLatLong->latitude == currLatLong->latitude
+    && prevLatLong->longitude == currLatLong->longitude) {
     return false;
   }
 
@@ -148,12 +149,12 @@ float getGPSlastDate() {
 
 // Output example
 // String value = "12.34N, 12.34E" in decimal degrees to 2 decimal places
-void convertLatLongForDisplay(struct LatLong *latlong, String &value) {
-  String latitude = String(latlong->latitude, 2);
-  String latitude_direction = latlong->latitude < 0 ? "S" : "N";
+void convertLatLongForDisplay(struct LatLong *latLong, String &value) {
+  String latitude = String(latLong->latitude, 2);
+  String latitude_direction = latLong->latitude < 0 ? "S" : "N";
 
-  String longitude = String(latlong->longitude, 2);
-  String longitude_direction = latlong->longitude < 0 ? "W" : "E";
+  String longitude = String(latLong->longitude, 2);
+  String longitude_direction = latLong->longitude < 0 ? "W" : "E";
 
   value = latitude
     + latitude_direction
@@ -164,18 +165,18 @@ void convertLatLongForDisplay(struct LatLong *latlong, String &value) {
 
 // Output example: "1234.12345678N, 12345.12345678E"
 // Format in Degree-Minutes in 8 decimal place accruacy
-void convertLatLongToString(struct LatLong *latlong, String &value) {
-  String latitude = String(latlong->latitude, 8);
-  String longitude = String(latlong->longitude, 8);
+void convertLatLongToString(struct LatLong *latLong, String &value) {
+  String latitude = String(latLong->latitude, 8);
+  String longitude = String(latLong->longitude, 8);
 
   value = latitude + "," + longitude;
 }
 
-float getHaversineDistance(struct LatLong *latlong1, struct LatLong *latlong2) {
-  float lat1 = latlong1->latitude;
-  float lon1 = latlong1->longitude;
-  float lat2 = latlong2->latitude;
-  float lon2 = latlong2->longitude;
+float getHaversineDistance(struct LatLong *latLong1, struct LatLong *latLong2) {
+  float lat1 = latLong1->latitude;
+  float lon1 = latLong1->longitude;
+  float lat2 = latLong2->latitude;
+  float lon2 = latLong2->longitude;
 
   float dLat = (lat2 - lat1) * DEG_TO_RAD;
   float dLon = (lon2 - lon1) * DEG_TO_RAD;
@@ -191,15 +192,15 @@ float getHaversineDistance(struct LatLong *latlong1, struct LatLong *latlong2) {
 }
 
 // Convert from Decimal degrees "1234.12345678,12345.12345678" to LatLong
-void convertStringToLatLong(String data, struct LatLong *latlong) {
+void convertStringToLatLong(String data, struct LatLong *latLong) {
   int commaIndex = data.indexOf(",");
   int dataLength = data.length();
 
   String latitude = data.substring(0, commaIndex);
   String longitude = data.substring(commaIndex + 1, dataLength);
 
-  latlong->latitude = latitude.toFloat();
-  latlong->longitude = longitude.toFloat();
+  latLong->latitude = latitude.toFloat();
+  latLong->longitude = longitude.toFloat();
 }
 // Convert Degree-Minutes 125.28 (1° 25.28') to Decimal Degrees 1.421343
 float convertDMtoDecimalDegrees(float value) {

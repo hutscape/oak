@@ -14,6 +14,7 @@
 struct LatLong {
   float latitude;
   float longitude;
+  bool hasValidFix;
 };
 
 // GPS initialisation and GPS fix related functions

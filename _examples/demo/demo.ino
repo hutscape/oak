@@ -34,9 +34,9 @@ String gpsLatLong = "waiting for fix";
 String gpsLatLongForDisplay = "";
 // Example "1 40N, 103 91E";
 
-LatLong latlong = {0.00, 0.00};
-LatLong prevLatlong = {0.00, 0.00};
-LatLong peerLalong = {0.00, 0.00};
+LatLong latLong = {0.00, 0.00, false};
+LatLong prevLatLong = {0.00, 0.00, false};
+LatLong peerLatLong = {0.00, 0.00, false};
 
 void setup() {
   #ifdef DEBUG
@@ -66,7 +66,7 @@ void setup() {
 
 void loop() {
   if (millis() - lastLoRaSendTime > sendLoRaInterval) {
-    if (hasNewGPSFix(&prevLatlong, &latlong)) {
+    if (hasNewGPSFix(&prevLatLong, &latLong)) {
       sendLoRa(gpsLatLong, localAddress, destinationAddress);
 
       DEBUG_PRINT_MORE("Send data "
@@ -94,23 +94,23 @@ void loop() {
   if (receivedGPSfix()) {
     getGPStime(gpsTime);
     getGPSdate(gpsDate);
-    getLatLong(&latlong);
+    getLatLong(&latLong);
 
     printGPSinfo();
 
     if (millis() - lastDisplayTime > displayInterval) {
-      if (hasNewGPSFix(&prevLatlong, &latlong)) {
+      if (hasNewGPSFix(&prevLatLong, &latLong)) {
         // Convert peerLatlong to struct LatLong
-        convertStringToLatLong(dataFromDestinationAddress, &peerLalong);
+        convertStringToLatLong(dataFromDestinationAddress, &peerLatLong);
 
-        // Calculate distance between peerLatlong and latlong
-        float distance = getHaversineDistance(&latlong, &peerLalong);
+        // Calculate distance between peerLatlong and latLong
+        float distance = getHaversineDistance(&latLong, &peerLatLong);
 
         // Display on E-Ink
-        convertLatLongForDisplay(&latlong, gpsLatLongForDisplay);
+        convertLatLongForDisplay(&latLong, gpsLatLongForDisplay);
         displayOnEink(
           gpsLatLongForDisplay, gpsTime, String(distance, 3) + "km");
-        prevLatlong = latlong;
+        prevLatLong = latLong;
       }
 
       lastDisplayTime = millis();
@@ -122,7 +122,7 @@ void printGPSinfo() {
   DEBUG_GPS("----------------------------------------");
   DEBUG_GPS("Time: " + gpsTime);
   DEBUG_GPS("Date: " + gpsDate);
-  convertLatLongToString(&latlong, gpsLatLong);
+  convertLatLongToString(&latLong, gpsLatLong);
   DEBUG_GPS("Lat/Long: " + gpsLatLong);
 
   DEBUG_GPS("GPS Fix? " + String(getGPSfix(), DEC));

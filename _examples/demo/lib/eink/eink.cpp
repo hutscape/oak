@@ -1,6 +1,6 @@
 #include "eink.h"
 
-const char latlong[] = "1.40N, 103.91E";
+const char latLong[] = "1.40N, 103.91E";
 const char haversine[] = "300m";
 const char last_timestamp[] = "00:10 ago";
 
@@ -18,9 +18,9 @@ bool initEink() {
   return true;
 }
 
-void displayOnEink(String latlong, String timestamp, String haversine) {
+void displayOnEink(String latLong, String timestamp, String haversine) {
   char convertLatlong[16];  // Example "1.40N, 1.03E"
-  latlong.toCharArray(convertLatlong, 16);
+  latLong.toCharArray(convertLatlong, 16);
 
   char convertTimestamp[6];  // Example "02:16"
   timestamp.toCharArray(convertTimestamp, 6);
