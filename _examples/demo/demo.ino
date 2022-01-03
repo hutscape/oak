@@ -41,6 +41,7 @@ LatLong peerLatLong = {0.00, 0.00, false};
 void setup() {
   #ifdef DEBUG
   SerialUSB.begin(9600);
+  delay(1000);
   #endif
 
   DEBUG_PRINT_MORE("Starting Oak demo on node " + String(localAddress, HEX));
@@ -65,6 +66,7 @@ void setup() {
 }
 
 void loop() {
+  // Send LoRa packet to peer node
   if (millis() - lastLoRaSendTime > sendLoRaInterval) {
     if (hasNewGPSFix(&prevLatLong, &latLong)) {
       sendLoRa(gpsLatLong, localAddress, destinationAddress);
@@ -81,6 +83,7 @@ void loop() {
     }
   }
 
+  // Receive LoRa packet
   if (receiveLoRa(
     LoRa.parsePacket(), localAddress, dataFromDestinationAddress)) {
     DEBUG_PRINT_MORE("Received data "
@@ -91,6 +94,7 @@ void loop() {
       + String(localAddress, HEX));
   }
 
+  // Receive GPS fix information
   if (receivedGPSfix()) {
     getGPStime(gpsTime);
     getGPSdate(gpsDate);
@@ -100,16 +104,18 @@ void loop() {
 
     if (millis() - lastDisplayTime > displayInterval) {
       if (hasNewGPSFix(&prevLatLong, &latLong)) {
-        // Convert peerLatlong to struct LatLong
-        convertStringToLatLong(dataFromDestinationAddress, &peerLatLong);
-
-        // Calculate distance between peerLatlong and latLong
-        float distance = getHaversineDistance(&latLong, &peerLatLong);
-
-        // Display on E-Ink
         convertLatLongForDisplay(&latLong, gpsLatLongForDisplay);
-        displayOnEink(
-          gpsLatLongForDisplay, gpsTime, String(distance, 3) + "km");
+
+        if (peerLatLong.hasValidFix) {
+          convertStringToLatLong(dataFromDestinationAddress, &peerLatLong);
+          float distance = getHaversineDistance(&latLong, &peerLatLong);
+          displayOnEink(
+            gpsLatLongForDisplay, gpsTime, String(distance, 3) + "km");
+        } else {
+          displayOnEink(
+            gpsLatLongForDisplay, gpsTime, "searching");
+        }
+
         prevLatLong = latLong;
       }
 

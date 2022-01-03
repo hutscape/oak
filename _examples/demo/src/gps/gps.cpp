@@ -59,7 +59,7 @@ void getLatLong(struct LatLong *latLong) {
 }
 
 bool hasNewGPSFix(struct LatLong *prevLatLong, struct LatLong *currLatLong) {
-  if (currLatLong->latitude == 0.00 && currLatLong->longitude == 0.00) {
+  if (!currLatLong->hasValidFix) {
     return false;
   }
 
