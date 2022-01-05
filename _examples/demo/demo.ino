@@ -121,6 +121,8 @@ void loop() {
 
       lastDisplayTime = millis();
     }
+  } else {
+    fastBlink(4);
   }
 }
 
