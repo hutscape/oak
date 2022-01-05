@@ -10,3 +10,10 @@ void toggleLED() {
   // Toggle LED
   digitalWrite(LEDPIN, !digitalRead(LEDPIN));
 }
+
+void fastBlink(int number) {
+  for (int i = 0; i < number; i++) {
+    toggleLED();
+    delay(500);
+  }
+}

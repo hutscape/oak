@@ -3,3 +3,4 @@
 
 void initLED();
 void toggleLED();
+void fastBlink(int);
