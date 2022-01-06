@@ -76,9 +76,10 @@ void getGPStime(String &value) {
 
   if (hourInTimezone < 10) {
     value = '0' + String(hourInTimezone, DEC);
+  } else {
+    value = String(hourInTimezone, DEC);
   }
 
-  value = String(hourInTimezone, DEC);
   value += ':';
 
   if (GPS.minute < 10) {
