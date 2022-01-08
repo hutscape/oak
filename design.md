@@ -75,3 +75,22 @@ power:
   charging_duration: 12 hours
   charging_instruction: Just plug in the USB cable to the Oak PCB that has the 18650 battery in the holder at the back. RED Charging LED will light up when charging. The battery will be fully charged when the RED Charging LED turns off.
 ---
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-1">Charging and Dischargings</h2>
+    <p class="subtitle">Graphs for Charging and Discharging are shown below.</p>
+    <div class="content is-medium">
+      <h3>Discharging</h3>
+      <p>Data log graph of the battery voltage and duration during a LoRa transmission of GPS Fix data and displaying it on the Eink.</p>
+      <a href="{{site.url}}/images/design/discharging.png">
+        <img src="{{site.url}}/images/design/discharging.png" alt="Example of a discharging graph">
+      </a>
+      <h3>Charging</h3>
+      <p>Data log graph of the battery voltage and duration during charging of the 18650 battery.</p>
+      <a href="{{site.url}}/images/design/charging.png">
+        <img src="{{site.url}}/images/design/charging.png" alt="Example of a charging graph">
+      </a>
+    </div>
+  </div>
+</section>
