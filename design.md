@@ -65,4 +65,13 @@ user_stories:
       - goal: see the Haversine distance with a relative time ago
         reason: I know how far away was the peer node when both nodes had a GPS fix
 
+# Power
+power:
+  tree: false
+  components: false
+  calculation: false
+  source: <code>4200mAh</code> 18650 button-top battery
+  battery_life: 12 hours
+  charging_duration: 12 hours
+  charging_instruction: Just plug in the USB cable to the Oak PCB that has the 18650 battery in the holder at the back. RED Charging LED will light up when charging. The battery will be fully charged when the RED Charging LED turns off.
 ---
