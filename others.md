@@ -10,24 +10,26 @@ lessons:
     subtitle: Good practices to continue for future projects
     list:
       - name: Add functional logical blocks in schematic to use similar circuits in future versions or other projects
-      - name: Use stencil SMD soldering with SMD components as alternatives wherever possible
+      - name: Use stencil SMD soldering with SMD components only if it is necessary. Else, use a PCB assembly service.
       - name: Use minimum number of through-hole components
       - name: Check Gerber file format with the PCB manufacturer before rendering them
-      - name: Check `F.Paste` and `B.Paste` layers for SMD stencil pattern
+      - name: Check <code>F.Paste</code> and <code>B.Paste</code> layers for SMD stencil pattern
+      - name: Pull out every single MCU pin as a test point for the first version of the project.
+      - name: Always buy buffer number of components. Image is from the book Designing Electronics That Work by Hunter Scott.
+        image: buffer-components.png
 
   - title: V2.0
     subtitle: For next iteration
     list:
       - name: Use SMD components only on top layer for one-step manual SMD stencil soldering process
       - name: Place a writable area on the silkscreen to note down LoRa node address, PCB number, frequency or other info
-      - name: Add a <a href="https://sg.element14.com/c/test-measurement/test-connectors-ic-clips/pcb-test-points?connector-mounting=surface-mount">surface mount PCB test point</a> for <code>GND</code> and SPI points
-      - name: Use a smaller SSD1306 I2C OLED display instead of E-Ink
+      - name: Add a <a href="https://sg.element14.com/c/test-measurement/test-connectors-ic-clips/pcb-test-points?connector-mounting=surface-mount">surface mount PCB test point</a> for <code>VBAT</code>, <code>VBUS</code>, <code>3.3V</code>, <code>5V</code>, <code>GND</code> and SPI points.
+      - name: Use a smaller <code>SSD1306</code> I2C OLED display instead of E-Ink. It's cheaper and easier to source and buy.
 
   - title: Board bring-up
     list:
-      - name: Check with 2 PCBs to conclude whether it is a design issue or a soldering / manufacturing / assembly issue
-      - name: Power it with USB only. Check `GND` and `VBUS` is `5V`. Check `GND` and `3.3V` is `3.3V`
-      - name: Bridge the open solder jumper for `3.3V`
+      - name: Check with 3 PCBs to conclude whether it is a design issue or a soldering / manufacturing / assembly issue
+      - name: Power it with current limiting power supply unit only. Check all the power test points such as <code>VBAT</code>, <code>VBUS</code>, <code>3.3V</code>, <code>5V</code>, <code>GND</code>.
 
 # References
 similar:
