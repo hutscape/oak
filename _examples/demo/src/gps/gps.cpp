@@ -1,8 +1,11 @@
 #include "gps.h"
 #include "Arduino.h"
+#include "Math.h"
 
 Adafruit_GPS GPS(&GPSSerial);
 const uint8_t timezone = 8;  // GMT +8
+
+#define TEN_SECONDS 10000
 
 void initGPS() {
   GPS.begin(9600);
@@ -43,6 +46,7 @@ void getLatLong(struct LatLong *latLong) {
     latLong->latitude = convertDMtoDecimalDegrees(GPS.latitude);
     latLong->longitude = convertDMtoDecimalDegrees(GPS.longitude);
     latLong->hasValidFix = true;
+    latLong->timestamp = millis();
   }
 
   if (String(GPS.lat) == "N") {
@@ -203,6 +207,7 @@ void convertStringToLatLong(String data, struct LatLong *latLong) {
   latLong->latitude = latitude.toFloat();
   latLong->longitude = longitude.toFloat();
   latLong->hasValidFix = true;
+  latLong->timestamp = millis();
 }
 // Convert Degree-Minutes 125.28 (1° 25.28') to Decimal Degrees 1.421343
 float convertDMtoDecimalDegrees(float value) {
@@ -214,4 +219,27 @@ float convertDMtoDecimalDegrees(float value) {
   float decimalDegrees = degrees.toFloat() + minutes.toFloat() / 60;
 
   return decimalDegrees;
+}
+
+// Get absolutel time difference in seconds
+// between the 2 nodes receiving their GPS fixes
+int getTimeDiff(long peerTimestamp, long localTimestamp) {
+  int peerTimeDifference = abs(millis() - peerTimestamp);
+  int localTimeDifference = abs(millis() - localTimestamp);
+  int timeDifference = min(peerTimeDifference, localTimeDifference) / 1000;
+
+  return timeDifference;
+}
+
+// Display peer node information on the E-Ink display
+// if peer node has a valid GPS Fix
+// and if the time difference between the 2 nodes is less than 10 seconds
+bool canDisplayPeerInfo(struct LatLong *peerLL, struct LatLong *localLL) {
+  if (peerLL->hasValidFix) {
+    if (abs(peerLL->timestamp - localLL->timestamp) < TEN_SECONDS) {
+      return true;
+    }
+  }
+
+  return false;
 }

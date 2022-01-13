@@ -61,7 +61,7 @@ void setup() {
     DEBUG_PRINT("Starting Eink succeeded!");
   }
 
-  displayOnEink("waiting for fix", "", "searching");
+  displayOnEink("waiting for fix", "", "searching", "for peer");
   initGPS();
 }
 
@@ -107,13 +107,19 @@ void loop() {
       if (hasNewGPSFix(&prevLatLong, &latLong)) {
         convertLatLongForDisplay(&latLong, gpsLatLongForDisplay);
 
-        if (peerLatLong.hasValidFix) {
+        if (canDisplayPeerInfo(&latLong, &peerLatLong)) {
           float distance = getHaversineDistance(&latLong, &peerLatLong);
+          int timeDiff = getTimeDiff(
+            peerLatLong.timestamp, latLong.timestamp);
+
           displayOnEink(
-            gpsLatLongForDisplay, gpsTime, String(distance, 3) + "km");
+            gpsLatLongForDisplay,
+            gpsTime,
+            String(distance, 3) + "km",
+            String(timeDiff) + "s ago");
         } else {
           displayOnEink(
-            gpsLatLongForDisplay, gpsTime, "searching");
+            gpsLatLongForDisplay, gpsTime, "searching", "for peer");
         }
 
         prevLatLong = latLong;

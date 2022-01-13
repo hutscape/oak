@@ -7,4 +7,4 @@
 #define UNCOLORED 1
 
 bool initEink();
-void displayOnEink(String, String, String);
+void displayOnEink(String, String, String, String);

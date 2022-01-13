@@ -15,6 +15,7 @@ struct LatLong {
   float latitude;
   float longitude;
   bool hasValidFix;
+  long timestamp;
 };
 
 // GPS initialisation and GPS fix related functions
@@ -42,3 +43,5 @@ void convertLatLongForDisplay(struct LatLong *, String &);
 void convertLatLongToString(struct LatLong *, String &);
 void convertStringToLatLong(String, struct LatLong *);
 float convertDMtoDecimalDegrees(float value);
+int getTimeDiff(long, long);
+bool canDisplayPeerInfo(struct LatLong *, struct LatLong *);
