@@ -92,6 +92,7 @@ void loop() {
       + String(destinationAddress, HEX)
       + " to 0x"
       + String(localAddress, HEX));
+    convertStringToLatLong(dataFromDestinationAddress, &peerLatLong);
   }
 
   // Receive GPS fix information
@@ -107,7 +108,6 @@ void loop() {
         convertLatLongForDisplay(&latLong, gpsLatLongForDisplay);
 
         if (peerLatLong.hasValidFix) {
-          convertStringToLatLong(dataFromDestinationAddress, &peerLatLong);
           float distance = getHaversineDistance(&latLong, &peerLatLong);
           displayOnEink(
             gpsLatLongForDisplay, gpsTime, String(distance, 3) + "km");
