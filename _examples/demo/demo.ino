@@ -117,19 +117,24 @@ void loop() {
         }
 
         prevLatLong = latLong;
+      } else {
+        DEBUG_PRINT("No GPS fix yet.");
+        DEBUG_PRINT_MORE(
+          "Date: " + gpsDate +
+          " Time: " + gpsTime +
+          " Lat/Long: " + gpsLatLong);
+        fastBlink(4);
       }
 
       lastDisplayTime = millis();
     }
-  } else {
-    fastBlink(4);
   }
 }
 
 void printGPSinfo() {
   DEBUG_GPS("----------------------------------------");
-  DEBUG_GPS("Time: " + gpsTime);
   DEBUG_GPS("Date: " + gpsDate);
+  DEBUG_GPS("Time: " + gpsTime);
   convertLatLongToString(&latLong, gpsLatLong);
   DEBUG_GPS("Lat/Long: " + gpsLatLong);
 
