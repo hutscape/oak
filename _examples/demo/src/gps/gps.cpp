@@ -234,7 +234,7 @@ int getTimeDiff(long peerTimestamp, long localTimestamp) {
 // Display peer node information on the E-Ink display
 // if peer node has a valid GPS Fix
 // and if the time difference between the 2 nodes is less than 10 seconds
-bool canDisplayPeerInfo(struct LatLong *peerLL, struct LatLong *localLL) {
+bool isOKtoCalculateHaversine(struct LatLong *peerLL, struct LatLong *localLL) {
   if (peerLL->hasValidFix) {
     if (abs(peerLL->timestamp - localLL->timestamp) < TEN_SECONDS) {
       return true;

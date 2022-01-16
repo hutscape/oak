@@ -107,7 +107,7 @@ void loop() {
       if (hasNewGPSFix(&prevLatLong, &latLong)) {
         convertLatLongForDisplay(&latLong, gpsLatLongForDisplay);
 
-        if (canDisplayPeerInfo(&latLong, &peerLatLong)) {
+        if (isOKtoCalculateHaversine(&latLong, &peerLatLong)) {
           float distance = getHaversineDistance(&latLong, &peerLatLong);
           int timeDiff = getTimeDiff(
             peerLatLong.timestamp, latLong.timestamp);

@@ -7,9 +7,9 @@
 #define GPSRST 3
 #define EARTH_RADIUS 6371.0  // km
 
-// Float in decimal degrees
+// Float latitude and longitude in decimal degrees
 // E.g. "1.2228262778567307, 103.84607299131493" in decimal degrees is
-// 1°13'22.2"N 103°50'45.9"E
+// 1°13'22.2"N 103°50'45.9"E in degrees, minutes, seconds (dataFromDestinationAddress)
 // + is North and East, - is South and West
 struct LatLong {
   float latitude;
@@ -44,4 +44,4 @@ void convertLatLongToString(struct LatLong *, String &);
 void convertStringToLatLong(String, struct LatLong *);
 float convertDMtoDecimalDegrees(float value);
 int getTimeDiff(long, long);
-bool canDisplayPeerInfo(struct LatLong *, struct LatLong *);
+bool isOKtoCalculateHaversine(struct LatLong *, struct LatLong *);
