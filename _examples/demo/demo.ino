@@ -108,6 +108,7 @@ void loop() {
       if (hasNewGPSFix(&prevLatLong, &latLong)) {
         convertLatLongForDisplay(&latLong, gpsLatLongForDisplay);
 
+        // Both local and peer nodes have GPS fixes around the same time
         if (isOKtoCalculateHaversine(&latLong, &peerLatLong)) {
           getHaversineDistance(&latLong, &peerLatLong, &haversine);
 
@@ -117,13 +118,23 @@ void loop() {
             String(haversine.distance, 3) + "km",
             String(haversine.timeDiff) + "s ago");
         } else {
+          // Peer node had a GPS fix a while ago
           if (peerLatLong.hasValidFix) {
+            int timeDiff = calculateTimeDiff(peerLatLong.timestamp);
+
+            DEBUG_PRINT("CANNOT calculate Haversine distance.");
+            DEBUG_PRINT_MORE("Haversine distance: "
+                + String(haversine.distance, 3) + " km");
+            DEBUG_PRINT_MORE("Haversine time difference: "
+              + String(timeDiff, DEC) + "s ago");
+
             displayOnEink(
-              gpsLatLongForDisplay,
-              gpsTime,
-              String(haversine.distance, 3) + "km",
-              calculateTimeDiff(haversine.timeDiff) + "s ago");
+                gpsLatLongForDisplay,
+                gpsTime,
+                String(haversine.distance, 3) + "km",
+                String(timeDiff, DEC) + "s ago");
           } else {
+            // Local node does not have a GPS fix
             displayOnEink(
               gpsLatLongForDisplay, gpsTime, "searching", "for peer");
           }

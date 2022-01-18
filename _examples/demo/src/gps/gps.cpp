@@ -256,7 +256,6 @@ bool isOKtoCalculateHaversine(struct LatLong *peerLL, struct LatLong *localLL) {
   return false;
 }
 
-int calculateTimeDiff(int timeDiff) {
-  int relativeTimeDiff = millis()/ 1000 - timeDiff;
-  return relativeTimeDiff;
+int calculateTimeDiff(uint32_t timestamp) {
+  return (millis() - timestamp) / 1000;  // in seconds
 }

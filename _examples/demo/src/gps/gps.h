@@ -9,13 +9,13 @@
 
 // Float latitude and longitude in decimal degrees
 // E.g. "1.2228262778567307, 103.84607299131493" in decimal degrees is
-// 1°13'22.2"N 103°50'45.9"E in degrees, minutes, seconds (dataFromDestinationAddress)
+// 1°13'22.2"N 103°50'45.9"E in degrees, minutes, seconds
 // + is North and East, - is South and West
 struct LatLong {
-  float latitude;
-  float longitude;
-  bool hasValidFix;
-  uint32_t timestamp;
+  float latitude;  // latitude in decimal degrees
+  float longitude;  // longitude in decimal degrees
+  bool hasValidFix;  // true if GPS has a valid fix
+  uint32_t timestamp;  // milliseconds
 };
 
 // float distance is Haversine distance in km
@@ -55,4 +55,4 @@ void convertLatLongToString(struct LatLong *, String &);
 void convertStringToLatLong(String, struct LatLong *);
 float convertDMtoDecimalDegrees(float value);
 bool isOKtoCalculateHaversine(struct LatLong *, struct LatLong *);
-int calculateTimeDiff(int);
+int calculateTimeDiff(uint32_t);
