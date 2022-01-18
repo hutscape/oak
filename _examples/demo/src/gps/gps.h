@@ -18,6 +18,14 @@ struct LatLong {
   long timestamp;
 };
 
+// float distance is Haversine distance in km
+// int timeDiff is time difference in seconds
+// when the 2 nodes received their GPS fixes
+struct Haversine {
+  float distance;
+  int timeDiff;
+};
+
 // GPS initialisation and GPS fix related functions
 void initGPS();
 bool receivedGPSfix();
@@ -36,12 +44,15 @@ uint8_t getGPSsatellites();
 float getGPStimeSinceLastFix();
 float getGPSlastTime();
 float getGPSlastDate();
-float getHaversineDistance(struct LatLong *, struct LatLong *);
+void getHaversineDistance(
+  struct LatLong *,
+  struct LatLong *,
+  struct Haversine *);
 
 // Convert LatLong to various formats
 void convertLatLongForDisplay(struct LatLong *, String &);
 void convertLatLongToString(struct LatLong *, String &);
 void convertStringToLatLong(String, struct LatLong *);
 float convertDMtoDecimalDegrees(float value);
-int getTimeDiff(long, long);
 bool isOKtoCalculateHaversine(struct LatLong *, struct LatLong *);
+int calculateTimeDiff(int);

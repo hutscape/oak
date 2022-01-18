@@ -37,6 +37,7 @@ String gpsLatLongForDisplay = "";
 LatLong latLong = {0.00, 0.00, false};
 LatLong prevLatLong = {0.00, 0.00, false};
 LatLong peerLatLong = {0.00, 0.00, false};
+Haversine haversine = {0.000, 0};
 
 void setup() {
   #ifdef DEBUG
@@ -108,25 +109,30 @@ void loop() {
         convertLatLongForDisplay(&latLong, gpsLatLongForDisplay);
 
         if (isOKtoCalculateHaversine(&latLong, &peerLatLong)) {
-          float distance = getHaversineDistance(&latLong, &peerLatLong);
-          int timeDiff = getTimeDiff(
-            peerLatLong.timestamp, latLong.timestamp);
+          getHaversineDistance(&latLong, &peerLatLong, &haversine);
 
           displayOnEink(
             gpsLatLongForDisplay,
             gpsTime,
-            String(distance, 3) + "km",
-            String(timeDiff) + "s ago");
+            String(haversine.distance, 3) + "km",
+            String(haversine.timeDiff) + "s ago");
         } else {
-          displayOnEink(
-            gpsLatLongForDisplay, gpsTime, "searching", "for peer");
+          if (peerLatLong.hasValidFix) {
+            displayOnEink(
+              gpsLatLongForDisplay,
+              gpsTime,
+              String(haversine.distance, 3) + "km",
+              calculateTimeDiff(haversine.timeDiff) + "s ago");
+          } else {
+            displayOnEink(
+              gpsLatLongForDisplay, gpsTime, "searching", "for peer");
+          }
         }
 
         prevLatLong = latLong;
       } else {
-        DEBUG_PRINT("No GPS fix yet.");
         DEBUG_PRINT_MORE(
-          "Date: " + gpsDate +
+          "No GPS fix yet. Date: " + gpsDate +
           " Time: " + gpsTime +
           " Lat/Long: " + gpsLatLong);
         fastBlink(4);

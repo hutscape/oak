@@ -177,7 +177,11 @@ void convertLatLongToString(struct LatLong *latLong, String &value) {
   value = latitude + "," + longitude;
 }
 
-float getHaversineDistance(struct LatLong *latLong1, struct LatLong *latLong2) {
+void getHaversineDistance(
+  struct LatLong *latLong1,
+  struct LatLong *latLong2,
+  struct Haversine *haversine) {
+  // Calculate Haversine distance between two latitude-longitude points
   float lat1 = latLong1->latitude;
   float lon1 = latLong1->longitude;
   float lat2 = latLong2->latitude;
@@ -193,7 +197,14 @@ float getHaversineDistance(struct LatLong *latLong1, struct LatLong *latLong2) {
   float c = 2 * atan2(sqrt(a), sqrt(1 - a));
   float d = EARTH_RADIUS * c;
 
-  return d;  // in km
+  haversine->distance = d;  // in km
+
+  // Calculate time difference between 2 GPS fixes
+  int localTimeDifference = abs(millis() - latLong1->timestamp);
+  int peerTimeDifference = abs(millis() - latLong2->timestamp);
+  int timeDifference = min(peerTimeDifference, localTimeDifference) / 1000;
+
+  haversine->timeDiff = timeDifference;  // in seconds
 }
 
 // Convert from Decimal degrees "1234.12345678,12345.12345678" to LatLong
@@ -209,6 +220,7 @@ void convertStringToLatLong(String data, struct LatLong *latLong) {
   latLong->hasValidFix = true;
   latLong->timestamp = millis();
 }
+
 // Convert Degree-Minutes 125.28 (1° 25.28') to Decimal Degrees 1.421343
 float convertDMtoDecimalDegrees(float value) {
   int size = String(value, 8).length();
@@ -242,4 +254,9 @@ bool isOKtoCalculateHaversine(struct LatLong *peerLL, struct LatLong *localLL) {
   }
 
   return false;
+}
+
+int calculateTimeDiff(int timeDiff) {
+  int relativeTimeDiff = millis()/ 1000 - timeDiff;
+  return relativeTimeDiff;
 }
