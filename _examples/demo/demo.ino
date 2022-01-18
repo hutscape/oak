@@ -18,10 +18,10 @@ byte localAddress = LOCAL_ADDRESS;
 byte destinationAddress = DESTINATION_ADDRESS;
 
 int sendLoRaInterval = 3000;  // Send LoRa packet every 3 seconds
-long lastLoRaSendTime = 0;
+uint32_t lastLoRaSendTime = 0;
 
 int displayInterval = 10000;  // display on E-Ink every 10 seconds
-long lastDisplayTime = 0;
+uint32_t lastDisplayTime = 0;
 
 String dataFromDestinationAddress = "";
 

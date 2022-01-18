@@ -235,7 +235,7 @@ float convertDMtoDecimalDegrees(float value) {
 
 // Get absolutel time difference in seconds
 // between the 2 nodes receiving their GPS fixes
-int getTimeDiff(long peerTimestamp, long localTimestamp) {
+int getTimeDiff(uint32_t peerTimestamp, uint32_t localTimestamp) {
   int peerTimeDifference = abs(millis() - peerTimestamp);
   int localTimeDifference = abs(millis() - localTimestamp);
   int timeDifference = min(peerTimeDifference, localTimeDifference) / 1000;

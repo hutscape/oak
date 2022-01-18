@@ -15,7 +15,7 @@ struct LatLong {
   float latitude;
   float longitude;
   bool hasValidFix;
-  long timestamp;
+  uint32_t timestamp;
 };
 
 // float distance is Haversine distance in km
