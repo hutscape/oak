@@ -112,6 +112,12 @@ void loop() {
         if (isOKtoCalculateHaversine(&latLong, &peerLatLong)) {
           getHaversineDistance(&latLong, &peerLatLong, &haversine);
 
+          DEBUG_PRINT_MORE("Haversine distance: "
+            + String(haversine.distance, 3)
+            + " km "
+            + String(haversine.timeDiff, DEC)
+            + "s ago");
+
           displayOnEink(
             gpsLatLongForDisplay,
             gpsTime,
@@ -138,7 +144,7 @@ void loop() {
             displayOnEink(
               gpsLatLongForDisplay, gpsTime, "searching", "for peer");
           }
-        }
+        }  // end if (isOKtoCalculateHaversine)
 
         prevLatLong = latLong;
       } else {
@@ -150,8 +156,8 @@ void loop() {
       }
 
       lastDisplayTime = millis();
-    }
-  }
+    }  // if (millis() - lastDisplayTime > displayInterval)
+  }  // if (receivedGPSfix())
 }
 
 void printGPSinfo() {
