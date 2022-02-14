@@ -20,8 +20,8 @@ references:
     url: https://www.adafruit.com/product/4415
   - name: Adafruit_GPS
     url: https://github.com/adafruit/Adafruit_GPS
-  - name: Adafruit GPS Hardware serial echo test
-    url: https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_EchoTest/GPS_HardwareSerial_EchoTest.ino
+  - name: Adafruit GPS Hardware serial parsing
+    url: https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_Parsing/GPS_HardwareSerial_Parsing.ino
 images:
   console: gps-fix-parsed-console.png
   prototype: gps-fix-prototype.jpg
