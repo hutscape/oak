@@ -1,6 +1,7 @@
 title: Oak
 description: 🌳 Outdoor LoRa-GPS tracker with E-Ink display 🔑
 url: "https://hutscape.com/oak"
+parent: "https://hutscape.com"
 markdown: kramdown
 permalink: /:title
 youtube: https://www.youtube.com/user/sweska/videos
