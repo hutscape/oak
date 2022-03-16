@@ -247,7 +247,7 @@ design_end: '2021-05-20'
 manufacturing_start: '2021-05-24'
 manufacturing_end: '2021-06-10'
 integration_start: '2021-06-21'
-integration_end:
-deployment_start:
-deployment_end:
+integration_end: '2021-12-31'
+deployment_start: '2022-01-01'
+deployment_end: '2022-02-15'
 ---
