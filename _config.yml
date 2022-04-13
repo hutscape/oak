@@ -16,7 +16,6 @@ collections:
     permalink: /examples/:name
 
 project:
-  version: 1.0
   power: 18650
   wireless: LoRa,
   sensor: GPS, E-Ink
