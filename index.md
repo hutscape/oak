@@ -9,7 +9,7 @@ downloads: true
 download_schematic: true
 download_layout: true
 download_kicad: true
-download_gerber: false
+download_gerber: true
 download_bom: true
 ---
 <section class="section is-small">
@@ -17,7 +17,7 @@ download_bom: true
     <h2 class="title is-1">Getting Started</h2>
     <div class="tags has-addons">
       <span class="tag is-medium is-light">status</span>
-      <span class="tag is-medium is-warning">ongoing</span>
+      <span class="tag is-medium is-success">completed</span>
     </div>
 
   <div class="tile is-ancestor">
