@@ -5,12 +5,16 @@ permalink: /
 sequence: 1
 
 manufacturing: true
-downloads: true
-download_schematic: true
-download_layout: true
-download_kicad: true
-download_gerber: true
-download_bom: true
+downloads:
+  schematic: true
+  layout: true
+  kicad: true
+  gerber: true
+  gerber_url: https://github.com/hutscape/oak/releases/tag/1.3.2
+  bom: true
+software:
+  - name: Demo firmware
+    code: _examples/demo
 ---
 <section class="section is-small">
   <div class="container">
