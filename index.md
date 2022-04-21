@@ -10,7 +10,6 @@ downloads:
   layout: true
   kicad: true
   gerber: true
-  gerber_url: https://github.com/hutscape/oak/releases/tag/1.3.2
   bom: true
 software:
   - name: Demo firmware

@@ -6,8 +6,7 @@ sequence: 3
 
 three_d: true
 pcb_layout: true
-manufacturing: false
-gerber: false
+gerber: true
 ---
 
 <!-- Steps to update hardware
