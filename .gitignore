@@ -31,4 +31,8 @@ build
 datasheets
 gerbers
 
+# mechanical
+*.FCStd1
+
+# text editor
 !.vscode
