@@ -5238,6 +5238,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/library/3d_models/18650-battery.step"
+      (offset (xyz -35.5 0 9))
+      (scale (xyz 1.1 1.1 1.1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (gr_poly
@@ -9032,7 +9037,7 @@
   (dimension (type aligned) (layer "Dwgs.User") (tstamp 25c3bcaf-5355-44c6-80f6-5a39fc38e90b)
     (pts (xy 77.5 35) (xy 77.5 31.7))
     (height -45.4)
-    (gr_text "3.3000 mm" (at 32.2 40.2 90) (layer "Dwgs.User") (tstamp 82522349-c81b-46ae-945b-dbf1508c7f1c)
+    (gr_text "3.3000 mm" (at 32.2 40.2 90) (layer "Dwgs.User") (tstamp 25c3bcaf-5355-44c6-80f6-5a39fc38e90b)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 3) (units_format 1) (precision 4))
@@ -9086,7 +9091,7 @@
   (dimension (type aligned) (layer "Dwgs.User") (tstamp 8fba8ce9-d00c-4a49-b7c1-b4cec3a0a614)
     (pts (xy 77.47 35) (xy 38.6 35))
     (height 6.6)
-    (gr_text "38.8700 mm" (at 53.8 28.2) (layer "Dwgs.User") (tstamp 648b87b6-6499-4832-b6db-524bae471da0)
+    (gr_text "38.8700 mm" (at 53.8 28.2) (layer "Dwgs.User") (tstamp 8fba8ce9-d00c-4a49-b7c1-b4cec3a0a614)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 3) (units_format 1) (precision 4))
@@ -9122,7 +9127,7 @@
   (dimension (type aligned) (layer "Dwgs.User") (tstamp fa9d0a4e-cfb6-4401-97dd-255de71601e3)
     (pts (xy 102.12 34.9) (xy 38.6 35.1))
     (height 20.886357)
-    (gr_text "63.5203 mm" (at 70.290616 12.963753 0.1804017323) (layer "Dwgs.User") (tstamp 4078cd1e-3bfd-4833-9973-967baf421539)
+    (gr_text "63.5203 mm" (at 70.290616 12.963753 0.1804017323) (layer "Dwgs.User") (tstamp fa9d0a4e-cfb6-4401-97dd-255de71601e3)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 3) (units_format 1) (precision 4))
