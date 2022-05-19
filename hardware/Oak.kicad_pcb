@@ -1527,9 +1527,14 @@
     (pad "2" smd rect locked (at -2.825 0 180) (size 1.35 4.2) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "GND") (tstamp 87371631-aa02-498a-998a-09bdb74784c1))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/MMCX_Molex_73415-0961_Horizontal.step"
-      (offset (xyz 0 -3.5 0.5))
+      (offset (xyz 0 -3 0.5))
       (scale (xyz 1.5 1.5 1.5))
       (rotate (xyz 0 0 -90))
+    )
+    (model "${KIPRJMOD}/library/3d_models/stub-antenna.step"
+      (offset (xyz 0 -7.5 0.5))
+      (scale (xyz 0.6 0.6 0.6))
+      (rotate (xyz 90 0 0))
     )
   )
 
