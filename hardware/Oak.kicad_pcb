@@ -2941,6 +2941,26 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/library/3d_models/hex_spacer_FF_M3_H10_pass_through.step"
+      (offset (xyz 21 13.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/library/3d_models/hex_spacer_FF_M3_H10_pass_through.step"
+      (offset (xyz -22 13.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/library/3d_models/hex_spacer_FF_M3_H10_pass_through.step"
+      (offset (xyz 21 -14.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/library/3d_models/hex_spacer_FF_M3_H10_pass_through.step"
+      (offset (xyz -22 -14.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "TestPoint:TestPoint_Pad_1.5x1.5mm" (layer "F.Cu")
