@@ -2,7 +2,7 @@
 layout: others
 title: Others
 permalink: /others
-sequence: 6
+sequence: 7
 
 # Lessons
 lessons:
