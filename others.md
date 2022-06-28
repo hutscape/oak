@@ -18,6 +18,19 @@ lessons:
       - name: Always buy buffer number of components. Image is from the book Designing Electronics That Work by Hunter Scott.
         image: buffer-components.png
 
+  - titles: Enclosure
+    subtitle: Next iteration improvements
+    list:
+      - name: Make the PCB routing symmetrical for LED positions and connector slots
+      - name: Ensure the length is not too long to prevent bending of the material
+      - name: Use wider ventilation holes with wider spacing between each of them
+      - name: Use less clearance for connector slots. Take note of finger access
+      - name: Use other shapes for connector slots E.g. rounded corner or trapezoid
+      - name: Use shape binder for seperation plane bends
+      - name: Use a counter sunk screw head
+      - name: Make the screw lug's initial length be wider to contain the screw head so that it can sink into the surface
+      - name: Try a snap-fit enclosure
+
   - title: V2.0
     subtitle: For next iteration
     list:
