@@ -1,7 +1,7 @@
 ---
-layout: hardware
-title: Hardware
-permalink: /hardware
+layout: pcb
+title: PCB
+permalink: /pcb
 sequence: 3
 
 three_d: true
