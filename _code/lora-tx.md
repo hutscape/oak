@@ -1,19 +1,23 @@
 ---
-layout: example
-title: Serial print
-description: Hello world with serial prints
+layout: code
+title: Transmit LoRa packet
+description: Transmit LoRa with an increasing integer counter to no destination address
 references:
-  - name: Arduino CLI
-    url: https://arduino.github.io/arduino-cli/latest/
+  - name: Arduino LoRa sender example code
+    url: https://github.com/sandeepmistry/arduino-LoRa/tree/master/code/LoRaSender
+dependancies:
+  - name: Arduino LoRa
+    url: https://github.com/sandeepmistry/arduino-LoRa
+prerequisites:
+  - name: LoRa Rx
+    url: ./lora-rx
 difficulty: easy
 features:
-  - print
-  - serial
-
+  - LoRa
+  - transmission
 images:
-  prototype: print-hello-prototype.jpg
-  console: print-hello-console.jpg
-
+  prototype: lora-prototype.jpg
+  console: lora-tx-console.png
 steps:
   - step: Plug in the Oak PCB to the computer
   - step: (Option A) Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>. Run <code>make</code> to compile and upload the code to the board.

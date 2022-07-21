@@ -1,12 +1,12 @@
 ---
-layout: example
+layout: code
 title: Oak Demo
 description: Send GPS information to the peer LoRa node and display it on the E-Ink screen
 references:
   - name: Arduino LoRa duplex example code
-    url: https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaDuplex/LoRaDuplex.ino
+    url: https://github.com/sandeepmistry/arduino-LoRa/blob/master/code/LoRaDuplex/LoRaDuplex.ino
   - name: Adafruit GPS Hardware serial parsing
-    url: https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_Parsing/GPS_HardwareSerial_Parsing.ino
+    url: https://github.com/adafruit/Adafruit_GPS/blob/master/code/GPS_HardwareSerial_Parsing/GPS_HardwareSerial_Parsing.ino
   - name: Arduino Waveshare E-paper 1in54 version 1
     url: https://github.com/waveshare/e-Paper/tree/master/Arduino/epd1in54
   - name: Arduino Waveshare E-paper 1in54 version 2
@@ -45,4 +45,4 @@ This example shows how 2 devices are exchanging GPS latitude-longitude informati
 
 The serial output below shows after resetting the device, it initialises the LoRa and E-Ink, waits for a while, and then finally gets a GPS fix and starts to send that information via LoRa.
 
-<img src="{{ site.url }}/images/examples/demo-reset-console.png" alt="Serial output after reset">
+<img src="{{ site.url }}/images/code/demo-reset-console.png" alt="Serial output after reset">

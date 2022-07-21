@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Reading and writing to the flash
 description: Reading and writing a simple integer to the non-volatile flash memory.
 dependancies:
@@ -7,7 +7,7 @@ dependancies:
     url: https://github.com/cmaglie/FlashStorage
 references:
   - name: Flash store and retrieve
-    url: https://github.com/cmaglie/FlashStorage/blob/master/examples/FlashStoreAndRetrieve/FlashStoreAndRetrieve.ino
+    url: https://github.com/cmaglie/FlashStorage/blob/master/code/FlashStoreAndRetrieve/FlashStoreAndRetrieve.ino
 difficulty: easy
 features:
   - flash

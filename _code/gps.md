@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: GPS hello world without a fix
 description: Test GPS sensor PA1010D with UART without any GPS Fix yet
 difficulty: easy
@@ -17,7 +17,7 @@ references:
   - name: Adafruit_GPS
     url: https://github.com/adafruit/Adafruit_GPS
   - name: Adafruit GPS Hardware serial echo test
-    url: https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_EchoTest/GPS_HardwareSerial_EchoTest.ino
+    url: https://github.com/adafruit/Adafruit_GPS/blob/master/code/GPS_HardwareSerial_EchoTest/GPS_HardwareSerial_EchoTest.ino
 images:
   console: gps-console.png
   prototype: gps-prototype.jpg

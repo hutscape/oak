@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Create a custom Arduino Board
 description: Create a local and downloadable custom Arduino board
 references:
@@ -65,7 +65,7 @@ Refer to the 2 repositories created:
     ```
 1. View the newely added board locally in Arduino IDE
 
-<img src="{{ site.url }}/images/examples/custom-arduino-board-local.png" alt="Custom Arduino board locally">
+<img src="{{ site.url }}/images/code/custom-arduino-board-local.png" alt="Custom Arduino board locally">
 
 ## Create downloadable custom board
 
@@ -131,10 +131,10 @@ Refer to the 2 repositories created:
     https://raw.githubusercontent.com/hutscape/arduino-board-index/main/package_hutscape_index.json
     ```
 
-    <img src="{{ site.url }}/images/examples/paste-board-url.png" alt="Copy and paste the custom board URL into Board Manager in Arduino IDE">
+    <img src="{{ site.url }}/images/code/paste-board-url.png" alt="Copy and paste the custom board URL into Board Manager in Arduino IDE">
 1. Restart Arduino IDE
 1. Go to Tools > Boards Manager > Search for Hutscape or Oak
-    <img src="{{ site.url }}/images/examples/install-custom-board.png" alt="Install custom Arduino board">
-    <img src="{{ site.url }}/images/examples/custom-board-installed.png" alt="Custom Arduino board is installed">
+    <img src="{{ site.url }}/images/code/install-custom-board.png" alt="Install custom Arduino board">
+    <img src="{{ site.url }}/images/code/custom-board-installed.png" alt="Custom Arduino board is installed">
 1. Choose the custom board installed for compiling and uploading
-    <img src="{{ site.url }}/images/examples/choose-custom-board.png" alt="Choose the custom Arduino Board installed">
+    <img src="{{ site.url }}/images/code/choose-custom-board.png" alt="Choose the custom Arduino Board installed">

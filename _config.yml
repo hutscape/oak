@@ -11,9 +11,9 @@ github:
 exclude: ["datasheets", "Gemfile", "Gemfile.lock", "contributing.md", "Makefile", "readme.md", "scripts", "firmware"]
 include: ["_data"]
 collections:
-  examples:
+  code:
     output: true
-    permalink: /examples/:name
+    permalink: /code/:name
 
 project:
   power: 18650

@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: GPS fix with parsed lat-long
 description: Display the parsed NMEA string information on the serial console after a successful GPS fix
 difficulty: medium
@@ -21,7 +21,7 @@ references:
   - name: Adafruit_GPS
     url: https://github.com/adafruit/Adafruit_GPS
   - name: Adafruit GPS Hardware serial parsing
-    url: https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_Parsing/GPS_HardwareSerial_Parsing.ino
+    url: https://github.com/adafruit/Adafruit_GPS/blob/master/code/GPS_HardwareSerial_Parsing/GPS_HardwareSerial_Parsing.ino
 images:
   console: gps-fix-parsed-console.png
   prototype: gps-fix-prototype.jpg

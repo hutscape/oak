@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Hello world blinky
 description: Hello world with Blinky LED
 references:

@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Reading and writing a struct to the flash
 description: Reading and writing a struct to the non-volatile flash memory.
 dependancies:
@@ -7,7 +7,7 @@ dependancies:
     url: https://github.com/cmaglie/FlashStorage
 references:
   - name: Flash store name and surname
-    url: https://github.com/cmaglie/FlashStorage/blob/master/examples/StoreNameAndSurname/StoreNameAndSurname.ino
+    url: https://github.com/cmaglie/FlashStorage/blob/master/code/StoreNameAndSurname/StoreNameAndSurname.ino
 difficulty: easy
 features:
   - flash

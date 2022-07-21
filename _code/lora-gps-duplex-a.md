@@ -1,10 +1,10 @@
 ---
-layout: example
-title: LoRa GPS duplex node B
+layout: code
+title: LoRa GPS duplex node A
 description: Transmit and receive GPS lat-long from a peer LoRa node
 references:
   - name: Arduino LoRa duplex example code
-    url: https://github.com/sandeepmistry/arduino-LoRa/blob/master/examples/LoRaDuplex/LoRaDuplex.ino
+    url: https://github.com/sandeepmistry/arduino-LoRa/blob/master/code/LoRaDuplex/LoRaDuplex.ino
 dependancies:
   - name: Arduino LoRa
     url: https://github.com/sandeepmistry/arduino-LoRa
@@ -15,8 +15,8 @@ prerequisites:
     url: ./lora-tx
   - name: LoRa receive
     url: ./lora-rx
-  - name: LoRa Duplex B
-    url: ./lora-duplex-b
+  - name: LoRa Duplex A
+    url: ./lora-duplex-a
 difficulty: medium
 features:
   - LoRa
@@ -29,7 +29,7 @@ images:
   prototype: lora-prototype.jpg
   console: lora-gps-duplex-console.png
 steps:
-  - step: Prepare <a href="./lora-gps-duplex-a">LoRa GPS duplex A</a> to send and receive GPS information
+  - step: Prepare <a href="./lora-gps-duplex-b">LoRa GPS duplex B</a> to send and receive GPS information
   - step: Plug in the Oak PCB to the computer
   - step: (Option A) Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>. Run <code>make</code> to compile and upload the code to the board.
     image: print-hello-check.png

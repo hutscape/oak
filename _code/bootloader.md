@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Upload Arduino Zero bootloader
 description: Upload bootloader Arduino Zero with J-Link Edu Mini
 references:
@@ -28,7 +28,7 @@ images:
 | 9 | GND | GND
 | 10 | RESET | RESET
 
-<img src="{{ site.url }}/images/examples/bootloader-pins.png" alt="SWD Pin connections on the PCB">
+<img src="{{ site.url }}/images/code/bootloader-pins.png" alt="SWD Pin connections on the PCB">
 
 ## Create the bootloader file
 
@@ -55,7 +55,7 @@ images:
 1. Connect the J-Link Edu Mini with SWD pins to the PCB
 1. Choose the created bootloader data file `samd21_sam_ba.bin`
 1. Click `Program Device`
-    <img src="{{ site.url }}/images/examples/bootloader-jflash.png" alt="">
+    <img src="{{ site.url }}/images/code/bootloader-jflash.png" alt="">
 1. Disconnect J-Link Edu Mini and connect the PCB to the laptop
 1. Double press the reset button to bring it into the bootloader mode
 1. Query `ls -al /dev/cu.usbmodem*` to ensure the port is detected

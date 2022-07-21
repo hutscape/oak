@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: GPS PA1010D with UART
 description: Use GPS module PA1010D to display the raw NMEA sentences.
 difficulty: easy

@@ -13,7 +13,7 @@ downloads:
   bom: true
 software:
   - name: Demo firmware
-    code: _examples/demo
+    code: _code/demo
 ---
 <section class="section is-small">
   <div class="container">
@@ -40,23 +40,23 @@ software:
               <p class="subtitle">[Option A]: Install new board in Arduino IDE</p>
               <p>Copy and paste the following URL into the File > Preferences > "Additional Boards Manager" textbox in Arduino IDE</p>
               <code> https://raw.githubusercontent.com/hutscape/arduino-board-index/main/package_hutscape_index.json</code>
-              <a href="{{site.url}}/images/examples/paste-board-url.png">
-                <img src="{{site.url}}/images/examples/paste-board-url.png" alt="Paste board URL">
+              <a href="{{site.url}}/images/code/paste-board-url.png">
+                <img src="{{site.url}}/images/code/paste-board-url.png" alt="Paste board URL">
               </a>
               <p>Restart Arduino IDE. Go to Tools > Boards Manager > Search for Hutscape or Oak</p>
-              <a href="{{site.url}}/images/examples/install-custom-board.png">
-                <img src="{{site.url}}/images/examples/install-custom-board.png" alt="Install custom board">
+              <a href="{{site.url}}/images/code/install-custom-board.png">
+                <img src="{{site.url}}/images/code/install-custom-board.png" alt="Install custom board">
               </a>
-              <a href="{{site.url}}/images/examples/custom-board-installed.png">
-                <img src="{{site.url}}/images/examples/custom-board-installed.png" alt="Installation of custom board is successful">
+              <a href="{{site.url}}/images/code/custom-board-installed.png">
+                <img src="{{site.url}}/images/code/custom-board-installed.png" alt="Installation of custom board is successful">
               </a>
               <p class="subtitle">[Option B]: Use Makefile</p>
               <p>Run <code>make</code> to upload the sketch to the board.</p>
-              <a href="{{site.url}}/images/examples/make-to-install.png">
-                <img src="{{site.url}}/images/examples/make-to-install.png" alt="Run the command make to upload the code to the board">
+              <a href="{{site.url}}/images/code/make-to-install.png">
+                <img src="{{site.url}}/images/code/make-to-install.png" alt="Run the command make to upload the code to the board">
               </a>
-              <a href="{{site.url}}/images/examples/make-successful.png">
-                <img src="{{site.url}}/images/examples/make-successful.png" alt="Successfully uploaded the code to the board">
+              <a href="{{site.url}}/images/code/make-successful.png">
+                <img src="{{site.url}}/images/code/make-successful.png" alt="Successfully uploaded the code to the board">
               </a>
             </article>
           </div>
@@ -64,17 +64,17 @@ software:
             <article class="tile is-child notification">
               <div class="content">
                 <p class="title">Step 3</p>
-                <p class="subtitle">Try the <a href="{{site.url}}/examples/hello-world">Blinky LED code</a> or other <a href="{{site.url}}/examples">examples</a>.</p>
-                <a href="{{site.url}}/images/examples/eink-prototype.jpg">
-                  <img src="{{site.url}}/images/examples/eink-prototype.jpg" alt="Typical setup">
+                <p class="subtitle">Try the <a href="{{site.url}}/code/hello-world">Blinky LED code</a> or other <a href="{{site.url}}/code">code examples</a>.</p>
+                <a href="{{site.url}}/images/code/eink-prototype.jpg">
+                  <img src="{{site.url}}/images/code/eink-prototype.jpg" alt="Typical setup">
                 </a>
                 <p class="subtitle">[Option A]: Use Arduino IDE</p>
-                <a href="{{site.url}}/images/examples/option-a-ide-blinky.png">
-                  <img src="{{site.url}}/images/examples/option-a-ide-blinky.png" alt="Use Arduino IDE to upoad blinky firmware">
+                <a href="{{site.url}}/images/code/option-a-ide-blinky.png">
+                  <img src="{{site.url}}/images/code/option-a-ide-blinky.png" alt="Use Arduino IDE to upoad blinky firmware">
                 </a>
                 <p class="subtitle">[Option B]: Use Makefile</p>
-                <a href="{{site.url}}/images/examples/option-b-makefile-blinky.png">
-                  <img src="{{site.url}}/images/examples/option-b-makefile-blinky.png" alt="Use Makefile to upload the blinky firmware">
+                <a href="{{site.url}}/images/code/option-b-makefile-blinky.png">
+                  <img src="{{site.url}}/images/code/option-b-makefile-blinky.png" alt="Use Makefile to upload the blinky firmware">
                 </a>
               </div>
             </article>

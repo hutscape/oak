@@ -1,10 +1,8 @@
 ---
-layout: example
-title: E-Ink hello world
-description: Display simple string on E-Ink with increasing counter
+layout: code
+title: E-Ink hello world with V2.1
+description: Display demo sample code with V2.1 E-Ink hardware version
 references:
-  - name: Arduino Waveshare E-paper 1in54 version 1
-    url: https://github.com/waveshare/e-Paper/tree/master/Arduino/epd1in54
   - name: Arduino Waveshare E-paper 1in54 version 2
     url: https://github.com/waveshare/e-Paper/tree/master/Arduino/epd1in54_V2
 dependancies:
@@ -18,12 +16,12 @@ features:
   - display
 versions:
   - name: e-paper
-    version: 1
+    version: 2.1
 images:
-  prototype: eink-prototype.jpg
-  console: eink-console.png
+  prototype: eink-v2-prototype.jpg
+  console: eink-v2-console.png
 steps:
-  - step: Plug in the Oak PCB to the computer
+  - step: Plug in the Oak PCB with the E-Ink to the computer
   - step: (Option A) Ensure the PCB can be detected with <code>ls -al /dev/cu.usbmodem</code> and <code>arduino-cli board list</code>. Run <code>make</code> to compile and upload the code to the board.
     image: print-hello-check.png
   - step: (Option B) Ensure the board can be detected with Arduino IDE. Compile and upload the code to the board.
@@ -32,9 +30,9 @@ steps:
 ---
 ### Waveshare E-Ink version
 
-Check the E-Ink display module for the version number. Here, version 1 is used and the number is not marked on the module.
+Check the E-Ink display module for the version number. Here, version 2.1 is used and the number is marked on the module.
 
-<img src="{{site.url}}/images/examples/waveshare-1in54-module.jpg" alt="WaveShare 1.54 inch module">
+<img src="{{site.url}}/images/code/waveshare-1in54-v2-module.jpg" alt="WaveShare 1.54 inch module Version 2.1">
 
 ### SPI
 The 4 non-SPI pins are defined in `epdif.h` file:

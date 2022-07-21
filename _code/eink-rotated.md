@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: E-Ink rotated
 description: Display lat-long and Haversine distance
 references:

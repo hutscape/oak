@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Convert latitude-longitude format
 description: Convert latitude-longitude coordinates from decimal degrees to DMS (degrees-minutes-seconds).
 difficulty: easy
