@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/Users/sayanee/Documents/hutscape/oak/hardware/Oak.sch</source>
+    <source>/Users/sayanee/Documents/hutscape/oak/pcb/Oak.sch</source>
     <date>2021 May 31, Monday 19:51:28</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -1515,7 +1515,7 @@
       <uri>/Library/Application Support/kicad/library/Battery_Management.lib</uri>
     </library>
     <library logical="CDTop_PA1010D_GPS">
-      <uri>/Users/sayanee/Documents/hutscape/oak/hardware/library/symbols/CDTop_PA1010D_GPS.lib</uri>
+      <uri>/Users/sayanee/Documents/hutscape/oak/pcb/library/symbols/CDTop_PA1010D_GPS.lib</uri>
     </library>
     <library logical="Connector">
       <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
@@ -1524,7 +1524,7 @@
       <uri>/Library/Application Support/kicad/library/Device.lib</uri>
     </library>
     <library logical="E-Ink">
-      <uri>/Users/sayanee/Documents/hutscape/oak/hardware/library/symbols/Waveshare_eink_1_54in.lib</uri>
+      <uri>/Users/sayanee/Documents/hutscape/oak/pcb/library/symbols/Waveshare_eink_1_54in.lib</uri>
     </library>
     <library logical="Jumper">
       <uri>/Library/Application Support/kicad/library/Jumper.lib</uri>

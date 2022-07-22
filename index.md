@@ -11,6 +11,7 @@ downloads:
   kicad: true
   gerber: true
   bom: true
+  case: true
 software:
   - name: Demo firmware
     code: _code/demo

@@ -1,5 +1,5 @@
 BOM_PATH?=_data/bill_of_materials.csv
-XML_PATH?=hardware/*.xml
+XML_PATH?=pcb/*.xml
 
 .PHONY: default serve build install bom
 
