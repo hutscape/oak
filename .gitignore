@@ -28,8 +28,9 @@ package-lock.json
 build
 
 # hardware
-datasheets
-gerbers
+datasheets # Download from bill_of_materials.csv "Datasheets" column
+gerbers  # Download the latest from GitHub release https://github.com/hutscape/oak/tags
+references
 
 # mechanical
 *.FCStd1
