@@ -3,6 +3,7 @@
   "bom-total": 83,
   "bom-total-populate": 52,
   "bom-cost": 111.2,
+  "currency": "SGD",
   "vendor-names": [
     "Element14",
     "LCSC",
