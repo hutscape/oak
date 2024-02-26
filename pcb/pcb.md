@@ -7,6 +7,43 @@ sequence: 3
 three_d: true
 pcb_layout: true
 gerber: true
+
+manufacturing_params_image: pcbway.png
+manufacturing_params:
+  - name: "Manufacturer"
+    value: "PCBWay"
+  - name: "Size"
+    value: "100 x 40 mm"
+  - name: "Layers"
+    value: "2"
+  - name: "PCB Thickness"
+    value: "1.6 mm"
+  - name: "Min hole size:"
+    value: "0.3 mm"
+  - name: "Silkscreen"
+    value: "White"
+  - name: "Surface Finish"
+    value: "HASL lead free"
+  - name: "Via process"
+    value: "Tenting vias"
+  - name: "Date code"
+    value: "None"
+  - name: "Quantity"
+    value: "5"
+  - name: "PCB Material"
+    value: "FR-4: TG130"
+  - name: "Min track/spacing"
+    value: "6/6mil"
+  - name: "Solder Mask"
+    value: "Green"
+  - name: "Edge connector"
+    value: "No"
+  - name: "HASL to ENIG"
+    value: "No"
+  - name: "Finished Copper"
+    value: "1oz Cu"
+  - name: "UL marking"
+    value: "No"
 ---
 
 <!-- Steps to update hardware
