@@ -8,6 +8,9 @@ three_d: true
 pcb_layout: true
 gerber: true
 
+# maximum number of images prototype-n.jpg in folder images/pcb/prototype
+max_prototype_images: 2
+
 manufacturing_params_image: pcbway.png
 manufacturing_params:
   - name: "Manufacturer"
