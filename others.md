@@ -18,7 +18,7 @@ lessons:
       - name: Always buy buffer number of components. Image is from the book Designing Electronics That Work by Hunter Scott.
         image: buffer-components.png
 
-  - titles: Enclosure
+  - title: Enclosure
     subtitle: Next iteration improvements
     list:
       - name: Make the PCB routing symmetrical for LED positions and connector slots
