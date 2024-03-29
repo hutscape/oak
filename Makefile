@@ -39,6 +39,7 @@ install:
 	bundle install
 
 update:
+	git submodule foreach --recursive git reset --hard HEAD
 	git submodule update --remote
 
 uncommit:
