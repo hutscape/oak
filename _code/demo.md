@@ -1,6 +1,6 @@
 ---
 layout: code
-title: Oak Demo
+title: Demo
 description: Send GPS information to the peer LoRa node and display it on the E-Ink screen
 references:
   - name: Arduino LoRa duplex example code
