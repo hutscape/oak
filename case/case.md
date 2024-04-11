@@ -2,7 +2,7 @@
 layout: case
 title: Case
 permalink: /case
-sequence: 4
+sequence: 3
 photos:
   - name: case-front.png
     caption: Case front

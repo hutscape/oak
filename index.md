@@ -1,6 +1,6 @@
 ---
 layout: start
-title: Getting Started
+title: Start
 permalink: /
 sequence: 1
 
