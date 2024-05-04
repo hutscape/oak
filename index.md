@@ -6,6 +6,7 @@ sequence: 1
 
 manufacturing: true
 downloads:
+  code: true
   schematic: true
   layout: true
   kicad: true
