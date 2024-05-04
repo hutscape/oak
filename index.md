@@ -14,9 +14,6 @@ downloads:
   bom: true
   freecad: true
   case: true
-software:
-  - name: Demo firmware
-    code: _code/demo
 features:
   - detail: Configure the 2 nodes with addresses <code>0xAA</code> and <code>0xBB</code> so that they can communicate with each other via LoRa
   - detail: Know when the current node does not have any GPS fix yet
