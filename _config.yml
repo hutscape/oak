@@ -4,7 +4,8 @@ url: "https://hutscape.com/oak"
 parent: "https://hutscape.com"
 markdown: kramdown
 permalink: /:title
-youtube: https://www.youtube.com/user/sweska/videos
+youtube: https://youtube.com/@sayanee
+paypal: https://www.paypal.com/ncp/payment/4JU23HRF65P66
 github:
   repository_url: https://github.com/hutscape/oak
   raw_content_url: https://github.com/hutscape/oak/tree/master
