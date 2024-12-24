@@ -38,9 +38,13 @@ install:
 	cat scripts/Gemfile > Gemfile
 	bundle install
 
-update:
+submodule:
 	git submodule foreach --recursive git reset --hard HEAD
 	git submodule update --remote
+
+update:
+	rm Gemfile.lock
+	bundle install
 
 uncommit:
 	# git uncommit the last commit

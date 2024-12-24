@@ -10,7 +10,31 @@ paypal: https://www.paypal.com/ncp/payment/4JU23HRF65P66
 github:
   repository_url: https://github.com/hutscape/oak
   raw_content_url: https://github.com/hutscape/oak/tree/master
-exclude: ["datasheets", "Gemfile", "Gemfile.lock", "contributing.md", "Makefile", "readme.md", "scripts", "firmware"]
+exclude: [
+  "datasheets",
+  "Gemfile",
+  "Gemfile.lock",
+  "contributing.md",
+  "*Makefile",
+  "readme.md",
+  "scripts",
+  "firmware",
+  "*.h",
+  "*.ino",
+  "*.bin",
+  "*.elf",
+  "*.map",
+  "*.kicad*",
+  "pcb/fp-*",
+  "pcb/sym-lib-table",
+  "pcb/library",
+  "*.FCStd",
+  "*.stl",
+  "*.FCBak",
+  "*-backups",
+  "references",
+  "_code/**/*",
+  ]
 include: ["_data"]
 collections:
   code:
